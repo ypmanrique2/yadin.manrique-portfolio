@@ -57,27 +57,27 @@ export const Sobre_mi = () => {
                             <h3 className="text-xl font-bold mb-4"> 🏫 Educación </h3>
                             <ul className="list-disc list-inside text-gray-300 space-y-2">
                                 <li>
-                                    <strong> Aprendiz en busca de etapa práctica de Tecnólogo en Análisis y Desarrollo de Software del SENA(May.2023-Mar.2025) </strong>
+                                    <strong> Tecnólogo en Análisis y Desarrollo de Software del SENA<br></br>(May.2023-Nov.2025) Código de verificación en certificados.sena.edu.co 9226002758299CE383652C</strong>
                                 </li>
                                 <br></br>
                                 <li>
-                                    <strong> BootCamp: Diplomado en Programación de aplicaciones específicas en Alura-Oracle Next Education(Abr.2022-Sep.2022) </strong>
+                                    <strong> BootCamp: Diplomado en Programación de aplicaciones específicas en Alura-Oracle Next Education<br></br>(Abr.2022-Sep.2022) </strong>
                                 </li>
                                 <br></br>
                                 <li>
-                                    <strong> Programación con énfasis en Aplicaciones web Misión TIC 2022 de la Universidad de Caldas (Ene. 2021 - Dic. 2021) </strong>
+                                    <strong> Programación con énfasis en Aplicaciones web Misión TIC 2022 de la Universidad de Caldas<br></br>(Ene. 2021 - Dic. 2021) </strong>
                                 </li>
                                 <br></br>
                                 <li>
-                                    <strong> Certificación de la Industria de Talentos de la Alcaldía de Medellín (Cursos de LinkedIn) (Ene. 2023 - Sep. 2023) </strong>
+                                    <strong> Certificación de la Industria de Talentos de la Alcaldía de Medellín (Cursos de LinkedIn)<br></br>(Ene. 2023 - Sep. 2023) </strong>
                                 </li>
                                 <br></br>
                                 <li>
-                                    <strong> Certificado Internacional ITIL (Information Technology Infrastructure Library) versión 4 (Ene. 2024 - Ene. 2027) </strong>
+                                    <strong> Certificado Internacional ITIL (Information Technology Infrastructure Library) versión 4<br></br>(Ene. 2024 - Ene. 2027) </strong>
                                 </li>
                                 <br></br>
                                 <li>
-                                    <strong> Licenciatura en Teología del Seminario Internacional del Condado de Miami-Dade M.I.N.T.S.(Ene. 2005 - Feb. 2010) </strong>
+                                    <strong> Licenciatura en Teología del Seminario Internacional del Condado de Miami-Dade M.I.N.T.S. (Ene. 2005 - Feb. 2010) </strong>
                                 </li>
                             </ul>
                         </div>
@@ -87,6 +87,16 @@ export const Sobre_mi = () => {
                             <h3 className="text-xl font-bold mb-4"> 💼 Experiencia </h3>
                             <ul className="list-disc list-inside text-gray-300 space-y-2">
                                 <span>
+                                    <h4 className="font-semibold">Tecnólogo en Análisis y Desarrollo de Software en ComfaOriente (Abr.2025-Oct.2025)</h4>
+                                    <p>Desarrollar aplicaciones informáticas de acuerdo con el diseño y metodologías.</p>
+                                    <p>Probar aplicaciones informáticas de acuerdo con parámetros técnicos y modelos de referencia.</p>
+                                    <p>Implementar aplicaciones informáticas de acuerdo con requisitos de operación y modelos de referencia.</p>
+                                    <p>Construir proyecto de tecnología digital de acuerdo con procedimientos técnicos.</p>
+                                    <p><strong>Contacto:</strong>  talentohumano@comfaoriente.com | ana.espejo@pearsolutions.com.co </p>
+                                    <p><strong>Cel:</strong> +57 3045913050 / +57 3202809064</p>
+                                </span>
+                                <br></br>
+                                <span>
                                     <h4 className="font-semibold">Back en Estudio Galicia EGSAC (Feb.2024-Ago.2024)</h4>
                                     <p>Administrar bases de datos, gestionando recopilación, almacenamiento y procesado de datos.</p>
                                     <p>Brindar soporte tecnológico, resolviendo problemas informáticos y manteniendo sistemas.</p>
@@ -94,14 +104,7 @@ export const Sobre_mi = () => {
                                     <p><strong>Cel:</strong> +51 944359069 / +51 941404777 / +51 908801111</p>
                                 </span>
                                 <br></br>
-                                <span>
-                                    <h4 className="font-semibold">Agente mesa de servicio nivel 2 en Pear Solutions SAS (Sep.2020-Dic.2023)</h4>
-                                    <p>Brindar atención y solución a incidentes y requerimientos técnicos, tanto presencial como remotamente, según los ANS pactados.</p>
-                                    <p>Realizar mantenimiento correctivo de hardware y software, instalación de equipos y configuración de acceso a Internet.</p>
-                                    <p>Gestionar solicitudes vía telefónica, chat, web o correo.</p>
-                                    <p><strong>Contacto:</strong> duvan.aldana@pearsolutions.com.co | ana.espejo@pearsolutions.com.co</p>
-                                    <p><strong>Cel:</strong> 3164485237 / 3185605017</p>
-                                </span>
+
                             </ul>
                         </div>
                     </div>

@@ -14,6 +14,62 @@ export const Proyectos = () => {
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,24,0.2)] transition">
+                            <h3 className="text-xl font-bold mb-2"> Pokédex </h3>
+                            <p className="text-gray-400 mb-4">
+                                Web-app full-stack en Angular, consumiendo API REST en Node.js+Express, con autenticación por sesión (cookie HTTP-only) y login por guards e interceptores.
+                                El back-end persiste data en MySQL, gestiona usuarios y rol, estado reactivo a RxJS y comunicación segura cross-origin por CORS. Usuario: admin / Clave: 1234
+                            </p>
+                            <div className="flex flex-wrap gap-2 mb-4">
+                                {["Angular", "Node.js", "Express", "RxJS", "TypeScript", "SQL", "Jasmine", "Karma"].map((tech, key) => (
+                                    <span
+                                        key={key}
+                                        className="bg-green-500/10 text-green-500 py-1 px-3 rounded-full text-sm hover:bg-green-500/20 
+                                            hover:shadow-[0_2px_8px_rgba(59,130,24,0.1)] transition-all
+                            "
+                                    >
+                                        {tech}
+                                    </span>
+                                ))}
+                            </div>
+                            <div className="flex justify-between items-center">
+                                <a
+                                    href="https://pokedexaplication.netlify.app/" target="_blank"
+                                    className="text-blue-400 hover:text-blue-300 transition-colors my-4">
+                                    {" "}
+                                    Ver Proyecto →{" "}
+                                </a>
+                            </div>
+                        </div>
+                        <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,24,0.2)] transition">
+                            <h3 className="text-xl font-bold mb-2"> Intranet adaptable a corporaciones</h3>
+                            <p className="text-gray-400 mb-4">
+                                Intranet de alta complejidad y altamente segura (Hardened), adaptable a corporaciones que desean manejar, editar y compartir sus archivos con toda o parte de su organización de forma segura y confidencial, con control de acceso y niveles de seguridad, edición y lectura ajustables.
+                            </p>
+                            <div className="flex flex-wrap gap-2 mb-4">
+                                {["HTML5", "CSS3", "JavaScript", "TypeScript", "Firebase", "GCP"].map((tech, key) => (
+                                    <span
+                                        key={key}
+                                        className="bg-green-500/10 text-green-500 py-1 px-3 rounded-full text-sm hover:bg-green-500/20 
+                                            hover:shadow-[0_2px_8px_rgba(59,130,24,0.1)] transition-all
+                            "
+                                    >
+                                        {tech}
+                                    </span>
+                                ))}
+                            </div>
+                            <div className="flex justify-between items-center">
+                                <a
+                                    href="https://sites.google.com/comfaoriente.com/intranetcolcampestre" target="_blank"
+                                    className="text-blue-400 hover:text-blue-300 transition-colors my-4">
+                                    {" "}
+                                    Ver Proyecto →{" "}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <br></br>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,24,0.2)] transition">
                             <h3 className="text-xl font-bold mb-2"> Conversor TTS-STT</h3>
                             <p className="text-gray-400 mb-4">
                                 Escalable infraestructura en la nube, gestionable con usuario administrador, que facilita la conversión bidireccional de la voz al texto y del texto a la voz.
