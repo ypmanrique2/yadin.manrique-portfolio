@@ -1,9 +1,19 @@
 import React from "react";
 import { RevealOnScroll } from "../RevealOnScroll";
+import cvPdf from "../1.HV - Yadin Manrique.pdf";
 
 export const Sobre_mi = () => {
-    const frontendSkills = ["TypeScript", "React", "Vite", "Angular", "NgRx", "PrimeFaces", "TailwindCSS", "SCSS", "CSS3", "HTML5", "JavaScrpt"];
-    const backendSkills = ["Node.js", "Java+SpringBoot", "Express", "MongoDB", "MySQL", "Firebase", "Python", "JavaScript", "TypeScript"];
+    const frontendSkills = ["TypeScript", "React", "Vite", "Angular", "NgRx", "PrimeFaces", "TailwindCSS", "SCSS", "CSS3", "HTML5", "JavaScrpt", "RxJS", "Next.js", "NextAuth"];
+    const backendSkills = [ "Java+SpringBoot", "Keycloak", "Node.js","Express", "MongoDB", "MySQL", "Firebase", "Python", "JavaScript", "TypeScript"];
+
+    const downloadCV = () => {
+        const link = document.createElement("a");
+        link.href = cvPdf;
+        link.download = "HV_YadinManrique_2026.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
 
     return (
         <section
@@ -19,6 +29,19 @@ export const Sobre_mi = () => {
                         <p className="text-gray-300 mb-6">
                             Apasionado desarrollador con experiencia en la construcción de aplicaciones web y móviles y creación de soluciones innovadoras.
                         </p>
+
+                        {/* Botón de descargar CV */}
+                        <div className="flex justify-center mb-8">
+                            <button
+                                onClick={downloadCV}
+                                className="flex items-center gap-3 px-6 py-3 rounded-lg font-semibold transition-all duration-300 border-2 bg-green-600 border-green-500 hover:bg-green-700 hover:shadow-[0_4px_20px_rgba(34,197,94,0.4)] hover:scale-105"
+                            >
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                </svg>
+                                Descargar CV (PDF Protegido)
+                            </button>
+                        </div>
 
                         {/* Habilidades Frontend y Backend */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
