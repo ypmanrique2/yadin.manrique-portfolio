@@ -14,7 +14,7 @@ export const Proyectos = () => {
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,24,0.2)] transition">
-                            <h3 className="text-xl font-bold mb-2"> Pokédex </h3>
+                            <h3 className="text-xl font-bold mb-2"> App consumidor de API educativa ej pokédex </h3>
                             <p className="text-gray-400 mb-4">
                                 Web-app full-stack en Angular, consumiendo API REST en Node.js+Express, con autenticación por sesión (cookie HTTP-only) y login por guards e interceptores.
                                 El back-end persiste data en MySQL, gestiona usuarios y rol, estado reactivo a RxJS y comunicación segura cross-origin por CORS. Usuario: admin / Clave: 1234
@@ -41,12 +41,12 @@ export const Proyectos = () => {
                             </div>
                         </div>
                         <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,24,0.2)] transition">
-                            <h3 className="text-xl font-bold mb-2"> Intranet adaptable a corporaciones</h3>
+                            <h3 className="text-xl font-bold mb-2">eShop corporativa de alta disponibilidad</h3>
                             <p className="text-gray-400 mb-4">
-                                Intranet de alta complejidad y altamente segura (Hardened), adaptable a corporaciones que desean manejar, editar y compartir sus archivos con toda o parte de su organización de forma segura y confidencial, con control de acceso y niveles de seguridad, edición y lectura ajustables.
+                                Solución de e-commerce corporativa Hardened que combina la potencia de Java + Spring Boot y MongoDB con la seguridad de Keycloak (IAM). Diseñada para procesar transacciones masivas bajo el modelo por roles RBAC estricto, garantizando una operación privada, escalable y de alta fiabilidad, que ameritan las corporaciones con requerimientos críticos de seguridad y disponibilidad, aún en temporada alta.
                             </p>
                             <div className="flex flex-wrap gap-2 mb-4">
-                                {["HTML5", "CSS3", "JavaScript", "TypeScript", "Firebase", "GCP"].map((tech, key) => (
+                                {["React", "NextJs", "Java", "TypeScript", "MongoDB", "SpringBoot", "Keycloak", "NextAuth"].map((tech, key) => (
                                     <span
                                         key={key}
                                         className="bg-green-500/10 text-green-500 py-1 px-3 rounded-full text-sm hover:bg-green-500/20 
@@ -59,7 +59,7 @@ export const Proyectos = () => {
                             </div>
                             <div className="flex justify-between items-center">
                                 <a
-                                    href="https://sites.google.com/comfaoriente.com/intranetcolcampestre" target="_blank"
+                                    href="https://eshop-oem.netlify.app" target="_blank"
                                     className="text-blue-400 hover:text-blue-300 transition-colors my-4">
                                     {" "}
                                     Ver Proyecto →{" "}
@@ -151,12 +151,12 @@ export const Proyectos = () => {
                         </div>
 
                         <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,24,0.2)] transition">
-                            <h3 className="text-xl font-bold mb-2"> Desencriptador o encriptador de mensajes</h3>
+                            <h3 className="text-xl font-bold mb-2"> Intranet adaptable a corporaciones</h3>
                             <p className="text-gray-400 mb-4">
-                                Página de básica complejidad, que permite la encriptación o desencriptación de mensajes o frases en clave, ideal para comunicaciones secretas.
+                                Intranet de alta complejidad y altamente segura (Hardened), adaptable a corporaciones que desean manejar, editar y compartir sus archivos con toda o parte de su organización de forma segura y confidencial, con control de acceso y niveles de seguridad, edición y lectura ajustables.
                             </p>
                             <div className="flex flex-wrap gap-2 mb-4">
-                                {["HTML5", "CSS3", "JavaScript"].map((tech, key) => (
+                                {["HTML5", "CSS3", "JavaScript", "TypeScript", "Firebase", "GCP"].map((tech, key) => (
                                     <span
                                         key={key}
                                         className="bg-green-500/10 text-green-500 py-1 px-3 rounded-full text-sm hover:bg-green-500/20 
@@ -169,7 +169,7 @@ export const Proyectos = () => {
                             </div>
                             <div className="flex justify-between items-center">
                                 <a
-                                    href="https://ypmanrique2.github.io/challenge/" target="_blank"
+                                    href="https://sites.google.com/comfaoriente.com/intranetcolcampestre" target="_blank"
                                     className="text-blue-400 hover:text-blue-300 transition-colors my-4">
                                     {" "}
                                     Ver Proyecto →{" "}

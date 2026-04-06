@@ -16,7 +16,7 @@ export const Inicio = () => {
                     <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto">
                         Desarrollador full stack apasionado por el código limpio, SOLID y ACID.
                         Enfocado en crear aplicaciones web con alto rendimiento y gran experiencia de usuario.
-                        Experto en React, Node.js, Express, MongoDB, Angular, NgRX, PrimeFaces, Java y Spring Boot.
+                        Experto en React, Next.js, NextAuth, RxJS, Node.js, Express, MongoDB, Angular, Java con Spring Boot y Keycloak.
                     </p>
                     <div className="flex justify-center space-x-4">
                         <a href="#proyectos"
