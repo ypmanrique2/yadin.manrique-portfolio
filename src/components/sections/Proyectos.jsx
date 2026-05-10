@@ -100,12 +100,12 @@ export const Proyectos = () => {
                         </div>
 
                         <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,24,0.2)] transition">
-                            <h3 className="text-xl font-bold mb-2"> Página personalizable a negocios</h3>
+                            <h3 className="text-xl font-bold mb-2"> Landing page AI first & SEO human in the loop + Security hardening (WordPress- A.C.F. pro)</h3>
                             <p className="text-gray-400 mb-4">
-                                Página de básica complejidad, adaptable a personas y negocios pequeños o medianos que deseen exhibir sus productos o servicios en internet, incrementando así sus ventas en línea.
+                                Página en WordPress en tema ligero y lógica de negocio separada en hook. Base de datos con optimización de consultas y persistencia de data en MySQL; esquema por dbDelta e intgración de CRUD robustos en manejo de estados. Integra Clean Architecture junto con plugin A.C.F. pro, front-end moderno en VanillaJS y maquetado CSS3 responsive, con primero IA y SEO humano en la lupa más bastionado (hardening) de la Seguridad.
                             </p>
                             <div className="flex flex-wrap gap-2 mb-4">
-                                {["HTML5", "CSS3", "JavaScript"].map((tech, key) => (
+                                {["Wordpress", "Vanilla JS", "SEO human in the loop", "AI first", "MySQL", "HTML5", "CSS3", "JavaScript"].map((tech, key) => (
                                     <span
                                         key={key}
                                         className="bg-green-500/10 text-green-500 py-1 px-3 rounded-full text-sm hover:bg-green-500/20 
@@ -118,7 +118,7 @@ export const Proyectos = () => {
                             </div>
                             <div className="flex justify-between items-center">
                                 <a
-                                    href="https://ypmanrique2.github.io/Avanzando/" target="_blank"
+                                    href="https://b2b-sucessintheair.infinityfree.me/" target="_blank"
                                     className="text-blue-400 hover:text-blue-300 transition-colors my-4">
                                     {" "}
                                     Ver Proyecto →{" "}
@@ -208,9 +208,9 @@ export const Proyectos = () => {
                         </div>
 
                         <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,24,0.2)] transition">
-                            <h3 className="text-xl font-bold mb-2"> Juego infantil denominado "el ahorcado"</h3>
+                            <h3 className="text-xl font-bold mb-2"> Página personalizable a negocios</h3>
                             <p className="text-gray-400 mb-4">
-                                Página de básica complejidad, que fue realizada a petición, sobre los países de latinoamérica, para que los niños de preescolar (kinder garden) los memoricen.
+                                Página de básica complejidad, adaptable a personas y negocios pequeños o medianos que deseen exhibir sus productos o servicios en internet, incrementando así sus ventas en línea.
                             </p>
                             <div className="flex flex-wrap gap-2 mb-4">
                                 {["HTML5", "CSS3", "JavaScript"].map((tech, key) => (
@@ -226,7 +226,7 @@ export const Proyectos = () => {
                             </div>
                             <div className="flex justify-between items-center">
                                 <a
-                                    href="https://ypmanrique2.github.io/alura_challenge2/" target="_blank"
+                                    href="https://ypmanrique2.github.io/Avanzando/" target="_blank"
                                     className="text-blue-400 hover:text-blue-300 transition-colors my-4">
                                     {" "}
                                     Ver Proyecto →{" "}
