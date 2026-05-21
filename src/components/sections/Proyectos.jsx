@@ -102,7 +102,7 @@ export const Proyectos = () => {
                         <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,24,0.2)] transition">
                             <h3 className="text-xl font-bold mb-2"> Landing page AI first & SEO human in the loop + Security hardening (WordPress- A.C.F. pro)</h3>
                             <p className="text-gray-400 mb-4">
-                                Página en WordPress en tema ligero y lógica de negocio separada en hook. Base de datos con optimización de consultas y persistencia de data en MySQL; esquema por dbDelta e intgración de CRUD robustos en manejo de estados. Integra Clean Architecture junto con plugin A.C.F. pro, front-end moderno en VanillaJS y maquetado CSS3 responsive, con primero IA y SEO humano en la lupa más bastionado (hardening) de la Seguridad.
+                                Página en WordPress en tema ligero y lógica de negocio separada en hook. Base de datos con optimización de consultas y persistencia de data en MySQL; esquema por dbDelta e integración de CRUD robustos en manejo de estados. Integra Clean Architecture junto con plugin A.C.F. pro, front-end moderno en VanillaJS y maquetado CSS3 responsive, con primero IA y SEO humano en la lupa más bastionado (hardening) de la Seguridad.
                             </p>
                             <div className="flex flex-wrap gap-2 mb-4">
                                 {["Wordpress", "Vanilla JS", "SEO human in the loop", "AI first", "MySQL", "HTML5", "CSS3", "JavaScript"].map((tech, key) => (

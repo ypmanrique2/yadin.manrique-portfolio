@@ -3,8 +3,8 @@ import { RevealOnScroll } from "../RevealOnScroll";
 import cvPdf from "../1.HV - Yadin Manrique.pdf";
 
 export const Sobre_mi = () => {
-    const frontendSkills = ["TypeScript", "React", "Vite", "Angular", "NgRx", "PrimeFaces", "TailwindCSS", "SCSS", "CSS3", "HTML5", "JavaScrpt", "RxJS", "Next.js", "NextAuth"];
-    const backendSkills = [ "Java+SpringBoot", "Keycloak", "Node.js","Express", "MongoDB", "MySQL", "Firebase", "Python", "JavaScript", "TypeScript"];
+    const frontendSkills = ["TypeScript", "React", "Vite", "Angular", "SEO human in the loop", "TailwindCSS", "SCSS", "CSS3", "HTML5", "JavaScrpt", "RxJS", "Next.js", "NextAuth"];
+    const backendSkills = [ "Java", "SpringBoot", "Keycloak", "Node.js","Express", "MongoDB", "MySQL", "Firebase", "Python", "JavaScript", "TypeScript", "hardened security", "AI first"];
 
     const downloadCV = () => {
         const link = document.createElement("a");
@@ -21,7 +21,7 @@ export const Sobre_mi = () => {
             className="min-h-screen flex items-center justify-center py-20"
         >
             <RevealOnScroll>
-                <div className="max-w-6xl mx-auto px-6"> {/* Se amplía el ancho */}
+                <div className="max-w-6xl mx-auto px-6">
                     <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-green-500 to-cyan-400 bg-clip-text text-transparent text-center">
                         Sobre mí
                     </h2>
@@ -46,7 +46,7 @@ export const Sobre_mi = () => {
                         {/* Habilidades Frontend y Backend */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
-                                <h3 className="text-xl font-bold mb-4"> Front-end</h3>
+                                <h3 className="text-xl font-bold mb-4"> Front-end </h3>
                                 <div className="flex flex-wrap gap-2">
                                     {frontendSkills.map((tech, key) => (
                                         <span
@@ -61,7 +61,7 @@ export const Sobre_mi = () => {
                                 </div>
                             </div>
                             <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
-                                <h3 className="text-xl font-bold mb-4"> Back-end</h3>
+                                <h3 className="text-xl font-bold mb-4"> Back-end </h3>
                                 <div className="flex flex-wrap gap-2">
                                     {backendSkills.map((tech, key) => (
                                         <span key={key} className="bg-green-500/10 text-green-500 py-1 px-3 rounded-full text-sm hover:bg-green-500/20 hover:shadow-[0_2px_8px_rgba(59,130,24,0.2)] transition">
@@ -115,7 +115,7 @@ export const Sobre_mi = () => {
                                     <p>Probar aplicaciones informáticas de acuerdo con parámetros técnicos y modelos de referencia.</p>
                                     <p>Implementar aplicaciones informáticas de acuerdo con requisitos de operación y modelos de referencia.</p>
                                     <p>Construir proyecto de tecnología digital de acuerdo con procedimientos técnicos.</p>
-                                    <p><strong>Contacto:</strong>  talentohumano@comfaoriente.com | ana.espejo@pearsolutions.com.co </p>
+                                    <p><strong>Contacto:</strong> talentohumano@comfaoriente.com | ana.hernandez@comfaoriente.com </p>
                                     <p><strong>Cel:</strong> +57 3045913050 / +57 3202809064</p>
                                 </span>
                                 <br></br>
