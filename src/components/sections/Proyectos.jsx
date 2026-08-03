@@ -15,6 +15,63 @@ export const Proyectos = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
                         <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,24,0.2)] transition">
+                            <h3 className="text-xl font-bold mb-2"> Marketplace de comercio electrónico VE&CO (Participación en actualización de proyecto privado)</h3>
+                            <p className="text-gray-400 mb-4">
+                                VE&CO es un Marketplace de e-commerce colombiano diseñado para impulsar el comercio digital, permitiendo a empresas y emprendedores publicar, vender y gestionar sus productos a través de una plataforma Web, y Móvil respaldada por una arquitectura moderna en la nube, pagos electrónicos seguros y cumplimiento de la normativa colombiana sobre comercio electrónico y protección de datos.
+                            </p>
+                            <div className="flex flex-wrap gap-2 mb-4">
+                                {["Angular", "Node.js", "Express", "SCSS", "Firebase", "Fly.io", "TypeScript", "MongoDB"].map((tech, key) => (
+                                    <span
+                                        key={key}
+                                        className="bg-green-500/10 text-green-500 py-1 px-3 rounded-full text-sm hover:bg-green-500/20 
+                                            hover:shadow-[0_2px_8px_rgba(59,130,24,0.1)] transition-all
+                            "
+                                    >
+                                        {tech}
+                                    </span>
+                                ))}
+                            </div>
+                            <div className="flex justify-between items-center">
+                                <a
+                                    href="https://veycoo.com.co/" target="_blank"
+                                    className="text-blue-400 hover:text-blue-300 transition-colors my-4">
+                                    {" "}
+                                    Ver Proyecto →{" "}
+                                </a>
+                            </div>
+                        </div>
+
+                        <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,24,0.2)] transition">
+                            <h3 className="text-xl font-bold mb-2"> App de PlayStore: VE&CO, Marketplace de comercio electrónico (Participación en actualización de proyecto privado)</h3>
+                            <p className="text-gray-400 mb-4">
+                                VE&CO (App en PlayStore) es un Marketplace de e-commerce colombiano que conecta compradores y vendedores mediante una plataforma omnicanal compuesta por Web, App móvil y Back-End en la nube, integrando autenticación segura, gestión de productos, pagos electrónicos, logística, mensajería y servicios desplegados en Cloud bajo una arquitectura escalable y orientada a microservicios, seguridad y cumplimiento normativo para el comercio digital en Colombia.
+                            </p>
+                            <div className="flex flex-wrap gap-2 mb-4">
+                                {["Angular", "Node.js", "Express", "SCSS", "Firebase", "Fly.io", "Java", "TypeScript", "MongoDB", "PlayStore"].map((tech, key) => (
+                                    <span
+                                        key={key}
+                                        className="bg-green-500/10 text-green-500 py-1 px-3 rounded-full text-sm hover:bg-green-500/20 
+                                            hover:shadow-[0_2px_8px_rgba(59,130,24,0.1)] transition-all
+                            "
+                                    >
+                                        {tech}
+                                    </span>
+                                ))}
+                            </div>
+                            <div className="flex justify-between items-center">
+                                <a
+                                    href="https://play.google.com/store/apps/details?id=app.veycoo.co&hl=es_CO" target="_blank"
+                                    className="text-blue-400 hover:text-blue-300 transition-colors my-4">
+                                    {" "}
+                                    Ver Proyecto →{" "}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <br></br>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                        <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,24,0.2)] transition">
                             <h3 className="text-xl font-bold mb-2"> Portafolio adaptable a empresas </h3>
                             <p className="text-gray-400 mb-4">
                                 Página de mediana complejidad, adaptable a empresas productoras que desean exhibir sus productos en internet, incrementando así sus ventas en línea. Desarrollada con Angular en el front-end y una capa back-end basada en Node.js y Express para la gestión de APIs. Implementa estilos escalables con SCSS, soporte en la nube mediante Firebase, y manejo eficiente de datos reactivos utilizando RxJS.
@@ -127,17 +184,17 @@ export const Proyectos = () => {
                         </div>
 
                         <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,24,0.2)] transition">
-                            <h3 className="text-xl font-bold mb-2"> Conversor TTS-STT</h3>
+                            <h3 className="text-xl font-bold mb-2"> Insurance CRM</h3>
                             <p className="text-gray-400 mb-4">
-                                Escalable infraestructura en la nube, gestionable con usuario administrador, que facilita la conversión bidireccional de la voz al texto y del texto a la voz. Implementada con Reac y Vite en el front-end, y un back-end basado en Node.js y Express para la gestión de APIs y lógica de negocio, bajo una arquitectura desacoplada que optimiza la escalabilidad, el rendimiento y la interacción en tiempo real.
+                                Sistema moderno para CRM de seguros, construido con arquitectura modular y componentes reutilizables. Gestión de pólizas, clientes y siniestros con UI reactiva y dashboards interactivos. Back-end API REST en Python/Flask desplegado en Render con Gunicorn, base de datos SQLite/PostgreSQL, CORS configurado para frontend en GitHub Pages, y CI/CD con GitHub Actions.
                             </p>
                             <div className="flex flex-wrap gap-2 mb-4">
-                                {["React", "Node.js", "Express", "Vite", "TypeScript"].map((tech, key) => (
+                                {["React", "TypeScript", "TailwindCSS", "Vite", "GitHub Actions", "Python", "Flask", "Gunicorn", "SQLite", "PostgreSQL", "Render"].map((tech, key) => (
                                     <span
                                         key={key}
                                         className="bg-green-500/10 text-green-500 py-1 px-3 rounded-full text-sm hover:bg-green-500/20 
                                             hover:shadow-[0_2px_8px_rgba(59,130,24,0.1)] transition-all
-                            "
+                                "
                                     >
                                         {tech}
                                     </span>
@@ -145,7 +202,7 @@ export const Proyectos = () => {
                             </div>
                             <div className="flex justify-between items-center">
                                 <a
-                                    href="https://vermillion-babka-8fa83b.netlify.app/" target="_blank"
+                                    href="https://ypmanrique2.github.io/insurance-crm-frontend/" target="_blank"
                                     className="text-blue-400 hover:text-blue-300 transition-colors my-4">
                                     {" "}
                                     Ver Proyecto →{" "}
@@ -181,17 +238,17 @@ export const Proyectos = () => {
                         </div>
 
                         <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,24,0.2)] transition">
-                            <h3 className="text-xl font-bold mb-2"> Portafolio personalizable a personas</h3>
+                            <h3 className="text-xl font-bold mb-2"> Landing Page para servicios profesionales</h3>
                             <p className="text-gray-400 mb-4">
-                                Página de básica complejidad, que facilita la exhibición de trabajos o logros personales alcanzados, personalizable para cualquier tipo de profesión o campo de estudios.
+                                Sitio web profesional en WordPress con tema ligero y ACF Pro para campos personalizados. Optimización SEO on-page, rendimiento con caching y compresión, maquetado responsive CSS3. Base de datos MySQL optimizada con consultas eficientes y seguridad hardenizada. Servicio de mensajería directo al correo personalizado con Brevo. Back-end en PHP/WordPress con tabla personalizada para contactos, validación y sanitización de datos, AJAX con nonce, y notificaciones por email HTML.
                             </p>
                             <div className="flex flex-wrap gap-2 mb-4">
-                                {["HTML5", "CSS3", "JavaScript"].map((tech, key) => (
+                                {["WordPress", "ACF Pro", "PHP", "MySQL", "CSS3", "Vanilla JS", "SEO", "Brevo", "jQuery", "AJAX"].map((tech, key) => (
                                     <span
                                         key={key}
                                         className="bg-green-500/10 text-green-500 py-1 px-3 rounded-full text-sm hover:bg-green-500/20 
                                             hover:shadow-[0_2px_8px_rgba(59,130,24,0.1)] transition-all
-                            "
+                                "
                                     >
                                         {tech}
                                     </span>
@@ -199,7 +256,7 @@ export const Proyectos = () => {
                             </div>
                             <div className="flex justify-between items-center">
                                 <a
-                                    href="https://ypmanrique2.github.io/ONEportafolio/" target="_blank"
+                                    href="https://diana-morantes.infinityfree.io/wp/" target="_blank"
                                     className="text-blue-400 hover:text-blue-300 transition-colors my-4">
                                     {" "}
                                     Ver Proyecto →{" "}
