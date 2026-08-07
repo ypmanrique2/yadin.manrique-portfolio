@@ -451,8 +451,12 @@
       /* ── Habilidades ── */
       .skills-wrap {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 20px;
+      }
+      .skills-wrap.tags {
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 20px;
       }
       .skills-card {
         background: var(--card);
@@ -976,14 +980,16 @@
             <div class="skill-row"><span class="name">GitHub Actions / CI-CD</span><div class="skill-dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot empty"></div></div></div>
             <div class="skill-row"><span class="name">EmailJS / Brevo (forms)</span><div class="skill-dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot empty"></div><div class="dot empty"></div></div></div>
           </div>
+        </div>
 
+        <div class="skills-wrap tags">
           <div class="skills-card">
             <h4>Especialidades &amp; Metodologías</h4>
             <div class="tagcloud">
               <span class="tag">Clean Arch</span><span class="tag">Hexagonal</span><span class="tag">DDD</span>
               <span class="tag">SOLID</span><span class="tag">MicroFront-Ends (MFE)</span><span class="tag">REST API</span>
               <span class="tag">CI/CD</span><span class="tag">OWASP Top 10</span><span class="tag">SDD</span>
-              <span class="tag">ITIL v4</span><span class="tag">Scrum</span><span class="tag">SEO</span>
+              <span class="tag">ITIL v4</span><span class="tag">Scrum</span>
             </div>
           </div>
 
@@ -993,7 +999,7 @@
               <span class="tag">Kafka KRaft</span><span class="tag">SSE</span><span class="tag">Docker/K8s</span>
               <span class="tag">GitHub Actions</span><span class="tag">Render</span><span class="tag">Fly.io</span>
               <span class="tag">GCP</span><span class="tag">Aiven</span><span class="tag">Keycloak</span>
-              <span class="tag">NextAuth</span><span class="tag">RBAC</span><span class="tag">CORS</span>
+              <span class="tag">NextAuth</span><span class="tag">RBAC</span>
             </div>
           </div>
 
@@ -1003,6 +1009,7 @@
               <span class="tag">TailwindCSS</span><span class="tag">WordPress/ACF Pro</span><span class="tag">RxJS</span>
               <span class="tag">Vite</span><span class="tag">esbuild</span><span class="tag">Redux</span>
               <span class="tag">MCP</span><span class="tag">LLM</span><span class="tag">EmailJS</span>
+              <span class="tag">SEO</span><span class="tag">CORS</span>
             </div>
           </div>
         </div>

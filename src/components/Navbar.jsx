@@ -34,10 +34,22 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
                         Sobre mí
                     </a>
                     <a
+                        href="#experiencia"
+                        className="text-gray-300 hover:text-white transition-colors"
+                    >
+                        Experiencia
+                    </a>
+                    <a
                         href="#proyectos"
                         className="text-gray-300 hover:text-white transition-colors"
                     >
                         Proyectos
+                    </a>
+                    <a
+                        href="#habilidades"
+                        className="text-gray-300 hover:text-white transition-colors"
+                    >
+                        Habilidades
                     </a>
                     <a
                         href="#contacto"

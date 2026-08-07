@@ -35,7 +35,7 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
                         Inicio
                     </a>
                     <a
-                        href="#acerca-de-mi"
+                        href="#sobre_mi"
                         onClick={() => setMenuOpen(false)}
                         className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
                             ${
@@ -46,6 +46,19 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
                     `}
                     >
                         Acerca de mí
+                    </a>
+                    <a
+                        href="#experiencia"
+                        onClick={() => setMenuOpen(false)}
+                        className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
+                            ${
+                                menuOpen 
+                                ? "opacity-100 translate-y-0" 
+                                : "opacity-0 translate-y-5"
+                            }
+                    `}
+                    >
+                        Experiencia
                     </a>
                     <a
                         href="#proyectos"
@@ -59,6 +72,19 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
                     `}
                     >
                         Proyectos
+                    </a>
+                    <a
+                        href="#habilidades"
+                        onClick={() => setMenuOpen(false)}
+                        className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
+                            ${
+                                menuOpen 
+                                ? "opacity-100 translate-y-0" 
+                                : "opacity-0 translate-y-5"
+                            }
+                    `}
+                    >
+                        Habilidades
                     </a>
                     <a
                         href="#contacto"

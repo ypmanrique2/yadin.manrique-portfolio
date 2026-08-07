@@ -1,10 +1,13 @@
 import React from "react";
 import { RevealOnScroll } from "../RevealOnScroll";
-import cvPdf from "../1.HV - Yadin Manrique.pdf";
+import cvPdf from "../HV_YadinManrique_2026.pdf";
 
 export const Sobre_mi = () => {
-    const frontendSkills = ["TypeScript", "React", "Vite", "Angular", "SEO human in the loop", "TailwindCSS", "SCSS", "CSS3", "HTML5", "JavaScrpt", "RxJS", "Next.js", "NextAuth"];
+    const frontendSkills = ["TypeScript", "React", "Vite", "Angular", "SEO human in the loop", "TailwindCSS", "SCSS", "CSS3", "HTML5", "JavaScript", "RxJS", "Next.js", "NextAuth"];
     const backendSkills = [ "Java", "SpringBoot", "Keycloak", "Node.js","Express", "MongoDB", "MySQL", "Firebase", "Python", "JavaScript", "TypeScript", "hardened security", "AI first"];
+    const especialidadesChips = ["Clean Arch", "Hexagonal", "DDD", "SOLID", "MicroFront-Ends (MFE)", "REST API", "CI/CD", "OWASP Top 10", "SDD", "ITIL v4", "Scrum"];
+    const cloudSeguridadChips = ["Kafka KRaft", "SSE", "Docker/K8s", "GitHub Actions", "Render", "Fly.io", "GCP", "Aiven", "Keycloak", "NextAuth", "RBAC"];
+    const frontendIaChips = ["TailwindCSS", "WordPress/ACF Pro", "RxJS", "Vite", "esbuild", "Redux", "MCP", "LLM", "EmailJS", "SEO", "CORS"];
 
     const downloadCV = () => {
         const link = document.createElement("a");
@@ -26,8 +29,8 @@ export const Sobre_mi = () => {
                         Sobre mí
                     </h2>
                     <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
-                        <p className="text-gray-300 mb-6">
-                            Apasionado desarrollador con experiencia en la construcción de aplicaciones web y móviles y creación de soluciones innovadoras.
+                        <p className="text-gray-300 mb-6 text-justify">
+                            Desarrollador <b className="text-green-500 font-semibold">Full Stack</b> con <b className="text-green-500 font-semibold">6 años de evolución</b> en el ecosistema Java 8–21, Node.js y front-end moderno (<b className="text-green-500 font-semibold">React 19, Angular, TypeScript</b>). Especializado en arquitecturas <b className="text-green-500 font-semibold">Cloud-Native</b>: Clean Architecture, Hexagonal, DDD, SOLID y Event-Driven con <b className="text-green-500 font-semibold">Kafka (KRaft)</b> y <b className="text-green-500 font-semibold">SSE</b>. Experiencia en desarrollo asistido por IA (<b className="text-green-500 font-semibold">SDD, MCP, LLM</b>) y seguridad de aplicaciones (<b className="text-green-500 font-semibold">OWASP Top 10, ASVS, IDOR</b>). Implementación de soluciones <b className="text-green-500 font-semibold">SaaS</b> con despliegue a <b className="text-green-500 font-semibold">GCP, Aiven y Fly.io</b>. Certificado <b className="text-green-500 font-semibold">ITILv4</b> con experiencia en mesa de servicio nivel 2
                         </p>
 
                         {/* Botón de descargar CV */}
@@ -73,62 +76,37 @@ export const Sobre_mi = () => {
                         </div>
                     </div>
 
-                    {/* Educación y Experiencia en dos columnas */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-                        {/* Sección Educación */}
-                        <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
-                            <h3 className="text-xl font-bold mb-4"> 🏫 Educación </h3>
-                            <ul className="list-disc list-inside text-gray-300 space-y-2">
-                                <li>
-                                    <strong> Tecnólogo en Análisis y Desarrollo de Software del SENA<br></br>(May.2023-Nov.2025) Código de verificación en certificados.sena.edu.co 9226002758299CE383652C</strong>
-                                </li>
-                                <br></br>
-                                <li>
-                                    <strong> BootCamp: Diplomado en Programación de aplicaciones específicas en Alura-Oracle Next Education<br></br>(Abr.2022-Sep.2022) </strong>
-                                </li>
-                                <br></br>
-                                <li>
-                                    <strong> Programación con énfasis en Aplicaciones web Misión TIC 2022 de la Universidad de Caldas<br></br>(Ene. 2021 - Dic. 2021) </strong>
-                                </li>
-                                <br></br>
-                                <li>
-                                    <strong> Certificación de la Industria de Talentos de la Alcaldía de Medellín (Cursos de LinkedIn)<br></br>(Ene. 2023 - Sep. 2023) </strong>
-                                </li>
-                                <br></br>
-                                <li>
-                                    <strong> Certificado Internacional ITIL (Information Technology Infrastructure Library) versión 4<br></br>(Ene. 2024 - Ene. 2027) </strong>
-                                </li>
-                                <br></br>
-                                <li>
-                                    <strong> Licenciatura en Teología del Seminario Internacional del Condado de Miami-Dade M.I.N.T.S. (Ene. 2005 - Feb. 2010) </strong>
-                                </li>
-                            </ul>
+                    {/* Chips clasificados — fusión de las 3 cards de Habilidades */}
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+                        <div className="rounded-xl p-6 border-white/10 border hover:-translate-y-1 transition-all">
+                            <h3 className="text-xl font-bold mb-4"> Especialidades &amp; Metodologías </h3>
+                            <div className="flex flex-wrap gap-2">
+                                {especialidadesChips.map((tech, key) => (
+                                    <span key={key} className="bg-green-500/10 text-green-500 py-1 px-3 rounded-full text-sm hover:bg-green-500/20 hover:shadow-[0_2px_8px_rgba(59,130,24,0.2)] transition">
+                                        {tech}
+                                    </span>
+                                ))}
+                            </div>
                         </div>
-
-                        {/* Sección Experiencia */}
-                        <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
-                            <h3 className="text-xl font-bold mb-4"> 💼 Experiencia </h3>
-                            <ul className="list-disc list-inside text-gray-300 space-y-2">
-                                <span>
-                                    <h4 className="font-semibold">Tecnólogo en Análisis y Desarrollo de Software en ComfaOriente (Abr.2025-Oct.2025)</h4>
-                                    <p>Desarrollar aplicaciones informáticas de acuerdo con el diseño y metodologías.</p>
-                                    <p>Probar aplicaciones informáticas de acuerdo con parámetros técnicos y modelos de referencia.</p>
-                                    <p>Implementar aplicaciones informáticas de acuerdo con requisitos de operación y modelos de referencia.</p>
-                                    <p>Construir proyecto de tecnología digital de acuerdo con procedimientos técnicos.</p>
-                                    <p><strong>Contacto:</strong> talentohumano@comfaoriente.com | ana.hernandez@comfaoriente.com </p>
-                                    <p><strong>Cel:</strong> +57 3045913050 / +57 3202809064</p>
-                                </span>
-                                <br></br>
-                                <span>
-                                    <h4 className="font-semibold">Back en Estudio Galicia EGSAC (Feb.2024-Ago.2024)</h4>
-                                    <p>Administrar bases de datos, gestionando recopilación, almacenamiento y procesado de datos.</p>
-                                    <p>Brindar soporte tecnológico, resolviendo problemas informáticos y manteniendo sistemas.</p>
-                                    <p><strong>Contacto:</strong> ktoledo@estudiogalicia.com | info@estudiogalicia.com | atencionalcliente@estudiogalicia.com</p>
-                                    <p><strong>Cel:</strong> +51 944359069 / +51 941404777 / +51 908801111</p>
-                                </span>
-                                <br></br>
-
-                            </ul>
+                        <div className="rounded-xl p-6 border-white/10 border hover:-translate-y-1 transition-all">
+                            <h3 className="text-xl font-bold mb-4"> Cloud · Infra · Seguridad </h3>
+                            <div className="flex flex-wrap gap-2">
+                                {cloudSeguridadChips.map((tech, key) => (
+                                    <span key={key} className="bg-green-500/10 text-green-500 py-1 px-3 rounded-full text-sm hover:bg-green-500/20 hover:shadow-[0_2px_8px_rgba(59,130,24,0.2)] transition">
+                                        {tech}
+                                    </span>
+                                ))}
+                            </div>
+                        </div>
+                        <div className="rounded-xl p-6 border-white/10 border hover:-translate-y-1 transition-all">
+                            <h3 className="text-xl font-bold mb-4"> Frontend · IA · Ecosistema </h3>
+                            <div className="flex flex-wrap gap-2">
+                                {frontendIaChips.map((tech, key) => (
+                                    <span key={key} className="bg-green-500/10 text-green-500 py-1 px-3 rounded-full text-sm hover:bg-green-500/20 hover:shadow-[0_2px_8px_rgba(59,130,24,0.2)] transition">
+                                        {tech}
+                                    </span>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>

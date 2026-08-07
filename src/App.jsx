@@ -1,11 +1,15 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import './App.css'
 import { LoadingScreen } from "./components/LoadinScreen";
 import { Navbar } from "./components/Navbar";
 import { MobileMenu } from "./components/MobileMenu";
 import { Inicio } from "./components/sections/Inicio";
 import { Sobre_mi } from "./components/sections/Sobre_mi";
+import { Experiencia } from "./components/sections/Experiencia";
 import { Proyectos } from "./components/sections/Proyectos";
+import { Habilidades } from "./components/sections/Habilidades";
+import { Certificaciones } from "./components/sections/Certificaciones";
+import { EducacionIdiomas } from "./components/sections/EducacionIdiomas";
 import { Contacto } from "./components/sections/Contacto";
 import "./index.css";
 
@@ -22,10 +26,13 @@ function App() {
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <Inicio />
         <Sobre_mi />
+        <Experiencia />
         <Proyectos />
+        <Habilidades />
+        <Certificaciones />
+        <EducacionIdiomas />
         <Contacto />
       </div >
-      <div className="hidden reveal visible"></div>
     </>
   );
 }
