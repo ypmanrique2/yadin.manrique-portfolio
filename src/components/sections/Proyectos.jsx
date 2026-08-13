@@ -2,6 +2,33 @@ import { RevealOnScroll } from "../RevealOnScroll";
 
 const projects = [
     {
+        title: "YadinStore · e-Shop SaaS",
+        badge: "⭐ e-Commerce SaaS · En desarrollo",
+        badgeClass: "bg-green-500/20 text-green-300",
+        description:
+            "YadinStore es una plataforma e-Commerce SaaS multi-vendor en evolución, diseñada para que múltiples vendedores gestionen productos, carrito, compras y notificaciones. El front-end utiliza Angular 21, Nx y Module Federation, mientras el back-end adopta un monolito modular con Spring Modulith y arquitectura hexagonal, integrando Kafka 3.9.2 mediante Transactional Outbox, DLT e idempotencia, resiliencia con Resilience4j y persistencia MongoDB con transacciones ACID. La arquitectura incorpora además Spring Security + JWT, RBAC, multi-tenancy, rate limiting, CORS restringido y controles OWASP/IDOR, junto con Docker, Testcontainers, CI/CD y observabilidad para favorecer seguridad, mantenibilidad y evolución.",
+        chips: ["Java 21", "Spring Boot 3.5", "Spring Modulith", "Angular 21", "Kafka 3.9.2", "MongoDB", "Hexagonal Architecture", "DDD", "Transactional Outbox", "DLT", "Idempotency", "Resilience4j", "Spring Security", "JWT", "RBAC", "Multi-Tenancy", "OWASP", "IDOR", "Docker", "Testcontainers", "GitHub Actions"],
+        href: "https://yadinstore-frontend.onrender.com/",
+    },
+    {
+        title: "YadinStore · Admin Dashboard SaaS Multi-Vendor",
+        badge: "🔐 SaaS Admin · Multi-Tenant · En desarrollo",
+        badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
+        description:
+            "Dashboard administrativo para la operación del e-Commerce SaaS, integrado con APIs reales y orientado a la gestión de ventas, órdenes, productos, usuarios y métricas. Desarrollado con Angular 21, Signals, Nx y Module Federation, implementa autenticación JWT, autorización RBAC por rol, guards e interceptores, aislamiento multi-tenant mediante X-Tenant-ID y acceso administrativo mediante ticket temporal de un solo uso, evitando exponer credenciales. El frontend consume el backend Spring Boot endurecido, incorporando controles de rate limiting, CORS restringido y protección frente a IDOR, con una arquitectura preparada para evolucionar como remote dentro del ecosistema de micro-frontends.",
+        chips: ["Angular 21", "TypeScript", "Signals", "Nx", "Module Federation", "Spring Boot 3.5", "Spring Security", "JWT", "RBAC", "Multi-Tenancy", "Rate Limiting", "IDOR", "MongoDB", "Tailwind 4"],
+        href: "https://yadinstore-admin.onrender.com/",
+    },
+    {
+        title: "YadinStore · Back-end API — Spring + Kafka",
+        badge: "⚡ Backend · Event-Driven · En desarrollo",
+        badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
+        description:
+            "API REST de YadinStore basada en Java 21, Spring Boot 3.5 y Spring Modulith, estructurada como monolito modular con arquitectura hexagonal y virtual threads. La integración asíncrona utiliza Kafka 3.9.2 mediante Transactional Outbox, DLT e idempotencia por eventId, complementada con Resilience4j para resiliencia. La capa de seguridad aplica Spring Security + JWT, RBAC, multi-tenancy, rate limiting, CORS restringido y protección IDOR, mientras MongoDB con Mongock, Testcontainers y JaCoCo soportan persistencia, evolución y validación automatizada. El servicio incorpora además un dashboard de actividad Kafka que permite observar brokers, topics, consumer groups y lag; el broker se consulta server-side mediante SASL_SSL y las credenciales no se exponen al navegador.",
+        chips: ["Java 21", "Spring Boot 3.5", "Spring Modulith", "Kafka 3.9.2", "MongoDB", "Hexagonal Architecture", "Transactional Outbox", "DLT", "Idempotency", "Resilience4j", "Spring Security", "JWT", "RBAC", "Multi-Tenancy", "OWASP", "Rate Limiting", "Mongock", "Testcontainers", "Docker", "SASL_SSL"],
+        href: "https://yadinstore-backend.onrender.com/kafka-dashboard.html",
+    },
+    {
         title: "Marketplace de comercio electrónico VE&CO (Web)",
         badge: "Actual · Privado",
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",

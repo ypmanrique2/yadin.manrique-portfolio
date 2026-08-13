@@ -1,0 +1,1294 @@
+<!doctype html>
+<html lang="es-419">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yadin Manrique — CV 2026 · Fusión Portafolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Orbitron:wght@500;700;900&family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #0a0a0a;
+        --bg2: #0f0f0f;
+        --card: rgba(255, 255, 255, 0.03);
+        --card-hover: rgba(255, 255, 255, 0.05);
+        --border: rgba(255, 255, 255, 0.1);
+        --green: #22c55e;
+        --green-soft: rgba(34, 197, 94, 0.1);
+        --cyan: #22d3ee;
+        --blue: #60a5fa;
+        --text: #f3f4f6;
+        --muted: #9ca3af;
+        --amber: #fbbf24;
+        --black: #050505;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background: var(--bg);
+        color: var(--text);
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 300;
+        line-height: 1.6;
+        overflow-x: hidden;
+      }
+
+      /* ── scanline sutil (herencia del CV cyberpunk) ── */
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background: repeating-linear-gradient(
+          0deg,
+          transparent,
+          transparent 3px,
+          rgba(34, 197, 94, 0.012) 3px,
+          rgba(34, 197, 94, 0.012) 4px
+        );
+        pointer-events: none;
+        z-index: 9999;
+      }
+
+      /* ── circuito de fondo ── */
+      .bg-grid {
+        position: fixed;
+        inset: 0;
+        background-image: linear-gradient(rgba(34, 197, 94, 0.03) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(34, 197, 94, 0.03) 1px, transparent 1px);
+        background-size: 48px 48px;
+        mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 30%, transparent 75%);
+        pointer-events: none;
+        z-index: 0;
+      }
+
+      .glow-orb {
+        position: fixed;
+        width: 600px;
+        height: 600px;
+        border-radius: 50%;
+        filter: blur(120px);
+        opacity: 0.12;
+        pointer-events: none;
+        z-index: 0;
+      }
+      .glow-orb.g1 {
+        background: var(--green);
+        top: -200px;
+        right: -150px;
+      }
+      .glow-orb.g2 {
+        background: var(--cyan);
+        bottom: -250px;
+        left: -150px;
+      }
+
+      .page {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 48px 24px 80px;
+        position: relative;
+        z-index: 1;
+      }
+
+      /* ════════ HERO ════════ */
+      .hero {
+        text-align: center;
+        padding: 72px 24px 56px;
+        position: relative;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .hero .tag-2026 {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-family: "Share Tech Mono", monospace;
+        font-size: 12px;
+        letter-spacing: 3px;
+        color: var(--green);
+        border: 1px solid rgba(34, 197, 94, 0.4);
+        padding: 6px 14px;
+        border-radius: 999px;
+        background: var(--green-soft);
+        margin-bottom: 24px;
+        text-transform: uppercase;
+      }
+      .hero .tag-2026::before {
+        content: "";
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: var(--green);
+        box-shadow: 0 0 10px var(--green);
+        animation: pulse-dot 2s ease-in-out infinite;
+      }
+      @keyframes pulse-dot {
+        0%, 100% { opacity: 1; transform: scale(1); }
+        50% { opacity: 0.5; transform: scale(0.8); }
+      }
+
+      .hero h1 {
+        font-family: "Orbitron", sans-serif;
+        font-size: clamp(34px, 6vw, 64px);
+        font-weight: 900;
+        letter-spacing: 1px;
+        background: linear-gradient(90deg, var(--green) 0%, var(--cyan) 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        margin-bottom: 12px;
+        text-shadow: 0 0 40px rgba(34, 197, 94, 0.15);
+      }
+
+      .hero .role {
+        font-family: "Share Tech Mono", monospace;
+        font-size: 15px;
+        letter-spacing: 4px;
+        color: var(--muted);
+        text-transform: uppercase;
+        margin-bottom: 28px;
+      }
+      .hero .role b {
+        color: var(--green);
+        font-weight: 400;
+      }
+
+      .hero .stats {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 14px;
+        margin-bottom: 32px;
+      }
+      .stat {
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 12px 22px;
+        background: var(--card);
+        min-width: 120px;
+      }
+      .stat .num {
+        font-family: "Orbitron", sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        background: linear-gradient(90deg, var(--green), var(--cyan));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      .stat .lbl {
+        font-size: 11px;
+        color: var(--muted);
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+
+      .hero .contact {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px 24px;
+        font-size: 13px;
+        color: var(--muted);
+      }
+      .contact a {
+        color: var(--green);
+        text-decoration: none;
+        transition: text-shadow 0.2s;
+      }
+      .contact a:hover {
+        text-shadow: 0 0 10px rgba(34, 197, 94, 0.6);
+      }
+      .contact .sep {
+        color: rgba(255, 255, 255, 0.2);
+      }
+      .contact .ic {
+        width: 14px;
+        height: 14px;
+        vertical-align: -2px;
+        color: var(--green);
+        margin-right: 2px;
+      }
+      .contact b {
+        font-weight: 600;
+      }
+
+      /* ════════ SECCIONES ════════ */
+      .section {
+        margin-top: 64px;
+      }
+      .section-heading {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin-bottom: 28px;
+      }
+      .section-heading .line {
+        flex: 1;
+        height: 1px;
+        background: linear-gradient(90deg, rgba(34, 197, 94, 0.5), transparent);
+      }
+      .section-heading h2 {
+        font-family: "Orbitron", sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: var(--text);
+        white-space: nowrap;
+      }
+      .section-heading h2 span {
+        color: var(--green);
+      }
+
+      /* ── Acerca ── */
+      .about-card {
+        background: linear-gradient(135deg, rgba(34, 197, 94, 0.06), rgba(34, 211, 238, 0.04));
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 26px 28px;
+        font-size: 14.5px;
+        letter-spacing: -0.25px;
+        color: #d1d5db;
+        text-align: justify;
+      }
+      .about-card b {
+        color: var(--green);
+        font-weight: 500;
+      }
+
+      /* ── Experiencia (timeline) ── */
+      .timeline {
+        position: relative;
+        padding-left: 28px;
+      }
+      .timeline::before {
+        content: "";
+        position: absolute;
+        left: 7px;
+        top: 8px;
+        bottom: 8px;
+        width: 2px;
+        background: linear-gradient(180deg, var(--green), var(--cyan), transparent);
+        opacity: 0.6;
+      }
+      .tl-item {
+        position: relative;
+        margin-bottom: 30px;
+      }
+      .tl-item::before {
+        content: "";
+        position: absolute;
+        left: -28px;
+        top: 7px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: var(--bg);
+        border: 2px solid var(--green);
+        box-shadow: 0 0 12px rgba(34, 197, 94, 0.5);
+      }
+      .tl-item h3 {
+        font-size: 17px;
+        font-weight: 600;
+        color: var(--text);
+      }
+      .tl-item h3 span {
+        color: var(--green);
+        font-weight: 400;
+      }
+      .tl-item .company {
+        font-family: "Share Tech Mono", monospace;
+        font-size: 12px;
+        color: var(--cyan);
+        margin: 2px 0 4px;
+      }
+      .tl-item .dates {
+        font-family: "Share Tech Mono", monospace;
+        font-size: 11px;
+        color: var(--muted);
+        margin-bottom: 10px;
+      }
+      .tl-item ul {
+        list-style: none;
+      }
+      .tl-item li {
+        font-size: 14px;
+        color: #b8bfc7;
+        padding-left: 18px;
+        position: relative;
+        margin-bottom: 4px;
+      }
+      .tl-item li::before {
+        content: "▸";
+        position: absolute;
+        left: 0;
+        color: var(--green);
+      }
+      .tl-item li.contact-li {
+        font-family: "Share Tech Mono", monospace;
+        font-size: 11.5px;
+        color: var(--muted);
+        margin-top: 10px;
+        padding-top: 8px;
+        border-top: 1px dashed rgba(255, 255, 255, 0.1);
+        word-break: break-word;
+      }
+
+      /* ── Proyectos (grid estilo FE) ── */
+      .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 20px;
+      }
+      .pcard {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+        position: relative;
+        overflow: hidden;
+      }
+      .pcard::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(120px 80px at var(--mx, 50%) var(--my, 0%), rgba(34, 197, 94, 0.08), transparent);
+        opacity: 0;
+        transition: opacity 0.3s;
+        pointer-events: none;
+      }
+      .pcard:hover {
+        transform: translateY(-4px);
+        border-color: rgba(34, 197, 94, 0.35);
+        box-shadow: 0 4px 24px rgba(34, 197, 94, 0.12);
+        background: var(--card-hover);
+      }
+      .pcard:hover::after {
+        opacity: 1;
+      }
+      .pcard .badge {
+        align-self: flex-start;
+        font-family: "Share Tech Mono", monospace;
+        font-size: 10px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding: 4px 10px;
+        border-radius: 999px;
+        margin-bottom: 12px;
+      }
+      .badge.actual {
+        color: var(--green);
+        background: var(--green-soft);
+        border: 1px solid rgba(34, 197, 94, 0.3);
+      }
+      .badge.flag {
+        color: var(--black);
+        background: linear-gradient(90deg, var(--green), var(--cyan));
+        font-weight: 700;
+      }
+      .badge.demo {
+        color: var(--amber);
+        background: rgba(251, 191, 36, 0.1);
+        border: 1px solid rgba(251, 191, 36, 0.3);
+      }
+      .pcard h3 {
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--text);
+        margin-bottom: 10px;
+        line-height: 1.35;
+      }
+      .pcard p {
+        font-size: 13.5px;
+        color: var(--muted);
+        margin-bottom: 16px;
+        flex: 1;
+      }
+      .pcard .chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin-bottom: 16px;
+      }
+      .chip {
+        font-family: "Share Tech Mono", monospace;
+        font-size: 11.5px;
+        color: var(--green);
+        background: var(--green-soft);
+        border: 1px solid transparent;
+        border-radius: 999px;
+        padding: 3px 10px;
+        transition: background 0.2s, box-shadow 0.2s;
+      }
+      .chip:hover {
+        background: rgba(34, 197, 94, 0.2);
+        box-shadow: 0 0 10px rgba(34, 197, 94, 0.15);
+      }
+      .pcard .link {
+        color: var(--blue);
+        text-decoration: none;
+        font-size: 13.5px;
+        font-weight: 500;
+        transition: color 0.2s, text-shadow 0.2s;
+      }
+      .pcard .link:hover {
+        color: #93c5fd;
+        text-shadow: 0 0 8px rgba(96, 165, 250, 0.5);
+      }
+
+      /* ── Habilidades ── */
+      .skills-wrap {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+      .skills-wrap.tags {
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 20px;
+      }
+      .skills-card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 24px;
+      }
+      .skills-card h4 {
+        font-family: "Orbitron", sans-serif;
+        font-size: 12px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: var(--green);
+        margin-bottom: 18px;
+      }
+      .skill-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 12px;
+      }
+      .skill-row .name {
+        font-size: 14.5px;
+        color: #d1d5db;
+      }
+      .skill-dots {
+        display: flex;
+        gap: 4px;
+      }
+      .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 1px solid var(--green);
+      }
+      .dot.filled {
+        background: var(--green);
+        box-shadow: 0 0 6px rgba(34, 197, 94, 0.6);
+      }
+      .tagcloud {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      .tag {
+        font-family: "Share Tech Mono", monospace;
+        font-size: 12px;
+        color: #a7f3d0;
+        border: 1px solid rgba(34, 197, 94, 0.25);
+        background: var(--green-soft);
+        padding: 5px 14px;
+        border-radius: 8px;
+        transition: all 0.2s;
+      }
+      .tag:hover {
+        border-color: var(--green);
+        box-shadow: 0 0 10px rgba(34, 197, 94, 0.2);
+        transform: translateY(-1px);
+      }
+
+      /* ── Certificaciones ── */
+      .certs-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 12px;
+      }
+      .cert {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 14px 16px;
+        font-size: 13.5px;
+        color: #d1d5db;
+        transition: all 0.2s;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+      .cert:hover {
+        border-color: rgba(34, 197, 94, 0.35);
+        box-shadow: 0 0 16px rgba(34, 197, 94, 0.1);
+        transform: translateY(-2px);
+      }
+      .cert .t {
+        font-weight: 600;
+        color: var(--text);
+      }
+      .cert .t b {
+        color: var(--green);
+        font-weight: 600;
+      }
+      .cert .m {
+        font-family: "Share Tech Mono", monospace;
+        font-size: 11.5px;
+        color: var(--muted);
+      }
+      .cert .m .yr {
+        color: var(--cyan);
+      }
+      .cert a {
+        font-family: "Share Tech Mono", monospace;
+        font-size: 11.5px;
+        color: var(--blue);
+        text-decoration: none;
+      }
+      .cert a:hover {
+        text-decoration: underline;
+      }
+      .cert .noverify {
+        font-family: "Share Tech Mono", monospace;
+        font-size: 11.5px;
+        color: rgba(255, 255, 255, 0.25);
+      }
+
+      /* ── Educación + Idiomas ── */
+      .edu-lang {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+        align-items: stretch;
+      }
+      .edu-item {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 20px 24px;
+        margin-bottom: 12px;
+        transition: border-color 0.2s;
+      }
+      .edu-item:hover {
+        border-color: rgba(34, 197, 94, 0.3);
+      }
+      .edu-item h4 {
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--text);
+      }
+      .edu-item .inst {
+        font-family: "Share Tech Mono", monospace;
+        font-size: 12.5px;
+        color: var(--green);
+      }
+      .edu-item .meta {
+        font-size: 13.5px;
+        color: var(--muted);
+      }
+      .lang-card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 20px 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .lang-card h4 {
+        font-family: "Orbitron", sans-serif;
+        font-size: 12px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: var(--green);
+        margin-bottom: 16px;
+      }
+
+      /* ── Footer ── */
+      .footer {
+        margin-top: 72px;
+        padding-top: 32px;
+        border-top: 1px solid var(--border);
+        text-align: center;
+        font-family: "Share Tech Mono", monospace;
+        font-size: 12px;
+        color: var(--muted);
+      }
+      .footer .gl {
+        color: var(--green);
+      }
+
+      /* ── Reveal on scroll ── */
+      .reveal {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+      }
+      .reveal.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      @media print {
+        body::before, .bg-grid, .glow-orb { display: none; }
+      }
+
+      @media (max-width: 720px) {
+        .edu-lang { grid-template-columns: 1fr; }
+        .hero { padding: 48px 16px 40px; }
+        .page { padding: 24px 16px 60px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg-grid"></div>
+    <div class="glow-orb g1"></div>
+    <div class="glow-orb g2"></div>
+
+    <div class="page">
+      <!-- ════════ HERO ════════ -->
+      <header class="hero reveal">
+        <div class="tag-2026">CV 2026 · Actualizado</div>
+        <h1>YADIN PAULO MANRIQUE</h1>
+        <div class="role">
+          Full Stack Developer · <b>React</b> / <b>Angular</b> / <b>TypeScript</b> · Node.js · Java
+        </div>
+
+        <div class="stats">
+          <div class="stat"><div class="num">6+</div><div class="lbl">Años evolución</div></div>
+          <div class="stat"><div class="num">12+</div><div class="lbl">Proyectos</div></div>
+          <div class="stat"><div class="num">95%+</div><div class="lbl">SLA/ANS</div></div>
+          <div class="stat"><div class="num">ITIL v4</div><div class="lbl">Certificado</div></div>
+        </div>
+
+        <div class="contact">
+          <span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/></svg> +57 310 296 5787</span><span class="sep">·</span>
+          <a href="mailto:ypmanrique15@gmail.com">✉ ypmanrique15@gmail.com</a><span class="sep">·</span>
+          <span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg> Cúcuta, Colombia</span><span class="sep">·</span>
+          <a href="https://github.com/ypmanrique2" target="_blank"><b>github.com/ypmanrique2</b></a><span class="sep">·</span>
+          <a href="https://www.linkedin.com/in/yadin-paulo-manrique-marquez-18753910/" target="_blank"><b>LinkedIn</b></a><span class="sep">·</span>
+          <a href="https://ypmanrique2.github.io/yadin.manrique-portfolio/" target="_blank"><b>Portafolio</b></a>
+        </div>
+      </header>
+
+      <!-- ════════ ACERCA DE ════════ -->
+      <section class="section reveal">
+        <div class="section-heading">
+          <h2><span>//</span> Acerca de</h2>
+          <div class="line"></div>
+        </div>
+        <div class="about-card">
+          Desarrollador <b>Full Stack</b> con <b>6 años de evolución</b> en el ecosistema Java 8–21,
+          Node.js y front-end moderno (<b>React 19, Angular, TypeScript</b>). Especializado en
+          arquitecturas <b>Cloud-Native</b>: Clean Architecture, Hexagonal, DDD, SOLID y
+          Event-Driven con <b>Kafka (KRaft)</b> y <b>SSE</b>. Experiencia en desarrollo asistido por
+          IA (<b>SDD, MCP, LLM</b>) y seguridad de aplicaciones (<b>OWASP Top 10, ASVS, IDOR</b>).
+          Implementación de soluciones <b>SaaS</b> con despliegue a <b>GCP, Aiven y Fly.io</b>.
+          Certificado <b>ITILv4</b> con experiencia en mesa de servicio nivel 2
+        </div>
+      </section>
+
+      <!-- ════════ EXPERIENCIA ════════ -->
+      <section class="section reveal">
+        <div class="section-heading">
+          <h2><span>//</span> Experiencia</h2>
+          <div class="line"></div>
+        </div>
+        <div class="timeline">
+          <div class="tl-item">
+            <h3>Tecnólogo en Análisis y Desarrollo de Software <span>(Desarrollador FullStack/GCP/Intranet)</span></h3>
+            <div class="company">COMFAORIENTE — I.E. Gimnasio Campestre ComfaOriente</div>
+            <div class="dates">ABR.2025 — OCT.2025 · 7 meses · Cúcuta, Colombia</div>
+            <ul>
+              <li>Diseñé y desarrollé la arquitectura Full-Stack de la intranet institucional bajo modelo SaaS con metodologías ágiles y escalabilidad en GCP.</li>
+              <li>Implementé solución de seguridad hardened en Google Cloud Platform con control de acceso por roles (RBAC) y protocolos para gestión de archivos confidenciales.</li>
+              <li>Evalué requisitos y ejecuté pruebas técnicas bajo estándares ISO 9001 y NTC 6744.</li>
+              <li>Coordiné equipos de docentes en adopción de Scrum y KPIs para la plataforma.</li>
+              <li>Procesé y analicé datos masivos con Excel (tablas dinámicas Pivot) para informes operacionales.</li>
+              <li class="contact-li">Cel: 3045913050-3202809064 · e-mail: talentohumano@comfaoriente.com · juan.munoz@comfaoriente.com · ana.hernandez@comfaoriente.com</li>
+            </ul>
+          </div>
+
+          <div class="tl-item">
+            <h3>Back <span>(Desarrollo y Datos)</span></h3>
+            <div class="company">Estudio Galicia &amp; Cía. Abogados Consultores EGSAC</div>
+            <div class="dates">FEB.2024 — AGO.2024 · 7 meses · Cúcuta, Colombia</div>
+            <ul>
+              <li>Administré bases de datos MySQL: consulta, exportación y depuración de datos nulos, NaN y duplicados, aplicando lógica de negocio para consistencia de información financiera.</li>
+              <li>Organicé tablas dinámicas pivot en Excel y scripts en Python/Java que redujeron el tiempo de elaboración de acuerdos de pago de 15 minutos a 2–3 minutos.</li>
+              <li>Consumí APIs REST e implementé aplicaciones informáticas conforme a normativa técnica.</li>
+              <li class="contact-li">Cel: +51944359069 · +51941404777 · +51908801111 · e-mail: ktoledo@estudiogalicia.com · info@estudiogalicia.com · atencionalcliente@estudiogalicia.com</li>
+            </ul>
+          </div>
+
+          <div class="tl-item">
+            <h3>Agente Mesa de Servicio Nivel 2</h3>
+            <div class="company">Pear Solutions S.A.S.</div>
+            <div class="dates">SEP.2020 — DIC.2023 · 3 años 4 meses · Cúcuta, Colombia</div>
+            <ul>
+              <li>Gestioné incidentes y requerimientos técnicos multicanal bajo ITIL v4 Foundations, manteniendo cumplimiento de ANS/SLA superior al 95%.</li>
+              <li>Diseñé y ejecuté pruebas automatizadas con Python y Java para diagnóstico de hardware e instalación masiva de software.</li>
+              <li>Realicé mantenimientos correctivos y preventivos, instalación de software multiuso y de seguridad (antivirus) y configuración de red.</li>
+              <li>Atendí clientes y registré interacciones en BMC Helix, estructurando propuestas técnicas de servicios.</li>
+              <li class="contact-li">Cel: 3164485237-3185605017 · e-mail: duvan.aldana@pearsolutions.com.co · ana.espejo@pearsolutions.com.co</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ════════ PROYECTOS (orden exacto del FE) ════════ -->
+      <section class="section reveal">
+        <div class="section-heading">
+          <h2><span>//</span> Proyectos Destacados</h2>
+          <div class="line"></div>
+        </div>
+        <div class="projects-grid">
+
+          <!-- NUEVO · 1 · YadinStore eShop SaaS Multi-Vendor -->
+          <article class="pcard">
+            <span class="badge flag">⭐ e-Commerce SaaS · En desarrollo</span>
+            <h3>YadinStore · e-Shop SaaS</h3>
+            <p>
+              <strong>YadinStore</strong> es una plataforma e-Commerce SaaS multi-vendor en
+              evolución, diseñada para que múltiples vendedores gestionen productos, carrito,
+              compras y notificaciones. El front-end utiliza <strong>Angular 21, Nx y Module
+              Federation</strong>, mientras el back-end adopta un <strong>monolito modular con
+              Spring Modulith y arquitectura hexagonal</strong>, integrando <strong>Kafka 3.9.2</strong>
+              mediante <strong>Transactional Outbox, DLT e idempotencia</strong>, resiliencia con
+              <strong>Resilience4j</strong> y persistencia <strong>MongoDB</strong> con transacciones
+              ACID. La arquitectura incorpora además <strong>Spring Security + JWT, RBAC,
+              multi-tenancy, rate limiting, CORS restringido y controles OWASP/IDOR</strong>, junto
+              con Docker, Testcontainers, CI/CD y observabilidad para favorecer seguridad,
+              mantenibilidad y evolución.
+            </p>
+            <div class="chips">
+              <span class="chip">Java 21</span><span class="chip">Spring Boot 3.5</span><span class="chip">Spring Modulith</span>
+              <span class="chip">Angular 21</span><span class="chip">Kafka 3.9.2</span><span class="chip">MongoDB</span>
+              <span class="chip">Hexagonal Architecture</span><span class="chip">DDD</span><span class="chip">Transactional Outbox</span>
+              <span class="chip">DLT</span><span class="chip">Idempotency</span><span class="chip">Resilience4j</span>
+              <span class="chip">Spring Security</span><span class="chip">JWT</span><span class="chip">RBAC</span>
+              <span class="chip">Multi-Tenancy</span><span class="chip">OWASP</span><span class="chip">IDOR</span>
+              <span class="chip">Docker</span><span class="chip">Testcontainers</span><span class="chip">GitHub Actions</span>
+            </div>
+            <a class="link" href="https://yadinstore-frontend.onrender.com/" target="_blank">Ver Proyecto →</a>
+          </article>
+
+          <!-- NUEVO · 2 · YadinStore Admin Dashboard -->
+          <article class="pcard">
+            <span class="badge actual">🔐 SaaS Admin · Multi-Tenant · En desarrollo</span>
+            <h3>YadinStore · Admin Dashboard SaaS Multi-Vendor</h3>
+            <p>
+              Dashboard administrativo para la operación del e-Commerce SaaS, integrado con APIs
+              reales y orientado a la gestión de ventas, órdenes, productos, usuarios y métricas.
+              Desarrollado con Angular 21, Signals, Nx y Module Federation, implementa
+              autenticación JWT, autorización RBAC por rol, guards e interceptores, aislamiento
+              multi-tenant mediante X-Tenant-ID y acceso administrativo mediante ticket temporal
+              de un solo uso, evitando exponer credenciales. El frontend consume el backend
+              Spring Boot endurecido, incorporando controles de rate limiting, CORS restringido
+              y protección frente a IDOR, con una arquitectura preparada para evolucionar como
+              remote dentro del ecosistema de micro-frontends.
+            </p>
+            <div class="chips">
+              <span class="chip">Angular 21</span><span class="chip">TypeScript</span><span class="chip">Signals</span>
+              <span class="chip">Nx</span><span class="chip">Module Federation</span><span class="chip">Spring Boot 3.5</span>
+              <span class="chip">Spring Security</span><span class="chip">JWT</span><span class="chip">RBAC</span>
+              <span class="chip">Multi-Tenancy</span><span class="chip">Rate Limiting</span><span class="chip">IDOR</span>
+              <span class="chip">MongoDB</span><span class="chip">Tailwind 4</span>
+            </div>
+            <a class="link" href="https://yadinstore-admin.onrender.com/" target="_blank">Ver Proyecto →</a>
+          </article>
+
+          <!-- NUEVO · 3 · YadinStore Back-end + Kafka Dashboard -->
+          <article class="pcard">
+            <span class="badge actual">⚡ Backend · Event-Driven · En desarrollo</span>
+            <h3>YadinStore · Back-end API — Spring + Kafka</h3>
+            <p>
+              API REST de YadinStore basada en Java 21, Spring Boot 3.5 y Spring Modulith,
+              estructurada como monolito modular con arquitectura hexagonal y virtual threads.
+              La integración asíncrona utiliza Kafka 3.9.2 mediante Transactional Outbox, DLT e
+              idempotencia por eventId, complementada con Resilience4j para resiliencia. La capa
+              de seguridad aplica Spring Security + JWT, RBAC, multi-tenancy, rate limiting, CORS
+              restringido y protección IDOR, mientras MongoDB con Mongock, Testcontainers y
+              JaCoCo soportan persistencia, evolución y validación automatizada. El servicio
+              incorpora además un dashboard de actividad Kafka que permite observar brokers,
+              topics, consumer groups y lag; el broker se consulta server-side mediante SASL_SSL
+              y las credenciales no se exponen al navegador.
+            </p>
+            <div class="chips">
+              <span class="chip">Java 21</span><span class="chip">Spring Boot 3.5</span><span class="chip">Spring Modulith</span>
+              <span class="chip">Kafka 3.9.2</span><span class="chip">MongoDB</span><span class="chip">Hexagonal Architecture</span>
+              <span class="chip">Transactional Outbox</span><span class="chip">DLT</span><span class="chip">Idempotency</span>
+              <span class="chip">Resilience4j</span><span class="chip">Spring Security</span><span class="chip">JWT</span>
+              <span class="chip">RBAC</span><span class="chip">Multi-Tenancy</span><span class="chip">OWASP</span>
+              <span class="chip">Rate Limiting</span><span class="chip">Mongock</span><span class="chip">Testcontainers</span>
+              <span class="chip">Docker</span><span class="chip">SASL_SSL</span>
+            </div>
+            <a class="link" href="https://yadinstore-backend.onrender.com/kafka-dashboard.html" target="_blank">Ver Kafka Dashboard →</a>
+          </article>
+
+          <!-- 1 · VE&CO Web -->
+          <article class="pcard">
+            <span class="badge actual">Actual · Privado</span>
+            <h3>Marketplace de comercio electrónico VE&CO (Web)</h3>
+            <p>
+              Marketplace de e-commerce colombiano para que empresas y emprendedores publiquen,
+              vendan y gestionen productos. Plataforma web con arquitectura moderna en la nube,
+              pagos electrónicos seguros y cumplimiento de la normativa colombiana de comercio
+              electrónico y protección de datos.
+            </p>
+            <div class="chips">
+              <span class="chip">Angular</span><span class="chip">Node.js</span><span class="chip">Express</span>
+              <span class="chip">SCSS</span><span class="chip">Firebase</span><span class="chip">Fly.io</span>
+              <span class="chip">TypeScript</span><span class="chip">MongoDB</span>
+            </div>
+            <a class="link" href="https://veycoo.com.co/" target="_blank">Ver Proyecto →</a>
+          </article>
+
+          <!-- 2 · VE&CO App -->
+          <article class="pcard">
+            <span class="badge actual">Actual · PlayStore</span>
+            <h3>App de PlayStore: VE&CO, Marketplace de comercio electrónico</h3>
+            <p>
+              App omnicanal que conecta compradores y vendedores: web, móvil y back-end en la nube
+              con autenticación segura, gestión de productos, pagos electrónicos, logística,
+              mensajería y servicios desplegados en Cloud bajo arquitectura escalable orientada a
+              microservicios, seguridad y cumplimiento normativo.
+            </p>
+            <div class="chips">
+              <span class="chip">Angular</span><span class="chip">Node.js</span><span class="chip">Express</span>
+              <span class="chip">SCSS</span><span class="chip">Firebase</span><span class="chip">Fly.io</span>
+              <span class="chip">Java</span><span class="chip">TypeScript</span><span class="chip">MongoDB</span>
+              <span class="chip">PlayStore</span>
+            </div>
+            <a class="link" href="https://play.google.com/store/apps/details?id=app.veycoo.co&hl=es_CO" target="_blank">Ver Proyecto →</a>
+          </article>
+
+          <!-- 3 · eShop OEM SaaS ⭐ -->
+          <article class="pcard">
+            <span class="badge flag">⭐ Flagship · eShop OEM SaaS</span>
+            <h3>eShop corporativa de alta disponibilidad</h3>
+            <p>
+              Solución de e-commerce corporativa Hardened que combina Java + Spring Boot y MongoDB
+              con la seguridad de Keycloak (IAM). Diseñada para transacciones masivas bajo modelo
+              por roles RBAC estricto: operación privada, escalable y de alta fiabilidad para
+              corporaciones con requerimientos críticos de seguridad y disponibilidad, aún en
+              temporada alta.
+            </p>
+            <div class="chips">
+              <span class="chip">React</span><span class="chip">NextJs</span><span class="chip">Java</span>
+              <span class="chip">TypeScript</span><span class="chip">MongoDB</span><span class="chip">SpringBoot</span>
+              <span class="chip">SpringSecurity</span><span class="chip">Keycloak</span><span class="chip">NextAuth</span>
+            </div>
+            <a class="link" href="https://eshop-oem.netlify.app" target="_blank">Ver Proyecto →</a>
+          </article>
+
+          <!-- 4 · Portafolio adaptable -->
+          <article class="pcard">
+            <span class="badge actual">Actual</span>
+            <h3>Portafolio adaptable a empresas</h3>
+            <p>
+              Página de mediana complejidad adaptable a empresas productoras que desean exhibir
+              sus productos, incrementando sus ventas en línea. Angular en front-end, back-end con
+              Node.js y Express para APIs, estilos escalables con SCSS, soporte en nube con
+              Firebase y manejo de datos reactivos con RxJS.
+            </p>
+            <div class="chips">
+              <span class="chip">Angular</span><span class="chip">Node.js</span><span class="chip">Express</span>
+              <span class="chip">SCSS</span><span class="chip">Firebase</span>
+            </div>
+            <a class="link" href="https://ypmanrique2.github.io/portfolio-angular/" target="_blank">Ver Proyecto →</a>
+          </article>
+
+          <!-- 5 · Pokédex -->
+          <article class="pcard">
+            <span class="badge demo">Demo abierta: admin / 1234</span>
+            <h3>App consumidora de API educativa (ej. Pokédex)</h3>
+            <p>
+              Web-app full-stack en Angular consumiendo API REST en Node.js + Express, con
+              autenticación por sesión (cookie HTTP-only) y login por guards e interceptores.
+              Back-end con persistencia en MySQL, gestión de usuarios y rol, estado reactivo con
+              RxJS y comunicación segura cross-origin por CORS.
+            </p>
+            <div class="chips">
+              <span class="chip">Angular</span><span class="chip">Node.js</span><span class="chip">Express</span>
+              <span class="chip">RxJS</span><span class="chip">TypeScript</span><span class="chip">SQL</span>
+              <span class="chip">Jasmine</span><span class="chip">Karma</span>
+            </div>
+            <a class="link" href="https://pokedexaplication.netlify.app/" target="_blank">Ver Proyecto →</a>
+          </article>
+
+          <!-- 6 · Landing AI first -->
+          <article class="pcard">
+            <span class="badge actual">Actual · AI First</span>
+            <h3>Landing page AI first &amp; SEO human in the loop + Security hardening (WordPress - A.C.F. pro)</h3>
+            <p>
+              Página en WordPress con tema ligero y lógica de negocio separada en hook. Base de
+              datos MySQL con optimización de consultas, esquema por dbDelta y CRUD robustos en
+              manejo de estados. Clean Architecture con ACF Pro, front-end moderno en VanillaJS y
+              maquetado CSS3 responsive, con AI first, SEO humano en la lupa y bastionado
+              (hardening) de seguridad.
+            </p>
+            <div class="chips">
+              <span class="chip">Wordpress</span><span class="chip">Vanilla JS</span><span class="chip">SEO human in the loop</span>
+              <span class="chip">AI first</span><span class="chip">MySQL</span><span class="chip">HTML5</span>
+              <span class="chip">CSS3</span><span class="chip">JavaScript</span>
+            </div>
+            <a class="link" href="https://b2b-sucessintheair.infinityfree.me/" target="_blank">Ver Proyecto →</a>
+          </article>
+
+          <!-- 7 · Insurance CRM -->
+          <article class="pcard">
+            <span class="badge actual">Actual</span>
+            <h3>Insurance CRM</h3>
+            <p>
+              CRM moderno para seguros con arquitectura modular y componentes reutilizables.
+              Gestión de pólizas, clientes y siniestros con UI reactiva y dashboards interactivos.
+              Back-end API REST en Python/Flask desplegado en Render con Gunicorn, SQLite/PostgreSQL,
+              CORS configurado para GitHub Pages y CI/CD con GitHub Actions.
+            </p>
+            <div class="chips">
+              <span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">TailwindCSS</span>
+              <span class="chip">Vite</span><span class="chip">GitHub Actions</span><span class="chip">Python</span>
+              <span class="chip">Flask</span><span class="chip">Gunicorn</span><span class="chip">SQLite</span>
+              <span class="chip">PostgreSQL</span><span class="chip">Render</span>
+            </div>
+            <a class="link" href="https://ypmanrique2.github.io/insurance-crm-frontend/" target="_blank">Ver Proyecto →</a>
+          </article>
+
+          <!-- 8 · Landing servicios profesionales -->
+          <article class="pcard">
+            <span class="badge actual">Actual · Brevo</span>
+            <h3>Landing Page para servicios profesionales</h3>
+            <p>
+              Sitio profesional en WordPress con tema ligero y ACF Pro. SEO on-page, rendimiento
+              con caching y compresión, maquetado responsive CSS3 y base de datos MySQL
+              optimizada. Mensajería directa al correo con Brevo, back-end en PHP/WordPress con
+              tabla personalizada de contactos, validación y sanitización de datos, AJAX con nonce
+              y notificaciones por email HTML.
+            </p>
+            <div class="chips">
+              <span class="chip">WordPress</span><span class="chip">ACF Pro</span><span class="chip">PHP</span>
+              <span class="chip">MySQL</span><span class="chip">CSS3</span><span class="chip">Vanilla JS</span>
+              <span class="chip">SEO</span><span class="chip">Brevo</span><span class="chip">jQuery</span>
+              <span class="chip">AJAX</span>
+            </div>
+            <a class="link" href="https://diana-morantes.infinityfree.io/wp/" target="_blank">Ver Proyecto →</a>
+          </article>
+
+          <!-- 9 · Intranet -->
+          <article class="pcard">
+            <span class="badge actual">Actual · Hardened</span>
+            <h3>Intranet adaptable a corporaciones</h3>
+            <p>
+              Intranet de alta complejidad y altamente segura (Hardened), adaptable a corporaciones
+              que desean manejar, editar y compartir archivos con toda o parte de su organización
+              de forma segura y confidencial, con control de acceso y niveles de seguridad, edición
+              y lectura ajustables.
+            </p>
+            <div class="chips">
+              <span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">TypeScript</span>
+              <span class="chip">Firebase</span><span class="chip">GCP</span>
+            </div>
+            <a class="link" href="https://sites.google.com/comfaoriente.com/intranetcolcampestre" target="_blank">Ver Proyecto →</a>
+          </article>
+
+          <!-- 10 · Página personalizable -->
+          <article class="pcard">
+            <span class="badge actual">Actual</span>
+            <h3>Página personalizable a negocios</h3>
+            <p>
+              Página de básica complejidad, adaptable a personas y negocios pequeños o medianos que
+              deseen exhibir sus productos o servicios en internet, incrementando así sus ventas en
+              línea.
+            </p>
+            <div class="chips">
+              <span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">JavaScript</span>
+            </div>
+            <a class="link" href="https://ypmanrique2.github.io/Avanzando/" target="_blank">Ver Proyecto →</a>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- ════════ HABILIDADES ════════ -->
+      <section class="section reveal">
+        <div class="section-heading">
+          <h2><span>//</span> Habilidades</h2>
+          <div class="line"></div>
+        </div>
+        <div class="skills-wrap">
+          <div class="skills-card">
+            <h4>Core Stack</h4>
+            <div class="skill-row"><span class="name">Angular (v10–v21)</span><div class="skill-dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div></div></div>
+            <div class="skill-row"><span class="name">React 19</span><div class="skill-dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot empty"></div></div></div>
+            <div class="skill-row"><span class="name">Next.js / SSR</span><div class="skill-dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot empty"></div></div></div>
+            <div class="skill-row"><span class="name">TypeScript</span><div class="skill-dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div></div></div>
+            <div class="skill-row"><span class="name">Node.js / Express</span><div class="skill-dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot empty"></div></div></div>
+            <div class="skill-row"><span class="name">Java 21 / Spring Boot 3</span><div class="skill-dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot empty"></div></div></div>
+            <div class="skill-row"><span class="name">Python / Flask</span><div class="skill-dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot empty"></div><div class="dot empty"></div></div></div>
+            <div class="skill-row"><span class="name">TailwindCSS / SCSS</span><div class="skill-dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot empty"></div></div></div>
+            <div class="skill-row"><span class="name">WordPress / ACF Pro / PHP</span><div class="skill-dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot empty"></div></div></div>
+            <div class="skill-row"><span class="name">RxJS / Signals / Redux</span><div class="skill-dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot empty"></div></div></div>
+            <div class="skill-row"><span class="name">Vite / esbuild</span><div class="skill-dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot empty"></div><div class="dot empty"></div></div></div>
+          </div>
+
+          <div class="skills-card">
+            <h4>Datos · Cloud · Infra</h4>
+            <div class="skill-row"><span class="name">MySQL / PostgreSQL</span><div class="skill-dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot empty"></div></div></div>
+            <div class="skill-row"><span class="name">MongoDB</span><div class="skill-dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot empty"></div></div></div>
+            <div class="skill-row"><span class="name">Firebase / GCP</span><div class="skill-dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot empty"></div></div></div>
+            <div class="skill-row"><span class="name">Docker / Kubernetes</span><div class="skill-dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot empty"></div></div></div>
+            <div class="skill-row"><span class="name">Kafka / Event-Driven</span><div class="skill-dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot empty"></div><div class="dot empty"></div></div></div>
+            <div class="skill-row"><span class="name">Keycloak / NextAuth (IAM)</span><div class="skill-dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot empty"></div><div class="dot empty"></div></div></div>
+            <div class="skill-row"><span class="name">SQLite / Express / REST</span><div class="skill-dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot empty"></div></div></div>
+            <div class="skill-row"><span class="name">Render / Aiven / Fly.io</span><div class="skill-dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot empty"></div><div class="dot empty"></div></div></div>
+            <div class="skill-row"><span class="name">GitHub Actions / CI-CD</span><div class="skill-dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot empty"></div></div></div>
+            <div class="skill-row"><span class="name">EmailJS / Brevo (forms)</span><div class="skill-dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot empty"></div><div class="dot empty"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skills-wrap tags">
+          <div class="skills-card">
+            <h4>Especialidades &amp; Metodologías</h4>
+            <div class="tagcloud">
+              <span class="tag">Clean Arch</span><span class="tag">Hexagonal</span><span class="tag">DDD</span>
+              <span class="tag">SOLID</span><span class="tag">MicroFront-Ends (MFE)</span><span class="tag">REST API</span>
+              <span class="tag">CI/CD</span><span class="tag">OWASP Top 10</span><span class="tag">SDD</span>
+              <span class="tag">ITIL v4</span><span class="tag">Scrum</span>
+            </div>
+          </div>
+
+          <div class="skills-card">
+            <h4>Cloud · Infra · Seguridad</h4>
+            <div class="tagcloud">
+              <span class="tag">Kafka KRaft</span><span class="tag">SSE</span><span class="tag">Docker/K8s</span>
+              <span class="tag">GitHub Actions</span><span class="tag">Render</span><span class="tag">Fly.io</span>
+              <span class="tag">GCP</span><span class="tag">Aiven</span><span class="tag">Keycloak</span>
+              <span class="tag">NextAuth</span><span class="tag">RBAC</span>
+            </div>
+          </div>
+
+          <div class="skills-card">
+            <h4>Frontend · IA · Ecosistema</h4>
+            <div class="tagcloud">
+              <span class="tag">TailwindCSS</span><span class="tag">WordPress/ACF Pro</span><span class="tag">RxJS</span>
+              <span class="tag">Vite</span><span class="tag">esbuild</span><span class="tag">Redux</span>
+              <span class="tag">MCP</span><span class="tag">LLM</span><span class="tag">EmailJS</span>
+              <span class="tag">SEO</span><span class="tag">CORS</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ════════ CERTIFICACIONES ════════ -->
+      <section class="section reveal">
+        <div class="section-heading">
+          <h2><span>//</span> Certificaciones</h2>
+          <div class="line"></div>
+        </div>
+        <div class="certs-grid">
+
+          <div class="cert">
+            <span class="t"><b>ITIL® 4 Foundation</b></span>
+            <span class="m">PeopleCert/AXELOS · <span class="yr">Vigente hasta 2027</span> · N.° GR671609055YM</span>
+            <a href="https://www.peoplecert.org/for-corporations/certificate-verification-service" target="_blank">▸ peoplecert.org/verification</a>
+          </div>
+
+          <div class="cert">
+            <span class="t"><b>Despliegue de apps web en Azure</b></span>
+            <span class="m">Código Facilito · <span class="yr">May. 2026</span></span>
+            <a href="https://codigofacilito.com/certificates/41d75233-36a5-445e-bb34-7698828f5874.pdf" target="_blank">▸ verificar credencial</a>
+          </div>
+
+          <div class="cert">
+            <span class="t"><b>Masterclass Docker</b> (Rossana Suárez)</span>
+            <span class="m">Código Facilito · <span class="yr">May. 2026</span></span>
+            <a href="https://codigofacilito.com/certificates/9647301a-aa76-4a99-8548-4f3cf109cd76.pdf" target="_blank">▸ verificar credencial</a>
+          </div>
+
+          <div class="cert">
+            <span class="t"><b>Introducción a DevOps</b></span>
+            <span class="m">Código Facilito · <span class="yr">May. 2026</span></span>
+            <a href="https://codigofacilito.com/certificates/31317567-8f94-494c-a34c-0655d1669481.pdf" target="_blank">▸ verificar credencial</a>
+          </div>
+
+          <div class="cert">
+            <span class="t"><b>Java Profesional</b> + Reactiva</span>
+            <span class="m">Código Facilito · <span class="yr">May. 2026</span></span>
+            <a href="https://codigofacilito.com/certificates/876f9324-6548-4849-a70c-79c28b020075.pdf" target="_blank">▸ verificar credencial</a>
+          </div>
+
+          <div class="cert">
+            <span class="t"><b>Deploy profesional en servidores</b></span>
+            <span class="m">Código Facilito · <span class="yr">May. 2026</span></span>
+            <a href="https://codigofacilito.com/certificates/b2ee76e1-e3e5-4bd4-8af4-26bc3ea6385e.pdf" target="_blank">▸ verificar credencial</a>
+          </div>
+
+          <div class="cert">
+            <span class="t"><b>Inmersión Agentes de IA</b></span>
+            <span class="m">Alura ONE · <span class="yr">May. 2026</span></span>
+            <a href="https://app.aluracursos.com/user/ypmanrique15/immersion/certificate/46" target="_blank">▸ verificar credencial</a>
+          </div>
+
+          <div class="cert">
+            <span class="t"><b>Desarrollo con IA de 0 a Producción</b></span>
+            <span class="m">BIG School · <span class="yr">Mar. 2026</span> · IA + MCP (6h)</span>
+            <span class="noverify">▸ sin enlace público</span>
+          </div>
+
+          <div class="cert">
+            <span class="t"><b>Masterclass MCP para empresas</b> + Ruta LLMs</span>
+            <span class="m">Código Facilito · <span class="yr">Mar. 2026</span> · Ruta LLM (9 semanas)</span>
+            <a href="https://codigofacilito.com/certificates/9a7bc1be-1651-4362-9f79ce36375888e8.pdf" target="_blank">▸ verificar credencial</a>
+          </div>
+
+          <div class="cert">
+            <span class="t"><b>Apps de IA con C# y Azure</b></span>
+            <span class="m">Código Facilito · <span class="yr">Ene. 2026</span></span>
+            <a href="https://codigofacilito.com/certificates/c0b2bf85-920f-4ea1-947a-193977fbe594.pdf" target="_blank">▸ verificar credencial</a>
+          </div>
+
+          <div class="cert">
+            <span class="t"><b>Ciberseguridad y Hacking Ético</b></span>
+            <span class="m">BIG School · Detección de vulnerabilidades y defensa digital</span>
+            <a href="https://certificados.thebigschool.com/wp-content/uploads/certs/MCIB/Certificado-YadinPaulo-Manrique-Marquez-oawvtcmq.pdf" target="_blank">▸ verificar credencial</a>
+          </div>
+
+          <div class="cert">
+            <span class="t"><b>Curso Profesional Git</b></span>
+            <span class="m">Código Facilito · <span class="yr">Abr. 2025</span></span>
+            <a href="https://codigofacilito.com/certificates/3605014c-b7c8-4c8f-b50c-1b526bcf1f04.pdf" target="_blank">▸ verificar credencial</a>
+          </div>
+
+          <div class="cert">
+            <span class="t"><b>Spring Framework &amp; Spring Boot</b></span>
+            <span class="m">Código Facilito · <span class="yr">Nov. 2023</span></span>
+            <a href="https://codigofacilito.com/certificates/102855.pdf" target="_blank">▸ verificar credencial</a>
+          </div>
+
+          <div class="cert">
+            <span class="t"><b>Angular Signals + React Server Components</b></span>
+            <span class="m">Código Facilito · <span class="yr">Nov. 2023</span></span>
+            <a href="https://codigofacilito.com/certificates/58c1dea0-1c62-4f27-bcec-e35010879931.pdf" target="_blank">▸ signals</a>
+            <a href="https://codigofacilito.com/certificates/ea455f74-c703-431f-b35e-5e4f46c5b398.pdf" target="_blank">▸ RSC</a>
+          </div>
+
+          <div class="cert">
+            <span class="t"><b>MEAN Stack E-Commerce</b> (Angular 12 + NodeJS)</span>
+            <span class="m">Skillshare · <span class="yr">Abr. 2023</span> · ID 321b94b1</span>
+            <a href="https://skl.sh/3KYAuYn" target="_blank">▸ verificar credencial</a>
+          </div>
+
+          <div class="cert">
+            <span class="t"><b>Oracle Cloud Infrastructure (OCI)</b></span>
+            <span class="m">Alura · <span class="yr">2022–2023</span> · Implementación, IaC, deploy</span>
+            <a href="https://app.aluracursos.com/certificate/27d24602-cf62-448f-bfe3-0420a89f190d" target="_blank">▸ certificado 1</a>
+            <a href="https://app.aluracursos.com/certificate/534cfc80-f625-4615-9fe2-d04ca3c2b6cc" target="_blank">▸ certificado 2</a>
+          </div>
+
+          <div class="cert">
+            <span class="t"><b>Formaciones ONE — Front End + Java OO</b></span>
+            <span class="m">Alura · <span class="yr">2022</span></span>
+            <a href="https://app.aluracursos.com/degree/certificate/424668c4c30b-4343-8957-8b18f421b1b5" target="_blank">▸ front-end</a>
+            <a href="https://app.aluracursos.com/degree/certificate/abbf0043-176a-401f-9523-6d37425ddf1b" target="_blank">▸ Java OO</a>
+          </div>
+
+          <div class="cert">
+            <span class="t"><b>Industria de Talentos</b> — Critertec</span>
+            <span class="m"><span class="yr">Ene. 2023</span> · ID PG-00382</span>
+            <span class="noverify">▸ sin enlace público</span>
+          </div>
+
+          <div class="cert">
+            <span class="t"><b>Docker</b> (base)</span>
+            <span class="m">Código Facilito · <span class="yr">Jul. 2023</span></span>
+            <a href="https://codigofacilito.com/certificates/f13b2d06-0ca2-4ebc-b131-f9d3f3a7d361.pdf" target="_blank">▸ verificar credencial</a>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ════════ EDUCACIÓN + IDIOMAS ════════ -->
+      <section class="section reveal">
+        <div class="section-heading">
+          <h2><span>//</span> Educación &amp; Idiomas</h2>
+          <div class="line"></div>
+        </div>
+        <div class="edu-lang">
+          <div>
+            <div class="edu-item">
+              <h4>Tecnólogo en Análisis y Desarrollo de Software</h4>
+              <div class="inst">SENA</div>
+              <div class="meta">May. 2023 – Nov. 2025</div>
+            </div>
+            <div class="edu-item">
+              <h4>Diplomatura en Programación Informática</h4>
+              <div class="inst">Alura Latam + Oracle (ONE)</div>
+              <div class="meta">Abr. 2022 – Sep. 2022 · HTML5/CSS3/JS · Java OOP · Oracle Cloud</div>
+            </div>
+            <div class="edu-item">
+              <h4>Diplomado en Programación Web — 800h</h4>
+              <div class="inst">Universidad de Caldas / MinTIC · Misión TIC 2022</div>
+              <div class="meta">Ene. 2021 – Dic. 2021</div>
+            </div>
+          </div>
+          <div class="lang-card">
+            <h4>Idiomas</h4>
+            <div class="skill-row"><span class="name">Español</span><div class="skill-dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div></div></div>
+            <div class="skill-row"><span class="name">Inglés (Professional Working)</span><div class="skill-dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot empty"></div></div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- NOTA FUSIÓN (EmailJS): al integrar este diseño al FE (src/), el formulario de
+           contacto debe usar EmailJS como el actual: emailjs.sendForm(SERVICE_ID,
+           TEMPLATE_ID, form, PUBLIC_KEY) con los IDs desde variables de entorno (.env). -->
+      <footer class="footer">
+        <span class="gl">▸</span> Yadin Paulo Manrique Márquez · Full Stack Developer · CV 2026
+        <span class="gl">◂</span>
+      </footer>
+    </div>
+
+    <!-- Reveal on scroll (como el FE) -->
+    <script>
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.08 }
+      );
+      document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
+
+      // Glow que sigue el cursor en las tarjetas
+      document.querySelectorAll(".pcard").forEach((card) => {
+        card.addEventListener("mousemove", (e) => {
+          const r = card.getBoundingClientRect();
+          card.style.setProperty("--mx", ((e.clientX - r.left) / r.width) * 100 + "%");
+          card.style.setProperty("--my", ((e.clientY - r.top) / r.height) * 100 + "%");
+        });
+      });
+    </script>
+  </body>
+</html>
