@@ -29,6 +29,15 @@ const projects = [
         href: "https://yadinstore-backend.onrender.com/kafka-dashboard.html",
     },
     {
+        title: "eShop corporativa de alta disponibilidad",
+        badge: "⭐ Flagship · eShop OEM SaaS",
+        badgeClass: "bg-green-500/20 text-green-300",
+        description:
+            "Solución de e-commerce corporativa Hardened que combina Java + Spring Boot y MongoDB con la seguridad de Keycloak (IAM). Diseñada para transacciones masivas bajo modelo por roles RBAC estricto: operación privada, escalable y de alta fiabilidad para corporaciones con requerimientos críticos de seguridad y disponibilidad, aún en temporada alta.",
+        chips: ["React", "NextJs", "Java", "TypeScript", "MongoDB", "SpringBoot", "SpringSecurity", "Keycloak", "NextAuth"],
+        href: "https://eshop-oem.netlify.app",
+    },
+    {
         title: "Marketplace de comercio electrónico VE&CO (Web)",
         badge: "Actual · Privado",
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
@@ -47,15 +56,6 @@ const projects = [
         href: "https://play.google.com/store/apps/details?id=app.veycoo.co&hl=es_CO",
     },
     {
-        title: "eShop corporativa de alta disponibilidad",
-        badge: "⭐ Flagship · eShop OEM SaaS",
-        badgeClass: "bg-green-500/20 text-green-300",
-        description:
-            "Solución de e-commerce corporativa Hardened que combina Java + Spring Boot y MongoDB con la seguridad de Keycloak (IAM). Diseñada para transacciones masivas bajo modelo por roles RBAC estricto: operación privada, escalable y de alta fiabilidad para corporaciones con requerimientos críticos de seguridad y disponibilidad, aún en temporada alta.",
-        chips: ["React", "NextJs", "Java", "TypeScript", "MongoDB", "SpringBoot", "SpringSecurity", "Keycloak", "NextAuth"],
-        href: "https://eshop-oem.netlify.app",
-    },
-    {
         title: "Portafolio adaptable a empresas",
         badge: "Actual",
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
@@ -65,13 +65,13 @@ const projects = [
         href: "https://ypmanrique2.github.io/portfolio-angular/",
     },
     {
-        title: "App consumidora de API educativa (ej. Pokédex)",
-        badge: "Demo abierta: admin / 1234",
-        badgeClass: "bg-amber-500/10 text-amber-400 border border-amber-500/30",
+        title: "Landing Page para servicios profesionales",
+        badge: "Actual · Brevo",
+        badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
         description:
-            "Web-app full-stack en Angular consumiendo API REST en Node.js + Express, con autenticación por sesión (cookie HTTP-only) y login por guards e interceptores. Back-end con persistencia en MySQL, gestión de usuarios y rol, estado reactivo con RxJS y comunicación segura cross-origin por CORS.",
-        chips: ["Angular", "Node.js", "Express", "RxJS", "TypeScript", "SQL", "Jasmine", "Karma"],
-        href: "https://pokedexaplication.netlify.app/",
+            "Sitio profesional en WordPress con tema ligero y ACF Pro. SEO on-page, rendimiento con caching y compresión, maquetado responsive CSS3 y base de datos MySQL optimizada. Mensajería directa al correo con Brevo, back-end en PHP/WordPress con tabla personalizada de contactos, validación y sanitización de datos, AJAX con nonce y notificaciones por email HTML.",
+        chips: ["WordPress", "ACF Pro", "PHP", "MySQL", "CSS3", "Vanilla JS", "SEO", "Brevo", "jQuery", "AJAX"],
+        href: "https://diana-morantes.infinityfree.io/wp/",
     },
     {
         title: "Landing page AI first & SEO human in the loop + Security hardening (WordPress - A.C.F. pro)",
@@ -92,13 +92,13 @@ const projects = [
         href: "https://ypmanrique2.github.io/insurance-crm-frontend/",
     },
     {
-        title: "Landing Page para servicios profesionales",
-        badge: "Actual · Brevo",
-        badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
+        title: "App consumidora de API educativa (ej. Pokédex)",
+        badge: "Demo abierta: admin / 1234",
+        badgeClass: "bg-amber-500/10 text-amber-400 border border-amber-500/30",
         description:
-            "Sitio profesional en WordPress con tema ligero y ACF Pro. SEO on-page, rendimiento con caching y compresión, maquetado responsive CSS3 y base de datos MySQL optimizada. Mensajería directa al correo con Brevo, back-end en PHP/WordPress con tabla personalizada de contactos, validación y sanitización de datos, AJAX con nonce y notificaciones por email HTML.",
-        chips: ["WordPress", "ACF Pro", "PHP", "MySQL", "CSS3", "Vanilla JS", "SEO", "Brevo", "jQuery", "AJAX"],
-        href: "https://diana-morantes.infinityfree.io/wp/",
+            "Web-app full-stack en Angular consumiendo API REST en Node.js + Express, con autenticación por sesión (cookie HTTP-only) y login por guards e interceptores. Back-end con persistencia en MySQL, gestión de usuarios y rol, estado reactivo con RxJS y comunicación segura cross-origin por CORS.",
+        chips: ["Angular", "Node.js", "Express", "RxJS", "TypeScript", "SQL", "Jasmine", "Karma"],
+        href: "https://pokedexaplication.netlify.app/",
     },
     {
         title: "Intranet adaptable a corporaciones",
