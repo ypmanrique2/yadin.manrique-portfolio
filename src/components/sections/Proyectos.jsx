@@ -9,6 +9,7 @@ const projects = [
             "YadinStore es una plataforma e-Commerce SaaS multi-vendor en evolución, diseñada para que múltiples vendedores gestionen productos, carrito, compras y notificaciones. El front-end utiliza Angular 21, Nx y Module Federation, mientras el back-end adopta un monolito modular con Spring Modulith y arquitectura hexagonal, integrando Kafka 3.9.2 mediante Transactional Outbox, DLT e idempotencia, resiliencia con Resilience4j y persistencia MongoDB con transacciones ACID. La arquitectura incorpora además Spring Security + JWT, RBAC, multi-tenancy, rate limiting, CORS restringido y controles OWASP/IDOR, junto con Docker, Testcontainers, CI/CD y observabilidad para favorecer seguridad, mantenibilidad y evolución.",
         chips: ["Java 21", "Spring Boot 3.5", "Spring Modulith", "Angular 21", "Kafka 3.9.2", "MongoDB", "Hexagonal Architecture", "DDD", "Transactional Outbox", "DLT", "Idempotency", "Resilience4j", "Spring Security", "JWT", "RBAC", "Multi-Tenancy", "OWASP", "IDOR", "Docker", "Testcontainers", "GitHub Actions"],
         href: "https://yadinstore-frontend.onrender.com/",
+        demo: { email: "usuario.demo@yadinstore.com", password: "1cLaVeDePrUeBa+" },
     },
     {
         title: "YadinStore · Admin Dashboard SaaS Multi-Vendor",
@@ -18,6 +19,7 @@ const projects = [
             "Dashboard administrativo para la operación del e-Commerce SaaS, integrado con APIs reales y orientado a la gestión de ventas, órdenes, productos, usuarios y métricas. Desarrollado con Angular 21, Signals, Nx y Module Federation, implementa autenticación JWT, autorización RBAC por rol, guards e interceptores, aislamiento multi-tenant mediante X-Tenant-ID y acceso administrativo mediante ticket temporal de un solo uso, evitando exponer credenciales. El frontend consume el backend Spring Boot endurecido, incorporando controles de rate limiting, CORS restringido y protección frente a IDOR, con una arquitectura preparada para evolucionar como remote dentro del ecosistema de micro-frontends.",
         chips: ["Angular 21", "TypeScript", "Signals", "Nx", "Module Federation", "Spring Boot 3.5", "Spring Security", "JWT", "RBAC", "Multi-Tenancy", "Rate Limiting", "IDOR", "MongoDB", "Tailwind 4"],
         href: "https://yadinstore-admin.onrender.com/",
+        demo: { email: "usuario.demo@yadinstore.com", password: "1cLaVeDePrUeBa+" },
     },
     {
         title: "YadinStore · Back-end API — Spring + Kafka",
@@ -156,6 +158,19 @@ export const Proyectos = () => {
                                         </span>
                                     ))}
                                 </div>
+                                {project.demo && (
+                                    <div className="flex flex-wrap items-center gap-2 mb-4 p-2 rounded-lg border border-dashed border-white/20 bg-white/5">
+                                        <span className="text-xs text-gray-400 font-semibold tracking-wide w-full">
+                                            Demo · solo lectura:
+                                        </span>
+                                        <code className="text-xs text-green-400 bg-green-500/10 px-2 py-0.5 rounded-md font-mono">
+                                            {project.demo.email}
+                                        </code>
+                                        <code className="text-xs text-green-400 bg-green-500/10 px-2 py-0.5 rounded-md font-mono">
+                                            {project.demo.password}
+                                        </code>
+                                    </div>
+                                )}
                                 <div className="flex justify-between items-center">
                                     <a
                                         href={project.href}
