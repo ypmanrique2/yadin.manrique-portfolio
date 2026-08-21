@@ -41,7 +41,7 @@ const projects = [
     },
     {
         title: "Marketplace de comercio electrónico VE&CO (Web)",
-        badge: "Actual · Privado",
+        badge: "Reciente · Participación en proyecto Privado",
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
         description:
             "Marketplace de e-commerce colombiano para que empresas y emprendedores publiquen, vendan y gestionen productos. Plataforma web con arquitectura moderna en la nube, pagos electrónicos seguros y cumplimiento de la normativa colombiana de comercio electrónico y protección de datos.",
@@ -50,7 +50,7 @@ const projects = [
     },
     {
         title: "App de PlayStore: VE&CO, Marketplace de comercio electrónico",
-        badge: "Actual · PlayStore",
+        badge: "Reciente · Participación en proyecto Privado",
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
         description:
             "App omnicanal que conecta compradores y vendedores: web, móvil y back-end en la nube con autenticación segura, gestión de productos, pagos electrónicos, logística, mensajería y servicios desplegados en Cloud bajo arquitectura escalable orientada a microservicios, seguridad y cumplimiento normativo.",
@@ -129,7 +129,7 @@ export const Proyectos = () => {
             className="min-h-screen flex items-center justify-center py-20"
         >
             <RevealOnScroll>
-                <div className="max-w-5xl mx-auto px-4">
+                <div className="max-w-6xl mx-auto px-6">
                     <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-green-500 to-cyan-400 bg-clip-text text-transparent text-center">
                         Proyectos Destacados
                     </h2>

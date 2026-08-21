@@ -6,15 +6,17 @@ export const RevealOnScroll = ({ children }) => {
     useEffect(() => {
         if (!ref.current) return;
 
-        console.log("Dimensiones del ref:", ref.current.getBoundingClientRect());
+        if (typeof IntersectionObserver === 'undefined' || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            ref.current.classList.add("visible");
+            return;
+        }
 
         const observer = new IntersectionObserver(([entry]) => {
-            console.log("Elemento en viewport:", entry.isIntersecting);
             if (entry.isIntersecting) {
                 entry.target.classList.add("visible");
                 observer.unobserve(entry.target);
             }
-        }, { threshold: 0.1, rootMargin: "-100px 0px" }); // Detecta antes de que aparezca completamente
+        }, { threshold: 0.15, rootMargin: "0px 0px -80px 0px" });
 
         observer.observe(ref.current);
 
