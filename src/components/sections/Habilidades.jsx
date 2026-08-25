@@ -36,6 +36,12 @@ const dataCloud = [
     { name: "Render / Aiven / Fly.io", level: 3 },
     { name: "GitHub Actions / CI-CD", level: 4 },
     { name: "EmailJS / Brevo (forms)", level: 3 },
+    { name: "Jenkins", level: 4 },
+    { name: "Prometheus", level: 4 },
+    { name: "Micrometer", level: 4 },
+    { name: "Kibana", level: 4 },
+    { name: "Grafana", level: 4 },
+    { name: "Elasticsearch (free tier)", level: 4 },
 ];
 
 const tagGroups = [
@@ -45,7 +51,7 @@ const tagGroups = [
     },
     {
         title: "Cloud · Infra · Seguridad",
-        tags: ["Kafka KRaft", "SSE", "Docker/K8s", "GitHub Actions", "Render", "Fly.io", "GCP", "Aiven", "Keycloak", "NextAuth", "RBAC"],
+        tags: ["Kafka KRaft", "SSE", "Docker/K8s", "GitHub Actions", "Jenkins", "Render", "Fly.io", "GCP", "Aiven", "Keycloak", "NextAuth", "RBAC", "Prometheus", "Grafana", "Elasticsearch", "Kibana", "Micrometer", "JasperReports"],
     },
     {
         title: "Frontend · IA · Ecosistema",
