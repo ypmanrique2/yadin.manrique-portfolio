@@ -30,6 +30,17 @@ const projects = [
         chips: ["Java 21", "Spring Boot 3.5", "Spring Modulith", "Kafka 3.9.2", "MongoDB", "Hexagonal Architecture", "Transactional Outbox", "DLT", "Idempotency", "Resilience4j", "Spring Security", "JWT", "RBAC", "Multi-Tenancy", "OWASP", "Rate Limiting", "Mongock", "Testcontainers", "Docker", "SASL_SSL"],
         href: "https://yadinstore-backend.onrender.com/kafka-dashboard.html",
     },
+
+    {
+        title: "YadinStore · CI/CD Live — Jenkins Dashboard & Observabilidad",
+        badge: "🔧 BE-JD · CI/CD Live · Jenkins + Observabilidad · En desarrollo",
+        badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
+        description:
+            `Implementé un stack CI/CD y observabilidad Cloud-Native para YadinStore integrando GitHub Actions y Jenkins mediante Pipeline as Code (Jenkinsfile), Docker/DinD y automatización del ciclo de build, test y empaquetado. Instrumenté el backend Spring Boot con Micrometer para exponer métricas de negocio y performance —Outbox, Kafka y p95 HTTP—, centralizando las métricas en Prometheus y visualización en Grafana, mientras Elasticsearch + Kibana proporcionan trazabilidad y análisis de logs; adicionalmente integré JasperReports para generación de reportes PDF. Toda ésta solución fue diseñada bajo restricciones reales de free tier, con sanitización de logs, rate limiting, almacenamiento volátil controlado y separación explícita entre observabilidad local y producción; el pipeline CI valida compilación, tests, empaquetado y construcción del Dockerfile y el Jenkinsfile.
+Si PC/agente apagado/hibernado se muestra OFFLINE, y ElasticSearch, LOCAL ONLY en amarillo, es precisamente el comportamiento esperado del free-tier, no es un bug: ya que está local todavía...`,
+        chips: ["GitHub Actions", "Jenkins 2.468.2", "Jenkinsfile", "Pipeline as Code", "Docker", "DinD", "Grafana 10.4.3", "Prometheus", "Elasticsearch 8.15.3", "Kibana 8.15.3", "Micrometer", "Render"],
+        href: "https://yadinstore-jenkins-obs-live.onrender.com/jenkins-dashboard.html",
+    },
     {
         title: "eShop corporativa de alta disponibilidad",
         badge: "⭐ Flagship · eShop OEM SaaS",
