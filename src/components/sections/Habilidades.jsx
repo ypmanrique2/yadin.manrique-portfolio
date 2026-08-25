@@ -36,12 +36,8 @@ const dataCloud = [
     { name: "Render / Aiven / Fly.io", level: 3 },
     { name: "GitHub Actions / CI-CD", level: 4 },
     { name: "EmailJS / Brevo (forms)", level: 3 },
-    { name: "Jenkins", level: 4 },
-    { name: "Prometheus", level: 4 },
-    { name: "Micrometer", level: 4 },
-    { name: "Kibana", level: 4 },
-    { name: "Grafana", level: 4 },
-    { name: "Elasticsearch (free tier)", level: 4 },
+    { name: "Jenkins / Prometheus / Micrometer", level: 4 },
+    { name: "Kibana / Grafana / Elasticsearch (free)", level: 4 },
 ];
 
 const tagGroups = [
