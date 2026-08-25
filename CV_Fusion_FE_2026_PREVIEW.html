@@ -854,18 +854,22 @@
           <!-- NUEVO · 3 · YadinStore Back-end + Kafka Dashboard -->
           <article class="pcard">
             <span class="badge actual">⚡ Backend · Event-Driven · En desarrollo</span>
-            <h3>YadinStore · Back-end API — Spring + Kafka</h3>
+            <h3>YadinStore · Back-end API - Spring + Kafka</h3>
             <p>
-              API REST de YadinStore basada en Java 21, Spring Boot 3.5 y Spring Modulith,
-              estructurada como monolito modular con arquitectura hexagonal y virtual threads.
-              La integración asíncrona utiliza Kafka 3.9.2 mediante Transactional Outbox, DLT e
-              idempotencia por eventId, complementada con Resilience4j para resiliencia. La capa
-              de seguridad aplica Spring Security + JWT, RBAC, multi-tenancy, rate limiting, CORS
-              restringido y protección IDOR, mientras MongoDB con Mongock, Testcontainers y
-              JaCoCo soportan persistencia, evolución y validación automatizada. El servicio
-              incorpora además un dashboard de actividad Kafka que permite observar brokers,
-              topics, consumer groups y lag; el broker se consulta server-side mediante SASL_SSL
-              y las credenciales no se exponen al navegador.
+              Diseñé e implementé la API REST de YadinStore sobre Java 21, Spring Boot 3.5 y
+              Spring Modulith como monolito modular con arquitectura hexagonal y virtual threads,
+              delimitando dominios con DDD y puertos adaptadores desacoplados. La integración
+              event-driven sobre Kafka 3.9.2 (KRaft) opera bajo patrón Transactional Outbox con
+              publicación atómica, DLT para poison messages e idempotencia por eventId para
+              semántica exactly-once, resiliente con Resilience4j (circuit breaker, retry y
+              bulkhead). La seguridad end-to-end aplica Spring Security + JWT, RBAC por rol,
+              aislamiento multi-tenant por X-Tenant-ID, rate limiting por tenant, CORS allowlist y
+              guards anti-IDOR validados con tests. La persistencia en MongoDB ejecuta
+              transacciones ACID multi-documento, migraciones versionadas con Mongock y validación
+              de calidad con Testcontainers y JaCoCo; el servicio expone además un dashboard
+              server-side de actividad Kafka (brokers, topics, consumer groups y lag) consultado vía
+              SASL_SSL sin exponer credenciales al navegador, con recursos contenidos para free-tier
+              y observabilidad local/producción separadas.
             </p>
             <div class="chips">
               <span class="chip">Java 21</span><span class="chip">Spring Boot 3.5</span><span class="chip">Spring Modulith</span>
@@ -882,7 +886,7 @@
           <!-- NUEVO · 4 · YadinStore CI/CD Live — Jenkins Dashboard & Observabilidad (BE-JD) -->
           <article class="pcard">
             <span class="badge actual">🔧 BE-JD · CI/CD Live · Jenkins + Observabilidad · En desarrollo</span>
-            <h3>YadinStore · CI/CD Live — Jenkins Dashboard & Observabilidad</h3>
+            <h3>YadinStore · CI/CD Live - Jenkins & Observabilidad</h3>
             <p>
               Implementé un stack CI/CD y observabilidad Cloud-Native para YadinStore integrando GitHub Actions y Jenkins mediante Pipeline as Code (Jenkinsfile), Docker/DinD y automatización del ciclo de build, test y empaquetado. Instrumenté el backend Spring Boot con Micrometer para exponer métricas de negocio y performance —Outbox, Kafka y p95 HTTP—, centralizando las métricas en Prometheus y visualización en Grafana, mientras Elasticsearch + Kibana proporcionan trazabilidad y análisis de logs; adicionalmente integré JasperReports para generación de reportes PDF. Toda ésta solución fue diseñada bajo restricciones reales de free tier, con sanitización de logs, rate limiting, almacenamiento volátil controlado y separación explícita entre observabilidad local y producción; el pipeline CI valida compilación, tests, empaquetado y construcción del Dockerfile y el Jenkinsfile.
               Si PC/agente apagado/hibernado se muestra OFFLINE, y ElasticSearch, LOCAL ONLY en amarillo, es precisamente el comportamiento esperado del free-tier, no es un bug: ya que está local todavía...
@@ -1132,9 +1136,10 @@
             <h4>Cloud · Infra · Seguridad</h4>
             <div class="tagcloud">
               <span class="tag">Kafka KRaft</span><span class="tag">SSE</span><span class="tag">Docker/K8s</span>
-              <span class="tag">GitHub Actions</span><span class="tag">Render</span><span class="tag">Fly.io</span>
+              <span class="tag">GitHub Actions</span><span class="tag">Jenkins</span><span class="tag">Render</span><span class="tag">Fly.io</span>
               <span class="tag">GCP</span><span class="tag">Aiven</span><span class="tag">Keycloak</span>
-              <span class="tag">NextAuth</span><span class="tag">RBAC</span>
+              <span class="tag">NextAuth</span><span class="tag">RBAC</span><span class="tag">Prometheus</span><span class="tag">Grafana</span>
+              <span class="tag">Elasticsearch</span><span class="tag">Kibana</span><span class="tag">Micrometer</span><span class="tag">JasperReports</span>
             </div>
           </div>
 
@@ -1157,6 +1162,12 @@
           <div class="line"></div>
         </div>
         <div class="certs-grid">
+
+          <div class="cert">
+            <span class="t"><b>Model Context Protocol: Advanced Topics</b></span>
+            <span class="m">DataCamp · <span class="yr">Ago. 2026</span> · ID #49,422,238 · MCP, HTTP, Protocolo multiagente</span>
+            <a href="https://www.datacamp.com/completed/statement-of-accomplishment/course/cb2c29a777923e2608e4b39690beb215cd9451a9" target="_blank">▸ verificar credencial</a>
+          </div>
 
           <div class="cert">
             <span class="t"><b>ITIL® 4 Foundation</b></span>

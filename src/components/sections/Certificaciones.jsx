@@ -23,6 +23,19 @@ const CertCard = ({ title, meta, links, noverify }) => (
 
 const certs = [
     {
+        title: (
+            <>
+                <b className="text-green-500">Model Context Protocol: Advanced Topics</b>
+            </>
+        ),
+        meta: (
+            <>
+                DataCamp · <span className="text-cyan-400">Ago. 2026</span> · ID #49,422,238 · MCP, HTTP, Protocolo multiagente
+            </>
+        ),
+        links: [{ href: "https://www.datacamp.com/completed/statement-of-accomplishment/course/cb2c29a777923e2608e4b39690beb215cd9451a9", label: "verificar credencial" }],
+    },
+    {
         title: "ITIL® 4 Foundation",
         meta: (
             <>
