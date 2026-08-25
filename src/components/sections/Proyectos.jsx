@@ -22,17 +22,17 @@ const projects = [
         demo: { email: "usuario.demo@yadinstore.com", password: "1cLaVeDePrUeBa+" },
     },
     {
-        title: "YadinStore · Back-end API — Spring + Kafka",
+        title: "YadinStore · Back-end API - Spring + Kafka",
         badge: "⚡ Backend · Event-Driven · En desarrollo",
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
         description:
-            "API REST de YadinStore basada en Java 21, Spring Boot 3.5 y Spring Modulith, estructurada como monolito modular con arquitectura hexagonal y virtual threads. La integración asíncrona utiliza Kafka 3.9.2 mediante Transactional Outbox, DLT e idempotencia por eventId, complementada con Resilience4j para resiliencia. La capa de seguridad aplica Spring Security + JWT, RBAC, multi-tenancy, rate limiting, CORS restringido y protección IDOR, mientras MongoDB con Mongock, Testcontainers y JaCoCo soportan persistencia, evolución y validación automatizada. El servicio incorpora además un dashboard de actividad Kafka que permite observar brokers, topics, consumer groups y lag; el broker se consulta server-side mediante SASL_SSL y las credenciales no se exponen al navegador.",
+            "Diseñé e implementé la API REST de YadinStore sobre Java 21, Spring Boot 3.5 y Spring Modulith como monolito modular con arquitectura hexagonal y virtual threads, delimitando dominios con DDD y puertos adaptadores desacoplados. La integración event-driven sobre Kafka 3.9.2 (KRaft) opera bajo patrón Transactional Outbox con publicación atómica, DLT para poison messages e idempotencia por eventId para semántica exactly-once, resiliente con Resilience4j (circuit breaker, retry y bulkhead). La seguridad end-to-end aplica Spring Security + JWT, RBAC por rol, aislamiento multi-tenant por X-Tenant-ID, rate limiting por tenant, CORS allowlist y guards anti-IDOR validados con tests. La persistencia en MongoDB ejecuta transacciones ACID multi-documento, migraciones versionadas con Mongock y validación de calidad con Testcontainers y JaCoCo; el servicio expone además un dashboard server-side de actividad Kafka (brokers, topics, consumer groups y lag) consultado vía SASL_SSL sin exponer credenciales al navegador, con recursos contenidos para free-tier y observabilidad local/producción separadas.",
         chips: ["Java 21", "Spring Boot 3.5", "Spring Modulith", "Kafka 3.9.2", "MongoDB", "Hexagonal Architecture", "Transactional Outbox", "DLT", "Idempotency", "Resilience4j", "Spring Security", "JWT", "RBAC", "Multi-Tenancy", "OWASP", "Rate Limiting", "Mongock", "Testcontainers", "Docker", "SASL_SSL"],
         href: "https://yadinstore-backend.onrender.com/kafka-dashboard.html",
     },
 
     {
-        title: "YadinStore · CI/CD Live — Jenkins Dashboard & Observabilidad",
+        title: "YadinStore · CI/CD Live - Jenkins & Observabilidad",
         badge: "🔧 BE-JD · CI/CD Live · Jenkins + Observabilidad · En desarrollo",
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
         description:
