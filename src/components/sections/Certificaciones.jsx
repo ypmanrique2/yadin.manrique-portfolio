@@ -25,6 +25,19 @@ const certs = [
     {
         title: (
             <>
+                <b className="text-green-500">Develop for Azure Storage</b>
+            </>
+        ),
+        meta: (
+            <>
+                DataCamp · <span className="text-cyan-400">ago. 2026</span> · ID #49,476,429 · Microsoft Azure
+            </>
+        ),
+        links: [{ href: "https://www.datacamp.com/es/completed/statement-of-accomplishment/course/993912624f124deec14733bc4d5361b59d6570cb", label: "verificar credencial" }],
+    },
+    {
+        title: (
+            <>
                 <b className="text-green-500">Model Context Protocol: Advanced Topics</b>
             </>
         ),

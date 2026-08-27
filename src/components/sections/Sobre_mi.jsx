@@ -6,7 +6,7 @@ export const Sobre_mi = () => {
     const frontendSkills = ["TypeScript", "React", "Vite", "Angular", "SEO human in the loop", "TailwindCSS", "SCSS", "CSS3", "HTML5", "JavaScript", "RxJS", "Next.js", "NextAuth"];
     const backendSkills = [ "Java", "SpringBoot", "Keycloak", "Node.js","Express", "MongoDB", "MySQL", "Firebase", "Python", "JavaScript", "TypeScript", "hardened security", "AI first"];
     const especialidadesChips = ["Clean Arch", "Hexagonal", "DDD", "SOLID", "MicroFront-Ends (MFE)", "REST API", "CI/CD", "OWASP Top 10", "SDD", "ITIL v4", "Scrum"];
-    const cloudSeguridadChips = ["Kafka KRaft", "SSE", "Docker/K8s", "GitHub Actions", "Jenkins", "Render", "Fly.io", "GCP", "Azure", "Aiven", "Keycloak", "NextAuth", "RBAC", "Prometheus", "Grafana", "Elasticsearch", "Kibana", "Micrometer", "JasperReports"];
+    const cloudSeguridadChips = ["Kafka KRaft", "SSE", "Docker/K8s", "Kubernetes", "GitHub Actions", "Jenkins", "Render", "Fly.io", "GCP", "Azure", "Aiven", "Keycloak", "NextAuth", "RBAC", "Prometheus", "Grafana", "Elasticsearch", "Kibana", "Micrometer", "JasperReports"];
     const frontendIaChips = ["TailwindCSS", "WordPress/ACF Pro", "RxJS", "Vite", "esbuild", "Redux", "MCP", "LLM", "EmailJS", "SEO", "CORS"];
 
     const downloadCV = () => {

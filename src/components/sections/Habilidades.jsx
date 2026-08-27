@@ -30,6 +30,7 @@ const dataCloud = [
     { name: "MongoDB", level: 4 },
     { name: "Firebase / GCP", level: 4 },
     { name: "Docker / Kubernetes", level: 4 },
+    { name: "Kubernetes", level: 4 },
     { name: "Kafka / Event-Driven", level: 3 },
     { name: "Keycloak / NextAuth (IAM)", level: 3 },
     { name: "SQLite / Express / REST", level: 4 },
@@ -48,7 +49,7 @@ const tagGroups = [
     },
     {
         title: "Cloud · Infra · Seguridad",
-        tags: ["Kafka KRaft", "SSE", "Docker/K8s", "GitHub Actions", "Jenkins", "Render", "Fly.io", "GCP", "Azure", "Aiven", "Keycloak", "NextAuth", "RBAC", "Prometheus", "Grafana", "Elasticsearch", "Kibana", "Micrometer", "JasperReports"],
+        tags: ["Kafka KRaft", "SSE", "Docker/K8s", "Kubernetes", "GitHub Actions", "Jenkins", "Render", "Fly.io", "GCP", "Azure", "Aiven", "Keycloak", "NextAuth", "RBAC", "Prometheus", "Grafana", "Elasticsearch", "Kibana", "Micrometer", "JasperReports"],
     },
     {
         title: "Frontend · IA · Ecosistema",
