@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import './App.css'
 import { LoadingScreen } from "./components/LoadinScreen";
 import { Navbar } from "./components/Navbar";
@@ -16,14 +16,20 @@ import "./index.css";
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isClearMode, setIsClearMode] = useState(() => localStorage.getItem("clearMode") === "true");
+
+  useEffect(() => {
+    document.documentElement.classList.toggle("clear-mode", isClearMode);
+    localStorage.setItem("clearMode", isClearMode);
+  }, [isClearMode]);
 
   return (
     <>
       {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}{""}
-      <div className={`min-h-screen transition-opacity duration-700 ${isLoaded ? "opacity-100" : "opacity-0"} bg-black text-gray-100`}
+      <div className={`min-h-screen transition-opacity duration-700 transition-colors ${isLoaded ? "opacity-100" : "opacity-0"} ${isClearMode ? "bg-gray-100 text-gray-900" : "bg-black text-gray-100"}`}
       >
-        <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-        <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} isClearMode={isClearMode} toggleClearMode={() => setIsClearMode((v) => !v)} />
+        <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} isClearMode={isClearMode} toggleClearMode={() => setIsClearMode((v) => !v)} />
         <Inicio />
         <Sobre_mi />
         <Experiencia />

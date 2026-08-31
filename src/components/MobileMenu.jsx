@@ -1,6 +1,5 @@
-import { useEffect } from "react"
-
-export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
+export const MobileMenu = ({ menuOpen, setMenuOpen, isClearMode, toggleClearMode, toggle }) => {
+    const onToggle = toggleClearMode || toggle;
 
     return (
         <div className={`fixed top-0 left-0 w-full bg-[rgba(10,10,10,0.8)] z-40 flex flex-col items-center justify-center 
@@ -99,6 +98,16 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
                     >
                         Contacto
                     </a>
+
+                    <button
+                        onClick={onToggle}
+                        aria-label={isClearMode ? "Cambiar a modo oscuro" : "Cambiar a modo claro"}
+                        aria-pressed={isClearMode}
+                        title="ClearMode"
+                        className={`mt-8 w-9 h-9 grid place-items-center rounded-full border border-white/10 hover:border-green-500/40 transition-colors text-gray-400 hover:text-white transform transition-transform duration-300 ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
+                    >
+                        {isClearMode ? "◑" : "◐"}
+                    </button>
 
         </div>
     );

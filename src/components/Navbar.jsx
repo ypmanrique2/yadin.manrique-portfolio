@@ -1,6 +1,7 @@
 import { useEffect } from "react"
 
-export const Navbar = ({ menuOpen, setMenuOpen }) => {
+export const Navbar = ({ menuOpen, setMenuOpen, isClearMode, toggleClearMode, toggle }) => {
+    const onToggle = toggleClearMode || toggle;
 
     useEffect(() => {
         document.body.style.overflow = menuOpen ? "hidden" : "";
@@ -57,6 +58,15 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
                     >
                         Contacto
                     </a>
+                    <button
+                        onClick={onToggle}
+                        aria-label={isClearMode ? "Cambiar a modo oscuro" : "Cambiar a modo claro"}
+                        aria-pressed={isClearMode}
+                        title="ClearMode"
+                        className="ml-12 w-9 h-9 grid place-items-center rounded-full border border-white/10 hover:border-green-500/40 transition-colors text-gray-400 hover:text-white"
+                    >
+                        {isClearMode ? "◑" : "◐"}
+                    </button>
                 </div>
             </div>
         </div>
