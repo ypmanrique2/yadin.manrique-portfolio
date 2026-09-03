@@ -2,8 +2,8 @@ import { RevealOnScroll } from "../RevealOnScroll";
 
 const roles = [
     {
-        title: "Tecnólogo en Análisis y Desarrollo de Software",
-        subtitle: "Desarrollador FullStack/GCP/Intranet",
+        title: "TECNÓLOGO EN ANÁLISIS Y DESARROLLO DE SOFTWARE (FullStack/GCP/Intranet)",
+        subtitle: "@ COMFAORIENTE",
         company: "COMFAORIENTE — I.E. Gimnasio Campestre ComfaOriente",
         dates: "ABR.2025 — OCT.2025 · 7 meses · Cúcuta, Colombia",
         bullets: [
@@ -17,7 +17,7 @@ const roles = [
     },
     {
         title: "Back",
-        subtitle: "Desarrollo y Datos",
+        subtitle: null,
         company: "Estudio Galicia & Cía. Abogados Consultores EGSAC",
         dates: "FEB.2024 — AGO.2024 · 7 meses · Cúcuta, Colombia",
         bullets: [

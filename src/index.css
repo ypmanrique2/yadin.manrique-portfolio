@@ -48,6 +48,28 @@ html.clear-mode .text-green-200 { color: #22c55e !important; }
 html.clear-mode .text-green-300 { color: #16a34a !important; } /* badge CV2026 legible, verde preservado */
 html.clear-mode .border-green-500\/25 { border-color: rgba(34,197,94,0.30) !important; }
 
+/* Fix #3 — ClearMode legibility: roles bajo Experiencia, texto bajo Skills y títulos — gris legible #374151 sobre #f3f4f6 */
+html.clear-mode .role { color: #374151 !important; }
+html.clear-mode .job-title { color: #111827 !important; }
+html.clear-mode .timeline-role { color: #111827 !important; }
+html.clear-mode .skills-text { color: #374151 !important; }
+html.clear-mode .skill-category p { color: #374151 !important; }
+html.clear-mode .tag { color: #15803d !important; border-color: rgba(34,197,94,0.30) !important; background: rgba(34,197,94,0.10) !important; }
+html.clear-mode .section-title { color: #111827 !important; }
+html.clear-mode h2 { color: #111827 !important; }
+html.clear-mode h3 { color: #111827 !important; }
+html.clear-mode .section-heading h2 { color: #111827 !important; }
+html.clear-mode .section-heading h3 { color: #111827 !important; }
+/* Paridad 1:1 con PREVIEW — hero role, timeline, skills, pcard, about, edu, cert */
+html.clear-mode .hero .role { color: #374151 !important; }
+html.clear-mode .tl-item h3 { color: #111827 !important; }
+html.clear-mode .tl-item li { color: #374151 !important; }
+html.clear-mode .skill-row .name { color: #374151 !important; }
+html.clear-mode .pcard h3 { color: #111827 !important; }
+html.clear-mode .pcard p { color: #4b5563 !important; }
+html.clear-mode .about-card { color: #374151 !important; }
+
+
 @layer utilities {
   .reveal {
     opacity: 0;

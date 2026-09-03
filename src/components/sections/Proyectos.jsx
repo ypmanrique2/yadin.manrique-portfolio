@@ -1,46 +1,63 @@
 import { RevealOnScroll } from "../RevealOnScroll";
 
 const projects = [
-    {
+{
         title: "YadinStore · e-Shop SaaS",
         badge: "⭐ e-Commerce SaaS · En desarrollo",
         badgeClass: "bg-green-500/20 text-green-300",
         description:
-            "YadinStore es una plataforma e-Commerce SaaS multi-vendor en evolución, diseñada para que múltiples vendedores gestionen productos, carrito, compras y notificaciones. El front-end utiliza Angular 21, Nx y Module Federation, mientras el back-end adopta un monolito modular con Spring Modulith y arquitectura hexagonal, integrando Kafka 3.9.2 mediante Transactional Outbox, DLT e idempotencia, resiliencia con Resilience4j y persistencia MongoDB con transacciones ACID. La arquitectura incorpora además Spring Security + JWT, RBAC, multi-tenancy, rate limiting, CORS restringido y controles OWASP/IDOR, junto con Docker, Testcontainers, CI/CD y observabilidad para favorecer seguridad, mantenibilidad y evolución.",
+            "S: SaaS multi-vendor debía soportar catálogo, carrito, checkout y notificaciones con aislamiento por tenant. T: Diseñar front modular y back event-driven con consistencia transaccional y seguridad por rol. A: Front Angular 21 + Nx + Module Federation (Signals); back monolito modular Spring Modulith + hexagonal + DDD + virtual threads, Kafka 3.9.2 KRaft con Transactional Outbox (atómico), DLT e idempotencia por eventId (exactly-once), Resilience4j (circuit breaker/retry/bulkhead), MongoDB ACID + Mongock, Spring Security + JWT + RBAC (X-Tenant-ID) + rate limiting + CORS allowlist + anti-IDOR, Docker + Testcontainers + GitHub Actions. R: Flujo outbox→Kafka→DLT trazable y verificado con Testcontainers; despliegue honesto free-tier Render con observabilidad local/prod separada.",
         chips: ["Java 21", "Spring Boot 3.5", "Spring Modulith", "Angular 21", "Kafka 3.9.2", "MongoDB", "Hexagonal Architecture", "DDD", "Transactional Outbox", "DLT", "Idempotency", "Resilience4j", "Spring Security", "JWT", "RBAC", "Multi-Tenancy", "OWASP", "IDOR", "Docker", "Testcontainers", "GitHub Actions"],
         href: "https://yadinstore-frontend.onrender.com/",
         demo: { email: "usuario.demo@yadinstore.com", password: "1cLaVeDePrUeBa+" },
     },
-    {
+{
         title: "YadinStore · Admin Dashboard SaaS Multi-Vendor",
         badge: "🔐 SaaS Admin · Multi-Tenant · En desarrollo",
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
         description:
-            "Dashboard administrativo para la operación del e-Commerce SaaS, integrado con APIs reales y orientado a la gestión de ventas, órdenes, productos, usuarios y métricas. Desarrollado con Angular 21, Signals, Nx y Module Federation, implementa autenticación JWT, autorización RBAC por rol, guards e interceptores, aislamiento multi-tenant mediante X-Tenant-ID y acceso administrativo mediante ticket temporal de un solo uso, evitando exponer credenciales. El frontend consume el backend Spring Boot endurecido, incorporando controles de rate limiting, CORS restringido y protección frente a IDOR, con una arquitectura preparada para evolucionar como remote dentro del ecosistema de micro-frontends.",
+            "S: Operación SaaS necesitaba gestionar ventas/órdenes/productos/usuarios sin exponer credenciales en navegador. T: Entregar dashboard seguro, multi-tenant e integrable como micro-frontend. A: Angular 21 + Signals + Nx + Module Federation, JWT + RBAC por rol con guards/interceptores, aislamiento multi-tenant por X-Tenant-ID, ticket temporal de un solo uso (sin credenciales persistentes), consumo de API Spring Boot hardened con rate limiting + CORS restringido + anti-IDOR. R: Acceso auditable sin secretos en cliente, autorización validada por tests, listo como remote MFE; demo solo lectura honesta.",
         chips: ["Angular 21", "TypeScript", "Signals", "Nx", "Module Federation", "Spring Boot 3.5", "Spring Security", "JWT", "RBAC", "Multi-Tenancy", "Rate Limiting", "IDOR", "MongoDB", "Tailwind 4"],
         href: "https://yadinstore-admin.onrender.com/",
         demo: { email: "usuario.demo@yadinstore.com", password: "1cLaVeDePrUeBa+" },
     },
-    {
+{
         title: "YadinStore · Back-end API - Spring + Kafka",
         badge: "⚡ Backend · Event-Driven · En desarrollo",
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
         description:
-            "Diseñé e implementé la API REST de YadinStore sobre Java 21, Spring Boot 3.5 y Spring Modulith como monolito modular con arquitectura hexagonal y virtual threads, delimitando dominios con DDD y puertos adaptadores desacoplados. La integración event-driven sobre Kafka 3.9.2 (KRaft) opera bajo patrón Transactional Outbox con publicación atómica, DLT para poison messages e idempotencia por eventId para semántica exactly-once, resiliente con Resilience4j (circuit breaker, retry y bulkhead). La seguridad end-to-end aplica Spring Security + JWT, RBAC por rol, aislamiento multi-tenant por X-Tenant-ID, rate limiting por tenant, CORS allowlist y guards anti-IDOR validados con tests. La persistencia en MongoDB ejecuta transacciones ACID multi-documento, migraciones versionadas con Mongock y validación de calidad con Testcontainers y JaCoCo; el servicio expone además un dashboard server-side de actividad Kafka (brokers, topics, consumer groups y lag) consultado vía SASL_SSL sin exponer credenciales al navegador, con recursos contenidos para free-tier y observabilidad local/producción separadas.",
+            "S: Publicación a Kafka debía ser atómica respecto a la transacción de negocio y resiliente sin perder/duplicar eventos. T: API REST Java 21 con exactly-once, persistencia consistente y dashboard Kafka sin exponer secretos. A: Java 21 + Spring Boot 3.5 + Spring Modulith (hexagonal, DDD, virtual threads, puertos/adaptadores), Kafka 3.9.2 KRaft con Transactional Outbox atómico + DLT + idempotencia por eventId, Resilience4j, Spring Security + JWT + RBAC + X-Tenant-ID + rate limiting + CORS + anti-IDOR con tests, MongoDB ACID + Mongock + Testcontainers + JaCoCo, Micrometer (Outbox/Kafka/p95) y dashboard SASL_SSL server-side. R: Exactly-once verificado con Testcontainers, DLT aislando poison messages, métricas p95 y lag visibles; honesto free-tier Render sin SLA productiva.",
         chips: ["Java 21", "Spring Boot 3.5", "Spring Modulith", "Kafka 3.9.2", "MongoDB", "Hexagonal Architecture", "Transactional Outbox", "DLT", "Idempotency", "Resilience4j", "Spring Security", "JWT", "RBAC", "Multi-Tenancy", "OWASP", "Rate Limiting", "Mongock", "Testcontainers", "Docker", "SASL_SSL"],
         href: "https://yadinstore-backend.onrender.com/kafka-dashboard.html",
     },
-
-    {
+{
         title: "YadinStore · CI/CD Live - Jenkins & Observabilidad",
         badge: "🔧 BE-JD · CI/CD Live · Jenkins + Observabilidad · En desarrollo",
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
         description:
-            "Implementé un stack CI/CD y observabilidad Cloud-Native para YadinStore integrando GitHub Actions y Jenkins mediante Pipeline as Code (Jenkinsfile), Docker/DinD y automatización del ciclo de build, test y empaquetado. Instrumenté el backend Spring Boot con Micrometer para exponer métricas de negocio y performance —Outbox, Kafka y p95 HTTP—, centralizando las métricas en Prometheus y visualización en Grafana, mientras Elasticsearch + Kibana proporcionan trazabilidad y análisis de logs; adicionalmente integré JasperReports para generación de reportes PDF. Toda ésta solución fue diseñada bajo restricciones reales de free tier, con sanitización de logs, rate limiting, almacenamiento volátil controlado y separación explícita entre observabilidad local y producción; el pipeline CI valida compilación, tests, empaquetado y construcción del Dockerfile y el Jenkinsfile. Si PC/agente apagado/hibernado se muestra OFFLINE, y ElasticSearch, LOCAL ONLY en amarillo, es precisamente el comportamiento esperado del free-tier, no es un bug: ya que está local todavía...",
+            "S: Pipeline trazable y observabilidad con recursos free-tier limitados sin infra dedicada. T: CI/CD Cloud-Native + métricas/logs bajo restricciones reales. A: GitHub Actions + Jenkins 2.468.2 Pipeline as Code (Jenkinsfile) + Docker/DinD automatizando build/test/package/Dockerfile, Micrometer (Outbox/Kafka/p95 HTTP) → Prometheus → Grafana 10.4.3, ES 8.15.3 + Kibana + JasperReports PDF, sanitización logs + rate limiting + almacenamiento volátil y separación local vs producción. R: Pipeline valida cada push; dashboards exponen p95 y lag; honesto free-tier: si PC/agente hibernado ⇒ OFFLINE y ES LOCAL ONLY amarillo = esperado, no bug.",
         chips: ["GitHub Actions", "Jenkins 2.468.2", "Jenkinsfile", "Pipeline as Code", "Docker", "DinD", "Grafana 10.4.3", "Prometheus", "Elasticsearch 8.15.3", "Kibana 8.15.3", "Micrometer", "Render"],
         href: "https://yadinstore-jenkins-obs-live.onrender.com/jenkins-dashboard.html",
     },
-    {
+{
+        title: "Marketplace de comercio electrónico VE&CO (Web)",
+        badge: "fui colaborador fullstack al código",
+        badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
+        description:
+            "Marketplace de e-commerce colombiano para que empresas y emprendedores publiquen, vendan y gestionen productos. Plataforma web con arquitectura moderna en la nube, pagos electrónicos seguros y cumplimiento de la normativa colombiana de comercio electrónico y protección de datos.",
+        chips: ["Angular", "Node.js", "Express", "SCSS", "Firebase", "Fly.io", "TypeScript", "MongoDB"],
+        href: "https://veycoo.com.co/",
+    },
+{
+        title: "App de PlayStore: VE&CO, Marketplace de comercio electrónico",
+        badge: "fui colaborador fullstack al código",
+        badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
+        description:
+            "App omnicanal que conecta compradores y vendedores: web, móvil y back-end en la nube con autenticación segura, gestión de productos, pagos electrónicos, logística, mensajería y servicios desplegados en Cloud bajo arquitectura escalable orientada a microservicios, seguridad y cumplimiento normativo.",
+        chips: ["Angular", "Node.js", "Express", "SCSS", "Firebase", "Fly.io", "Java", "TypeScript", "MongoDB", "PlayStore"],
+        href: "https://play.google.com/store/apps/details?id=app.veycoo.co&hl=es_CO",
+    },
+{
         title: "eShop corporativa de alta disponibilidad",
         badge: "⭐ Flagship · eShop OEM SaaS",
         badgeClass: "bg-green-500/20 text-green-300",
@@ -49,25 +66,7 @@ const projects = [
         chips: ["React", "NextJs", "Java", "TypeScript", "MongoDB", "SpringBoot", "SpringSecurity", "Keycloak", "NextAuth"],
         href: "https://eshop-oem.netlify.app",
     },
-    {
-        title: "Marketplace de comercio electrónico VE&CO (Web)",
-        badge: "Reciente · Participación en proyecto Privado",
-        badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
-        description:
-            "Marketplace de e-commerce colombiano para que empresas y emprendedores publiquen, vendan y gestionen productos. Plataforma web con arquitectura moderna en la nube, pagos electrónicos seguros y cumplimiento de la normativa colombiana de comercio electrónico y protección de datos.",
-        chips: ["Angular", "Node.js", "Express", "SCSS", "Firebase", "Fly.io", "TypeScript", "MongoDB"],
-        href: "https://veycoo.com.co/",
-    },
-    {
-        title: "App de PlayStore: VE&CO, Marketplace de comercio electrónico",
-        badge: "Reciente · Participación en proyecto Privado",
-        badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
-        description:
-            "App omnicanal que conecta compradores y vendedores: web, móvil y back-end en la nube con autenticación segura, gestión de productos, pagos electrónicos, logística, mensajería y servicios desplegados en Cloud bajo arquitectura escalable orientada a microservicios, seguridad y cumplimiento normativo.",
-        chips: ["Angular", "Node.js", "Express", "SCSS", "Firebase", "Fly.io", "Java", "TypeScript", "MongoDB", "PlayStore"],
-        href: "https://play.google.com/store/apps/details?id=app.veycoo.co&hl=es_CO",
-    },
-    {
+{
         title: "Portafolio adaptable a empresas",
         badge: "Actual",
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
@@ -76,7 +75,7 @@ const projects = [
         chips: ["Angular", "Node.js", "Express", "SCSS", "Firebase"],
         href: "https://ypmanrique2.github.io/portfolio-angular/",
     },
-    {
+{
         title: "Landing Page para servicios profesionales",
         badge: "Actual · Brevo",
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
@@ -85,7 +84,7 @@ const projects = [
         chips: ["WordPress", "ACF Pro", "PHP", "MySQL", "CSS3", "Vanilla JS", "SEO", "Brevo", "jQuery", "AJAX"],
         href: "https://diana-morantes.infinityfree.io/wp/",
     },
-    {
+{
         title: "Landing page AI first & SEO human in the loop + Security hardening (WordPress - A.C.F. pro)",
         badge: "Actual · AI First",
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
@@ -94,7 +93,7 @@ const projects = [
         chips: ["Wordpress", "Vanilla JS", "SEO human in the loop", "AI first", "MySQL", "HTML5", "CSS3", "JavaScript"],
         href: "https://b2b-sucessintheair.infinityfree.me/",
     },
-    {
+{
         title: "Insurance CRM",
         badge: "Actual",
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
@@ -103,8 +102,8 @@ const projects = [
         chips: ["React", "TypeScript", "TailwindCSS", "Vite", "GitHub Actions", "Python", "Flask", "Gunicorn", "SQLite", "PostgreSQL", "Render"],
         href: "https://ypmanrique2.github.io/insurance-crm-frontend/",
     },
-    {
-        title: "App consumidora de API educativa (ej. Pokédex)",
+{
+        title: "App consumidora de API educativa (Full-Stack MySQL + RBAC)",
         badge: "Demo abierta: admin / 1234",
         badgeClass: "bg-amber-500/10 text-amber-400 border border-amber-500/30",
         description:
@@ -112,7 +111,7 @@ const projects = [
         chips: ["Angular", "Node.js", "Express", "RxJS", "TypeScript", "SQL", "Jasmine", "Karma"],
         href: "https://pokedexaplication.netlify.app/",
     },
-    {
+{
         title: "Intranet adaptable a corporaciones",
         badge: "Actual · Hardened",
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
@@ -121,7 +120,7 @@ const projects = [
         chips: ["HTML5", "CSS3", "TypeScript", "Firebase", "GCP"],
         href: "https://sites.google.com/comfaoriente.com/intranetcolcampestre",
     },
-    {
+{
         title: "Página personalizable a negocios",
         badge: "Actual",
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
