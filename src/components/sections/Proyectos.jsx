@@ -3,7 +3,7 @@ import { RevealOnScroll } from "../RevealOnScroll";
 const projects = [
 {
         title: "YadinStore · e-Shop SaaS",
-        badge: "⭐ e-Commerce SaaS · En desarrollo",
+        badge: "⭐ e-Commerce SaaS",
         badgeClass: "bg-green-500/20 text-green-300",
         description:
             "S: SaaS multi-vendor debía soportar catálogo, carrito, checkout y notificaciones con aislamiento por tenant. T: Diseñar front modular y back event-driven con consistencia transaccional y seguridad por rol. A: Front Angular 21 + Nx + Module Federation (Signals); back monolito modular Spring Modulith + hexagonal + DDD + virtual threads, Kafka 3.9.2 KRaft con Transactional Outbox (atómico), DLT e idempotencia por eventId (exactly-once), Resilience4j (circuit breaker/retry/bulkhead), MongoDB ACID + Mongock, Spring Security + JWT + RBAC (X-Tenant-ID) + rate limiting + CORS allowlist + anti-IDOR, Docker + Testcontainers + GitHub Actions. R: Flujo outbox→Kafka→DLT trazable y verificado con Testcontainers; despliegue honesto free-tier Render con observabilidad local/prod separada.",
@@ -13,7 +13,7 @@ const projects = [
     },
 {
         title: "YadinStore · Admin Dashboard SaaS Multi-Vendor",
-        badge: "🔐 SaaS Admin · Multi-Tenant · En desarrollo",
+        badge: "🔐 SaaS Admin · Multi-Tenant",
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
         description:
             "S: Operación SaaS necesitaba gestionar ventas/órdenes/productos/usuarios sin exponer credenciales en navegador. T: Entregar dashboard seguro, multi-tenant e integrable como micro-frontend. A: Angular 21 + Signals + Nx + Module Federation, JWT + RBAC por rol con guards/interceptores, aislamiento multi-tenant por X-Tenant-ID, ticket temporal de un solo uso (sin credenciales persistentes), consumo de API Spring Boot hardened con rate limiting + CORS restringido + anti-IDOR. R: Acceso auditable sin secretos en cliente, autorización validada por tests, listo como remote MFE; demo solo lectura honesta.",
@@ -23,7 +23,7 @@ const projects = [
     },
 {
         title: "YadinStore · Back-end API - Spring + Kafka",
-        badge: "⚡ Backend · Event-Driven · En desarrollo",
+        badge: "⚡ Backend · Event-Driven",
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
         description:
             "S: Publicación a Kafka debía ser atómica respecto a la transacción de negocio y resiliente sin perder/duplicar eventos. T: API REST Java 21 con exactly-once, persistencia consistente y dashboard Kafka sin exponer secretos. A: Java 21 + Spring Boot 3.5 + Spring Modulith (hexagonal, DDD, virtual threads, puertos/adaptadores), Kafka 3.9.2 KRaft con Transactional Outbox atómico + DLT + idempotencia por eventId, Resilience4j, Spring Security + JWT + RBAC + X-Tenant-ID + rate limiting + CORS + anti-IDOR con tests, MongoDB ACID + Mongock + Testcontainers + JaCoCo, Micrometer (Outbox/Kafka/p95) y dashboard SASL_SSL server-side. R: Exactly-once verificado con Testcontainers, DLT aislando poison messages, métricas p95 y lag visibles; honesto free-tier Render sin SLA productiva.",
@@ -32,7 +32,7 @@ const projects = [
     },
 {
         title: "YadinStore · CI/CD Live - Jenkins & Observabilidad",
-        badge: "🔧 BE-JD · CI/CD Live · Jenkins + Observabilidad · En desarrollo",
+        badge: "🔧 BE-JD · CI/CD Live · Jenkins + Observabilidad",
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
         description:
             "S: Pipeline trazable y observabilidad con recursos free-tier limitados sin infra dedicada. T: CI/CD Cloud-Native + métricas/logs bajo restricciones reales. A: GitHub Actions + Jenkins 2.468.2 Pipeline as Code (Jenkinsfile) + Docker/DinD automatizando build/test/package/Dockerfile, Micrometer (Outbox/Kafka/p95 HTTP) → Prometheus → Grafana 10.4.3, ES 8.15.3 + Kibana + JasperReports PDF, sanitización logs + rate limiting + almacenamiento volátil y separación local vs producción. R: Pipeline valida cada push; dashboards exponen p95 y lag; honesto free-tier: si PC/agente hibernado ⇒ OFFLINE y ES LOCAL ONLY amarillo = esperado, no bug.",
