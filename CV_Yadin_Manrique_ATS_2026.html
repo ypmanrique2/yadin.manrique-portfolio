@@ -645,14 +645,13 @@
     <section class="ats-section" aria-labelledby="acerca-title">
       <h2 id="acerca-title"><span>//</span> Resumen profesional</h2>
       <div class="ats-lead">
-        Desarrollador <b>Full Stack</b> con <b>6 años de evolución</b> en el ecosistema <b>Java 8–21</b>, <b>Node.js</b>
-        y front-end moderno (<b>React 19, Angular 10–21, TypeScript</b>). Especializado en arquitecturas
-        <b>Cloud-Native</b>: <em>Clean Architecture, Hexagonal, DDD, SOLID</em> y <em>Event-Driven</em> con <b>Kafka
-          3.9.2 (KRaft)</b>, <b>Transactional Outbox, DLT, Exactly-Once</b> y <b>SSE</b>. Experiencia en desarrollo
-        asistido por IA (<b>SDD, MCP, LLM</b>) y seguridad (<b>OWASP Top 10, ASVS, IDOR, RBAC, JWT</b>). Implementación
-        de soluciones <b>SaaS multi-tenant</b> con despliegue en <b>GCP, Azure, Aiven y Fly.io</b>, observabilidad con
-        <b>Prometheus/Grafana/ELK</b> y CI/CD. Certificado <b>ITIL v4</b> con trayectoria en mesa de servicio nivel 2 y
-        cumplimiento <b>ANS/SLA &gt;95%</b>.
+        Desarrollador <b>Full Stack</b> con <em>6 años de evolución (Java 8→21, Spring Boot 3.5)</em> y front-end moderno
+        (<em>Angular 21, React 19, TypeScript, Node.js</em>). Arquitecturas <b>Cloud-Native</b>:
+        <em>Clean/Hexagonal/DDD/SOLID</em> y <em>Event-Driven con Kafka 3.9.2 KRaft</em> (<b>Transactional Outbox, DLT,
+          Exactly-Once con Resilience4j</b>) + <em>SSE</em>. Seguridad app: <em>Spring Security + JWT/RBAC (X-Tenant-ID),
+          Keycloak, OWASP Top 10 / ASVS / IDOR, rate limiting, CORS allowlist</em>. Desarrollo asistido por IA (<b>SDD,
+          MCP, LLM</b>), <b>Docker/Testcontainers, CI/CD, observabilidad (Micrometer/Prometheus/Grafana/ELK)</b> y
+        deploy <em>SaaS en GCP/Azure/Aiven/Fly.io/Render</em>. <b>12+ proyectos</b> · <b>95%+ SLA</b> · <b>ITIL v4</b>
       </div>
     </section>
 
@@ -711,7 +710,13 @@
         <article class="ats-card featured">
           <span class="badge badge-green">⭐ e-Commerce SaaS · Flagship</span>
           <h3>YadinStore · e-Shop SaaS Multi-Vendor</h3>
-          <p>Plataforma e-Commerce SaaS multi-vendor para que múltiples vendedores gestionen catálogo, carrito, checkout y notificaciones con aislamiento por tenant. El front-end utiliza <b>Angular 21, Nx y Module Federation</b> con Signals preparado como host/remote; el back-end adopta un monolito modular con <b>Spring Modulith + arquitectura hexagonal + DDD + virtual threads</b>, <b>Kafka 3.9.2 KRaft</b> con Transactional Outbox atómico, DLT e idempotencia por eventId, <b>Resilience4j</b>, <b>MongoDB ACID + Mongock</b> y <b>Spring Security</b> con JWT, RBAC por X-Tenant-ID, rate limiting, CORS allowlist y controles anti-IDOR validados con Testcontainers.</p>
+          <p>Plataforma e-Commerce SaaS multi-vendor para que múltiples vendedores gestionen catálogo, carrito, checkout
+            y notificaciones con aislamiento por tenant. El front-end utiliza <b>Angular 21, Nx y Module Federation</b>
+            con Signals preparado como host/remote; el back-end adopta un monolito modular con <b>Spring Modulith +
+              arquitectura hexagonal + DDD + virtual threads</b>, <b>Kafka 3.9.2 KRaft</b> con Transactional Outbox
+            atómico, DLT e idempotencia por eventId, <b>Resilience4j</b>, <b>MongoDB ACID + Mongock</b> y <b>Spring
+              Security</b> con JWT, RBAC por X-Tenant-ID, rate limiting, CORS allowlist y controles anti-IDOR validados
+            con Testcontainers.</p>
           <div class="chips"><span class="chip accent">Java 21</span><span class="chip accent">Spring Boot
               3.5</span><span class="chip accent">Spring Modulith</span><span class="chip accent">Kafka
               3.9.2</span><span class="chip accent">Angular 21</span><span class="chip">MongoDB</span><span
@@ -725,7 +730,13 @@
         <article class="ats-card featured">
           <span class="badge badge-green">🔐 SaaS Admin · Multi-Tenant</span>
           <h3>YadinStore · Admin Dashboard SaaS</h3>
-          <p>Dashboard administrativo para la operación del e-Commerce SaaS, integrado con APIs reales y orientado a la gestión de ventas, órdenes, productos, usuarios y métricas. Desarrollado con <b>Angular 21, Signals, Nx y Module Federation</b>, implementa autenticación <b>JWT</b>, autorización <b>RBAC</b> por rol con guards e interceptores, aislamiento <b>multi-tenant por X-Tenant-ID</b> y acceso admin mediante <b>ticket temporal de un solo uso</b> sin exponer credenciales en el navegador. Consume la API Spring Boot hardened con rate limiting, CORS restringido y protección anti-IDOR; arquitectura lista para evolucionar como <b>remote MFE</b>.</p>
+          <p>Dashboard administrativo para la operación del e-Commerce SaaS, integrado con APIs reales y orientado a la
+            gestión de ventas, órdenes, productos, usuarios y métricas. Desarrollado con <b>Angular 21, Signals, Nx y
+              Module Federation</b>, implementa autenticación <b>JWT</b>, autorización <b>RBAC</b> por rol con guards e
+            interceptores, aislamiento <b>multi-tenant por X-Tenant-ID</b> y acceso admin mediante <b>ticket temporal de
+              un solo uso</b> sin exponer credenciales en el navegador. Consume la API Spring Boot hardened con rate
+            limiting, CORS restringido y protección anti-IDOR; arquitectura lista para evolucionar como <b>remote
+              MFE</b>.</p>
           <div class="chips"><span class="chip accent">Angular 21</span><span class="chip accent">TypeScript</span><span
               class="chip accent">Signals</span><span class="chip">Nx</span><span class="chip">Module
               Federation</span><span class="chip">Spring Security</span><span class="chip">JWT</span><span
@@ -737,7 +748,14 @@
         <article class="ats-card featured">
           <span class="badge badge-green">⚡ Backend · Event-Driven</span>
           <h3>YadinStore · Back-end API — Spring + Kafka</h3>
-          <p>API REST Java 21 con <b>Spring Boot 3.5 y Spring Modulith</b> como monolito modular con arquitectura hexagonal, DDD y virtual threads. <b>Kafka 3.9.2 KRaft</b> opera con Transactional Outbox atómico, DLT para poison messages e idempotencia por eventId (exactly-once); <b>Resilience4j</b> aporta circuit breaker, retry y bulkhead. La seguridad end-to-end combina <b>Spring Security + JWT, RBAC</b> por X-Tenant-ID, rate limiting por tenant, CORS allowlist y guards anti-IDOR con tests. La persistencia usa <b>MongoDB ACID</b> multi-documento, migraciones con <b>Mongock</b> y calidad con <b>Testcontainers + JaCoCo</b>. Dashboard server-side de actividad Kafka vía <b>SASL_SSL</b> sin exponer credenciales al navegador, con <b>Micrometer</b> para métricas p95 HTTP.</p>
+          <p>API REST Java 21 con <b>Spring Boot 3.5 y Spring Modulith</b> como monolito modular con arquitectura
+            hexagonal, DDD y virtual threads. <b>Kafka 3.9.2 KRaft</b> opera con Transactional Outbox atómico, DLT para
+            poison messages e idempotencia por eventId (exactly-once); <b>Resilience4j</b> aporta circuit breaker, retry
+            y bulkhead. La seguridad end-to-end combina <b>Spring Security + JWT, RBAC</b> por X-Tenant-ID, rate
+            limiting por tenant, CORS allowlist y guards anti-IDOR con tests. La persistencia usa <b>MongoDB ACID</b>
+            multi-documento, migraciones con <b>Mongock</b> y calidad con <b>Testcontainers + JaCoCo</b>. Dashboard
+            server-side de actividad Kafka vía <b>SASL_SSL</b> sin exponer credenciales al navegador, con
+            <b>Micrometer</b> para métricas p95 HTTP.</p>
           <div class="chips"><span class="chip accent">Java 21</span><span class="chip accent">Kafka 3.9.2</span><span
               class="chip accent">Spring Modulith</span><span class="chip">Transactional Outbox</span><span
               class="chip">DLT</span><span class="chip">Resilience4j</span><span class="chip">MongoDB</span><span
@@ -749,7 +767,14 @@
         <article class="ats-card">
           <span class="badge badge-slate">🔧 CI/CD Live · Jenkins + Observabilidad</span>
           <h3>YadinStore · CI/CD Live — Jenkins &amp; Observabilidad</h3>
-          <p>Stack CI/CD y observabilidad Cloud-Native integrado con <b>GitHub Actions y Jenkins 2.468.2</b> mediante Pipeline as Code (Jenkinsfile), <b>Docker/DinD</b> y automatización completa del ciclo build, test y empaquetado. El backend Spring Boot está instrumentado con <b>Micrometer</b> (Outbox, Kafka, p95 HTTP) centralizando métricas en <b>Prometheus</b> y visualización en <b>Grafana 10.4.3</b>, mientras <b>Elasticsearch 8.15.3 + Kibana</b> proporcionan trazabilidad y análisis de logs; <b>JasperReports</b> genera reportes PDF de órdenes. Diseñado bajo restricciones reales de free-tier: logs sanitizados, almacenamiento volátil controlado y separación explícita local vs producción. Si PC/agente hibernado: <b>OFFLINE</b> y Elasticsearch <b>LOCAL ONLY</b> en amarillo = comportamiento esperado, no bug.</p>
+          <p>Stack CI/CD y observabilidad Cloud-Native integrado con <b>GitHub Actions y Jenkins 2.468.2</b> mediante
+            Pipeline as Code (Jenkinsfile), <b>Docker/DinD</b> y automatización completa del ciclo build, test y
+            empaquetado. El backend Spring Boot está instrumentado con <b>Micrometer</b> (Outbox, Kafka, p95 HTTP)
+            centralizando métricas en <b>Prometheus</b> y visualización en <b>Grafana 10.4.3</b>, mientras
+            <b>Elasticsearch 8.15.3 + Kibana</b> proporcionan trazabilidad y análisis de logs; <b>JasperReports</b>
+            genera reportes PDF de órdenes. Diseñado bajo restricciones reales de free-tier: logs sanitizados,
+            almacenamiento volátil controlado y separación explícita local vs producción. Si PC/agente hibernado:
+            <b>OFFLINE</b> y Elasticsearch <b>LOCAL ONLY</b> en amarillo = comportamiento esperado, no bug.</p>
           <div class="chips"><span class="chip">GitHub Actions</span><span class="chip">Jenkins 2.468.2</span><span
               class="chip">Prometheus</span><span class="chip">Grafana</span><span
               class="chip">Elasticsearch</span><span class="chip">Kibana</span><span class="chip">Micrometer</span>
@@ -772,24 +797,36 @@
         <article class="ats-card">
           <span class="badge badge-slate">fui colaborador fullstack al código</span>
           <h3>Marketplace de comercio electrónico VE&CO (Web)</h3>
-          <p>Marketplace de e-commerce colombiano para que empresas y emprendedores publiquen, vendan y gestionen productos. Plataforma web con arquitectura moderna en la nube, pagos electrónicos seguros y cumplimiento de la normativa colombiana de comercio electrónico y protección de datos.</p>
-          <div class="chips"><span class="chip">Angular</span><span class="chip">Node.js</span><span class="chip">Express</span><span class="chip">SCSS</span><span class="chip">Firebase</span><span class="chip">Fly.io</span><span class="chip">TypeScript</span><span class="chip">MongoDB</span></div>
+          <p>Marketplace de e-commerce colombiano para que empresas y emprendedores publiquen, vendan y gestionen
+            productos. Plataforma web con arquitectura moderna en la nube, pagos electrónicos seguros y cumplimiento de
+            la normativa colombiana de comercio electrónico y protección de datos.</p>
+          <div class="chips"><span class="chip">Angular</span><span class="chip">Node.js</span><span
+              class="chip">Express</span><span class="chip">SCSS</span><span class="chip">Firebase</span><span
+              class="chip">Fly.io</span><span class="chip">TypeScript</span><span class="chip">MongoDB</span></div>
           <a class="link" href="https://veycoo.com.co/" target="_blank">veycoo.com.co →</a>
         </article>
 
         <article class="ats-card">
           <span class="badge badge-slate">fui colaborador fullstack al código</span>
           <h3>App de PlayStore: VE&CO, Marketplace de comercio electrónico</h3>
-          <p>App omnicanal que conecta compradores y vendedores: web, móvil y back-end en la nube con autenticación segura, gestión de productos, pagos electrónicos, logística, mensajería y servicios desplegados en Cloud bajo arquitectura escalable orientada a microservicios, seguridad y cumplimiento normativo.</p>
-          <div class="chips"><span class="chip">Angular</span><span class="chip">Node.js</span><span class="chip">Express</span><span class="chip">SCSS</span><span class="chip">Firebase</span><span class="chip">Fly.io</span><span class="chip">Java</span><span class="chip">TypeScript</span><span class="chip">MongoDB</span><span class="chip">PlayStore</span><span class="chip">Capacitor</span><span class="chip">Ionic</span></div>
-          <a class="link" href="https://play.google.com/store/apps/details?id=app.veycoo.co&hl=es_CO" target="_blank">PlayStore →</a>
+          <p>App omnicanal que conecta compradores y vendedores: web, móvil y back-end en la nube con autenticación
+            segura, gestión de productos, pagos electrónicos, logística, mensajería y servicios desplegados en Cloud
+            bajo arquitectura escalable orientada a microservicios, seguridad y cumplimiento normativo.</p>
+          <div class="chips"><span class="chip">Angular</span><span class="chip">Node.js</span><span
+              class="chip">Express</span><span class="chip">SCSS</span><span class="chip">Firebase</span><span
+              class="chip">Fly.io</span><span class="chip">Java</span><span class="chip">TypeScript</span><span
+              class="chip">MongoDB</span><span class="chip">PlayStore</span><span class="chip">Capacitor</span><span
+              class="chip">Ionic</span></div>
+          <a class="link" href="https://play.google.com/store/apps/details?id=app.veycoo.co&hl=es_CO"
+            target="_blank">PlayStore →</a>
         </article>
 
         <article class="ats-card">
           <span class="badge badge-slate">Actual</span>
           <h3>Portafolio adaptable a empresas · Insurance CRM (PHP/MySQL) · App educativa Full-Stack (MySQL + RBAC)</h3>
           <p>Portafolio Angular + Node/Express + SCSS + RxJS + Firebase (GCP). Insurance CRM React + TypeScript +
-            Tailwind + Flask + PostgreSQL. App educativa Full-Stack Angular + Express + MySQL + RxJS + CORS + guards + RBAC.</p>
+            Tailwind + Flask + PostgreSQL. App educativa Full-Stack Angular + Express + MySQL + RxJS + CORS + guards +
+            RBAC.</p>
           <div class="chips"><span class="chip">Angular</span><span class="chip">React</span><span
               class="chip">TypeScript</span><span class="chip">Node.js</span><span class="chip">Python/Flask</span><span
               class="chip">Tailwind</span></div>
@@ -825,7 +862,8 @@
           <div class="ats-skill-row"><span>MySQL / PostgreSQL</span><span class="level">●●●●○ Avanzado</span></div>
           <div class="ats-skill-row"><span>MongoDB</span><span class="level">●●●●○ Avanzado</span></div>
           <div class="ats-skill-row"><span>Firebase / GCP</span><span class="level">●●●●○ Avanzado</span></div>
-          <div class="ats-skill-row"><span>Docker / Kubernetes (AKS)</span><span class="level">●●●●○ Avanzado</span></div>
+          <div class="ats-skill-row"><span>Docker / Kubernetes (AKS)</span><span class="level">●●●●○ Avanzado</span>
+          </div>
           <div class="ats-skill-row"><span>Kafka / Event-Driven (KRaft, Outbox, DLT)</span><span class="level">●●●○○
               Intermedio-Avanzado</span></div>
           <div class="ats-skill-row"><span>Keycloak / NextAuth (IAM)</span><span class="level">●●●○○ Intermedio</span>
@@ -843,9 +881,11 @@
           <h4>Especialidades &amp; Metodologías</h4>
           <div class="ats-tags">
             <span class="ats-tag accent">Clean Arch</span><span class="ats-tag accent">Hexagonal</span><span
-              class="ats-tag accent">DDD</span><span class="ats-tag accent">SOLID</span><span class="ats-tag accent">MicroFront-Ends
+              class="ats-tag accent">DDD</span><span class="ats-tag accent">SOLID</span><span
+              class="ats-tag accent">MicroFront-Ends
               (MFE)</span><span class="ats-tag accent">REST API</span><span class="ats-tag accent">CI/CD</span><span
-              class="ats-tag accent">OWASP Top 10</span><span class="ats-tag accent">SDD</span><span class="ats-tag accent">ITIL
+              class="ats-tag accent">OWASP Top 10</span><span class="ats-tag accent">SDD</span><span
+              class="ats-tag accent">ITIL
               v4</span><span class="ats-tag">Scrum</span>
           </div>
         </div>
@@ -868,9 +908,10 @@
           <h4>Frontend · IA · Ecosistema</h4>
           <div class="ats-tags">
             <span class="ats-tag accent">TailwindCSS</span><span class="ats-tag accent">WordPress/ACF Pro</span><span
-              class="ats-tag accent">RxJS</span><span class="ats-tag accent">Vite</span><span class="ats-tag">esbuild</span><span
-              class="ats-tag">Redux</span><span class="ats-tag accent">MCP</span><span
-              class="ats-tag accent">LLM</span><span class="ats-tag accent">EmailJS</span><span class="ats-tag accent">SEO</span><span
+              class="ats-tag accent">RxJS</span><span class="ats-tag accent">Vite</span><span
+              class="ats-tag">esbuild</span><span class="ats-tag">Redux</span><span
+              class="ats-tag accent">MCP</span><span class="ats-tag accent">LLM</span><span
+              class="ats-tag accent">EmailJS</span><span class="ats-tag accent">SEO</span><span
               class="ats-tag accent">CORS</span>
           </div>
         </div>
