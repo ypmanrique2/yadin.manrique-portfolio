@@ -1053,7 +1053,7 @@
             <span class="badge flag">⭐ e-Commerce SaaS</span>
             <h3>YadinStore · e-Shop SaaS</h3>
             <p>
-              <strong>S:</strong> SaaS multi-vendor debía soportar catálogo, carrito, checkout y notificaciones con aislamiento por tenant y evolución sin acoplar dominios. <strong>T:</strong> Diseñar front modular y back event-driven con consistencia transaccional y seguridad por rol. <strong>A:</strong> Front <strong>Angular 21 + Nx + Module Federation</strong> (Signals) preparado como host/remote; back <strong>monolito modular Spring Modulith + hexagonal + DDD + virtual threads</strong>, <strong>Kafka 3.9.2 KRaft</strong> con <strong>Transactional Outbox</strong> (publicación atómica), <strong>DLT</strong> para poison messages e <strong>idempotencia por eventId (exactly-once)</strong>, <strong>Resilience4j</strong> (circuit breaker, retry, bulkhead), <strong>MongoDB ACID + Mongock</strong>, <strong>Spring Security + JWT + RBAC (X-Tenant-ID) + rate limiting + CORS allowlist + anti-IDOR</strong>, <strong>Docker + Testcontainers + GitHub Actions</strong>. <strong>R:</strong> Flujo outbox→Kafka→DLT trazable y verificado con <strong>Testcontainers</strong> (aislamiento por tenant validado); despliegue honesto en <strong>free-tier Render</strong> con observabilidad local/prod separada y recursos contenidos — sin claims de p95 a escala productiva.
+              Plataforma e-Commerce SaaS multi-vendor para que múltiples vendedores gestionen catálogo, carrito, checkout y notificaciones con aislamiento por tenant. El front-end utiliza <strong>Angular 21, Nx y Module Federation</strong> con Signals preparado como host/remote; el back-end adopta un monolito modular con <strong>Spring Modulith + arquitectura hexagonal + DDD + virtual threads</strong>, <strong>Kafka 3.9.2 KRaft</strong> con Transactional Outbox atómico, DLT e idempotencia por eventId, <strong>Resilience4j</strong>, <strong>MongoDB ACID + Mongock</strong> y <strong>Spring Security</strong> con JWT, RBAC por X-Tenant-ID, rate limiting, CORS allowlist y controles anti-IDOR validados con Testcontainers.
             </p>
             <div class="chips">
               <span class="chip">Java 21</span><span class="chip">Spring Boot 3.5</span><span class="chip">Spring Modulith</span>
@@ -1077,7 +1077,7 @@
             <span class="badge actual">🔐 SaaS Admin · Multi-Tenant</span>
             <h3>YadinStore · Admin Dashboard SaaS Multi-Vendor</h3>
             <p>
-              <strong>S:</strong> La operación SaaS necesitaba gestionar ventas, órdenes, productos, usuarios y métricas sin exponer credenciales en el navegador. <strong>T:</strong> Entregar dashboard seguro, multi-tenant e integrable como micro-frontend. <strong>A:</strong> <strong>Angular 21 + Signals + Nx + Module Federation</strong>, autenticación <strong>JWT</strong> + autorización <strong>RBAC</strong> por rol con guards e interceptores, aislamiento <strong>multi-tenant por X-Tenant-ID</strong>, acceso admin vía <strong>ticket temporal de un solo uso</strong> (sin credenciales persistentes), consumo de API <strong>Spring Boot hardened</strong> con <strong>rate limiting + CORS restringido + anti-IDOR</strong>. <strong>R:</strong> Acceso admin auditable sin secretos en cliente, autorización validada por tests, listo para evolucionar como <strong>remote MFE</strong>; honesto: demo solo lectura con credenciales temporales, no producción multi-región.
+              Dashboard administrativo para la operación del e-Commerce SaaS, integrado con APIs reales y orientado a la gestión de ventas, órdenes, productos, usuarios y métricas. Desarrollado con <strong>Angular 21, Signals, Nx y Module Federation</strong>, implementa autenticación <strong>JWT</strong>, autorización <strong>RBAC</strong> por rol con guards e interceptores, aislamiento <strong>multi-tenant por X-Tenant-ID</strong> y acceso admin mediante <strong>ticket temporal de un solo uso</strong> sin exponer credenciales en el navegador. Consume la API <strong>Spring Boot hardened</strong> con rate limiting, CORS restringido y protección anti-IDOR; arquitectura lista para evolucionar como <strong>remote MFE</strong>.
             </p>
             <div class="chips">
               <span class="chip">Angular 21</span><span class="chip">TypeScript</span><span class="chip">Signals</span>
@@ -1099,7 +1099,7 @@
             <span class="badge actual">⚡ Backend · Event-Driven</span>
             <h3>YadinStore · Back-end API - Spring + Kafka</h3>
             <p>
-              <strong>S:</strong> Publicación a Kafka debía ser atómica respecto a la transacción de negocio y resiliente sin perder ni duplicar eventos. <strong>T:</strong> API REST Java 21 con semántica exactly-once, persistencia consistente y dashboard Kafka sin exponer secretos. <strong>A:</strong> <strong>Java 21 + Spring Boot 3.5 + Spring Modulith</strong> (hexagonal, DDD, puertos/adaptadores, virtual threads), <strong>Kafka 3.9.2 KRaft</strong> con <strong>Transactional Outbox atómico + DLT + idempotencia por eventId</strong>, <strong>Resilience4j</strong> (circuit breaker, retry, bulkhead), <strong>Spring Security + JWT + RBAC + X-Tenant-ID + rate limiting por tenant + CORS allowlist + anti-IDOR</strong> con tests, <strong>MongoDB ACID multi-documento + Mongock + Testcontainers + JaCoCo</strong>, <strong>Micrometer</strong> (Outbox, Kafka, p95 HTTP) y dashboard server-side <strong>SASL_SSL</strong> sin credenciales en navegador. <strong>R:</strong> Exactly-once verificado con tests de idempotencia y <strong>Testcontainers</strong>, DLT aislando poison messages, métricas <strong>p95</strong> y lag visibles; honesto: recursos contenidos para <strong>free-tier Render</strong>, sin SLA de alta disponibilidad productiva.
+              API REST Java 21 con <strong>Spring Boot 3.5 y Spring Modulith</strong> como monolito modular con arquitectura hexagonal, DDD y virtual threads. <strong>Kafka 3.9.2 KRaft</strong> opera con Transactional Outbox atómico, DLT para poison messages e idempotencia por eventId (exactly-once); <strong>Resilience4j</strong> aporta circuit breaker, retry y bulkhead. La seguridad end-to-end combina <strong>Spring Security + JWT, RBAC</strong> por X-Tenant-ID, rate limiting por tenant, CORS allowlist y guards anti-IDOR con tests. La persistencia usa <strong>MongoDB ACID</strong> multi-documento, migraciones con <strong>Mongock</strong> y calidad con <strong>Testcontainers + JaCoCo</strong>. Incluye dashboard server-side de actividad Kafka (brokers, topics, consumer groups y lag) consultado vía <strong>SASL_SSL</strong> sin exponer credenciales al navegador, con <strong>Micrometer</strong> para métricas p95 HTTP y recursos contenidos para free-tier.
             </p>
             <div class="chips">
               <span class="chip">Java 21</span><span class="chip">Spring Boot 3.5</span><span class="chip">Spring Modulith</span>
@@ -1118,7 +1118,7 @@
             <span class="badge actual">🔧 BE-JD · CI/CD Live · Jenkins + Observabilidad</span>
             <h3>YadinStore · CI/CD Live - Jenkins & Observabilidad</h3>
             <p>
-              <strong>S:</strong> Se requería pipeline trazable y observabilidad con recursos free-tier limitados y sin infra dedicada. <strong>T:</strong> CI/CD Cloud-Native + métricas/logs bajo restricciones reales. <strong>A:</strong> <strong>GitHub Actions + Jenkins 2.468.2 Pipeline as Code</strong> (Jenkinsfile) + <strong>Docker/DinD</strong> automatizando build/test/package/Dockerfile, backend instrumentado con <strong>Micrometer (Outbox, Kafka, p95 HTTP)</strong> → <strong>Prometheus → Grafana 10.4.3</strong>, <strong>Elasticsearch 8.15.3 + Kibana</strong> para trazabilidad + <strong>JasperReports</strong> PDF, sanitización de logs + rate limiting + almacenamiento volátil y separación observabilidad local vs producción. <strong>R:</strong> Pipeline valida compilación, tests, empaquetado y build de imagen en cada push; dashboards exponen <strong>p95</strong> y consumer lag; honesto free-tier: si PC/agente hibernado ⇒ <strong>OFFLINE</strong> y Elasticsearch <strong>LOCAL ONLY</strong> en amarillo es comportamiento esperado, no bug.
+              Stack CI/CD y observabilidad Cloud-Native integrado con <strong>GitHub Actions y Jenkins 2.468.2</strong> mediante Pipeline as Code (Jenkinsfile), <strong>Docker/DinD</strong> y automatización completa del ciclo build, test y empaquetado. El backend Spring Boot está instrumentado con <strong>Micrometer</strong> (Outbox, Kafka, p95 HTTP) centralizando métricas en <strong>Prometheus</strong> y visualización en <strong>Grafana 10.4.3</strong>, mientras <strong>Elasticsearch 8.15.3 + Kibana</strong> proporcionan trazabilidad y análisis de logs; <strong>JasperReports</strong> genera reportes PDF de órdenes. Diseñado bajo restricciones reales de free-tier: logs sanitizados, almacenamiento volátil controlado y separación explícita entre observabilidad local y producción. Si PC/agente hibernado se muestra OFFLINE, y Elasticsearch LOCAL ONLY en amarillo — es el comportamiento esperado del free-tier, no un bug.
             </p>
             <div class="chips">
               <span class="chip">GitHub Actions</span><span class="chip">Jenkins 2.468.2</span><span class="chip">Jenkinsfile</span>
@@ -1136,7 +1136,7 @@
             <span class="badge actual">fui colaborador fullstack al código</span>
             <h3>Marketplace de comercio electrónico VE&CO (Web)</h3>
             <p>
-              <strong>S:</strong> Marketplace colombiano debía conectar empresas/emprendedores para publicar, vender y gestionar productos con pagos seguros y normativa local (protección de datos + comercio electrónico). <strong>T:</strong> Plataforma web cloud-native con cumplimiento y escalabilidad. <strong>A:</strong> <strong>Angular + Node.js/Express + TypeScript + SCSS</strong>, <strong>Firebase/Fly.io</strong>, <strong>MongoDB</strong>, arquitectura moderna en la nube. <strong>R:</strong> Marketplace operativo con pagos electrónicos seguros — <strong>Core Contributor FullStack al team privado</strong>.
+              Marketplace de e-commerce colombiano para que empresas y emprendedores publiquen, vendan y gestionen productos. Plataforma web con arquitectura moderna en la nube, pagos electrónicos seguros y cumplimiento de la normativa colombiana de comercio electrónico y protección de datos.
             </p>
             <div class="chips">
               <span class="chip">Angular</span><span class="chip">Node.js</span><span class="chip">Express</span>
@@ -1151,7 +1151,7 @@
             <span class="badge actual">fui colaborador fullstack al código</span>
             <h3>App de PlayStore: VE&CO, Marketplace de comercio electrónico</h3>
             <p>
-              <strong>S:</strong> Se requería app omnicanal (web + móvil + back-end Cloud) para conectar compradores/vendedores con auth segura, catálogo, pagos, logística y mensajería. <strong>T:</strong> Solución escalable, segura y normativa. <strong>A:</strong> <strong>Angular + Node.js/Express + TypeScript + SCSS + Firebase/Fly.io + MongoDB</strong>, <strong>Java</strong>, <strong>Ionic/Capacitor (PlayStore)</strong>, arquitectura orientada a microservicios. <strong>R:</strong> App publicada en <strong>PlayStore</strong> con despliegue Cloud y cumplimiento — <strong>Core Contributor FullStack al team privado</strong>.
+              App omnicanal que conecta compradores y vendedores: web, móvil y back-end en la nube con autenticación segura, gestión de productos, pagos electrónicos, logística, mensajería y servicios desplegados en Cloud bajo arquitectura escalable orientada a microservicios, seguridad y cumplimiento normativo.
             </p>
             <div class="chips">
               <span class="chip">Angular</span><span class="chip">Node.js</span><span class="chip">Express</span>
@@ -1167,7 +1167,7 @@
             <span class="badge flag">⭐ Flagship · eShop OEM SaaS</span>
             <h3>eShop corporativa de alta disponibilidad</h3>
             <p>
-              <strong>S:</strong> Corporación requería e-commerce privado para transacciones masivas con <strong>RBAC estricto</strong> y alta disponibilidad en picos de demanda. <strong>T:</strong> Diseñar eShop Hardened con IAM y operación escalable. <strong>A:</strong> <strong>Java + Spring Boot + MongoDB</strong> + <strong>Keycloak (IAM)</strong>, <strong>Spring Security</strong>, <strong>RBAC</strong> por rol, <strong>NextAuth</strong>, <strong>React/Next.js + TypeScript</strong> y controles <strong>hardened</strong>. <strong>R:</strong> Operación privada, auditable y escalable para temporada alta con seguridad corporativa.
+              Solución de e-commerce corporativa Hardened que combina Java + Spring Boot y MongoDB con la seguridad de Keycloak (IAM). Diseñada para transacciones masivas bajo modelo por roles RBAC estricto: operación privada, escalable y de alta fiabilidad para corporaciones con requerimientos críticos de seguridad y disponibilidad, aún en temporada alta.
             </p>
             <div class="chips">
               <span class="chip">React</span><span class="chip">NextJs</span><span class="chip">Java</span>
@@ -1183,7 +1183,7 @@
             <span class="badge actual">Actual</span>
             <h3>Portafolio adaptable a empresas</h3>
             <p>
-              <strong>S:</strong> Empresa productora necesitaba exhibir catálogo y captar ventas online sin acoplar front/back. <strong>T:</strong> Portafolio adaptable de mediana complejidad. <strong>A:</strong> <strong>Angular + Node.js/Express (APIs) + SCSS + Firebase + RxJS</strong> con diseño responsive y datos reactivos. <strong>R:</strong> Sitio adaptable que incrementa visibilidad y ventas online — reutilizable como plantilla empresarial.
+              Página de mediana complejidad adaptable a empresas productoras que desean exhibir sus productos, incrementando sus ventas en línea. Angular en front-end, back-end con Node.js y Express para APIs, estilos escalables con SCSS, soporte en nube con Firebase y manejo de datos reactivos con RxJS.
             </p>
             <div class="chips">
               <span class="chip">Angular</span><span class="chip">Node.js</span><span class="chip">Express</span>

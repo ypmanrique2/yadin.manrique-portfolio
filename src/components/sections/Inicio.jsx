@@ -18,7 +18,7 @@ export const Inicio = () => {
                     </h1>
 
                     <p className="text-gray-300 text-lg mb-6">
-                        Full Stack Developer · <b className="text-green-500 font-semibold">React</b> / <b className="text-green-500 font-semibold">Angular</b> / <b className="text-green-500 font-semibold">TypeScript</b> · Node.js · Java
+                        Full Stack Developer · <b className="text-green-500 font-semibold">Java 21</b> · <b className="text-green-500 font-semibold">Spring Boot 3.5</b> · <b className="text-green-500 font-semibold">Kafka KRaft</b> · <b className="text-green-500 font-semibold">AKS</b> · React / Angular / TypeScript
                     </p>
 
                     <div className="flex flex-wrap justify-center gap-4 mb-8">
