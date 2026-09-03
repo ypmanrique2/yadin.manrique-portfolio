@@ -1,0 +1,53 @@
+# Yadin Manrique — Portafolio 2026
+
+> Full Stack Developer Java 21, Spring Boot 3.5, Kafka KRaft (Transactional Outbox, DLT, Exactly-Once), Angular 21, React 19, TypeScript, Node.js, Clean/Hexagonal, DDD, Event-Driven, Cloud SaaS GCP/Azure, Docker / Kubernetes (AKS), ITIL v4. 6+ años, 12+ proyectos.
+
+## URL canónica
+- Portafolio: https://ypmanrique2.github.io/yadin.manrique-portfolio/
+- CV PREVIEW (humano + print ATS): https://ypmanrique2.github.io/yadin.manrique-portfolio/CV_Fusion_FE_2026_PREVIEW.html
+- CV ATS (AI-fetchable, single-column): https://ypmanrique2.github.io/yadin.manrique-portfolio/CV_Yadin_Manrique_ATS_2026.html
+
+## Resumen profesional (ES)
+Desarrollador Full Stack con 6 años de evolución en ecosistema Java 8–21, Node.js y front-end moderno (React 19, Angular, TypeScript). Especializado en arquitecturas Cloud-Native: Clean Architecture, Hexagonal, DDD, SOLID y Event-Driven con Kafka (KRaft) y SSE. Experiencia en desarrollo asistido por IA (SDD, MCP, LLM) y seguridad (OWASP Top 10, ASVS, IDOR). SaaS con despliegue en GCP, Aiven y Fly.io. Certificado ITIL v4, mesa nivel 2 con SLA >95%.
+
+## Experiencia — honest titles
+- **Aprendiz SENA — Desarrollador Full Stack (GCP/Intranet) @ COMFAORIENTE** — I.E. Gimnasio Campestre ComfaOriente — ABR.2025–OCT.2025 — Intranet SaaS GCP, RBAC, ISO 9001/NTC 6744.
+- **Back — Desarrollo y Datos** — Estudio Galicia & Cía. Abogados Consultores EGSAC — FEB.2024–AGO.2024 — MySQL, Python/Java, acuerdos de pago 15m→2–3m.
+- **Agente Mesa de Servicio Nivel 2** — Pear Solutions S.A.S. — SEP.2020–DIC.2023 — ITIL v4, SLA >95%, BMC Helix.
+
+## Proyectos flagship (STAR, honest free-tier)
+- **YadinStore · e-Shop SaaS** — https://yadinstore-frontend.onrender.com/ — S: SaaS multi-vendor multi-tenant. T: Front modular + back exactly-once. A: Angular 21 Nx MF, Spring Modulith hexagonal DDD, Kafka KRaft Outbox+DLT+idempotencia eventId, Resilience4j, MongoDB ACID Mongock, Security JWT RBAC X-Tenant-ID, Testcontainers. R: flujo trazable, free-tier Render.
+- **YadinStore · Admin Dashboard SaaS** — https://yadinstore-admin.onrender.com/ — S: Operación sin exponer credenciales. T: Dashboard seguro MFE. A: Angular Signals Nx MF, JWT RBAC guards, X-Tenant-ID, ticket temporal 1 uso. R: sin secretos en cliente, listo como remote MFE.
+- **YadinStore · Back-end API Spring + Kafka** — https://yadinstore-backend.onrender.com/kafka-dashboard.html — S: Publicación atómica resiliente. T: API exactly-once + dashboard SASL_SSL. A: Java 21 Spring Boot 3.5 Modulith hexagonal virtual threads DDD, Outbox atómico DLT idempotencia, Resilience4j, Security, MongoDB ACID, Micrometer p95. R: Testcontainers, p95 visible.
+- **YadinStore · CI/CD Live Jenkins & Observabilidad** — https://yadinstore-jenkins-obs-live.onrender.com/jenkins-dashboard.html — S: Pipeline trazable free-tier. T: CI/CD + métricas/logs. A: GitHub Actions Jenkins 2.468.2 Pipeline as Code Docker DinD, Micrometer → Prometheus → Grafana 10.4.3, ES 8.15.3 Kibana, JasperReports. R: p95/lag en Grafana; OFFLINE si agente hibernado y ES LOCAL ONLY amarillo = esperado, no bug.
+- Otros: eShop OEM SaaS, VE&CO Marketplace, Portafolio adaptable, Landing PHP, Insurance CRM, App educativa Full-Stack MySQL + RBAC (ex-Pokédex), Intranet Hardened GCP.
+
+## Habilidades (dedup K8s)
+- Core: Angular v10–v21 (5), React 19 (4), Next.js/SSR (4), TypeScript (5), Node/Express (4), Java 21/Spring Boot 3 (4), Python/Flask (3), Tailwind/SCSS (4), WordPress/ACF PHP (4), RxJS/Signals/Redux (4), Vite/esbuild (3)
+- Datos/Cloud/Infra: MySQL/PostgreSQL (4), MongoDB (4), Firebase/GCP (4), Docker / Kubernetes (AKS) (4), Kafka/Event-Driven (3), Keycloak/NextAuth (3), SQLite/REST (4), Render/Aiven/Fly.io (3), Azure (3), GitHub Actions CI-CD (4), EmailJS/Brevo (3), Jenkins/Prometheus/Micrometer (4), Kibana/Grafana/ES free (4)
+- Tags: Clean, Hexagonal, DDD, SOLID, MFE, REST, CI/CD, OWASP, SDD, ITIL v4, Scrum, SSE, etc.
+
+## Certificaciones — 12 top verificables (resto +9 en portafolio)
+1. Introducción a Kubernetes — DataCamp 08/2026 #49,528,106 AKS — https://www.datacamp.com/completed/statement-of-accomplishment/course/06fa83062327ecb6a730e5e6ac81573f92637f7c
+2. Curso de Backend con Java y Azure — CódigoFacilito 08/2026 573de605 — https://codigofacilito.com/certificates/573de605-9f7c-40ce-a4dc-51a635203f06
+3. Develop for Azure Storage — DataCamp 08/2026 #49,476,429 — https://www.datacamp.com/es/completed/statement-of-accomplishment/course/993912624f124deec14733bc4d5361b59d6570cb
+4. Model Context Protocol: Advanced Topics — DataCamp #49,422,238 — https://www.datacamp.com/completed/statement-of-accomplishment/course/cb2c29a777923e2608e4b39690beb215cd9451a9
+5. ITIL® 4 Foundation — PeopleCert GR671609055YM vigente 2027 — https://www.peoplecert.org/for-corporations/certificate-verification-service
+6. Despliegue de apps web en Azure — CódigoFacilito 05/2026 — https://codigofacilito.com/certificates/41d75233-36a5-445e-bb34-7698828f5874.pdf
+7. Masterclass Docker Rossana Suárez — CódigoFacilito 05/2026 — https://codigofacilito.com/certificates/9647301a-aa76-4a99-8548-4f3cf109cd76.pdf
+8. Introducción a DevOps — CódigoFacilito 05/2026 — https://codigofacilito.com/certificates/31317567-8f94-494c-a34c-0655d1669481.pdf
+9. Java Profesional + Reactiva — CódigoFacilito 05/2026 — https://codigofacilito.com/certificates/876f9324-6548-4849-a70c-79c28b020075.pdf
+10. Deploy profesional en servidores — CódigoFacilito 05/2026 — https://codigofacilito.com/certificates/b2ee76e1-e3e5-4bd4-8af4-26bc3ea6385e.pdf
+11. Inmersión Agentes de IA — Alura ONE 05/2026 — https://app.aluracursos.com/user/ypmanrique15/immersion/certificate/46
+12. Masterclass MCP para empresas + Ruta LLMs — CódigoFacilito 03/2026 — https://codigofacilito.com/certificates/9a7bc1be-1651-4362-9f79ce36375888e8.pdf
++ 9 adicionales en https://ypmanrique2.github.io/yadin.manrique-portfolio/ (incluye C#, Ciberseguridad, Git, Spring, Angular Signals, MEAN, OCI, etc.)
+
+## Contacto
+- Email: ypmanrique15@gmail.com
+- Tel: +57 310 296 5787 (oculto en PREVIEW con 👁, visible en ATS)
+- Ubicación: Cúcuta, Colombia
+- GitHub: https://github.com/ypmanrique2
+- LinkedIn: https://www.linkedin.com/in/yadin-paulo-manrique-marquez-18753910/
+
+## Licencia y fetch
+Este archivo llms.txt y los HTML con JSON-LD (Person, hasCredential, CreativeWork) están optimizados para LLMs y ATS parsers. Contenido multi-idioma ES/EN disponible; PREVIEW y ATS comparten canonical base. Ver sitemap.xml para indexación.
