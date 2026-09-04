@@ -3,7 +3,7 @@ import { RevealOnScroll } from "../RevealOnScroll";
 const projects = [
     {
         title: "YadinStore · e-Shop SaaS",
-        badge: "⭐ e-Commerce SaaS · En desarrollo",
+        badge: "⭐ e-Commerce SaaS · Multi-Vendor · Hardened",
         badgeClass: "bg-green-500/20 text-green-300",
         description:
             "Plataforma e-Commerce SaaS multi-vendor para que múltiples vendedores gestionen catálogo, carrito, checkout y notificaciones con aislamiento por tenant. El front-end utiliza Angular 21, Nx y Module Federation con Signals preparado como host/remote; el back-end adopta un monolito modular con Spring Modulith + arquitectura hexagonal + DDD + virtual threads, Kafka 3.9.2 KRaft con Transactional Outbox atómico, DLT e idempotencia por eventId, Resilience4j, MongoDB ACID + Mongock y Spring Security con JWT, RBAC por X-Tenant-ID, rate limiting, CORS allowlist y controles anti-IDOR validados con Testcontainers.",
@@ -13,7 +13,7 @@ const projects = [
     },
     {
         title: "YadinStore · Admin Dashboard SaaS Multi-Vendor",
-        badge: "🔐 SaaS Admin · Multi-Tenant · En desarrollo",
+        badge: "🔐 SaaS Admin · Multi-Tenant",
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
         description:
             "Dashboard administrativo para la operación del e-Commerce SaaS, integrado con APIs reales y orientado a la gestión de ventas, órdenes, productos, usuarios y métricas. Desarrollado con Angular 21, Signals, Nx y Module Federation, implementa autenticación JWT, autorización RBAC por rol, guards e interceptores, aislamiento multi-tenant mediante X-Tenant-ID y acceso admin mediante ticket temporal de un solo uso sin exponer credenciales en el navegador. Consume el backend Spring Boot hardened con rate limiting, CORS restringido y protección anti-IDOR, con arquitectura lista para evolucionar como remote MFE dentro del ecosistema micro-frontend.",
@@ -23,7 +23,7 @@ const projects = [
     },
     {
         title: "YadinStore · Back-end API - Spring + Kafka",
-        badge: "⚡ Backend · Event-Driven · En desarrollo",
+        badge: "⚡ Backend · Event-Driven",
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
         description:
             "API REST Java 21 con Spring Boot 3.5 y Spring Modulith como monolito modular con arquitectura hexagonal, DDD y virtual threads. Kafka 3.9.2 KRaft opera con Transactional Outbox atómico, DLT para poison messages e idempotencia por eventId (exactly-once); Resilience4j aporta circuit breaker, retry y bulkhead. La seguridad end-to-end combina Spring Security + JWT, RBAC por X-Tenant-ID, rate limiting por tenant, CORS allowlist y guards anti-IDOR con tests. La persistencia usa MongoDB ACID multi-documento, migraciones con Mongock y calidad con Testcontainers + JaCoCo. Incluye dashboard server-side de actividad Kafka (brokers, topics, consumer groups y lag) consultado vía SASL_SSL sin exponer credenciales al navegador, con Micrometer para métricas p95 HTTP y recursos contenidos para free-tier.",
@@ -32,7 +32,7 @@ const projects = [
     },
     {
         title: "YadinStore · CI/CD Live - Jenkins & Observabilidad",
-        badge: "🔧 BE-JD · CI/CD Live · Jenkins + Observabilidad · En desarrollo",
+        badge: "🔧 BE-JD · CI/CD Live · Jenkins + Observabilidad",
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
         description:
             "Stack CI/CD y observabilidad Cloud-Native integrado con GitHub Actions y Jenkins mediante Pipeline as Code (Jenkinsfile), Docker/DinD y automatización completa del ciclo build, test y empaquetado. El backend Spring Boot está instrumentado con Micrometer (Outbox, Kafka, p95 HTTP) centralizando métricas en Prometheus y visualización en Grafana, mientras Elasticsearch + Kibana proporcionan trazabilidad y análisis de logs; JasperReports genera reportes PDF de órdenes. Diseñado bajo restricciones reales de free-tier: logs sanitizados, almacenamiento volátil controlado y separación explícita entre observabilidad local y producción. Si PC/agente hibernado se muestra OFFLINE, y Elasticsearch LOCAL ONLY en amarillo — es el comportamiento esperado del free-tier, no un bug.",
@@ -41,7 +41,7 @@ const projects = [
     },
 {
         title: "Marketplace de comercio electrónico VE&CO (Web)",
-        badge: "fui colaborador fullstack al código",
+        badge: "Colaborador fullstack al código núcleo (Core Contributor)",
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
         description:
             "Marketplace de e-commerce colombiano para que empresas y emprendedores publiquen, vendan y gestionen productos. Plataforma web con arquitectura moderna en la nube, pagos electrónicos seguros y cumplimiento de la normativa colombiana de comercio electrónico y protección de datos.",
@@ -50,7 +50,7 @@ const projects = [
     },
 {
         title: "App de PlayStore: VE&CO, Marketplace de comercio electrónico",
-        badge: "fui colaborador fullstack al código",
+        badge: "Colaborador fullstack al código núcleo (Core Contributor)",
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
         description:
             "App omnicanal que conecta compradores y vendedores: web, móvil y back-end en la nube con autenticación segura, gestión de productos, pagos electrónicos, logística, mensajería y servicios desplegados en Cloud bajo arquitectura escalable orientada a microservicios, seguridad y cumplimiento normativo.",

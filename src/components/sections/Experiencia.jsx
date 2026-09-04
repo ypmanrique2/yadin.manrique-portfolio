@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { RevealOnScroll } from "../RevealOnScroll";
 
 const roles = [
@@ -43,6 +44,9 @@ const roles = [
 ];
 
 export const Experiencia = () => {
+    const [visiblePii, setVisiblePii] = useState({});
+    const togglePii = (idx) =>
+        setVisiblePii((prev) => ({ ...prev, [idx]: !prev[idx] }));
     return (
         <section
             id="experiencia"
@@ -84,8 +88,41 @@ export const Experiencia = () => {
                                         </li>
                                     ))}
                                 </ul>
-                                <p className="border-t border-dashed border-white/10 pt-3 mt-3 font-mono text-xs text-gray-400">
-                                    {role.contact}
+                                {/* REVERSIBLE PII ojo — por privacidad terceros: wrap en .pii-hidden + toggle 👁. Quitar span/button para revertir — paridad 1:1 con CV_Fusion_FE_2026_PREVIEW.html:1010 */}
+                                <p className="contact-li border-t border-dashed border-white/10 pt-3 mt-3 font-mono text-xs text-gray-400 flex flex-wrap items-center gap-x-1 gap-y-1 leading-relaxed print:hidden">
+                                    <span>Ref. verificable</span>
+                                    <span
+                                        className="pii-hidden"
+                                        style={{
+                                            display: visiblePii[key] ? "inline" : "none",
+                                            wordBreak: "break-word",
+                                        }}
+                                    >
+                                        {role.contact}
+                                    </span>
+                                    <button
+                                        type="button"
+                                        className="pii-toggle ml-1 inline-flex items-center justify-center rounded-md border border-white/10 bg-white/5 px-1.5 py-0.5 text-[12px] leading-none cursor-pointer hover:border-green-500/30 hover:bg-white/10 transition-colors"
+                                        onClick={() => togglePii(key)}
+                                        title={
+                                            visiblePii[key]
+                                                ? "Ocultar contacto"
+                                                : "Mostrar contacto"
+                                        }
+                                        aria-label={
+                                            visiblePii[key]
+                                                ? "Ocultar contacto de referencia"
+                                                : "Mostrar contacto de referencia"
+                                        }
+                                        aria-expanded={!!visiblePii[key]}
+                                    >
+                                        {visiblePii[key] ? "🙈" : "👁"}
+                                    </button>
+                                    <span className="text-[10px] text-gray-500 ml-1">
+                                        {visiblePii[key]
+                                            ? "(visible — clic 🙈 para ocultar)"
+                                            : "(oculto — clic 👁)"}
+                                    </span>
                                 </p>
                             </div>
                         ))}
