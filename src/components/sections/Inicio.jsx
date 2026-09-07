@@ -20,9 +20,9 @@ export const Inicio = () => {
                     <p className="text-gray-300 text-lg mb-6">
                         Full Stack Developer ·{" "}
                         <b className="text-green-500 font-semibold">Java 21</b> ·{" "}
-                        <b className="text-green-500 font-semibold">Spring Boot 3.5</b> ·{" "}
+                        <b className="text-green-500 font-semibold">Spring Boot</b> ·{" "}
                         <b className="text-green-500 font-semibold">Kafka KRaft</b> ·{" "}
-                        <b className="text-green-500 font-semibold">AKS</b> · React /
+                        <b className="text-green-500 font-semibold">Docker / Kubernetes </b> · React /
                         Angular / TypeScript
                     </p>
 
@@ -62,11 +62,10 @@ export const Inicio = () => {
                     </div>
 
                     <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto">
-                        Desarrollador full stack apasionado por el código limpio, SOLID y
-                        ACID. Enfocado en crear aplicaciones web con alto rendimiento y gran
-                        experiencia de usuario. Experto en Java, SpringBoot, Kafka, Angular,
-                        React, Next.js, JWT, RBAC, OWASP, ASVS, IDOR, Idempotencia, Node.js,
-                        MySQL, MongoDB, CI/CD, Keycloak, IAM.
+                        Desarrollador full stack apasionado por código limpio, SOLID, DX y muy
+                        seguro. Enfocado en crear apps web con alto rendimiento y gran experiencia 
+                        de usuario. Experto en Java 21, Spring Boot, Kafka, Angular, React, NextJs, 
+                        JWT, RBAC, OWASP, ASVS, IDOR, SQL, MongoDB, Docker, K8s
                     </p>
 
                     <div className="flex flex-wrap justify-center items-center gap-x-4 gap-y-2 text-sm text-gray-400 mb-8">
