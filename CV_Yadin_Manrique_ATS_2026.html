@@ -746,41 +746,33 @@
         </article>
 
         <article class="ats-card featured">
-          <span class="badge badge-green">⚡ Backend · Event-Driven</span>
-          <h3>YadinStore · Back-end API — Spring + Kafka</h3>
+          <span class="badge badge-green">🔧 BE-JD · Backend + Kafka + CI/CD & Observabilidad</span>
+          <h3>YadinStore · Backend API + Kafka + CI/CD & Observabilidad</h3>
           <p>API REST Java 21 con <b>Spring Boot 3.5 y Spring Modulith</b> como monolito modular con arquitectura
             hexagonal, DDD y virtual threads. <b>Kafka 3.9.2 KRaft</b> opera con Transactional Outbox atómico, DLT para
             poison messages e idempotencia por eventId (exactly-once); <b>Resilience4j</b> aporta circuit breaker, retry
             y bulkhead. La seguridad end-to-end combina <b>Spring Security + JWT, RBAC</b> por X-Tenant-ID, rate
             limiting por tenant, CORS allowlist y guards anti-IDOR con tests. La persistencia usa <b>MongoDB ACID</b>
-            multi-documento, migraciones con <b>Mongock</b> y calidad con <b>Testcontainers + JaCoCo</b>. Dashboard
-            server-side de actividad Kafka vía <b>SASL_SSL</b> sin exponer credenciales al navegador, con
-            <b>Micrometer</b> para métricas p95 HTTP.</p>
-          <div class="chips"><span class="chip accent">Java 21</span><span class="chip accent">Kafka 3.9.2</span><span
-              class="chip accent">Spring Modulith</span><span class="chip">Transactional Outbox</span><span
-              class="chip">DLT</span><span class="chip">Resilience4j</span><span class="chip">MongoDB</span><span
-              class="chip">Mongock</span><span class="chip">k3d</span></div>
-          <a class="link" href="https://yadinstore-backend.onrender.com/kafka-dashboard.html"
-            target="_blank">yadinstore-backend.onrender.com/kafka-dashboard →</a>
-        </article>
-
-        <article class="ats-card">
-          <span class="badge badge-slate">🔧 CI/CD Live · Jenkins + Observabilidad</span>
-          <h3>YadinStore · CI/CD Live — Jenkins &amp; Observabilidad</h3>
-          <p>Stack CI/CD y observabilidad Cloud-Native integrado con <b>GitHub Actions y Jenkins 2.468.2</b> mediante
+            multi-documento, migraciones con <b>Mongock</b> y calidad con <b>Testcontainers + JaCoCo</b>. Stack CI/CD y observabilidad Cloud-Native integrado con <b>GitHub Actions y Jenkins 2.468.2</b> mediante
             Pipeline as Code (Jenkinsfile), <b>Docker/DinD</b> y automatización completa del ciclo build, test y
-            empaquetado. El backend Spring Boot está instrumentado con <b>Micrometer</b> (Outbox, Kafka, p95 HTTP)
+            empaquetado. El backend está instrumentado con <b>Micrometer</b> (Outbox, Kafka, p95 HTTP)
             centralizando métricas en <b>Prometheus</b> y visualización en <b>Grafana 10.4.3</b>, mientras
             <b>Elasticsearch 8.15.3 + Kibana</b> proporcionan trazabilidad y análisis de logs; <b>JasperReports</b>
-            genera reportes PDF de órdenes. Diseñado bajo restricciones reales de free-tier: logs sanitizados,
-            almacenamiento volátil controlado y separación explícita local vs producción. Si PC/agente hibernado:
-            <b>OFFLINE</b> y Elasticsearch <b>LOCAL ONLY</b> en amarillo = comportamiento esperado, no bug.</p>
-          <div class="chips"><span class="chip">GitHub Actions</span><span class="chip">Jenkins 2.468.2</span><span
-              class="chip">Prometheus</span><span class="chip">Grafana</span><span
-              class="chip">Elasticsearch</span><span class="chip">Kibana</span><span class="chip">Micrometer</span><span class="chip">k3d</span>
-          </div>
+            genera reportes PDF de órdenes. Dashboard server-side de actividad Kafka vía <b>SASL_SSL</b> sin exponer credenciales al navegador.</p>
+          <div class="chips"><span class="chip accent">Java 21</span><span class="chip accent">Spring Boot 3.5</span><span
+              class="chip accent">Spring Modulith</span><span class="chip accent">Kafka 3.9.2</span><span
+              class="chip accent">MongoDB</span><span class="chip">Hexagonal</span><span class="chip">DDD</span><span
+              class="chip">Transactional Outbox</span><span class="chip">DLT</span><span class="chip">Idempotency</span><span
+              class="chip">Resilience4j</span><span class="chip">Spring Security</span><span class="chip">JWT</span><span
+              class="chip">RBAC</span><span class="chip">Multi-Tenancy</span><span class="chip">OWASP</span><span
+              class="chip">Rate Limiting</span><span class="chip">Mongock</span><span class="chip">Testcontainers</span><span
+              class="chip">Docker</span><span class="chip">k3d</span><span class="chip">SASL_SSL</span><span
+              class="chip">GitHub Actions</span><span class="chip">Jenkins 2.468.2</span><span class="chip">Jenkinsfile</span><span
+              class="chip">Pipeline as Code</span><span class="chip">DinD</span><span class="chip">Grafana 10.4.3</span><span
+              class="chip">Prometheus</span><span class="chip">Elasticsearch 8.15.3</span><span class="chip">Kibana 8.15.3</span><span
+              class="chip">Micrometer</span><span class="chip">JasperReports</span><span class="chip">Render</span></div>
           <a class="link" href="https://yadinstore-jenkins-obs-live.onrender.com/jenkins-dashboard.html"
-            target="_blank">yadinstore-jenkins-obs-live.onrender.com →</a>
+            target="_blank">yadinstore-jenkins-obs-live.onrender.com/jenkins-dashboard →</a>
         </article>
 
         <article class="ats-card">
@@ -822,16 +814,21 @@
         </article>
 
         <article class="ats-card">
-          <span class="badge badge-slate">Actual</span>
-          <h3>Portafolio adaptable a empresas · Insurance CRM (PHP/MySQL) · App educativa Full-Stack (MySQL + RBAC)</h3>
-          <p>Portafolio Angular + Node/Express + SCSS + RxJS + Firebase (GCP). Insurance CRM React + TypeScript +
-            Tailwind + Flask + PostgreSQL. App educativa Full-Stack Angular + Express + MySQL + RxJS + CORS + guards +
-            RBAC.</p>
-          <div class="chips"><span class="chip">Angular</span><span class="chip">React</span><span
-              class="chip">TypeScript</span><span class="chip">Node.js</span><span class="chip">Python/Flask</span><span
-              class="chip">Tailwind</span></div>
-          <a class="link" href="https://ypmanrique2.github.io/yadin.manrique-portfolio/" target="_blank">Portafolio
-            →</a>
+          <span class="badge badge-slate">🛡️ Business Process Digitalization</span>
+          <h3>Insurance CRM · Plataforma de Gestión y Digitalización de Seguros</h3>
+          <p>Insurance CRM es una solución full-stack de ingeniería de software diseñada para erradicar la ineficiencia operativa y los riesgos de integridad derivados de hojas de cálculo aisladas (Excel). Construida enteramente mediante programación a medida, la plataforma ejecuta la reingeniería de flujos de trabajo complejos, centralizando el ciclo operativo del sector asegurador en tres pilares de dominio: gestión de clientes, administración de pólizas y trazabilidad de siniestros. La arquitectura implementa un frontend desacoplado bajo el paradigma de Arquitectura Basada en Componentes utilizando React, TypeScript, Vite y TailwindCSS, lo que asegura un tipado estricto, gestión de estado y rendimiento optimizado en dashboards interactivos. En la capa de servidor, se programó una API REST en Python (Flask) encargada de procesar reglas de negocio, sanitizar entradas y orquestar la persistencia en SQLite/PostgreSQL, complementada con un pipeline de automatización CI/CD en GitHub Actions y despliegue WSGI (Gunicorn) sobre Render. Este desarrollo evidencia capacidad técnica de tomar procesos de negocio informales y transformarlos en arquitecturas web distribuidas, escalables y seguras, combinando el análisis de datos con la escritura de código limpio y orientado a entornos de producción reales.</p>
+          <div class="chips"><span class="chip">React</span><span class="chip">TypeScript</span><span
+              class="chip">TailwindCSS</span><span class="chip">HTML5</span><span class="chip">CSS3</span><span
+              class="chip">Vite</span><span class="chip">GitHub Actions</span><span class="chip">Python</span><span
+              class="chip">Flask</span><span class="chip">Gunicorn</span><span class="chip">SQLite</span><span
+              class="chip">PostgreSQL</span><span class="chip">Render</span><span class="chip">API RESTful</span><span
+              class="chip">CI/CD</span><span class="chip">Data Visualization</span><span class="chip">Dashboard</span><span
+              class="chip">CRM</span><span class="chip">Business Process Digitalization</span><span class="chip">Excel</span><span
+              class="chip">Component-Based Architecture</span><span class="chip">Clean Code</span><span
+              class="chip">Secure Coding</span><span class="chip">Data Sanitization</span><span
+              class="chip">Input Validation</span><span class="chip">State Management</span><span
+              class="chip">Performance Optimization</span></div>
+          <a class="link" href="https://ypmanrique2.github.io/insurance-crm-frontend/" target="_blank">insurance-crm-frontend →</a>
         </article>
 
       </div>
