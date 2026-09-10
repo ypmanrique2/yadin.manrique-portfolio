@@ -48,11 +48,10 @@
       "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "YadinStore · e-Shop SaaS", "url": "https://yadinstore-frontend.onrender.com/"},
         {"@type": "ListItem", "position": 2, "name": "YadinStore · Admin Dashboard", "url": "https://yadinstore-admin.onrender.com/"},
-        {"@type": "ListItem", "position": 3, "name": "YadinStore · Back-end API Spring + Kafka", "url": "https://yadinstore-backend.onrender.com/kafka-dashboard.html"},
-        {"@type": "ListItem", "position": 4, "name": "YadinStore · CI/CD Live Jenkins", "url": "https://yadinstore-jenkins-obs-live.onrender.com/jenkins-dashboard.html"},
-        {"@type": "ListItem", "position": 5, "name": "VE&CO Marketplace Web", "url": "https://veycoo.com.co/"},
-        {"@type": "ListItem", "position": 6, "name": "VE&CO App PlayStore", "url": "https://play.google.com/store/apps/details?id=app.veycoo.co"},
-        {"@type": "ListItem", "position": 7, "name": "eShop corporativa de alta disponibilidad", "url": "https://eshop-oem.netlify.app"}
+        {"@type": "ListItem", "position": 3, "name": "YadinStore · Backend API + Kafka + CI/CD & Observabilidad", "url": "https://yadinstore-backend.onrender.com/kafka-dashboard.html"},
+        {"@type": "ListItem", "position": 4, "name": "VE&CO Marketplace Web", "url": "https://veycoo.com.co/"},
+        {"@type": "ListItem", "position": 5, "name": "VE&CO App PlayStore", "url": "https://play.google.com/store/apps/details?id=app.veycoo.co"},
+        {"@type": "ListItem", "position": 6, "name": "eShop corporativa de alta disponibilidad", "url": "https://eshop-oem.netlify.app"}
       ]
     }
     </script>
@@ -1053,7 +1052,11 @@
             <span class="badge flag">⭐ e-Commerce SaaS</span>
             <h3>YadinStore · e-Shop SaaS</h3>
             <p>
-              Plataforma e-Commerce SaaS multi-vendor para que múltiples vendedores gestionen catálogo, carrito, checkout y notificaciones con aislamiento por tenant. El front-end utiliza <strong>Angular 21, Nx y Module Federation</strong> con Signals preparado como host/remote; el back-end adopta un monolito modular con <strong>Spring Modulith + arquitectura hexagonal + DDD + virtual threads</strong>, <strong>Kafka 3.9.2 KRaft</strong> con Transactional Outbox atómico, DLT e idempotencia por eventId, <strong>Resilience4j</strong>, <strong>MongoDB ACID + Mongock</strong> y <strong>Spring Security</strong> con JWT, RBAC por X-Tenant-ID, rate limiting, CORS allowlist y controles anti-IDOR validados con Testcontainers.
+              Plataforma e-Commerce SaaS multi-vendor para que múltiples vendedores gestionen catálogo, carrito, checkout y notificaciones con aislamiento por tenant. 
+              El front-end utiliza <strong>Angular 21, Nx y Module Federation</strong> con Signals preparado como host/remote; el back-end adopta un monolito modular con 
+              <strong>Spring Modulith + arquitectura hexagonal + DDD + virtual threads</strong>, <strong>Kafka 3.9.2 KRaft</strong> con Transactional Outbox atómico, DLT e 
+              idempotencia por eventId, <strong>Resilience4j</strong>, <strong>MongoDB ACID + Mongock</strong> y <strong>Spring Security</strong> con JWT, RBAC por 
+              X-Tenant-ID, rate limiting, CORS allowlist y controles anti-IDOR validados con Testcontainers.
             </p>
             <div class="chips">
               <span class="chip">Java 21</span><span class="chip">Spring Boot 3.5</span><span class="chip">Spring Modulith</span>
@@ -1077,7 +1080,11 @@
             <span class="badge actual">🔐 SaaS Admin · Multi-Tenant</span>
             <h3>YadinStore · Admin Dashboard SaaS Multi-Vendor</h3>
             <p>
-              Dashboard administrativo para la operación del e-Commerce SaaS, integrado con APIs reales y orientado a la gestión de ventas, órdenes, productos, usuarios y métricas. Desarrollado con <strong>Angular 21, Signals, Nx y Module Federation</strong>, implementa autenticación <strong>JWT</strong>, autorización <strong>RBAC</strong> por rol con guards e interceptores, aislamiento <strong>multi-tenant por X-Tenant-ID</strong> y acceso admin mediante <strong>ticket temporal de un solo uso</strong> sin exponer credenciales en el navegador. Consume la API <strong>Spring Boot hardened</strong> con rate limiting, CORS restringido y protección anti-IDOR; arquitectura lista para evolucionar como <strong>remote MFE</strong>.
+              Dashboard administrativo para la operación del e-Commerce SaaS, integrado con APIs reales y orientado a la gestión de ventas, órdenes, productos, usuarios y métricas. 
+              Desarrollado con <strong>Angular 21, Signals, Nx y Module Federation</strong>, implementa autenticación <strong>JWT</strong>, autorización <strong>RBAC</strong> 
+              por rol con guards e interceptores, aislamiento <strong>multi-tenant por X-Tenant-ID</strong> y acceso admin mediante <strong>ticket temporal de un solo uso</strong> 
+              sin exponer credenciales en el navegador. Consume la API <strong>Spring Boot hardened</strong> con rate limiting, CORS restringido y protección anti-IDOR; arquitectura 
+              lista para evolucionar como <strong>remote MFE</strong>.
             </p>
             <div class="chips">
               <span class="chip">Angular 21</span><span class="chip">TypeScript</span><span class="chip">Signals</span>
@@ -1094,12 +1101,15 @@
             <a class="link" href="https://yadinstore-admin.onrender.com/" target="_blank">Ver Proyecto →</a>
           </article>
 
-          <!-- YadinStore Back-end + Kafka Dashboard -->
+          <!-- YadinStore BE-JD: Backend API + Kafka + CI/CD + Observabilidad (Fusión de positions [2,3]) -->
           <article class="pcard">
-            <span class="badge actual">⚡ Backend · Event-Driven</span>
-            <h3>YadinStore · Back-end API - Spring + Kafka</h3>
+            <span class="badge actual">🔧 Backend Event Driven · Kafka · CI/CD · Observabilidad</span>
+            <h3>YadinStore · Backend API + Kafka + CI/CD & Observabilidad</h3>
             <p>
-              API REST Java 21 con <strong>Spring Boot 3.5 y Spring Modulith</strong> como monolito modular con arquitectura hexagonal, DDD y virtual threads. <strong>Kafka 3.9.2 KRaft</strong> opera con Transactional Outbox atómico, DLT para poison messages e idempotencia por eventId (exactly-once); <strong>Resilience4j</strong> aporta circuit breaker, retry y bulkhead. La seguridad end-to-end combina <strong>Spring Security + JWT, RBAC</strong> por X-Tenant-ID, rate limiting por tenant, CORS allowlist y guards anti-IDOR con tests. La persistencia usa <strong>MongoDB ACID</strong> multi-documento, migraciones con <strong>Mongock</strong> y calidad con <strong>Testcontainers + JaCoCo</strong>. Incluye dashboard server-side de actividad Kafka (brokers, topics, consumer groups y lag) consultado vía <strong>SASL_SSL</strong> sin exponer credenciales al navegador, con <strong>Micrometer</strong> para métricas p95 HTTP y recursos contenidos para free-tier.
+              API REST <strong>Java 21 / Spring Boot 3.5 / Spring Modulith</strong>, con <strong>arquitectura Hexagonal + DDD, virtual threads y Kafka KRaft</strong> mediante 
+              Transactional Outbox, <strong>DLT, idempotencia y Resilience4j</strong>. Persistencia MongoDB ACID; seguridad <strong>Spring Security/JWT, RBAC, multi-tenancy</strong>, 
+              rate limiting y protección <strong>anti-IDOR</strong>. La plataforma completa CI/CD + observabilidad con <strong>GitHub Actions, Jenkins, Docker, Micrometer, Prometheus, 
+              Grafana, Elasticsearch y Kibana</strong>, incluyendo monitoreo server-side de <strong>Kafka brokers, topics, consumer groups y lag</strong> y generación de reportes con JasperReports.
             </p>
             <div class="chips">
               <span class="chip">Java 21</span><span class="chip">Spring Boot 3.5</span><span class="chip">Spring Modulith</span>
@@ -1109,27 +1119,36 @@
               <span class="chip">RBAC</span><span class="chip">Multi-Tenancy</span><span class="chip">OWASP</span>
               <span class="chip">Rate Limiting</span><span class="chip">Mongock</span><span class="chip">Testcontainers</span>
               <span class="chip">Docker</span><span class="chip">k3d</span><span class="chip">SASL_SSL</span>
+              <span class="chip">GitHub Actions</span><span class="chip">Jenkins 2.468.2</span><span class="chip">Jenkinsfile</span>
+              <span class="chip">Pipeline as Code</span><span class="chip">DinD</span><span class="chip">Grafana 10.4.3</span>
+              <span class="chip">Prometheus</span><span class="chip">Elasticsearch 8.15.3</span><span class="chip">Kibana 8.15.3</span>
+              <span class="chip">Micrometer</span><span class="chip">JasperReports</span><span class="chip">Render</span>
             </div>
-            <a class="link" href="https://yadinstore-backend.onrender.com/kafka-dashboard.html" target="_blank">Ver Kafka Dashboard →</a>
+            <a class="link" href="https://yadinstore-jenkins-obs-live.onrender.com/jenkins-dashboard.html" target="_blank">Ver monitor Kafka + Docker + K8s (K3d-AKS) + CI/CD & Observabilidad →</a>
           </article>
 
-          <!-- YadinStore CI/CD Live — Jenkins Dashboard & Observabilidad (BE-JD) -->
+          <!-- Insurance CRM -->
           <article class="pcard">
-            <span class="badge actual">🔧 BE-JD · CI/CD Live · Jenkins + Observabilidad</span>
-            <h3>YadinStore · CI/CD Live - Jenkins & Observabilidad</h3>
+            <span class="badge actual">�️ Business Process Digitalization</span>
+            <h3>Insurance CRM · Plataforma de Gestión y Digitalización de Seguros</h3>
             <p>
-              Stack CI/CD y observabilidad Cloud-Native integrado con <strong>GitHub Actions y Jenkins 2.468.2</strong> mediante Pipeline as Code (Jenkinsfile), <strong>Docker/DinD</strong> y automatización completa del ciclo build, test y empaquetado. El backend Spring Boot está instrumentado con <strong>Micrometer</strong> (Outbox, Kafka, p95 HTTP) centralizando métricas en <strong>Prometheus</strong> y visualización en <strong>Grafana 10.4.3</strong>, mientras <strong>Elasticsearch 8.15.3 + Kibana</strong> proporcionan trazabilidad y análisis de logs; <strong>JasperReports</strong> genera reportes PDF de órdenes. Diseñado bajo restricciones reales de free-tier: logs sanitizados, almacenamiento volátil controlado y separación explícita entre observabilidad local y producción. Si PC/agente hibernado se muestra OFFLINE, y Elasticsearch LOCAL ONLY en amarillo — es el comportamiento esperado del free-tier, no un bug.
+            Insurance CRM es una solución full-stack de ingeniería de software diseñada para erradicar la ineficiencia operativa y los riesgos de integridad derivados de hojas de cálculo aisladas (Excel). Construida enteramente mediante programación a medida, la plataforma ejecuta la reingeniería de flujos de trabajo complejos, centralizando el ciclo operativo del sector asegurador en tres pilares de dominio: gestión de clientes, administración de pólizas y trazabilidad de siniestros. La arquitectura implementa un frontend desacoplado bajo el paradigma de Arquitectura Basada en Componentes utilizando React, TypeScript, Vite y TailwindCSS, lo que asegura un tipado estricto, gestión de estado y rendimiento optimizado en dashboards interactivos. En la capa de servidor, se programó una API REST en Python (Flask) encargada de procesar reglas de negocio, sanitizar entradas y orquestar la persistencia en SQLite/PostgreSQL, complementada con un pipeline de automatización CI/CD en GitHub Actions y despliegue WSGI (Gunicorn) sobre Render. Este desarrollo evidencia capacidad técnica de tomar procesos de negocio informales y transformarlos en arquitecturas web distribuidas, escalables y seguras, combinando el análisis de datos con la escritura de código limpio y orientado a entornos de producción reales.
             </p>
             <div class="chips">
-              <span class="chip">GitHub Actions</span><span class="chip">Jenkins 2.468.2</span><span class="chip">Jenkinsfile</span>
-              <span class="chip">Pipeline as Code</span><span class="chip">Docker</span><span class="chip">DinD</span><span class="chip">k3d</span>
-              <span class="chip">Grafana 10.4.3</span><span class="chip">Prometheus</span><span class="chip">Elasticsearch 8.15.3</span>
-              <span class="chip">Kibana 8.15.3</span><span class="chip">Micrometer</span><span class="chip">Render</span>
+              <span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">TailwindCSS</span>
+              <span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">Vite</span>
+              <span class="chip">GitHub Actions</span><span class="chip">Python</span><span class="chip">Flask</span>
+              <span class="chip">Gunicorn</span><span class="chip">SQLite</span><span class="chip">PostgreSQL</span>
+              <span class="chip">Render</span><span class="chip">API RESTful</span><span class="chip">CI/CD</span>
+              <span class="chip">Data Visualization</span><span class="chip">Dashboard</span><span class="chip">CRM</span>
+              <span class="chip">Business Process Digitalization</span><span class="chip">Excel</span>
+              <span class="chip">Component-Based Architecture</span><span class="chip">Clean Code</span>
+              <span class="chip">Secure Coding</span><span class="chip">Data Sanitization</span>
+              <span class="chip">Input Validation</span><span class="chip">State Management</span>
+              <span class="chip">Performance Optimization</span>
             </div>
-            <a class="link" href="https://yadinstore-jenkins-obs-live.onrender.com/jenkins-dashboard.html" target="_blank">Ver Jenkins Dashboard →</a>
+            <a class="link" href="https://ypmanrique2.github.io/insurance-crm-frontend/" target="_blank">Ver Proyecto →</a>
           </article>
-
-          
 
           <!-- VE&CO Web -->
           <article class="pcard">
@@ -1229,25 +1248,6 @@
               <span class="chip">CSS3</span><span class="chip">JavaScript</span>
             </div>
             <a class="link" href="https://b2b-sucessintheair.infinityfree.me/" target="_blank">Ver Proyecto →</a>
-          </article>
-
-          <!-- Insurance CRM -->
-          <article class="pcard">
-            <span class="badge actual">Actual</span>
-            <h3>Insurance CRM</h3>
-            <p>
-              CRM moderno para seguros con arquitectura modular y componentes reutilizables.
-              Gestión de pólizas, clientes y siniestros con UI reactiva y dashboards interactivos.
-              Back-end API REST en Python/Flask desplegado en Render con Gunicorn, SQLite/PostgreSQL,
-              CORS configurado para GitHub Pages y CI/CD con GitHub Actions.
-            </p>
-            <div class="chips">
-              <span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">TailwindCSS</span>
-              <span class="chip">Vite</span><span class="chip">GitHub Actions</span><span class="chip">Python</span>
-              <span class="chip">Flask</span><span class="chip">Gunicorn</span><span class="chip">SQLite</span>
-              <span class="chip">PostgreSQL</span><span class="chip">Render</span>
-            </div>
-            <a class="link" href="https://ypmanrique2.github.io/insurance-crm-frontend/" target="_blank">Ver Proyecto →</a>
           </article>
 
           <!-- App educativa (Full-Stack MySQL + RBAC) -->

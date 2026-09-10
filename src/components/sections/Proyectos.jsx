@@ -22,22 +22,22 @@ const projects = [
         demo: { email: "usuario.demo@yadinstore.com", password: "1cLaVeDePrUeBa+" },
     },
     {
-        title: "YadinStore · Back-end API - Spring + Kafka",
-        badge: "⚡ Backend · Event-Driven",
+        title: "YadinStore · Backend API + Kafka + CI/CD & Observabilidad",
+        badge: "🔧 BE-JD · Backend + Kafka + CI/CD & Observabilidad",
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
         description:
-            "API REST Java 21 con Spring Boot 3.5 y Spring Modulith como monolito modular con arquitectura hexagonal, DDD y virtual threads. Kafka 3.9.2 KRaft opera con Transactional Outbox atómico, DLT para poison messages e idempotencia por eventId (exactly-once); Resilience4j aporta circuit breaker, retry y bulkhead. La seguridad end-to-end combina Spring Security + JWT, RBAC por X-Tenant-ID, rate limiting por tenant, CORS allowlist y guards anti-IDOR con tests. La persistencia usa MongoDB ACID multi-documento, migraciones con Mongock y calidad con Testcontainers + JaCoCo. Incluye dashboard server-side de actividad Kafka (brokers, topics, consumer groups y lag) consultado vía SASL_SSL sin exponer credenciales al navegador, con Micrometer para métricas p95 HTTP y recursos contenidos para free-tier.",
-        chips: ["Java 21", "Spring Boot 3.5", "Spring Modulith", "Kafka 3.9.2", "MongoDB", "Hexagonal Architecture", "Transactional Outbox", "DLT", "Idempotency", "Resilience4j", "Spring Security", "JWT", "RBAC", "Multi-Tenancy", "OWASP", "Rate Limiting", "Mongock", "Testcontainers", "Docker", "k3d", "SASL_SSL"],
-        href: "https://yadinstore-backend.onrender.com/kafka-dashboard.html",
-    },
-    {
-        title: "YadinStore · CI/CD Live - Jenkins & Observabilidad",
-        badge: "🔧 BE-JD · CI/CD Live · Jenkins + Observabilidad",
-        badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
-        description:
-            "Stack CI/CD y observabilidad Cloud-Native integrado con GitHub Actions y Jenkins mediante Pipeline as Code (Jenkinsfile), Docker/DinD y automatización completa del ciclo build, test y empaquetado. El backend Spring Boot está instrumentado con Micrometer (Outbox, Kafka, p95 HTTP) centralizando métricas en Prometheus y visualización en Grafana, mientras Elasticsearch + Kibana proporcionan trazabilidad y análisis de logs; JasperReports genera reportes PDF de órdenes. Diseñado bajo restricciones reales de free-tier: logs sanitizados, almacenamiento volátil controlado y separación explícita entre observabilidad local y producción. Si PC/agente hibernado se muestra OFFLINE, y Elasticsearch LOCAL ONLY en amarillo — es el comportamiento esperado del free-tier, no un bug.",
-        chips: ["GitHub Actions", "Jenkins 2.468.2", "Jenkinsfile", "Pipeline as Code", "Docker", "DinD", "k3d", "Grafana 10.4.3", "Prometheus", "Elasticsearch 8.15.3", "Kibana 8.15.3", "Micrometer", "Render"],
+            "API REST Java 21 con Spring Boot 3.5 y Spring Modulith como monolito modular con arquitectura hexagonal, DDD y virtual threads. Kafka 3.9.2 KRaft opera con Transactional Outbox atómico, DLT para poison messages e idempotencia por eventId (exactly-once); Resilience4j aporta circuit breaker, retry y bulkhead. La seguridad end-to-end combina Spring Security + JWT, RBAC por X-Tenant-ID, rate limiting por tenant, CORS allowlist y guards anti-IDOR con tests. La persistencia usa MongoDB ACID multi-documento, migraciones con Mongock y calidad con Testcontainers + JaCoCo. Stack CI/CD y observabilidad Cloud-Native integrado con GitHub Actions y Jenkins mediante Pipeline as Code (Jenkinsfile), Docker/DinD y automatización completa del ciclo build, test y empaquetado. El backend está instrumentado con Micrometer (Outbox, Kafka, p95 HTTP) centralizando métricas en Prometheus y visualización en Grafana, mientras Elasticsearch + Kibana proporcionan trazabilidad y análisis de logs; JasperReports genera reportes PDF de órdenes. Incluye dashboard server-side de actividad Kafka (brokers, topics, consumer groups y lag) consultado vía SASL_SSL sin exponer credenciales al navegador.",
+        chips: ["Java 21", "Spring Boot 3.5", "Spring Modulith", "Kafka 3.9.2", "MongoDB", "Hexagonal Architecture", "DDD", "Transactional Outbox", "DLT", "Idempotency", "Resilience4j", "Spring Security", "JWT", "RBAC", "Multi-Tenancy", "OWASP", "Rate Limiting", "Mongock", "Testcontainers", "Docker", "k3d", "SASL_SSL", "GitHub Actions", "Jenkins 2.468.2", "Jenkinsfile", "Pipeline as Code", "DinD", "Grafana 10.4.3", "Prometheus", "Elasticsearch 8.15.3", "Kibana 8.15.3", "Micrometer", "JasperReports", "Render"],
         href: "https://yadinstore-jenkins-obs-live.onrender.com/jenkins-dashboard.html",
+    },
+{
+        title: "Insurance CRM · Plataforma de Gestión y Digitalización de Seguros",
+        badge: "🛡️ Business Process Digitalization",
+        badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
+        description:
+            "Insurance CRM es una solución full-stack de ingeniería de software diseñada para erradicar la ineficiencia operativa y los riesgos de integridad derivados de hojas de cálculo aisladas (Excel). Construida enteramente mediante programación a medida, la plataforma ejecuta la reingeniería de flujos de trabajo complejos, centralizando el ciclo operativo del sector asegurador en tres pilares de dominio: gestión de clientes, administración de pólizas y trazabilidad de siniestros. La arquitectura implementa un frontend desacoplado bajo el paradigma de Arquitectura Basada en Componentes utilizando React, TypeScript, Vite y TailwindCSS, lo que asegura un tipado estricto, gestión de estado y rendimiento optimizado en dashboards interactivos. En la capa de servidor, se programó una API REST en Python (Flask) encargada de procesar reglas de negocio, sanitizar entradas y orquestar la persistencia en SQLite/PostgreSQL, complementada con un pipeline de automatización CI/CD en GitHub Actions y despliegue WSGI (Gunicorn) sobre Render. Este desarrollo evidencia capacidad técnica de tomar procesos de negocio informales y transformarlos en arquitecturas web distribuidas, escalables y seguras, combinando el análisis de datos con la escritura de código limpio y orientado a entornos de producción reales.",
+        chips: ["React", "TypeScript", "TailwindCSS", "HTML5", "CSS3", "Vite", "GitHub Actions", "Python", "Flask", "Gunicorn", "SQLite", "PostgreSQL", "Render", "API RESTful", "CI/CD", "Data Visualization", "Dashboard", "CRM", "Business Process Digitalization", "Excel", "Component-Based Architecture", "Clean Code", "Secure Coding", "Datan Sanitization", "Input Validation", "State Management", "Performance Optimization"],
+        href: "https://ypmanrique2.github.io/insurance-crm-frontend/",
     },
 {
         title: "Marketplace de comercio electrónico VE&CO (Web)",
@@ -92,15 +92,6 @@ const projects = [
             "Página en WordPress con tema ligero y lógica de negocio separada en hook. Base de datos MySQL con optimización de consultas, esquema por dbDelta y CRUD robustos en manejo de estados. Clean Architecture con ACF Pro, front-end moderno en VanillaJS y maquetado CSS3 responsive, con AI first, SEO humano en la lupa y bastionado (hardening) de seguridad.",
         chips: ["Wordpress", "Vanilla JS", "SEO human in the loop", "AI first", "MySQL", "HTML5", "CSS3", "JavaScript"],
         href: "https://b2b-sucessintheair.infinityfree.me/",
-    },
-{
-        title: "Insurance CRM",
-        badge: "Actual",
-        badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
-        description:
-            "CRM moderno para seguros con arquitectura modular y componentes reutilizables. Gestión de pólizas, clientes y siniestros con UI reactiva y dashboards interactivos. Back-end API REST en Python/Flask desplegado en Render con Gunicorn, SQLite/PostgreSQL, CORS configurado para GitHub Pages y CI/CD con GitHub Actions.",
-        chips: ["React", "TypeScript", "TailwindCSS", "Vite", "GitHub Actions", "Python", "Flask", "Gunicorn", "SQLite", "PostgreSQL", "Render"],
-        href: "https://ypmanrique2.github.io/insurance-crm-frontend/",
     },
 {
         title: "App consumidora de API educativa (Full-Stack MySQL + RBAC)",
