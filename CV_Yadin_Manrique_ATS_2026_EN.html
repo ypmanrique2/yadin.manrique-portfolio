@@ -729,25 +729,21 @@
         <article class="ats-card featured">
           <span class="badge badge-green">🔧 BE-JD · Backend + Kafka + CI/CD & Observability</span>
           <h3>YadinStore · Backend API + Kafka + CI/CD & Observability</h3>
-          <p>High-throughput Java 21 REST API built with <b>Spring Boot 3.5 and Spring Modulith</b> (Hexagonal Architecture, DDD, and Virtual Threads). Integrates <b>Kafka 3.9.2 KRaft</b> using an atomic Transactional Outbox pattern, Dead Letter Topics (DLT), and eventId deduplication for exactly-once semantics; fault-tolerant via <b>Resilience4j</b> (circuit breaker, retry, bulkhead). Security combines <b>Spring Security + JWT, RBAC</b> with X-Tenant-ID, tenant-level rate limiting, strict CORS allowlist, and anti-IDOR tests. Persistence backed by <b>MongoDB ACID</b> multi-document transactions, <b>Mongock</b> migrations, and <b>Testcontainers + JaCoCo</b> quality gates. Features a server-side Kafka activity dashboard queried over <b>SASL_SSL</b> with zero frontend secrets, instrumented with <b>Micrometer</b> for p95 HTTP metrics.</p>
-          <div class="chips"><span class="chip accent">Java 21</span><span class="chip accent">Kafka 3.9.2</span><span
-              class="chip accent">Spring Modulith</span><span class="chip">Transactional Outbox</span><span
-              class="chip">DLT</span><span class="chip">Resilience4j</span><span class="chip">MongoDB</span><span
-              class="chip">Mongock</span><span class="chip">k3d</span></div>
-          <a class="link" href="https://yadinstore-backend.onrender.com/kafka-dashboard.html"
-            target="_blank">yadinstore-backend.onrender.com/kafka-dashboard →</a>
-        </article>
-
-        <article class="ats-card">
-          <span class="badge badge-slate">🔧 CI/CD Live · Jenkins + Observability</span>
-          <h3>YadinStore · CI/CD Live — Jenkins &amp; Observability</h3>
-          <p>Cloud-Native CI/CD and observability pipeline integrating <b>GitHub Actions and Jenkins 2.468.2</b> via Pipeline as Code (Jenkinsfile), <b>Docker/DinD</b>, and end-to-end build/test/package automation. The Spring Boot backend is instrumented with <b>Micrometer</b> (Outbox, Kafka, p95 HTTP metrics) feeding into <b>Prometheus</b> and <b>Grafana 10.4.3</b>, while <b>Elasticsearch 8.15.3 + Kibana</b> deliver distributed tracing and log parsing, alongside <b>JasperReports</b> for automated order PDF receipts. Built within real free-tier constraints: sanitized logging, volatile memory buffers, and explicit local vs production isolation (agent hibernation showing OFFLINE or Elasticsearch in LOCAL ONLY yellow status represents expected free-tier behavior, not a bug).</p>
-          <div class="chips"><span class="chip">GitHub Actions</span><span class="chip">Jenkins 2.468.2</span><span
-              class="chip">Prometheus</span><span class="chip">Grafana</span><span
-              class="chip">Elasticsearch</span><span class="chip">Kibana</span><span class="chip">Micrometer</span><span class="chip">k3d</span>
-          </div>
+          <p>High-throughput Java 21 REST API built with <b>Spring Boot 3.5 and Spring Modulith</b> (Hexagonal Architecture, DDD, and Virtual Threads). Integrates <b>Kafka 3.9.2 KRaft</b> using an atomic Transactional Outbox pattern, Dead Letter Topics (DLT), and eventId deduplication for exactly-once semantics; fault-tolerant via <b>Resilience4j</b> (circuit breaker, retry, bulkhead). Security combines <b>Spring Security + JWT, RBAC</b> with X-Tenant-ID, tenant-level rate limiting, strict CORS allowlist, and anti-IDOR tests. Persistence backed by <b>MongoDB ACID</b> multi-document transactions, <b>Mongock</b> migrations, and <b>Testcontainers + JaCoCo</b> quality gates. Cloud-Native CI/CD and observability pipeline integrating <b>GitHub Actions and Jenkins 2.468.2</b> via Pipeline as Code (Jenkinsfile), <b>Docker/DinD</b>, and end-to-end build/test/package automation. The backend is instrumented with <b>Micrometer</b> (Outbox, Kafka, p95 HTTP metrics) feeding into <b>Prometheus</b> and <b>Grafana 10.4.3</b>, while <b>Elasticsearch 8.15.3 + Kibana</b> deliver distributed tracing and log parsing, alongside <b>JasperReports</b> for automated order PDF receipts. Features a server-side Kafka activity dashboard queried over <b>SASL_SSL</b> with zero frontend secrets.</p>
+          <div class="chips"><span class="chip accent">Java 21</span><span class="chip accent">Spring Boot 3.5</span><span
+              class="chip accent">Spring Modulith</span><span class="chip accent">Kafka 3.9.2</span><span
+              class="chip accent">MongoDB</span><span class="chip">Hexagonal</span><span class="chip">DDD</span><span
+              class="chip">Transactional Outbox</span><span class="chip">DLT</span><span class="chip">Idempotency</span><span
+              class="chip">Resilience4j</span><span class="chip">Spring Security</span><span class="chip">JWT</span><span
+              class="chip">RBAC</span><span class="chip">Multi-Tenancy</span><span class="chip">OWASP</span><span
+              class="chip">Rate Limiting</span><span class="chip">Mongock</span><span class="chip">Testcontainers</span><span
+              class="chip">Docker</span><span class="chip">k3d</span><span class="chip">SASL_SSL</span><span
+              class="chip">GitHub Actions</span><span class="chip">Jenkins 2.468.2</span><span class="chip">Jenkinsfile</span><span
+              class="chip">Pipeline as Code</span><span class="chip">DinD</span><span class="chip">Grafana 10.4.3</span><span
+              class="chip">Prometheus</span><span class="chip">Elasticsearch 8.15.3</span><span class="chip">Kibana 8.15.3</span><span
+              class="chip">Micrometer</span><span class="chip">JasperReports</span><span class="chip">Render</span></div>
           <a class="link" href="https://yadinstore-jenkins-obs-live.onrender.com/jenkins-dashboard.html"
-            target="_blank">yadinstore-jenkins-obs-live.onrender.com →</a>
+            target="_blank">yadinstore-jenkins-obs-live.onrender.com/jenkins-dashboard →</a>
         </article>
 
         <article class="ats-card">
@@ -784,14 +780,21 @@
         </article>
 
         <article class="ats-card">
-          <span class="badge badge-slate">Active Production</span>
-          <h3>Enterprise Adaptive Portfolio · Insurance CRM · Educational Full-Stack App</h3>
-          <p>Corporate Angular + Node/Express + SCSS + RxJS + Firebase (GCP) portfolio. Insurance CRM built with React + TypeScript + Tailwind + Flask + PostgreSQL. Educational Full-Stack application featuring Angular + Express + MySQL + RxJS + CORS + route guards + RBAC.</p>
-          <div class="chips"><span class="chip">Angular</span><span class="chip">React</span><span
-              class="chip">TypeScript</span><span class="chip">Node.js</span><span class="chip">Python/Flask</span><span
-              class="chip">Tailwind</span></div>
-          <a class="link" href="https://ypmanrique2.github.io/yadin.manrique-portfolio/" target="_blank">Portfolio
-            →</a>
+          <span class="badge badge-slate">🛡️ Business Process Digitalization</span>
+          <h3>Insurance CRM · Insurance Management and Digitalization Platform</h3>
+          <p>Insurance CRM is a full-stack software engineering solution designed to eradicate operational inefficiency and integrity risks derived from isolated Excel spreadsheets. Built entirely through custom programming, the platform executes the reengineering of complex workflows, centralizing the insurance sector's operational cycle across three domain pillars: customer management, policy administration, and claims tracking. The architecture implements a decoupled frontend under the Component-Based Architecture paradigm using React, TypeScript, Vite, and TailwindCSS, ensuring strict typing, state management, and optimized performance in interactive dashboards. On the server layer, a REST API was programmed in Python (Flask) responsible for processing business rules, sanitizing inputs, and orchestrating persistence in SQLite/PostgreSQL, complemented by a CI/CD automation pipeline in GitHub Actions and WSGI (Gunicorn) deployment on Render. This development demonstrates technical capability to transform informal business processes into distributed, scalable, and secure web architectures, combining data analysis with clean code writing oriented to real production environments.</p>
+          <div class="chips"><span class="chip">React</span><span class="chip">TypeScript</span><span
+              class="chip">TailwindCSS</span><span class="chip">HTML5</span><span class="chip">CSS3</span><span
+              class="chip">Vite</span><span class="chip">GitHub Actions</span><span class="chip">Python</span><span
+              class="chip">Flask</span><span class="chip">Gunicorn</span><span class="chip">SQLite</span><span
+              class="chip">PostgreSQL</span><span class="chip">Render</span><span class="chip">API RESTful</span><span
+              class="chip">CI/CD</span><span class="chip">Data Visualization</span><span class="chip">Dashboard</span><span
+              class="chip">CRM</span><span class="chip">Business Process Digitalization</span><span class="chip">Excel</span><span
+              class="chip">Component-Based Architecture</span><span class="chip">Clean Code</span><span
+              class="chip">Secure Coding</span><span class="chip">Data Sanitization</span><span
+              class="chip">Input Validation</span><span class="chip">State Management</span><span
+              class="chip">Performance Optimization</span></div>
+          <a class="link" href="https://ypmanrique2.github.io/insurance-crm-frontend/" target="_blank">insurance-crm-frontend →</a>
         </article>
 
       </div>
