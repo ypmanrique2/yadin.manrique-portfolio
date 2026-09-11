@@ -2,7 +2,7 @@ import { RevealOnScroll } from "../RevealOnScroll";
 
 const projects = [
     {
-        title: "YadinStore · e-Shop SaaS · Enterprise e-Commerce Engine",
+        title: "YadinStore · e-Shop SaaS · Enterprise e-Commerce",
         badge: "⭐ Distributed Systems Architecture · Multi-tenant · Hardened",
         badgeClass: "bg-green-500/20 text-green-300",
         description:
@@ -63,7 +63,7 @@ const projects = [
         badgeClass: "bg-green-500/20 text-green-300",
         description:
             "Diseñé e implementé una solución de e-commerce corporativa endurecida (Hardened e-Commerce Solution) para transacciones masivas bajo modelo de roles estricto (Strict RBAC Model). El front-end opera con renderizado de servidor (Server-Side Rendering - SSR) en Next.js con React y TypeScript, autenticación federada con Keycloak (Identity and Access Management - IAM) y NextAuth; el back-end expone servicios en Java con Spring Boot y Spring Security con persistencia en MongoDB. La arquitectura separa responsabilidades por capas (Clean Architecture), aplica mínimo privilegio, validación de entradas OWASP y operación privada, escalable y de alta fiabilidad aun en temporada alta.",
-        chips: ["React", "NextJs", "Java", "TypeScript", "MongoDB", "SpringBoot", "SpringSecurity", "Keycloak", "NextAuth", "SSR", "RBAC", "OWASP", "Clean Architecture", "REST API"],
+        chips: ["React", "Next.js", "Java", "TypeScript", "MongoDB", "SpringBoot", "SpringSecurity", "Keycloak", "NextAuth", "SSR", "RBAC", "OWASP", "Clean Architecture", "REST API"],
         href: "https://eshop-oem.netlify.app",
     },
 {
@@ -90,7 +90,7 @@ const projects = [
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
         description:
             "Diseñé e implementé una landing con enfoque AI-first y SEO con humano en el bucle (Human-in-the-Loop) sobre WordPress con tema ligero y lógica de negocio separada en hooks (Separation of Concerns). Modelé la base MySQL con optimización de consultas, esquema versionado con dbDelta y operaciones CRUD robustas en manejo de estados. El front-end combina VanillaJS moderno y maquetado CSS3 responsive bajo principios de arquitectura limpia (Clean Architecture) con ACF Pro, endurecimiento de seguridad (Security Hardening) y cabeceras seguras.",
-        chips: ["Wordpress", "Vanilla JS", "SEO human in the loop", "AI first", "MySQL", "HTML5", "CSS3", "JavaScript", "ACF Pro", "PHP", "Hooks", "dbDelta", "Responsive Design", "Security Hardening", "Clean Architecture", "Custom Post Types"],
+        chips: ["WordPress", "Vanilla JS", "SEO human in the loop", "AI first", "MySQL", "HTML5", "CSS3", "JavaScript", "ACF Pro", "PHP", "Hooks", "dbDelta", "Responsive Design", "Security Hardening", "Clean Architecture", "Custom Post Types"],
         href: "https://b2b-sucessintheair.infinityfree.me/",
     },
 {
