@@ -2,28 +2,28 @@ import { RevealOnScroll } from "../RevealOnScroll";
 
 const projects = [
     {
-        title: "YadinStore · e-Shop SaaS",
-        badge: "⭐ e-Commerce SaaS · Multi-Vendor · Hardened",
+        title: "YadinStore · e-Shop SaaS · Enterprise e-Commerce Engine",
+        badge: "⭐ Distributed Systems Architecture · Multi-tenant · Hardened",
         badgeClass: "bg-green-500/20 text-green-300",
         description:
-            "Plataforma e-Commerce SaaS multi-vendor para que múltiples vendedores gestionen catálogo, carrito, checkout y notificaciones con aislamiento por tenant. El front-end utiliza Angular 21, Nx y Module Federation con Signals preparado como host/remote; el back-end adopta un monolito modular con Spring Modulith + arquitectura hexagonal + DDD + virtual threads, Kafka 3.9.2 KRaft con Transactional Outbox atómico, DLT e idempotencia por eventId, Resilience4j, MongoDB ACID + Mongock y Spring Security con JWT, RBAC por X-Tenant-ID, rate limiting, CORS allowlist y controles anti-IDOR validados con Testcontainers.",
-        chips: ["Java 21", "Spring Boot 3.5", "Spring Modulith", "Angular 21", "Kafka 3.9.2", "MongoDB", "Hexagonal Architecture", "DDD", "Transactional Outbox", "DLT", "Idempotency", "Resilience4j", "Spring Security", "JWT", "RBAC", "Multi-Tenancy", "OWASP", "IDOR", "Docker", "k3d", "Testcontainers", "GitHub Actions"],
+            "Diseñé e implementé YadinStore, un SaaS e-Commerce Engine con Angular 21 + Nx + Module Federation y arquitectura de micro-frontends, respaldado por un monolito modular en Java 21 + Spring Boot/Spring Modulith. Apliqué Clean/Hexagonal Architecture + DDD, integración Kafka KRaft + Transactional Outbox + DLT + Idempotency, y MongoDB para persistencia con principio ACID. La solución incorpora RBAC + Multi-Tenancy, pruebas de integración con Testcontainers y un flujo CI/CD con GitHub Actions, Jenkins y Docker sobre infraestructura cloud. Arquitectura limpia (Clean Architecture), diseño guiado por el dominio (Domain-Driven Design - DDD) y arquitectura hexagonal (Hexagonal Architecture), asegurada con control de acceso basado en roles (Role-Based Access Control - RBAC), aislamiento estricto por inquilino (Multi-Tenancy Isolation), Docker con Kubernetes (K8s) mediante K3d y despliegue a Azure Kubernetes Service (AKS).",
+        chips: ["Java 21", "Spring Boot", "Spring Modulith", "X-Tenant-ID", "Angular 21", "Kafka", "MongoDB", "NgRX", "Kubernetes (K8s)", "Hexagonal Architecture", "DDD", "Transactional Outbox", "Angular Signals", "DLT", "Idempotency", "Resilience4j", "Virtual Threads", "Spring Security", "JWT", "RBAC", "Clean Architecture", "Multi-Tenancy", "OWASP", "IDOR", "EDA", "Azure Kubernetes Service (AKS)", "Docker", "K3d", "Testcontainers", "GitHub Actions"],
         href: "https://yadinstore-frontend.onrender.com/",
         demo: { email: "usuario.demo@yadinstore.com", password: "1cLaVeDePrUeBa+" },
     },
     {
         title: "YadinStore · Admin Dashboard SaaS Multi-Vendor",
-        badge: "🔐 SaaS Admin · Multi-Tenant",
+        badge: "🔐 SaaS Admin · Multi-Tenant Dashboard",
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
         description:
-            "Dashboard administrativo para la operación del e-Commerce SaaS, integrado con APIs reales y orientado a la gestión de ventas, órdenes, productos, usuarios y métricas. Desarrollado con Angular 21, Signals, Nx y Module Federation, implementa autenticación JWT, autorización RBAC por rol, guards e interceptores, aislamiento multi-tenant mediante X-Tenant-ID y acceso admin mediante ticket temporal de un solo uso sin exponer credenciales en el navegador. Consume el backend Spring Boot hardened con rate limiting, CORS restringido y protección anti-IDOR, con arquitectura lista para evolucionar como remote MFE dentro del ecosistema micro-frontend.",
-        chips: ["Angular 21", "TypeScript", "Signals", "Nx", "Module Federation", "Spring Boot 3.5", "Spring Security", "JWT", "RBAC", "Multi-Tenancy", "Rate Limiting", "IDOR", "MongoDB", "Tailwind 4", "Docker", "k3d", "GitHub Actions"],
+            "Diseñé e implementé el Panel Administrativo SaaS de YadinStore, una consola de operación empresarial (Enterprise Administrative Dashboard) preparada como micro-frontend remoto (Remote Micro-Frontend) con Angular 21, Nx Monorepo y federación de módulos (Module Federation). Lideré la gestión reactiva de productos, usuarios, métricas y ventas con señales (Angular Signals), blindando la consola con arquitectura de seguridad endurecida (Hardened Security Architecture): autenticación JWT con acceso por ticket de un solo uso (One-Time Ticket Access), control de acceso basado en roles (Role-Based Access Control - RBAC), protección anti-IDOR (Anti-IDOR Protection) y aislamiento estricto por inquilino (X-Tenant-ID Multi-Tenancy Isolation), integrada con servicios Spring Boot 3.5 y base de datos MongoDB.",
+        chips: ["Java 21", "Spring Boot", "Spring Modulith", "X-Tenant-ID", "Angular 21", "Kafka", "MongoDB", "NgRX", "Kubernetes (K8s)", "Hexagonal Architecture", "DDD", "Transactional Outbox", "Angular Signals", "DLT", "Idempotency", "Resilience4j", "Virtual Threads", "Spring Security", "JWT", "RBAC", "Clean Architecture", "Multi-Tenancy", "OWASP", "IDOR", "EDA", "Azure Kubernetes Service (AKS)", "Docker", "K3d", "Testcontainers", "GitHub Actions"],
         href: "https://yadinstore-admin.onrender.com/",
         demo: { email: "usuario.demo@yadinstore.com", password: "1cLaVeDePrUeBa+" },
     },
     {
         title: "YadinStore · Backend API + Kafka + CI/CD & Observabilidad",
-        badge: "🔧 BE-JD · Backend + Kafka + CI/CD & Observabilidad",
+        badge: "🔧 Backend Event Driven · Kafka · CI/CD · Observabilidad",
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
         description:
             "API REST Java 21 con Spring Boot 3.5 y Spring Modulith como monolito modular con arquitectura hexagonal, DDD y virtual threads. Kafka 3.9.2 KRaft opera con Transactional Outbox atómico, DLT para poison messages e idempotencia por eventId (exactly-once); Resilience4j aporta circuit breaker, retry y bulkhead. La seguridad end-to-end combina Spring Security + JWT, RBAC por X-Tenant-ID, rate limiting por tenant, CORS allowlist y guards anti-IDOR con tests. La persistencia usa MongoDB ACID multi-documento, migraciones con Mongock y calidad con Testcontainers + JaCoCo. Stack CI/CD y observabilidad Cloud-Native integrado con GitHub Actions y Jenkins mediante Pipeline as Code (Jenkinsfile), Docker/DinD y automatización completa del ciclo build, test y empaquetado. El backend está instrumentado con Micrometer (Outbox, Kafka, p95 HTTP) centralizando métricas en Prometheus y visualización en Grafana, mientras Elasticsearch + Kibana proporcionan trazabilidad y análisis de logs; JasperReports genera reportes PDF de órdenes. Incluye dashboard server-side de actividad Kafka (brokers, topics, consumer groups y lag) consultado vía SASL_SSL sin exponer credenciales al navegador.",
@@ -36,25 +36,25 @@ const projects = [
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
         description:
             "Insurance CRM es una solución full-stack de ingeniería de software diseñada para erradicar la ineficiencia operativa y los riesgos de integridad derivados de hojas de cálculo aisladas (Excel). Construida enteramente mediante programación a medida, la plataforma ejecuta la reingeniería de flujos de trabajo complejos, centralizando el ciclo operativo del sector asegurador en tres pilares de dominio: gestión de clientes, administración de pólizas y trazabilidad de siniestros. La arquitectura implementa un frontend desacoplado bajo el paradigma de Arquitectura Basada en Componentes utilizando React, TypeScript, Vite y TailwindCSS, lo que asegura un tipado estricto, gestión de estado y rendimiento optimizado en dashboards interactivos. En la capa de servidor, se programó una API REST en Python (Flask) encargada de procesar reglas de negocio, sanitizar entradas y orquestar la persistencia en SQLite/PostgreSQL, complementada con un pipeline de automatización CI/CD en GitHub Actions y despliegue WSGI (Gunicorn) sobre Render. Este desarrollo evidencia capacidad técnica de tomar procesos de negocio informales y transformarlos en arquitecturas web distribuidas, escalables y seguras, combinando el análisis de datos con la escritura de código limpio y orientado a entornos de producción reales.",
-        chips: ["React", "TypeScript", "TailwindCSS", "HTML5", "CSS3", "Vite", "GitHub Actions", "Python", "Flask", "Gunicorn", "SQLite", "PostgreSQL", "Render", "API RESTful", "CI/CD", "Data Visualization", "Dashboard", "CRM", "Business Process Digitalization", "Excel", "Component-Based Architecture", "Clean Code", "Secure Coding", "Datan Sanitization", "Input Validation", "State Management", "Performance Optimization"],
+        chips: ["React", "TypeScript", "TailwindCSS", "HTML5", "CSS3", "Vite", "GitHub Actions", "Python", "Flask", "Gunicorn", "SQLite", "PostgreSQL", "Render", "API RESTful", "CI/CD", "Data Visualization", "Dashboard", "CRM", "Business Process Digitalization", "Excel", "Component-Based Architecture", "Clean Code", "Secure Coding", "Data Sanitization", "Input Validation", "State Management", "Performance Optimization"],
         href: "https://ypmanrique2.github.io/insurance-crm-frontend/",
     },
 {
         title: "Marketplace de comercio electrónico VE&CO (Web)",
-        badge: "Colaborador fullstack al código núcleo (Core Contributor)",
+        badge: "Fui colaborador fullstack al código núcleo (Core Contributor)",
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
         description:
-            "Marketplace de e-commerce colombiano para que empresas y emprendedores publiquen, vendan y gestionen productos. Plataforma web con arquitectura moderna en la nube, pagos electrónicos seguros y cumplimiento de la normativa colombiana de comercio electrónico y protección de datos.",
-        chips: ["Angular", "Node.js", "Express", "SCSS", "Firebase", "Fly.io", "TypeScript", "MongoDB"],
+            "Contribuí como desarrollador fullstack al código núcleo (Core Contributor) del marketplace VE&CO, plataforma colombiana donde empresas y emprendedores publican, venden y gestionan productos. Implementé interfaces reactivas en Angular con TypeScript estricto y gestión de estado con RxJS, maquetado escalable con SCSS responsive, y una API REST en Node.js con Express para catálogo, autenticación con Firebase (Auth) y persistencia en MongoDB. La solución opera con despliegue continuo sobre Fly.io, pagos electrónicos seguros y cumplimiento de la normativa colombiana de comercio electrónico y protección de datos, con sanitización de entradas y control de acceso por roles (Role-Based Access Control - RBAC).",
+        chips: ["Angular", "Node.js", "Express", "SCSS", "Firebase", "Fly.io", "TypeScript", "MongoDB", "RxJS", "REST API", "Firebase Auth", "JWT", "RBAC", "Responsive Design", "CI/CD", "SEO"],
         href: "https://veycoo.com.co/",
     },
 {
         title: "App de PlayStore: VE&CO, Marketplace de comercio electrónico",
-        badge: "Colaborador fullstack al código núcleo (Core Contributor)",
+        badge: "Fui colaborador fullstack al código núcleo (Core Contributor)",
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
         description:
-            "App omnicanal que conecta compradores y vendedores: web, móvil y back-end en la nube con autenticación segura, gestión de productos, pagos electrónicos, logística, mensajería y servicios desplegados en Cloud bajo arquitectura escalable orientada a microservicios, seguridad y cumplimiento normativo.",
-        chips: ["Angular", "Node.js", "Express", "SCSS", "Firebase", "Fly.io", "Java", "TypeScript", "MongoDB", "PlayStore"],
+            "Contribuí como desarrollador fullstack al código núcleo (Core Contributor) de la app omnicanal VE&CO, que conecta compradores y vendedores desde web, móvil y back-end en la nube. Construí la experiencia móvil distribuida en PlayStore con renderizado adaptativo, autenticación segura con Firebase (Auth) y JWT, gestión de productos, pagos electrónicos, logística y mensajería sobre una API REST en Node.js con Express y persistencia en MongoDB. Los servicios, desplegados en Fly.io bajo arquitectura escalable orientada a servicios, aplican control de acceso por roles (Role-Based Access Control - RBAC), validación de entradas y cumplimiento normativo colombiano.",
+        chips: ["Angular", "Node.js", "Express", "SCSS", "Firebase", "Fly.io", "Java", "TypeScript", "MongoDB", "PlayStore", "RxJS", "REST API", "Firebase Auth", "JWT", "RBAC", "Responsive Design", "CI/CD"],
         href: "https://play.google.com/store/apps/details?id=app.veycoo.co&hl=es_CO",
     },
 {
@@ -62,8 +62,8 @@ const projects = [
         badge: "⭐ Flagship · eShop OEM SaaS",
         badgeClass: "bg-green-500/20 text-green-300",
         description:
-            "Solución de e-commerce corporativa Hardened que combina Java + Spring Boot y MongoDB con la seguridad de Keycloak (IAM). Diseñada para transacciones masivas bajo modelo por roles RBAC estricto: operación privada, escalable y de alta fiabilidad para corporaciones con requerimientos críticos de seguridad y disponibilidad, aún en temporada alta.",
-        chips: ["React", "NextJs", "Java", "TypeScript", "MongoDB", "SpringBoot", "SpringSecurity", "Keycloak", "NextAuth"],
+            "Diseñé e implementé una solución de e-commerce corporativa endurecida (Hardened e-Commerce Solution) para transacciones masivas bajo modelo de roles estricto (Strict RBAC Model). El front-end opera con renderizado de servidor (Server-Side Rendering - SSR) en Next.js con React y TypeScript, autenticación federada con Keycloak (Identity and Access Management - IAM) y NextAuth; el back-end expone servicios en Java con Spring Boot y Spring Security con persistencia en MongoDB. La arquitectura separa responsabilidades por capas (Clean Architecture), aplica mínimo privilegio, validación de entradas OWASP y operación privada, escalable y de alta fiabilidad aun en temporada alta.",
+        chips: ["React", "NextJs", "Java", "TypeScript", "MongoDB", "SpringBoot", "SpringSecurity", "Keycloak", "NextAuth", "SSR", "RBAC", "OWASP", "Clean Architecture", "REST API"],
         href: "https://eshop-oem.netlify.app",
     },
 {
@@ -71,8 +71,8 @@ const projects = [
         badge: "Actual",
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
         description:
-            "Página de mediana complejidad adaptable a empresas productoras que desean exhibir sus productos, incrementando sus ventas en línea. Angular en front-end, back-end con Node.js y Express para APIs, estilos escalables con SCSS, soporte en nube con Firebase y manejo de datos reactivos con RxJS.",
-        chips: ["Angular", "Node.js", "Express", "SCSS", "Firebase"],
+            "Diseñé e implementé un portafolio adaptable (Adaptive Portfolio) de mediana complejidad para empresas productoras que exhiben su catálogo e incrementan ventas en línea. Construí el front-end en Angular con TypeScript y estado reactivo con RxJS, una API REST en Node.js con Express para contenido dinámico, maquetado escalable con SCSS responsive y despliegue en la nube con Firebase (Hosting). La solución aplica diseño responsive mobile-first, SEO on-page y código limpio por componentes.",
+        chips: ["Angular", "Node.js", "Express", "SCSS", "Firebase", "TypeScript", "RxJS", "REST API", "Responsive Design", "SEO"],
         href: "https://ypmanrique2.github.io/portfolio-angular/",
     },
 {
@@ -80,8 +80,8 @@ const projects = [
         badge: "Actual · Brevo",
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
         description:
-            "Sitio profesional en WordPress con tema ligero y ACF Pro. SEO on-page, rendimiento con caching y compresión, maquetado responsive CSS3 y base de datos MySQL optimizada. Mensajería directa al correo con Brevo, back-end en PHP/WordPress con tabla personalizada de contactos, validación y sanitización de datos, AJAX con nonce y notificaciones por email HTML.",
-        chips: ["WordPress", "ACF Pro", "PHP", "MySQL", "CSS3", "Vanilla JS", "SEO", "Brevo", "jQuery", "AJAX"],
+            "Diseñé e implementé una landing profesional (Professional Landing Page) en WordPress con tema ligero y campos personalizados con ACF Pro (Advanced Custom Fields). Optimicé el SEO on-page, el rendimiento con caché y compresión, y el maquetado responsive con CSS3 sobre base de datos MySQL optimizada. La mensajería directa al correo opera con Brevo, y el back-end en PHP expone tabla personalizada de contactos con validación y sanitización de datos, peticiones AJAX con nonce de seguridad (Security Nonces) y notificaciones por email HTML.",
+        chips: ["WordPress", "ACF Pro", "PHP", "MySQL", "CSS3", "Vanilla JS", "SEO", "Brevo", "jQuery", "AJAX", "HTML5", "Responsive Design", "Security Nonces", "Hooks", "Custom Post Types"],
         href: "https://diana-morantes.infinityfree.io/wp/",
     },
 {
@@ -89,8 +89,8 @@ const projects = [
         badge: "Actual · AI First",
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
         description:
-            "Página en WordPress con tema ligero y lógica de negocio separada en hook. Base de datos MySQL con optimización de consultas, esquema por dbDelta y CRUD robustos en manejo de estados. Clean Architecture con ACF Pro, front-end moderno en VanillaJS y maquetado CSS3 responsive, con AI first, SEO humano en la lupa y bastionado (hardening) de seguridad.",
-        chips: ["Wordpress", "Vanilla JS", "SEO human in the loop", "AI first", "MySQL", "HTML5", "CSS3", "JavaScript"],
+            "Diseñé e implementé una landing con enfoque AI-first y SEO con humano en el bucle (Human-in-the-Loop) sobre WordPress con tema ligero y lógica de negocio separada en hooks (Separation of Concerns). Modelé la base MySQL con optimización de consultas, esquema versionado con dbDelta y operaciones CRUD robustas en manejo de estados. El front-end combina VanillaJS moderno y maquetado CSS3 responsive bajo principios de arquitectura limpia (Clean Architecture) con ACF Pro, endurecimiento de seguridad (Security Hardening) y cabeceras seguras.",
+        chips: ["Wordpress", "Vanilla JS", "SEO human in the loop", "AI first", "MySQL", "HTML5", "CSS3", "JavaScript", "ACF Pro", "PHP", "Hooks", "dbDelta", "Responsive Design", "Security Hardening", "Clean Architecture", "Custom Post Types"],
         href: "https://b2b-sucessintheair.infinityfree.me/",
     },
 {
@@ -98,8 +98,8 @@ const projects = [
         badge: "Demo abierta: admin / 1234",
         badgeClass: "bg-amber-500/10 text-amber-400 border border-amber-500/30",
         description:
-            "Web-app full-stack en Angular consumiendo API REST en Node.js + Express, con autenticación por sesión (cookie HTTP-only) y login por guards e interceptores. Back-end con persistencia en MySQL, gestión de usuarios y rol, estado reactivo con RxJS y comunicación segura cross-origin por CORS.",
-        chips: ["Angular", "Node.js", "Express", "RxJS", "TypeScript", "SQL", "Jasmine", "Karma"],
+            "Diseñé e implementé una web-app full-stack (Full-Stack Web App) en Angular que consume una API REST educativa en Node.js con Express. Aseguré la autenticación por sesión con cookie HTTP-only (HTTP-Only Session Cookie), login protegido con guards e interceptores, persistencia en MySQL con gestión de usuarios y roles (Role-Based Access Control - RBAC), estado reactivo con RxJS y comunicación segura cross-origin mediante CORS con lista de orígenes permitidos (Allowlist). La calidad se respalda con pruebas unitarias en Jasmine y Karma.",
+        chips: ["Angular", "Node.js", "Express", "RxJS", "TypeScript", "SQL", "Jasmine", "Karma", "MySQL", "CORS", "Route Guards", "REST API", "Responsive Design"],
         href: "https://pokedexaplication.netlify.app/",
     },
 {
@@ -107,8 +107,8 @@ const projects = [
         badge: "Actual · Hardened",
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
         description:
-            "Intranet de alta complejidad y altamente segura (Hardened), adaptable a corporaciones que desean manejar, editar y compartir archivos con toda o parte de su organización de forma segura y confidencial, con control de acceso y niveles de seguridad, edición y lectura ajustables.",
-        chips: ["HTML5", "CSS3", "TypeScript", "Firebase", "GCP"],
+            "Diseñé y desarrollé la arquitectura full-stack de la intranet institucional (Institutional Intranet) bajo modelo SaaS sobre Google Cloud Platform, adaptable a corporaciones que gestionan, editan y comparten archivos confidenciales. Implementé control de acceso por roles (Role-Based Access Control - RBAC) con niveles de seguridad ajustables de edición y lectura, gestión de archivos con clasificación de confidencialidad y adopción de metodologías ágiles con KPIs. Solución endurecida (Hardened) bajo principios OWASP, evaluada con estándares ISO 9001 y NTC 6744.",
+        chips: ["HTML5", "CSS3", "TypeScript", "Firebase", "GCP", "RBAC", "IAM", "OWASP", "Responsive Design", "Google Workspace"],
         href: "https://sites.google.com/comfaoriente.com/intranetcolcampestre",
     },
 {
@@ -116,8 +116,8 @@ const projects = [
         badge: "Actual",
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
         description:
-            "Página de básica complejidad, adaptable a personas y negocios pequeños o medianos que deseen exhibir sus productos o servicios en internet, incrementando así sus ventas en línea.",
-        chips: ["HTML5", "CSS3", "JavaScript"],
+            "Diseñé e implementé una página ligera (Lightweight Business Page) de complejidad básica para personas y negocios pequeños que exhiben sus productos o servicios en internet. Maquetado semántico en HTML5 con estilos CSS3 responsive mobile-first y comportamiento en JavaScript vainilla (Vanilla JS), con SEO on-page básico, accesibilidad con etiquetas aria y despliegue estático en GitHub Pages para carga rápida y costo cero.",
+        chips: ["HTML5", "CSS3", "JavaScript", "Responsive Design", "SEO", "GitHub Pages", "Semantic HTML", "Accessibility"],
         href: "https://ypmanrique2.github.io/Avanzando/",
     },
 ];

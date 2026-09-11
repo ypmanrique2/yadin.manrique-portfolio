@@ -44,15 +44,15 @@ const dataCloud = [
 const tagGroups = [
     {
         title: "Especialidades & Metodologías",
-        tags: ["Clean Arch", "Hexagonal", "DDD", "SOLID", "MicroFront-Ends (MFE)", "REST API", "CI/CD", "OWASP Top 10", "SDD", "ITIL v4", "Scrum"],
+        tags: ["Clean Arch", "Hexagonal", "DDD", "SOLID", "MicroFront-Ends (MFE)", "REST API", "CI/CD", "OWASP Top 10", "SDD", "ITIL v4", "Scrum", "EDA", "Idempotency"],
     },
     {
         title: "Cloud · Infra · Seguridad",
-        tags: ["Kafka KRaft", "SSE", "Docker / Kubernetes (k3d · AKS)", "GitHub Actions", "Jenkins", "Render", "Fly.io", "GCP", "Azure", "Aiven", "Keycloak", "NextAuth", "RBAC", "Prometheus", "Grafana", "Elasticsearch", "Kibana", "Micrometer", "JasperReports"],
+        tags: ["Kafka KRaft", "SSE", "Docker / Kubernetes (k3d · AKS)", "GitHub Actions", "Jenkins", "Render", "Fly.io", "GCP", "Azure", "Aiven", "Keycloak", "NextAuth", "JWT", "RBAC", "IAM", "Multi-Tenancy", "IDOR", "Rate Limiting", "Prometheus", "Grafana", "Elasticsearch", "Kibana", "Micrometer", "JasperReports"],
     },
     {
         title: "Frontend · IA · Ecosistema",
-        tags: ["TailwindCSS", "WordPress/ACF Pro", "RxJS", "Vite", "esbuild", "Redux", "MCP", "LLM", "EmailJS", "SEO", "CORS", "Data Visualization", "Dashboard", "CRM", "Business Process Digitalization", "Excel", "Component-Based Architecture", "Clean Code", "Secure Coding", "Data Sanitization", "Input Validation", "State Management", "Performance Optimization"],
+        tags: ["TailwindCSS", "WordPress/ACF Pro", "RxJS", "NgRX", "Vite", "esbuild", "Redux", "SSR", "MCP", "LLM", "EmailJS", "SEO", "CORS", "Firebase Auth", "Route Guards", "Responsive Design", "Semantic HTML", "Accessibility", "Security Hardening", "Custom Post Types", "GitHub Pages", "Data Visualization", "Dashboard", "CRM", "Business Process Digitalization", "Excel", "Component-Based Architecture", "Clean Code", "Secure Coding", "Data Sanitization", "Input Validation", "State Management", "Performance Optimization"],
     },
 ];
 
