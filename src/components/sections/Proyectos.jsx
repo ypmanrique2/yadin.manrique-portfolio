@@ -26,12 +26,12 @@ const projects = [
         badge: "🔧 Backend Event Driven · Kafka · CI/CD · Observabilidad",
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
         description:
-            "API REST Java 21 con Spring Boot 3.5 y Spring Modulith como monolito modular con arquitectura hexagonal, DDD y virtual threads. Kafka 3.9.2 KRaft opera con Transactional Outbox atómico, DLT para poison messages e idempotencia por eventId (exactly-once); Resilience4j aporta circuit breaker, retry y bulkhead. La seguridad end-to-end combina Spring Security + JWT, RBAC por X-Tenant-ID, rate limiting por tenant, CORS allowlist y guards anti-IDOR con tests. La persistencia usa MongoDB ACID multi-documento, migraciones con Mongock y calidad con Testcontainers + JaCoCo. Stack CI/CD y observabilidad Cloud-Native integrado con GitHub Actions y Jenkins mediante Pipeline as Code (Jenkinsfile), Docker/DinD y automatización completa del ciclo build, test y empaquetado. El backend está instrumentado con Micrometer (Outbox, Kafka, p95 HTTP) centralizando métricas en Prometheus y visualización en Grafana, mientras Elasticsearch + Kibana proporcionan trazabilidad y análisis de logs; JasperReports genera reportes PDF de órdenes. Incluye dashboard server-side de actividad Kafka (brokers, topics, consumer groups y lag) consultado vía SASL_SSL sin exponer credenciales al navegador.",
+            "API REST Java 21 con Spring Boot 3.5 y Spring Modulith como monolito modular con arquitectura hexagonal, DDD y virtual threads. Kafka 3.9.2 KRaft opera con Transactional Outbox atómico, DLT para poison messages e idempotencia por eventId (exactly-once); Resilience4j aporta circuit breaker, retry y bulkhead. La seguridad end-to-end combina Spring Security + JWT, RBAC por X-Tenant-ID, rate limiting por tenant, CORS allowlist y guards anti-IDOR con tests. La persistencia usa MongoDB ACID multi-documento, migraciones con Mongock y calidad con Testcontainers + JaCoCo. Stack CI/CD y observabilidad Cloud-Native integrado con GitHub Actions y Jenkins mediante Pipeline as Code (Jenkinsfile), Docker/DinD y automatización completa del ciclo build, test y empaquetado. El backend está instrumentado con Micrometer (Outbox, Kafka, p95 HTTP) centralizando métricas en Prometheus y visualización en Grafana, mientras Elasticsearch + Kibana proporcionan trazabilidad y análisis de logs; JasperReports genera reportes PDF de órdenes. Incluye dashboard server-side de actividad Kafka (brokers, topics, consumer groups y lag) consultado vía SASL_SSL sin exponer credenciales al navegador. Si PC/agente hibernado se muestra OFFLINE, y Elasticsearch LOCAL ONLY en amarillo — es el comportamiento esperado del free-tier, no un bug.",
         chips: ["Java 21", "Spring Boot 3.5", "Spring Modulith", "Kafka 3.9.2", "MongoDB", "Hexagonal Architecture", "DDD", "Transactional Outbox", "DLT", "Idempotency", "Resilience4j", "Spring Security", "JWT", "RBAC", "Multi-Tenancy", "OWASP", "Rate Limiting", "Mongock", "Testcontainers", "Docker", "k3d", "SASL_SSL", "GitHub Actions", "Jenkins 2.468.2", "Jenkinsfile", "Pipeline as Code", "DinD", "Grafana 10.4.3", "Prometheus", "Elasticsearch 8.15.3", "Kibana 8.15.3", "Micrometer", "JasperReports", "Render"],
         href: "https://yadinstore-jenkins-obs-live.onrender.com/jenkins-dashboard.html",
         linkLabel: "Ver monitor Kafka + Docker + K8s (k3d-AKS) + CI/CD & Observabilidad →",
     },
-{
+    {
         title: "Insurance CRM · Plataforma de Gestión y Digitalización de Seguros",
         badge: "🛡️ Business Process Digitalization",
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
@@ -40,7 +40,7 @@ const projects = [
         chips: ["React", "TypeScript", "TailwindCSS", "HTML5", "CSS3", "Vite", "GitHub Actions", "Python", "Flask", "Gunicorn", "SQLite", "PostgreSQL", "Render", "API RESTful", "CI/CD", "Data Visualization", "Dashboard", "CRM", "Business Process Digitalization", "Excel", "Component-Based Architecture", "Clean Code", "Secure Coding", "Data Sanitization", "Input Validation", "State Management", "Performance Optimization"],
         href: "https://ypmanrique2.github.io/insurance-crm-frontend/",
     },
-{
+    {
         title: "Marketplace de comercio electrónico VE&CO (Web)",
         badge: "Fui colaborador fullstack al código núcleo (Core Contributor)",
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
@@ -49,7 +49,7 @@ const projects = [
         chips: ["Angular", "Node.js", "Express", "SCSS", "Firebase", "Fly.io", "TypeScript", "MongoDB", "RxJS", "REST API", "Firebase Auth", "JWT", "RBAC", "Responsive Design", "CI/CD", "SEO"],
         href: "https://veycoo.com.co/",
     },
-{
+    {
         title: "App de PlayStore: VE&CO, Marketplace de comercio electrónico",
         badge: "Fui colaborador fullstack al código núcleo (Core Contributor)",
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
@@ -58,7 +58,7 @@ const projects = [
         chips: ["Angular", "Node.js", "Express", "SCSS", "Firebase", "Fly.io", "Java", "TypeScript", "MongoDB", "PlayStore", "RxJS", "REST API", "Firebase Auth", "JWT", "RBAC", "Responsive Design", "CI/CD"],
         href: "https://play.google.com/store/apps/details?id=app.veycoo.co&hl=es_CO",
     },
-{
+    {
         title: "eShop corporativa de alta disponibilidad",
         badge: "⭐ Flagship · eShop OEM SaaS",
         badgeClass: "bg-green-500/20 text-green-300",
@@ -67,7 +67,7 @@ const projects = [
         chips: ["React", "Next.js", "Java", "TypeScript", "MongoDB", "Spring Boot", "Spring Security", "Keycloak", "NextAuth", "SSR", "RBAC", "OWASP", "Clean Architecture", "REST API"],
         href: "https://eshop-oem.netlify.app",
     },
-{
+    {
         title: "Portafolio adaptable a empresas",
         badge: "Actual",
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
@@ -76,7 +76,7 @@ const projects = [
         chips: ["Angular", "Node.js", "Express", "SCSS", "Firebase", "TypeScript", "RxJS", "REST API", "Responsive Design", "SEO"],
         href: "https://ypmanrique2.github.io/portfolio-angular/",
     },
-{
+    {
         title: "Landing Page para servicios profesionales",
         badge: "Actual · Brevo",
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
@@ -85,7 +85,7 @@ const projects = [
         chips: ["WordPress", "ACF Pro", "PHP", "MySQL", "CSS3", "Vanilla JS", "SEO", "Brevo", "jQuery", "AJAX", "HTML5", "Responsive Design", "Security Nonces", "Hooks", "Custom Post Types"],
         href: "https://diana-morantes.infinityfree.io/wp/",
     },
-{
+    {
         title: "Landing page AI first & SEO human in the loop + Security hardening (WordPress - A.C.F. pro)",
         badge: "Actual · AI First",
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
@@ -94,7 +94,7 @@ const projects = [
         chips: ["WordPress", "Vanilla JS", "SEO human in the loop", "AI first", "MySQL", "HTML5", "CSS3", "JavaScript", "ACF Pro", "PHP", "Hooks", "dbDelta", "Responsive Design", "Security Hardening", "Clean Architecture", "Custom Post Types"],
         href: "https://b2b-sucessintheair.infinityfree.me/",
     },
-{
+    {
         title: "App consumidora de API educativa (Full-Stack MySQL + RBAC)",
         badge: "Demo interactiva disponible",
         badgeClass: "bg-amber-500/10 text-amber-400 border border-amber-500/30",
@@ -103,7 +103,7 @@ const projects = [
         chips: ["Angular", "Node.js", "Express", "RxJS", "TypeScript", "SQL", "Jasmine", "Karma", "MySQL", "CORS", "Route Guards", "REST API", "Responsive Design"],
         href: "https://pokedexaplication.netlify.app/",
     },
-{
+    {
         title: "Intranet adaptable a corporaciones",
         badge: "Actual · Hardened",
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
@@ -112,7 +112,7 @@ const projects = [
         chips: ["HTML5", "CSS3", "TypeScript", "Firebase", "GCP", "RBAC", "IAM", "OWASP", "Responsive Design", "Google Workspace"],
         href: "https://sites.google.com/comfaoriente.com/intranetcolcampestre",
     },
-{
+    {
         title: "Página personalizable a negocios",
         badge: "Actual",
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
