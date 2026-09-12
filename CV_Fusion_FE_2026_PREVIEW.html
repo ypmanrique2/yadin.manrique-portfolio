@@ -4,17 +4,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yadin Manrique — CV 2026 · Fusión Portafolio</title>
+  <title>Yadin Manrique — CV 2026 · Full Stack Java 21 Kafka Docker K8s Cloud SaaS</title>
   <meta name="description"
-    content="Yadin Paulo Manrique Marquez — Full Stack Developer Java 21, Spring Boot 3.5, Kafka KRaft, Event-Driven, Clean/Hexagonal, DDD. 5+ años, 12+ proyectos, ITIL v4, Cloud SaaS en GCP/Azure. Portafolio, experiencia, habilidades y certificaciones verificables." />
+    content="Yadin Paulo Manrique Marquez — Full Stack Developer Java 21, Spring Boot 3.5, Kafka KRaft, Docker, K8s (k3d · AKS), SDD/MCP, OWASP, SQL/MongoDB, Event-Driven, Clean/Hexagonal, DDD. 5+ años, 12+ proyectos, ITIL v4, Cloud SaaS en GCP/Azure. Portafolio, experiencia, habilidades y certificaciones verificables." />
   <meta name="author" content="Yadin Paulo Manrique Marquez" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <link rel="canonical" href="https://ypmanrique2.github.io/yadin.manrique-portfolio/CV_Fusion_FE_2026_PREVIEW.html" />
   <meta name="theme-color" content="#0a0a0a" />
   <meta property="og:type" content="profile" />
-  <meta property="og:title" content="Yadin Manrique — Full Stack Developer Java 21 · Kafka · Cloud SaaS" />
+  <meta property="og:title" content="Yadin Manrique — Full Stack Developer Java 21 · Kafka · Docker K8s · Cloud SaaS" />
   <meta property="og:description"
-    content="Full Stack Java 21, Spring Boot 3.5, Kafka KRaft, Angular 21, React 19. Arquitectura hexagonal, DDD, transactional outbox, DLT, Resilience4j. 5+ años, 12+ proyectos, ITIL v4." />
+    content="Full Stack Java 21, Spring Boot 3.5, Kafka KRaft, Docker, K8s (k3d · AKS), SDD/MCP, OWASP, Angular 21, React 19. Arquitectura hexagonal, DDD, transactional outbox, DLT, Resilience4j. 5+ años, 12+ proyectos, ITIL v4." />
   <meta property="og:url" content="https://ypmanrique2.github.io/yadin.manrique-portfolio/" />
   <meta property="og:image" content="https://ypmanrique2.github.io/yadin.manrique-portfolio/og-image.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -23,7 +23,7 @@
     content="Java 21, Spring Boot 3.5, Kafka, Angular 21, React 19. Clean Architecture, Hexagonal, DDD. Portafolio y CV 2026." />
   <!-- ATS + AI-fetchable meta invisible / reversible — no visual change -->
   <meta name="keywords"
-    content="Java 21, Spring Boot 3.5, Spring Modulith, Hexagonal, DDD, Kafka 3.9.2 KRaft, Transactional Outbox, DLT, Exactly-Once, Resilience4j, MongoDB, Angular 21, React 19, TypeScript, Node.js, Docker, Kubernetes, GCP, Azure, Aiven, Fly.io, Micro frontends, Module Federation, Nx, Signals, RBAC, JWT, OWASP, Prometheus, Grafana, ELK" />
+    content="Java 21, Spring Boot 3.5, Spring Modulith, Hexagonal, DDD, Kafka 3.9.2 KRaft, Transactional Outbox, DLT, Exactly-Once, Resilience4j, MongoDB, SQL, Angular 21, React 19, TypeScript, Node.js, Docker, Kubernetes, k3d, AKS, SDD, MCP, GCP, Azure, Aiven, Fly.io, Micro frontends, Module Federation, Nx, Signals, RBAC, JWT, OWASP, Prometheus, Grafana, ELK" />
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -42,7 +42,10 @@
         "https://ypmanrique2.github.io/yadin.manrique-portfolio/"
       ],
       "knowsAbout": ["Java 21", "Spring Boot 3.5", "Spring Modulith", "Hexagonal", "DDD", "Kafka 3.9.2 KRaft", "Transactional Outbox", "DLT", "Exactly-Once", "Resilience4j", "MongoDB", "Angular 21", "React 19", "TypeScript", "Node.js", "Docker", "Kubernetes", "k3d", "GCP", "Azure", "Aiven", "Fly.io", "Micro frontends", "Module Federation", "Nx", "Signals", "RBAC", "JWT", "OWASP", "Prometheus", "Grafana", "ELK"],
-      "hasOccupation": { "@type": "Occupation", "name": "Full Stack Developer", "skills": "Java 21, Spring Boot 3.5, Kafka, Angular 21, React 19, TypeScript, Node.js, Docker, Kubernetes, GCP, Azure" }
+      "hasOccupation": { "@type": "Occupation", "name": "Full Stack Developer", "skills": "Java 21, Spring Boot 3.5, Kafka, Angular 21, React 19, TypeScript, Node.js, Docker, Kubernetes, GCP, Azure" },
+      "alumniOf": { "@type": "CollegeOrUniversity", "name": "SENA — Servicio Nacional de Aprendizaje" },
+      "hasCredential": { "@type": "EducationalOccupationalCredential", "name": "ITIL 4 Foundation", "recognizedBy": { "@type": "Organization", "name": "PeopleCert/AXELOS" } },
+      "worksFor": { "@type": "Organization", "name": "COMFAORIENTE — I.E. Gimnasio Campestre ComfaOriente" }
     }
     </script>
   <script type="application/ld+json">
@@ -592,6 +595,8 @@
       width: 2px;
       background: linear-gradient(180deg, var(--green), var(--cyan), transparent);
       opacity: 0.6;
+      pointer-events: none;
+      /* FIX 2026-09-12 — decoración nunca intercepta clics */
     }
 
     .tl-item {
@@ -610,6 +615,8 @@
       background: var(--bg);
       border: 2px solid var(--green);
       box-shadow: 0 0 12px rgba(34, 197, 94, 0.5);
+      pointer-events: none;
+      /* FIX 2026-09-12 — decoración nunca intercepta clics */
     }
 
     .tl-item h3 {
@@ -654,6 +661,8 @@
       position: absolute;
       left: 0;
       color: var(--green);
+      pointer-events: none;
+      /* FIX 2026-09-12 — decoración nunca intercepta clics */
     }
 
     .tl-item li.contact-li {
@@ -683,6 +692,8 @@
       transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
       position: relative;
       overflow: hidden;
+      isolation: isolate;
+      /* FIX 2026-09-12 — stacking propio: .link z-index:1 resuelve local */
     }
 
     .pcard::after {
@@ -808,6 +819,14 @@
       font-size: 13.5px;
       font-weight: 500;
       transition: color 0.2s, text-shadow 0.2s;
+      /* FIX hitbox 2026-09-12 — el enlace era una franja de ~22px separada por
+         márgenes muertos (~16px, no clicables); el padding SÍ es hitbox.
+         position+z-index lo elevan sobre decoraciones. Sin cambio visual. */
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      padding: 8px 14px 8px 0;
+      margin-top: 2px;
     }
 
     .pcard .link:hover {
@@ -1432,7 +1451,7 @@
       <h1>YADIN PAULO MANRIQUE</h1>
       <div class="role">
         Full Stack Developer · <b>Java 21</b> / <b>Spring Boot 3.5</b> · <b>Kafka KRaft</b> · <b>Angular 21</b> /
-        <b>React 19</b> · <b>TypeScript</b>
+        <b>React 19</b> · <b>TypeScript</b> · Docker · K8s (k3d · AKS) · SDD/MCP · OWASP · SQL/MongoDB
       </div>
 
       <div class="stats">
@@ -1467,11 +1486,12 @@
             <path stroke-linecap="round" stroke-linejoin="round"
               d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
           </svg> Cúcuta, Colombia</span><span class="sep">·</span>
-        <a href="https://github.com/ypmanrique2" target="_blank"><b>github.com/ypmanrique2</b></a><span
+        <a href="https://github.com/ypmanrique2" target="_blank" rel="noopener"><b>github.com/ypmanrique2</b></a><span
           class="sep">·</span>
-        <a href="https://www.linkedin.com/in/yadin-paulo-manrique-marquez-18753910/"
-          target="_blank"><b>LinkedIn</b></a><span class="sep">·</span>
-        <a href="https://ypmanrique2.github.io/yadin.manrique-portfolio/" target="_blank"><b>Portafolio</b></a>
+        <a href="https://www.linkedin.com/in/yadin-paulo-manrique-marquez-18753910/" target="_blank"
+          rel="noopener"><b>LinkedIn</b></a><span class="sep">·</span>
+        <a href="https://ypmanrique2.github.io/yadin.manrique-portfolio/" target="_blank"
+          rel="noopener"><b>Portafolio</b></a>
       </div>
     </header>
 
@@ -1585,21 +1605,18 @@
           <span class="badge flag">⭐ Distributed Systems Architecture · Multi-tenant · Hardened</span>
           <h3>YadinStore · e-Shop SaaS · Enterprise e-Commerce</h3>
           <p>
-            Diseñé e implementé <em>YadinStore</em>, un SaaS e-Commerce Engine con Angular 21 + Nx + Module Federation y
-            arquitectura de micro-frontends,
-            respaldado por un monolito modular en Java 21 + Spring Boot/Spring Modulith. Apliqué Clean/Hexagonal
-            Architecture + DDD, integración Kafka KRaft
-            + Transactional Outbox + DLT + Idempotency, y MongoDB para persistencia con princio ACID. La solución
-            incorpora RBAC + Multi-Tenancy, pruebas de
-            integración con Testcontainers y un flujo CI/CD con GitHub Actions, Jenkins y Docker, desplegado sobre
-            infraestructura cloud. Toda la solución
-            aplica arquitectura limpia (Clean Architecture), diseño guiado por el dominio (Domain-Driven Design - DDD) y
-            arquitectura hexagonal (Hexagonal
-            Architecture), asegurada mediante control de acceso basado en roles (Role-Based Access Control - RBAC),
-            aislamiento estricto por inquilino
-            (Multi-Tenancy Isolation) y pruebas de integración con Testcontainers y Docker con Kubernetes (K8s) mediante
-            K3d y despliegue a Azure Kubernetes
-            Service (AKS).
+            Diseñé e implementé <b>YadinStore</b>, un <b>SaaS e-Commerce</b> Engine con <em>Angular 21</em> + Nx +
+            <em>Module Federation</em> y arquitectura de
+            micro-frontends, respaldado por un monolito modular en <em>Java 21</em> + <em>Spring Boot</em>/<em>Spring
+              Modulith</em>. Apliqué <em>Clean</em>/
+            <em>Hexagonal Architecture</em> + <em>DDD</em>, integración <em>Kafka</em> <em>KRaft</em> +
+            <em>Transactional Outbox</em> + <em>DLT</em> +
+            <em>Idempotency</em>, y <em>MongoDB</em> para persistencia. La solución incorpora <em>RBAC</em> +
+            <em>Multi-Tenancy</em>, pruebas de integración
+            con <em>Testcontainers</em> y un flujo CI/CD con <em>GitHub Actions</em>, <em>Jenkins</em> y
+            <em>Docker</em>, desplegado sobre infraestructura
+            cloud y <em>Docker</em> con <em>Kubernetes (K8s)</em> mediante <em>k3d</em> y despliegue a <em>Azure
+              Kubernetes Service (AKS)</em>.
           </p>
           <div class="chips">
             <span class="chip">Java 21</span><span class="chip">Spring Boot</span><span class="chip">Spring
@@ -1614,7 +1631,7 @@
               class="chip">Clean Architecture</span>
             <span class="chip">Multi-Tenancy</span><span class="chip">OWASP</span><span class="chip">IDOR</span><span
               class="chip">EDA</span><span class="chip">Azure Kubernetes Service (AKS)</span>
-            <span class="chip">Docker</span><span class="chip">K3d</span><span class="chip">Testcontainers</span><span
+            <span class="chip">Docker</span><span class="chip">k3d</span><span class="chip">Testcontainers</span><span
               class="chip">GitHub Actions</span>
           </div>
           <div class="demo-creds">
@@ -1622,27 +1639,29 @@
             <code>usuario.demo@yadinstore.com</code>
             <code>1cLaVeDePrUeBa+</code>
           </div>
-          <a class="link" href="https://yadinstore-frontend.onrender.com/" target="_blank">Ver Proyecto →</a>
+          <a class="link" href="https://yadinstore-frontend.onrender.com/" target="_blank" rel="noopener">Ver Proyecto
+            →</a>
         </article>
 
         <!-- YadinStore Admin Dashboard -->
         <article class="pcard">
-          <span class="badge actual">🔐 SaaS Admin · Multi-Tenant Dashboard</span>
+          <span class="badge badge-green">🔐 SaaS Admin · Multi-Tenant Dashboard</span>
           <h3>YadinStore · Admin Dashboard SaaS Multi-Vendor</h3>
           <p>
-            Diseñé e implementé el Panel Administrativo SaaS de <em>YadinStore</em>, una consola de operación
+            Diseñé e implementé el Panel Administrativo <em>SaaS</em> de <em>YadinStore</em>, una consola de operación
             empresarial (Enterprise Administrative
-            Dashboard) preparada como un micro-frontend remoto (Remote Micro-Frontend) con Angular 21, Nx Monorepo y
-            federación de módulos (Module
-            Federation). Lideré la gestión reactiva de productos, usuarios, métricas y ventas mediante señales (Angular
-            Signals), blindando la consola
-            con una arquitectura de seguridad endurecida (Hardened Security Architecture) que combina autenticación JWT
-            con acceso por ticket de un solo
-            uso (One-Time Ticket Access), control de acceso basado en roles (Role-Based Access Control - RBAC),
-            protección contra referencia directa a
-            objetos inseguros (Anti-IDOR Protection) y aislamiento estricto por inquilino (X-Tenant-ID Multi-Tenancy
-            Isolation) en constante integración
-            con servicios en Spring Boot 3.5 y base de datos (DataBase) <strong>Mongo DB</strong>.
+            Dashboard) preparada como un micro-frontend remoto (Remote Micro-Frontend) con <b>Angular 21</b>, Nx
+            Monorepo y federación de módulos (<b>Module
+              Federation</b>). Lideré la gestión reactiva de productos, usuarios, métricas y ventas mediante señales
+            (<b>Angular Signals</b>), blindando la
+            consola administrativa con una arquitectura de seguridad endurecida (<b>Hardened Security Architecture</b>)
+            que combina autenticación <b>JWT</b>
+            con acceso por ticket de un solo uso (One-Time Ticket Access), control de acceso basado en roles (Role-Based
+            Access Control - <b>RBAC</b>),
+            protección contra referencia directa a objetos inseguros (Anti-<b>IDOR</b> Protection) y aislamiento
+            estricto por inquilino (<b>X-Tenant-ID</b>
+            Multi-Tenancy Isolation) en constante integración con servicios en <b>Spring Boot</b> 3.5 y base de datos
+            <b>MongoDB</b> con principios de diseño <b>ACID</b>.
           </p>
           <div class="chips">
             <span class="chip">Java 21</span><span class="chip">Spring Boot</span><span class="chip">Spring
@@ -1657,7 +1676,7 @@
               class="chip">Clean Architecture</span>
             <span class="chip">Multi-Tenancy</span><span class="chip">OWASP</span><span class="chip">IDOR</span><span
               class="chip">EDA</span><span class="chip">Azure Kubernetes Service (AKS)</span>
-            <span class="chip">Docker</span><span class="chip">K3d</span><span class="chip">Testcontainers</span><span
+            <span class="chip">Docker</span><span class="chip">k3d</span><span class="chip">Testcontainers</span><span
               class="chip">GitHub Actions</span>
           </div>
           <div class="demo-creds">
@@ -1665,31 +1684,44 @@
             <code>usuario.demo@yadinstore.com</code>
             <code>1cLaVeDePrUeBa+</code>
           </div>
-          <a class="link" href="https://yadinstore-admin.onrender.com/" target="_blank">Ver Proyecto →</a>
+          <a class="link" href="https://yadinstore-admin.onrender.com/" target="_blank" rel="noopener">Ver Proyecto
+            →</a>
         </article>
 
         <!-- YadinStore BE-JD: Backend API + Kafka + CI/CD + Observabilidad  -->
         <article class="pcard">
-          <span class="badge actual">🔧 Backend Event Driven · Kafka · CI/CD · Observabilidad</span>
+          <span class="badge badge-green">🔧 Backend Event Driven · Kafka · CI/CD · Observabilidad</span>
           <h3>YadinStore · Backend API + Kafka + CI/CD & Observabilidad</h3>
           <p>
-            API REST <strong>Java 21 con Spring Boot 3.5 y Spring Modulith</strong>, como monolito modular con
-            arquitectura hexagonal, DDD y virtual threads. Kafka 3.9.2 KRaft opera con Transactional Outbox atómico, DLT
-            para poison messages e idempotencia por eventId (exactly-once); Resilience4j aporta circuit breaker, retry y
-            bulkhead. La seguridad end-to-end combina Spring Security + JWT, RBAC por X-Tenant-ID, rate limiting por
-            tenant, CORS allowlist y guards anti-IDOR con tests. La persistencia usa MongoDB ACID multi-documento,
-            migraciones con Mongock y calidad con Testcontainers + JaCoCo. Stack CI/CD y observabilidad Cloud-Native
-            integrado con GitHub Actions y Jenkins mediante Pipeline as Code (Jenkinsfile), Docker/DinD y automatización
-            completa del ciclo build, test y empaquetado. El backend está instrumentado con Micrometer (Outbox, Kafka,
-            p95 HTTP) centralizando métricas en Prometheus y visualización en Grafana, mientras Elasticsearch + Kibana
-            proporcionan trazabilidad y análisis de logs; JasperReports genera reportes PDF de órdenes. Incluye
-            dashboard server-side de actividad Kafka (brokers, topics, consumer groups y lag) consultado vía SASL_SSL
-            sin exponer credenciales al navegador.
+            Arquitecturé e integré un ecosistema distribuido de alta complejidad tecnológica utilizando <strong>Java
+              21</strong> y <strong>Spring Boot</strong>
+            3.5 sobre <strong>Spring Modulith</strong>, aplicando Arquitectura Hexagonal (<strong>Hexagonal
+              Architecture</strong>) y Diseño Guiado por el Dominio
+            (<strong>Domain-Driven Design - DDD</strong>) con alta concurrencia mediante Hilos Virtuales
+            (<strong>Virtual Threads</strong>-Project Loom).
+            Estructuré la persistencia transaccional sobre <strong>MongoDB</strong> con principio de diseño
+            <strong>ACID</strong> y garanticé la consistencia
+            eventual con <strong>Apache Kafka</strong> (<strong>KRaft</strong>) implementando el patrón de la Bandeja de
+            Salida Transaccional
+            (<strong>Transactional Outbox Pattern</strong>), resiliencia con <strong>Resilience4j</strong>, Idempotencia
+            (<strong>Idempotency</strong>) y
+            Tópicos de Mensajes No entregados (Dead Letter Topics - <strong>DLT</strong>). Fortalecí el núcleo de toda
+            la seguridad mediante
+            <strong>Spring Security</strong>, tokens <strong>JWT</strong>, Control de Acceso Basado en Roles
+            (<strong>RBAC</strong>), aislamiento
+            multi-inquilino (<strong>X-Tenant ID</strong>), limitación de rango (<strong>Rate Limiting</strong>) y
+            mitigación Anti-<strong>IDOR</strong>. Orquesté la
+            automatización de CI/CD e infraestructura con <strong>GitHub Actions</strong>, <strong>Jenkins</strong>,
+            <strong>Docker</strong> y <strong>Testcontainers</strong>
+            con <strong>Kubernetes (K8s)</strong>, desplegando una pila de Observabilidad con <strong>Prometheus,
+              Grafana, Elasticsearch, Kibana y Micrometer</strong> para
+            monitorear en tiempo real métricas del sistema, hilos del servidor y la latencia (lag) de los consumidores
+            de tópicos de <strong>Apache Kafka KRaft</strong>.
           </p>
           <div class="chips">
             <span class="chip">Java 21</span><span class="chip">Spring Boot 3.5</span><span class="chip">Spring
               Modulith</span>
-            <span class="chip">Kafka 3.9.2</span><span class="chip">MongoDB</span><span class="chip">Hexagonal
+            <span class="chip">Kafka</span><span class="chip">MongoDB</span><span class="chip">Hexagonal
               Architecture</span>
             <span class="chip">Transactional Outbox</span><span class="chip">DLT</span><span
               class="chip">Idempotency</span>
@@ -1706,8 +1738,8 @@
               8.15.3</span>
             <span class="chip">Micrometer</span><span class="chip">JasperReports</span><span class="chip">Render</span>
           </div>
-          <a class="link" href="https://yadinstore-jenkins-obs-live.onrender.com/jenkins-dashboard.html"
-            target="_blank">Ver monitor Kafka + Docker + K8s (K3d-AKS) + CI/CD & Observabilidad →</a>
+          <a class="link" href="https://yadinstore-jenkins-obs-live.onrender.com/jenkins-dashboard.html" target="_blank"
+            rel="noopener">Ver monitor Kafka + Docker + K8s (k3d-AKS) + CI/CD & Observabilidad →</a>
         </article>
 
         <!-- Insurance CRM -->
@@ -1715,25 +1747,28 @@
           <span class="badge actual">🛡️ Business Process Digitalization</span>
           <h3>Insurance CRM · Plataforma de Gestión y Digitalización de Seguros</h3>
           <p>
-            Insurance CRM es una solución full-stack de ingeniería de software diseñada para erradicar la ineficiencia
-            operativa y los riesgos de integridad derivados de hojas de cálculo aisladas (Excel). Construida enteramente
-            mediante programación a medida, la plataforma ejecuta la reingeniería de flujos de trabajo complejos,
-            centralizando el ciclo operativo del sector asegurador en tres pilares de dominio: gestión de clientes,
-            administración de pólizas y trazabilidad de siniestros. La arquitectura implementa un frontend desacoplado
-            bajo el paradigma de Arquitectura Basada en Componentes utilizando React, TypeScript, Vite y TailwindCSS, lo
-            que asegura un tipado estricto, gestión de estado y rendimiento optimizado en dashboards interactivos. En la
-            capa de servidor, se programó una API REST en Python (Flask) encargada de procesar reglas de negocio,
-            sanitizar entradas y orquestar la persistencia en SQLite/PostgreSQL, complementada con un pipeline de
-            automatización CI/CD en GitHub Actions y despliegue WSGI (Gunicorn) sobre Render. Este desarrollo evidencia
-            capacidad técnica de tomar procesos de negocio informales y transformarlos en arquitecturas web
-            distribuidas, escalables y seguras, combinando el análisis de datos con la escritura de código limpio y
-            orientado a entornos de producción reales.
+            Arquitecté y desarrollé Insurance CRM para transformar información operativa dispersa en múltiples hojas de
+            Excel en una plataforma web centralizada de gestión
+            para asesores de seguros. Analicé y estructuré los datos para concentrar en un dashboard administrativo tipo
+            CRM la gestión de clientes, pólizas y siniestros,
+            facilitando la consulta, organización y seguimiento del flujo operativo y reduciendo la dependencia de
+            archivos aislados. Diseñé el front-end desacoplado con
+            <b>React</b>, <b>TypeScript</b>, <b>Vite</b> y <b>Tailwind CSS</b> bajo una arquitectura basada en
+            componentes, optimizando el rendimiento, la gestión de estado
+            y la visualización de datos (<b>Data Visualization</b>). En la capa de servidor, construí una <b>API
+              RESTful</b> en <b>Python</b> con <b>Flask</b> y <b>Gunicorn</b>,
+            encargada de sanitizar entradas, aplicar validaciones estrictas y orquestar la persistencia sobre
+            <b>SQLite</b>, asegurando un despliegue continuo mediante un
+            pipeline de CI/CD con <b>GitHub Actions</b> hacia <b>Render</b>. Con este proyecto demuestro mi capacidad
+            para convertir procesos empresariales desestructurados
+            en soluciones de software utilizables, conectando análisis de datos, modelado de procesos, desarrollo Full
+            Stack y diseño de interfaces orientadas a la operación real.
           </p>
           <div class="chips">
             <span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">TailwindCSS</span>
             <span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">Vite</span>
             <span class="chip">GitHub Actions</span><span class="chip">Python</span><span class="chip">Flask</span>
-            <span class="chip">Gunicorn</span><span class="chip">SQLite</span><span class="chip">PostgreSQL</span>
+            <span class="chip">Gunicorn</span><span class="chip">SQLite</span>
             <span class="chip">Render</span><span class="chip">API RESTful</span><span class="chip">CI/CD</span>
             <span class="chip">Data Visualization</span><span class="chip">Dashboard</span><span class="chip">CRM</span>
             <span class="chip">Business Process Digitalization</span><span class="chip">Excel</span>
@@ -1742,13 +1777,14 @@
             <span class="chip">Input Validation</span><span class="chip">State Management</span>
             <span class="chip">Performance Optimization</span>
           </div>
-          <a class="link" href="https://ypmanrique2.github.io/insurance-crm-frontend/" target="_blank">Ver Proyecto
+          <a class="link" href="https://ypmanrique2.github.io/insurance-crm-frontend/" target="_blank"
+            rel="noopener">Ver Proyecto
             →</a>
         </article>
 
         <!-- VE&CO Web -->
         <article class="pcard">
-          <span class="badge actual">Fui colaborador fullstack al código núcleo (Core Contributor)</span>
+          <span class="badge badge-green">Fui colaborador fullstack al código núcleo (Core Contributor)</span>
           <h3>Marketplace de comercio electrónico VE&CO (Web)</h3>
           <p>
             Contribuí como desarrollador fullstack al código núcleo (<em>Core Contributor</em>) del marketplace
@@ -1768,12 +1804,12 @@
               class="chip">RBAC</span><span class="chip">Responsive Design</span><span class="chip">CI/CD</span><span
               class="chip">SEO</span>
           </div>
-          <a class="link" href="https://veycoo.com.co/" target="_blank">Ver Proyecto →</a>
+          <a class="link" href="https://veycoo.com.co/" target="_blank" rel="noopener">Ver Proyecto →</a>
         </article>
 
         <!-- VE&CO App -->
         <article class="pcard">
-          <span class="badge actual">Fui colaborador fullstack al código núcleo (Core Contributor)</span>
+          <span class="badge badge-green">Fui colaborador fullstack al código núcleo (Core Contributor)</span>
           <h3>App de PlayStore: VE&CO, Marketplace de comercio electrónico</h3>
           <p>
             Contribuí como desarrollador fullstack al código núcleo (<em>Core Contributor</em>) de la app omnicanal
@@ -1792,8 +1828,8 @@
               class="chip">Firebase Auth</span><span class="chip">JWT</span><span class="chip">RBAC</span><span
               class="chip">Responsive Design</span><span class="chip">CI/CD</span>
           </div>
-          <a class="link" href="https://play.google.com/store/apps/details?id=app.veycoo.co&hl=es_CO"
-            target="_blank">Ver Proyecto →</a>
+          <a class="link" href="https://play.google.com/store/apps/details?id=app.veycoo.co&hl=es_CO" target="_blank"
+            rel="noopener">Ver Proyecto →</a>
         </article>
 
         <!-- eShop OEM SaaS ⭐ -->
@@ -1811,12 +1847,13 @@
           </p>
           <div class="chips">
             <span class="chip">React</span><span class="chip">Next.js</span><span class="chip">Java</span>
-            <span class="chip">TypeScript</span><span class="chip">MongoDB</span><span class="chip">SpringBoot</span>
-            <span class="chip">SpringSecurity</span><span class="chip">Keycloak</span><span
+            <span class="chip">TypeScript</span><span class="chip">MongoDB</span><span class="chip">Spring Boot</span>
+            <span class="chip">Spring Security</span><span class="chip">Keycloak</span><span
               class="chip">NextAuth</span><span class="chip">SSR</span><span class="chip">RBAC</span><span
               class="chip">OWASP</span><span class="chip">Clean Architecture</span><span class="chip">REST
-              API</span></div>
-              <a class="link" href="https://eshop-oem.netlify.app" target="_blank">Ver Proyecto →</a>
+              API</span>
+          </div>
+          <a class="link" href="https://eshop-oem.netlify.app" target="_blank" rel="noopener">Ver Proyecto →</a>
         </article>
 
 
@@ -1837,7 +1874,8 @@
               class="chip">RxJS</span><span class="chip">REST API</span><span class="chip">Responsive Design</span><span
               class="chip">SEO</span>
           </div>
-          <a class="link" href="https://ypmanrique2.github.io/portfolio-angular/" target="_blank">Ver Proyecto →</a>
+          <a class="link" href="https://ypmanrique2.github.io/portfolio-angular/" target="_blank" rel="noopener">Ver
+            Proyecto →</a>
         </article>
 
         <!-- Landing servicios profesionales -->
@@ -1860,12 +1898,13 @@
               Design</span><span class="chip">Security Nonces</span><span class="chip">Hooks</span><span
               class="chip">Custom Post Types</span>
           </div>
-          <a class="link" href="https://diana-morantes.infinityfree.io/wp/" target="_blank">Ver Proyecto →</a>
+          <a class="link" href="https://diana-morantes.infinityfree.io/wp/" target="_blank" rel="noopener">Ver Proyecto
+            →</a>
         </article>
 
         <!-- Landing AI first -->
         <article class="pcard">
-          <span class="badge actual">Actual · AI First</span>
+          <span class="badge badge-green">Actual · AI First</span>
           <h3>Landing page AI first &amp; SEO human in the loop + Security hardening (WordPress - A.C.F. pro)</h3>
           <p>
             Diseñé e implementé una landing con enfoque AI-first y SEO con humano en el bucle
@@ -1884,12 +1923,13 @@
               class="chip">Responsive Design</span><span class="chip">Security Hardening</span><span class="chip">Clean
               Architecture</span><span class="chip">Custom Post Types</span>
           </div>
-          <a class="link" href="https://b2b-sucessintheair.infinityfree.me/" target="_blank">Ver Proyecto →</a>
+          <a class="link" href="https://b2b-sucessintheair.infinityfree.me/" target="_blank" rel="noopener">Ver Proyecto
+            →</a>
         </article>
 
         <!-- App educativa (Full-Stack MySQL + RBAC) -->
         <article class="pcard">
-          <span class="badge demo">Demo abierta: admin / 1234</span>
+          <span class="badge demo">Demo interactiva disponible</span>
           <h3>App consumidora de API educativa (Full-Stack MySQL + RBAC)</h3>
           <p>
             Diseñé e implementé una web-app full-stack (<em>Full-Stack Web App</em>) en Angular que consume una API
@@ -1906,18 +1946,21 @@
               class="chip">CORS</span><span class="chip">Route Guards</span><span class="chip">REST API</span><span
               class="chip">Responsive Design</span>
           </div>
-          <a class="link" href="https://pokedexaplication.netlify.app/" target="_blank">Ver Proyecto →</a>
+          <a class="link" href="https://pokedexaplication.netlify.app/" target="_blank" rel="noopener">Ver Proyecto
+            →</a>
         </article>
 
         <!-- Intranet -->
         <article class="pcard">
-          <span class="badge actual">Actual · Hardened</span>
+          <span class="badge badge-green">Actual · Hardened</span>
           <h3>Intranet adaptable a corporaciones</h3>
           <p>
             Diseñé y desarrollé la arquitectura full-stack de la intranet institucional
-            (<em>Institutional Intranet</em>) bajo modelo SaaS sobre Google Cloud Platform, adaptable a corporaciones
+            (<em>Institutional Intranet</em>) bajo modelo SaaS sogre Google Cloud Platform (<b>GCP</b>), adaptable a
+            corporaciones
             que gestionan, editan y comparten archivos confidenciales. Implementé control de acceso por roles
-            (Role-Based Access Control - RBAC) con niveles de seguridad ajustables de edición y lectura, gestión de
+            (Role-Based Access Control - <b>RBAC</b>) con niveles de seguridad ajustables de edición y lectura, gestión
+            de
             archivos con clasificación de confidencialidad y adopción de metodologías ágiles con KPIs. Solución
             endurecida (Hardened) bajo principios OWASP, evaluada con estándares ISO 9001 y NTC 6744.
           </p>
@@ -1927,7 +1970,8 @@
               class="chip">IAM</span><span class="chip">OWASP</span><span class="chip">Responsive Design</span><span
               class="chip">Google Workspace</span>
           </div>
-          <a class="link" href="https://sites.google.com/comfaoriente.com/intranetcolcampestre" target="_blank">Ver
+          <a class="link" href="https://sites.google.com/comfaoriente.com/intranetcolcampestre" target="_blank"
+            rel="noopener">Ver
             Proyecto →</a>
         </article>
 
@@ -1947,7 +1991,8 @@
               class="chip">Responsive Design</span><span class="chip">SEO</span><span class="chip">GitHub
               Pages</span><span class="chip">Semantic HTML</span><span class="chip">Accessibility</span>
           </div>
-          <a class="link" href="https://ypmanrique2.github.io/Avanzando/" target="_blank">Ver Proyecto →</a>
+          <a class="link" href="https://ypmanrique2.github.io/Avanzando/" target="_blank" rel="noopener">Ver Proyecto
+            →</a>
         </article>
 
       </div>
@@ -2106,7 +2151,7 @@
               <div class="dot filled"></div>
               <div class="dot filled"></div>
               <div class="dot filled"></div>
-              <div class="dot empty"></div>
+              <div class="dot filled"></div>
               <div class="dot empty"></div>
             </div>
           </div>
@@ -2221,7 +2266,7 @@
           <span class="m">DataCamp · <span class="yr">ago. 2026</span> · ID #49,528,106 · Azure Kubernetes Service
             (AKS)</span>
           <a href="https://www.datacamp.com/completed/statement-of-accomplishment/course/06fa83062327ecb6a730e5e6ac81573f92637f7c"
-            target="_blank">▸ verificar credencial</a>
+            target="_blank" rel="noopener">▸ verificar credencial</a>
         </div>
 
         <div class="cert"
@@ -2229,7 +2274,8 @@
           <span class="t"><b>Curso de Backend con Java y Azure</b></span>
           <span class="m">Código Facilito · <span class="yr">ago. 2026</span> · ID 573de605-9f7c-40ce-a4dc-51a635203f06
             · Java, Microsoft Azure</span>
-          <a href="https://codigofacilito.com/certificates/573de605-9f7c-40ce-a4dc-51a635203f06" target="_blank">▸
+          <a href="https://codigofacilito.com/certificates/573de605-9f7c-40ce-a4dc-51a635203f06" target="_blank"
+            rel="noopener">▸
             verificar credencial</a>
         </div>
 
@@ -2238,7 +2284,7 @@
           <span class="t"><b>Develop for Azure Storage</b></span>
           <span class="m">DataCamp · <span class="yr">ago. 2026</span> · ID #49,476,429 · Microsoft Azure</span>
           <a href="https://www.datacamp.com/es/completed/statement-of-accomplishment/course/993912624f124deec14733bc4d5361b59d6570cb"
-            target="_blank">▸ verificar credencial</a>
+            target="_blank" rel="noopener">▸ verificar credencial</a>
         </div>
 
         <div class="cert">
@@ -2246,55 +2292,62 @@
           <span class="m">DataCamp · <span class="yr">Ago. 2026</span> · ID #49,422,238 · MCP, HTTP, Protocolo
             multiagente</span>
           <a href="https://www.datacamp.com/completed/statement-of-accomplishment/course/cb2c29a777923e2608e4b39690beb215cd9451a9"
-            target="_blank">▸ verificar credencial</a>
+            target="_blank" rel="noopener">▸ verificar credencial</a>
         </div>
 
         <div class="cert">
           <span class="t"><b>ITIL® 4 Foundation</b></span>
           <span class="m">PeopleCert/AXELOS · <span class="yr">Vigente hasta 2027</span> · N.° GR671609055YM</span>
-          <a href="https://www.peoplecert.org/for-corporations/certificate-verification-service" target="_blank">▸
+          <a href="https://www.peoplecert.org/for-corporations/certificate-verification-service" target="_blank"
+            rel="noopener">▸
             peoplecert.org/verification</a>
         </div>
 
         <div class="cert">
           <span class="t"><b>Despliegue de apps web en Azure</b></span>
           <span class="m">Código Facilito · <span class="yr">May. 2026</span></span>
-          <a href="https://codigofacilito.com/certificates/41d75233-36a5-445e-bb34-7698828f5874.pdf" target="_blank">▸
+          <a href="https://codigofacilito.com/certificates/41d75233-36a5-445e-bb34-7698828f5874.pdf" target="_blank"
+            rel="noopener">▸
             verificar credencial</a>
         </div>
 
         <div class="cert">
           <span class="t"><b>Masterclass Docker</b> (Rossana Suárez)</span>
           <span class="m">Código Facilito · <span class="yr">May. 2026</span></span>
-          <a href="https://codigofacilito.com/certificates/9647301a-aa76-4a99-8548-4f3cf109cd76.pdf" target="_blank">▸
+          <a href="https://codigofacilito.com/certificates/9647301a-aa76-4a99-8548-4f3cf109cd76.pdf" target="_blank"
+            rel="noopener">▸
             verificar credencial</a>
         </div>
 
         <div class="cert">
           <span class="t"><b>Introducción a DevOps</b></span>
           <span class="m">Código Facilito · <span class="yr">May. 2026</span></span>
-          <a href="https://codigofacilito.com/certificates/31317567-8f94-494c-a34c-0655d1669481.pdf" target="_blank">▸
+          <a href="https://codigofacilito.com/certificates/31317567-8f94-494c-a34c-0655d1669481.pdf" target="_blank"
+            rel="noopener">▸
             verificar credencial</a>
         </div>
 
         <div class="cert">
           <span class="t"><b>Java Profesional</b> + Reactiva</span>
           <span class="m">Código Facilito · <span class="yr">May. 2026</span></span>
-          <a href="https://codigofacilito.com/certificates/876f9324-6548-4849-a70c-79c28b020075.pdf" target="_blank">▸
+          <a href="https://codigofacilito.com/certificates/876f9324-6548-4849-a70c-79c28b020075.pdf" target="_blank"
+            rel="noopener">▸
             verificar credencial</a>
         </div>
 
         <div class="cert">
           <span class="t"><b>Deploy profesional en servidores</b></span>
           <span class="m">Código Facilito · <span class="yr">May. 2026</span></span>
-          <a href="https://codigofacilito.com/certificates/b2ee76e1-e3e5-4bd4-8af4-26bc3ea6385e.pdf" target="_blank">▸
+          <a href="https://codigofacilito.com/certificates/b2ee76e1-e3e5-4bd4-8af4-26bc3ea6385e.pdf" target="_blank"
+            rel="noopener">▸
             verificar credencial</a>
         </div>
 
         <div class="cert">
           <span class="t"><b>Inmersión Agentes de IA</b></span>
           <span class="m">Alura ONE · <span class="yr">May. 2026</span></span>
-          <a href="https://app.aluracursos.com/user/ypmanrique15/immersion/certificate/46" target="_blank">▸ verificar
+          <a href="https://app.aluracursos.com/user/ypmanrique15/immersion/certificate/46" target="_blank"
+            rel="noopener">▸ verificar
             credencial</a>
         </div>
 
@@ -2307,14 +2360,16 @@
         <div class="cert">
           <span class="t"><b>Masterclass MCP para empresas</b> + Ruta LLMs</span>
           <span class="m">Código Facilito · <span class="yr">Mar. 2026</span> · Ruta LLM (9 semanas)</span>
-          <a href="https://codigofacilito.com/certificates/9a7bc1be-1651-4362-9f79ce36375888e8.pdf" target="_blank">▸
+          <a href="https://codigofacilito.com/certificates/9a7bc1be-1651-4362-9f79ce36375888e8.pdf" target="_blank"
+            rel="noopener">▸
             verificar credencial</a>
         </div>
 
         <div class="cert">
           <span class="t"><b>Apps de IA con C# y Azure</b></span>
           <span class="m">Código Facilito · <span class="yr">Ene. 2026</span></span>
-          <a href="https://codigofacilito.com/certificates/c0b2bf85-920f-4ea1-947a-193977fbe594.pdf" target="_blank">▸
+          <a href="https://codigofacilito.com/certificates/c0b2bf85-920f-4ea1-947a-193977fbe594.pdf" target="_blank"
+            rel="noopener">▸
             verificar credencial</a>
         </div>
 
@@ -2322,53 +2377,60 @@
           <span class="t"><b>Ciberseguridad y Hacking Ético</b></span>
           <span class="m">BIG School · Detección de vulnerabilidades y defensa digital</span>
           <a href="https://certificados.thebigschool.com/wp-content/uploads/certs/MCIB/Certificado-YadinPaulo-Manrique-Marquez-oawvtcmq.pdf"
-            target="_blank">▸ verificar credencial</a>
+            target="_blank" rel="noopener">▸ verificar credencial</a>
         </div>
 
         <div class="cert">
           <span class="t"><b>Curso Profesional Git</b></span>
           <span class="m">Código Facilito · <span class="yr">Abr. 2025</span></span>
-          <a href="https://codigofacilito.com/certificates/3605014c-b7c8-4c8f-b50c-1b526bcf1f04.pdf" target="_blank">▸
+          <a href="https://codigofacilito.com/certificates/3605014c-b7c8-4c8f-b50c-1b526bcf1f04.pdf" target="_blank"
+            rel="noopener">▸
             verificar credencial</a>
         </div>
 
         <div class="cert">
           <span class="t"><b>Spring Framework &amp; Spring Boot</b></span>
           <span class="m">Código Facilito · <span class="yr">Nov. 2023</span></span>
-          <a href="https://codigofacilito.com/certificates/102855.pdf" target="_blank">▸ verificar credencial</a>
+          <a href="https://codigofacilito.com/certificates/102855.pdf" target="_blank" rel="noopener">▸ verificar
+            credencial</a>
         </div>
 
         <div class="cert">
           <span class="t"><b>Angular Signals + React Server Components</b></span>
           <span class="m">Código Facilito · <span class="yr">Nov. 2023</span></span>
-          <a href="https://codigofacilito.com/certificates/58c1dea0-1c62-4f27-bcec-e35010879931.pdf" target="_blank">▸
+          <a href="https://codigofacilito.com/certificates/58c1dea0-1c62-4f27-bcec-e35010879931.pdf" target="_blank"
+            rel="noopener">▸
             signals</a>
-          <a href="https://codigofacilito.com/certificates/ea455f74-c703-431f-b35e-5e4f46c5b398.pdf" target="_blank">▸
+          <a href="https://codigofacilito.com/certificates/ea455f74-c703-431f-b35e-5e4f46c5b398.pdf" target="_blank"
+            rel="noopener">▸
             RSC</a>
         </div>
 
         <div class="cert">
           <span class="t"><b>MEAN Stack E-Commerce</b> (Angular 12 + NodeJS)</span>
           <span class="m">Skillshare · <span class="yr">Abr. 2023</span> · ID 321b94b1</span>
-          <a href="https://skl.sh/3KYAuYn" target="_blank">▸ verificar credencial</a>
+          <a href="https://skl.sh/3KYAuYn" target="_blank" rel="noopener">▸ verificar credencial</a>
         </div>
 
         <div class="cert">
           <span class="t"><b>Oracle Cloud Infrastructure (OCI)</b></span>
           <span class="m">Alura · <span class="yr">2022–2023</span> · Implementación, IaC, deploy</span>
-          <a href="https://app.aluracursos.com/certificate/27d24602-cf62-448f-bfe3-0420a89f190d" target="_blank">▸
+          <a href="https://app.aluracursos.com/certificate/27d24602-cf62-448f-bfe3-0420a89f190d" target="_blank"
+            rel="noopener">▸
             certificado 1</a>
-          <a href="https://app.aluracursos.com/certificate/534cfc80-f625-4615-9fe2-d04ca3c2b6cc" target="_blank">▸
+          <a href="https://app.aluracursos.com/certificate/534cfc80-f625-4615-9fe2-d04ca3c2b6cc" target="_blank"
+            rel="noopener">▸
             certificado 2</a>
         </div>
 
         <div class="cert">
           <span class="t"><b>Formaciones ONE — Front End + Java OO</b></span>
           <span class="m">Alura · <span class="yr">2022</span></span>
-          <a href="https://app.aluracursos.com/degree/certificate/424668c4c30b-4343-8957-8b18f421b1b5" target="_blank">▸
+          <a href="https://app.aluracursos.com/degree/certificate/424668c4c30b-4343-8957-8b18f421b1b5" target="_blank"
+            rel="noopener">▸
             front-end</a>
-          <a href="https://app.aluracursos.com/degree/certificate/abbf0043-176a-401f-9523-6d37425ddf1b"
-            target="_blank">▸ Java OO</a>
+          <a href="https://app.aluracursos.com/degree/certificate/abbf0043-176a-401f-9523-6d37425ddf1b" target="_blank"
+            rel="noopener">▸ Java OO</a>
         </div>
 
         <div class="cert">
@@ -2380,7 +2442,8 @@
         <div class="cert">
           <span class="t"><b>Docker</b> (base)</span>
           <span class="m">Código Facilito · <span class="yr">Jul. 2023</span></span>
-          <a href="https://codigofacilito.com/certificates/f13b2d06-0ca2-4ebc-b131-f9d3f3a7d361.pdf" target="_blank">▸
+          <a href="https://codigofacilito.com/certificates/f13b2d06-0ca2-4ebc-b131-f9d3f3a7d361.pdf" target="_blank"
+            rel="noopener">▸
             verificar credencial</a>
         </div>
 
