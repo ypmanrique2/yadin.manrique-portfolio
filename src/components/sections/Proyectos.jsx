@@ -6,8 +6,8 @@ const projects = [
         badge: "⭐ Distributed Systems Architecture · Multi-tenant · Hardened",
         badgeClass: "bg-green-500/20 text-green-300",
         description:
-            "Diseñé e implementé YadinStore, un SaaS e-Commerce Engine con Angular 21 + Nx + Module Federation y arquitectura de micro-frontends, respaldado por un monolito modular en Java 21 + Spring Boot/Spring Modulith. Apliqué Clean/Hexagonal Architecture + DDD, integración Kafka KRaft + Transactional Outbox + DLT + Idempotency, y MongoDB para persistencia con principio ACID. La solución incorpora RBAC + Multi-Tenancy, pruebas de integración con Testcontainers y un flujo CI/CD con GitHub Actions, Jenkins y Docker sobre infraestructura cloud. Arquitectura limpia (Clean Architecture), diseño guiado por el dominio (Domain-Driven Design - DDD) y arquitectura hexagonal (Hexagonal Architecture), asegurada con control de acceso basado en roles (Role-Based Access Control - RBAC), aislamiento estricto por inquilino (Multi-Tenancy Isolation), Docker con Kubernetes (K8s) mediante K3d y despliegue a Azure Kubernetes Service (AKS).",
-        chips: ["Java 21", "Spring Boot", "Spring Modulith", "X-Tenant-ID", "Angular 21", "Kafka", "MongoDB", "NgRX", "Kubernetes (K8s)", "Hexagonal Architecture", "DDD", "Transactional Outbox", "Angular Signals", "DLT", "Idempotency", "Resilience4j", "Virtual Threads", "Spring Security", "JWT", "RBAC", "Clean Architecture", "Multi-Tenancy", "OWASP", "IDOR", "EDA", "Azure Kubernetes Service (AKS)", "Docker", "K3d", "Testcontainers", "GitHub Actions"],
+            "Diseñé e implementé YadinStore, un SaaS e-Commerce Engine con Angular 21 + Nx + Module Federation y arquitectura de micro-frontends, respaldado por un monolito modular en Java 21 + Spring Boot/Spring Modulith. Apliqué Clean/Hexagonal Architecture + DDD, integración Kafka KRaft + Transactional Outbox + DLT + Idempotency, y MongoDB para persistencia con principio ACID. La solución incorpora RBAC + Multi-Tenancy, pruebas de integración con Testcontainers y un flujo CI/CD con GitHub Actions, Jenkins y Docker sobre infraestructura cloud. Arquitectura limpia (Clean Architecture), diseño guiado por el dominio (Domain-Driven Design - DDD) y arquitectura hexagonal (Hexagonal Architecture), asegurada con control de acceso basado en roles (Role-Based Access Control - RBAC), aislamiento estricto por inquilino (Multi-Tenancy Isolation), Docker con Kubernetes (K8s) mediante k3d y despliegue a Azure Kubernetes Service (AKS).",
+        chips: ["Java 21", "Spring Boot", "Spring Modulith", "X-Tenant-ID", "Angular 21", "Kafka", "MongoDB", "NgRX", "Kubernetes (K8s)", "Hexagonal Architecture", "DDD", "Transactional Outbox", "Angular Signals", "DLT", "Idempotency", "Resilience4j", "Virtual Threads", "Spring Security", "JWT", "RBAC", "Clean Architecture", "Multi-Tenancy", "OWASP", "IDOR", "EDA", "Azure Kubernetes Service (AKS)", "Docker", "k3d", "Testcontainers", "GitHub Actions"],
         href: "https://yadinstore-frontend.onrender.com/",
         demo: { email: "usuario.demo@yadinstore.com", password: "1cLaVeDePrUeBa+" },
     },
@@ -17,7 +17,7 @@ const projects = [
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
         description:
             "Diseñé e implementé el Panel Administrativo SaaS de YadinStore, una consola de operación empresarial (Enterprise Administrative Dashboard) preparada como micro-frontend remoto (Remote Micro-Frontend) con Angular 21, Nx Monorepo y federación de módulos (Module Federation). Lideré la gestión reactiva de productos, usuarios, métricas y ventas con señales (Angular Signals), blindando la consola con arquitectura de seguridad endurecida (Hardened Security Architecture): autenticación JWT con acceso por ticket de un solo uso (One-Time Ticket Access), control de acceso basado en roles (Role-Based Access Control - RBAC), protección anti-IDOR (Anti-IDOR Protection) y aislamiento estricto por inquilino (X-Tenant-ID Multi-Tenancy Isolation), integrada con servicios Spring Boot 3.5 y base de datos MongoDB.",
-        chips: ["Java 21", "Spring Boot", "Spring Modulith", "X-Tenant-ID", "Angular 21", "Kafka", "MongoDB", "NgRX", "Kubernetes (K8s)", "Hexagonal Architecture", "DDD", "Transactional Outbox", "Angular Signals", "DLT", "Idempotency", "Resilience4j", "Virtual Threads", "Spring Security", "JWT", "RBAC", "Clean Architecture", "Multi-Tenancy", "OWASP", "IDOR", "EDA", "Azure Kubernetes Service (AKS)", "Docker", "K3d", "Testcontainers", "GitHub Actions"],
+        chips: ["Java 21", "Spring Boot", "Spring Modulith", "X-Tenant-ID", "Angular 21", "Kafka", "MongoDB", "NgRX", "Kubernetes (K8s)", "Hexagonal Architecture", "DDD", "Transactional Outbox", "Angular Signals", "DLT", "Idempotency", "Resilience4j", "Virtual Threads", "Spring Security", "JWT", "RBAC", "Clean Architecture", "Multi-Tenancy", "OWASP", "IDOR", "EDA", "Azure Kubernetes Service (AKS)", "Docker", "k3d", "Testcontainers", "GitHub Actions"],
         href: "https://yadinstore-admin.onrender.com/",
         demo: { email: "usuario.demo@yadinstore.com", password: "1cLaVeDePrUeBa+" },
     },
@@ -29,6 +29,7 @@ const projects = [
             "API REST Java 21 con Spring Boot 3.5 y Spring Modulith como monolito modular con arquitectura hexagonal, DDD y virtual threads. Kafka 3.9.2 KRaft opera con Transactional Outbox atómico, DLT para poison messages e idempotencia por eventId (exactly-once); Resilience4j aporta circuit breaker, retry y bulkhead. La seguridad end-to-end combina Spring Security + JWT, RBAC por X-Tenant-ID, rate limiting por tenant, CORS allowlist y guards anti-IDOR con tests. La persistencia usa MongoDB ACID multi-documento, migraciones con Mongock y calidad con Testcontainers + JaCoCo. Stack CI/CD y observabilidad Cloud-Native integrado con GitHub Actions y Jenkins mediante Pipeline as Code (Jenkinsfile), Docker/DinD y automatización completa del ciclo build, test y empaquetado. El backend está instrumentado con Micrometer (Outbox, Kafka, p95 HTTP) centralizando métricas en Prometheus y visualización en Grafana, mientras Elasticsearch + Kibana proporcionan trazabilidad y análisis de logs; JasperReports genera reportes PDF de órdenes. Incluye dashboard server-side de actividad Kafka (brokers, topics, consumer groups y lag) consultado vía SASL_SSL sin exponer credenciales al navegador.",
         chips: ["Java 21", "Spring Boot 3.5", "Spring Modulith", "Kafka 3.9.2", "MongoDB", "Hexagonal Architecture", "DDD", "Transactional Outbox", "DLT", "Idempotency", "Resilience4j", "Spring Security", "JWT", "RBAC", "Multi-Tenancy", "OWASP", "Rate Limiting", "Mongock", "Testcontainers", "Docker", "k3d", "SASL_SSL", "GitHub Actions", "Jenkins 2.468.2", "Jenkinsfile", "Pipeline as Code", "DinD", "Grafana 10.4.3", "Prometheus", "Elasticsearch 8.15.3", "Kibana 8.15.3", "Micrometer", "JasperReports", "Render"],
         href: "https://yadinstore-jenkins-obs-live.onrender.com/jenkins-dashboard.html",
+        linkLabel: "Ver monitor Kafka + Docker + K8s (k3d-AKS) + CI/CD & Observabilidad →",
     },
 {
         title: "Insurance CRM · Plataforma de Gestión y Digitalización de Seguros",
@@ -63,7 +64,7 @@ const projects = [
         badgeClass: "bg-green-500/20 text-green-300",
         description:
             "Diseñé e implementé una solución de e-commerce corporativa endurecida (Hardened e-Commerce Solution) para transacciones masivas bajo modelo de roles estricto (Strict RBAC Model). El front-end opera con renderizado de servidor (Server-Side Rendering - SSR) en Next.js con React y TypeScript, autenticación federada con Keycloak (Identity and Access Management - IAM) y NextAuth; el back-end expone servicios en Java con Spring Boot y Spring Security con persistencia en MongoDB. La arquitectura separa responsabilidades por capas (Clean Architecture), aplica mínimo privilegio, validación de entradas OWASP y operación privada, escalable y de alta fiabilidad aun en temporada alta.",
-        chips: ["React", "Next.js", "Java", "TypeScript", "MongoDB", "SpringBoot", "SpringSecurity", "Keycloak", "NextAuth", "SSR", "RBAC", "OWASP", "Clean Architecture", "REST API"],
+        chips: ["React", "Next.js", "Java", "TypeScript", "MongoDB", "Spring Boot", "Spring Security", "Keycloak", "NextAuth", "SSR", "RBAC", "OWASP", "Clean Architecture", "REST API"],
         href: "https://eshop-oem.netlify.app",
     },
 {
@@ -95,7 +96,7 @@ const projects = [
     },
 {
         title: "App consumidora de API educativa (Full-Stack MySQL + RBAC)",
-        badge: "Demo abierta: admin / 1234",
+        badge: "Demo interactiva disponible",
         badgeClass: "bg-amber-500/10 text-amber-400 border border-amber-500/30",
         description:
             "Diseñé e implementé una web-app full-stack (Full-Stack Web App) en Angular que consume una API REST educativa en Node.js con Express. Aseguré la autenticación por sesión con cookie HTTP-only (HTTP-Only Session Cookie), login protegido con guards e interceptores, persistencia en MySQL con gestión de usuarios y roles (Role-Based Access Control - RBAC), estado reactivo con RxJS y comunicación segura cross-origin mediante CORS con lista de orígenes permitidos (Allowlist). La calidad se respalda con pruebas unitarias en Jasmine y Karma.",
@@ -175,9 +176,11 @@ export const Proyectos = () => {
                                     <a
                                         href={project.href}
                                         target="_blank"
-                                        className="text-blue-400 hover:text-blue-300 transition-colors my-4"
+                                        rel="noopener"
+                                        aria-label={`Ver proyecto: ${project.title}`}
+                                        className="relative z-10 inline-block py-2 pr-4 pl-1 -ml-1 text-blue-400 hover:text-blue-300 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-500"
                                     >
-                                        Ver Proyecto →
+                                        {project.linkLabel || "Ver Proyecto →"}
                                     </a>
                                 </div>
                             </div>

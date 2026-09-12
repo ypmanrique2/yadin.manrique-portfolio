@@ -10,6 +10,7 @@ const CertCard = ({ title, meta, links, noverify }) => (
                     key={key}
                     href={link.href}
                     target="_blank"
+                    rel="noopener"
                     className="font-mono text-xs text-blue-400 hover:underline"
                 >
                     → {link.label}
@@ -22,6 +23,28 @@ const CertCard = ({ title, meta, links, noverify }) => (
 );
 
 const certs = [
+    {
+        title: (
+            <>
+                <b className="text-green-500">Introducción a Kubernetes</b>
+            </>
+        ),
+        meta: (
+            <>
+                DataCamp · <span className="text-cyan-400">ago. 2026</span> · ID #49,528,106 · Azure Kubernetes Service (AKS)
+            </>
+        ),
+        links: [{ href: "https://www.datacamp.com/completed/statement-of-accomplishment/course/06fa83062327ecb6a730e5e6ac81573f92637f7c", label: "verificar credencial" }],
+    },
+    {
+        title: "Curso de Backend con Java y Azure",
+        meta: (
+            <>
+                Código Facilito · <span className="text-cyan-400">ago. 2026</span> · ID 573de605-9f7c-40ce-a4dc-51a635203f06 · Java, Microsoft Azure
+            </>
+        ),
+        links: [{ href: "https://codigofacilito.com/certificates/573de605-9f7c-40ce-a4dc-51a635203f06", label: "verificar credencial" }],
+    },
     {
         title: (
             <>

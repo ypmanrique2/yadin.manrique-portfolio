@@ -30,7 +30,7 @@ const dataCloud = [
     { name: "MongoDB", level: 4 },
     { name: "Firebase / GCP", level: 4 },
     { name: "Docker / Kubernetes (k3d · AKS)", level: 4 },
-    { name: "Kafka / Event-Driven", level: 3 },
+    { name: "Kafka / Event-Driven", level: 4 },
     { name: "Keycloak / NextAuth (IAM)", level: 3 },
     { name: "SQLite / Express / REST", level: 4 },
     { name: "Render / Aiven / Fly.io", level: 3 },
@@ -52,7 +52,7 @@ const tagGroups = [
     },
     {
         title: "Frontend · IA · Ecosistema",
-        tags: ["TailwindCSS", "WordPress/ACF Pro", "RxJS", "NgRX", "Vite", "esbuild", "Redux", "SSR", "MCP", "LLM", "EmailJS", "SEO", "CORS", "Firebase Auth", "Route Guards", "Responsive Design", "Semantic HTML", "Accessibility", "Security Hardening", "Custom Post Types", "GitHub Pages", "Data Visualization", "Dashboard", "CRM", "Business Process Digitalization", "Excel", "Component-Based Architecture", "Clean Code", "Secure Coding", "Data Sanitization", "Input Validation", "State Management", "Performance Optimization", "JavaScript", "HTML5", "CSS3", "AJAX", "jQuery", "Hooks", "Security Nonces", "dbDelta", "Google Workspace", "Jasmine / Karma"],
+        tags: ["TailwindCSS", "WordPress/ACF Pro", "RxJS", "NgRX", "Vite", "esbuild", "Redux", "SSR", "MCP", "LLM", "EmailJS", "SEO", "CORS", "Firebase Auth", "Route Guards", "Responsive Design", "Semantic HTML", "Accessibility", "Security Hardening", "GitHub Pages", "Data Visualization", "Dashboard", "CRM", "Business Process Digitalization", "Excel", "Clean Code", "Secure Coding", "Input Validation", "State Management", "Performance Optimization", "JavaScript", "HTML5", "CSS3", "AJAX", "jQuery", "Hooks", "Security Nonces", "Jasmine / Karma"],
     },
 ];
 

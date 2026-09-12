@@ -120,6 +120,7 @@ export const Inicio = () => {
                         <a
                             href="https://github.com/ypmanrique2"
                             target="_blank"
+                            rel="noopener"
                             className="text-green-500 font-semibold hover:text-green-400 transition-colors"
                         >
                             github.com/ypmanrique2
@@ -128,6 +129,7 @@ export const Inicio = () => {
                         <a
                             href="https://www.linkedin.com/in/yadin-paulo-manrique-marquez-18753910/"
                             target="_blank"
+                            rel="noopener"
                             className="text-green-500 font-semibold hover:text-green-400 transition-colors"
                         >
                             LinkedIn
@@ -136,6 +138,7 @@ export const Inicio = () => {
                         <a
                             href="https://ypmanrique2.github.io/yadin.manrique-portfolio/"
                             target="_blank"
+                            rel="noopener"
                             className="text-green-500 font-semibold hover:text-green-400 transition-colors"
                         >
                             Portafolio
