@@ -1,6 +1,6 @@
 # Yadin Manrique — Portafolio 2026
 
-> Full Stack Developer Java 21, Spring Boot 3.5, Kafka KRaft (Transactional Outbox, DLT, Exactly-Once), Angular 21, React 19, TypeScript, Node.js, Clean/Hexagonal, DDD, Event-Driven, Cloud SaaS GCP/Azure, Docker / Kubernetes (AKS), ITIL v4. 5+ años, 12+ proyectos.
+> Full Stack Developer Java 21, Spring Boot 3.5, Kafka KRaft (Transactional Outbox, DLT, At-Least-Once + idempotencia), Angular 21, React 19, TypeScript, Node.js, Clean/Hexagonal, DDD, Event-Driven, Cloud SaaS GCP/Azure, Docker / Kubernetes (k3d local), ITIL v4. 5+ años, 12+ proyectos.
 
 ## URL canónica
 - Portafolio: https://ypmanrique2.github.io/yadin.manrique-portfolio/
@@ -16,15 +16,15 @@ Desarrollador Full Stack con 5+ años de evolución en ecosistema Java 8–21, N
 - **Agente Mesa de Servicio Nivel 2** — Pear Solutions S.A.S. — SEP.2020–DIC.2023 — ITIL v4, SLA >95%, BMC Helix.
 
 ## Proyectos flagship (STAR, honest free-tier)
-- **YadinStore · e-Shop SaaS** — https://yadinstore-frontend.onrender.com/ — S: SaaS multi-vendor multi-tenant. T: Front modular + back exactly-once. A: Angular 21 Nx MF, Spring Modulith hexagonal DDD, Kafka KRaft Outbox+DLT+idempotencia eventId, Resilience4j, MongoDB ACID Mongock, Security JWT RBAC X-Tenant-ID, Testcontainers. R: flujo trazable, free-tier Render.
+- **YadinStore · e-Shop SaaS** — https://yadinstore-frontend.onrender.com/ — S: SaaS multi-vendor multi-tenant. T: Front modular + back at-least-once con consumo idempotente (eventId, efecto exactly-once). A: Angular 21 Nx MF, Spring Modulith hexagonal DDD, Kafka KRaft Outbox+DLT+idempotencia eventId, Resilience4j, MongoDB ACID Mongock, Security JWT RBAC X-Tenant-ID, Testcontainers. R: flujo trazable, free-tier Render.
 - **YadinStore · Admin Dashboard SaaS** — https://yadinstore-admin.onrender.com/ — S: Operación sin exponer credenciales. T: Dashboard seguro MFE. A: Angular Signals Nx MF, JWT RBAC guards, X-Tenant-ID, ticket temporal 1 uso. R: sin secretos en cliente, listo como remote MFE.
-- **YadinStore · Back-end API Spring + Kafka** — https://yadinstore-backend.onrender.com/kafka-dashboard.html — S: Publicación atómica resiliente. T: API exactly-once + dashboard SASL_SSL. A: Java 21 Spring Boot 3.5 Modulith hexagonal virtual threads DDD, Outbox atómico DLT idempotencia, Resilience4j, Security, MongoDB ACID, Micrometer p95. R: Testcontainers, p95 visible.
+- **YadinStore · Back-end API Spring + Kafka** — https://yadinstore-backend.onrender.com/kafka-dashboard.html — S: Publicación atómica resiliente. T: API at-least-once con consumo idempotente (eventId, efecto exactly-once) + dashboard SASL_SSL. A: Java 21 Spring Boot 3.5 Modulith hexagonal virtual threads DDD, Outbox atómico DLT idempotencia (eventId, efecto exactly-once), Resilience4j, Security, MongoDB ACID, Micrometer p95. R: Testcontainers, p95 visible.
 - **YadinStore · CI/CD Live Jenkins & Observabilidad** — https://yadinstore-jenkins-obs-live.onrender.com/jenkins-dashboard.html — S: Pipeline trazable free-tier. T: CI/CD + métricas/logs. A: GitHub Actions Jenkins 2.468.2 Pipeline as Code Docker DinD, Micrometer → Prometheus → Grafana 10.4.3, ES 8.15.3 Kibana, JasperReports. R: p95/lag en Grafana; OFFLINE si agente hibernado y ES LOCAL ONLY amarillo = esperado, no bug.
 - Otros: eShop OEM SaaS, VE&CO Marketplace, Portafolio adaptable, Landing PHP, Insurance CRM, App educativa Full-Stack MySQL + RBAC (ex-Pokédex), Intranet Hardened GCP.
 
 ## Habilidades (dedup K8s)
 - Core: Angular v10–v21 (5), React 19 (4), Next.js/SSR (4), TypeScript (5), Node/Express (4), Java 21/Spring Boot 3 (4), Python/Flask (3), Tailwind/SCSS (4), WordPress/ACF PHP (4), RxJS/Signals/Redux (4), Vite/esbuild (3)
-- Datos/Cloud/Infra: MySQL/PostgreSQL (4), MongoDB (4), Firebase/GCP (4), Docker / Kubernetes (AKS) (4), Kafka/Event-Driven (4), Keycloak/NextAuth (3), SQLite/REST (4), Render/Aiven/Fly.io (3), Azure (3), GitHub Actions CI-CD (4), EmailJS/Brevo (3), Jenkins/Prometheus/Micrometer (4), Kibana/Grafana/ES free (4)
+- Datos/Cloud/Infra: MySQL/PostgreSQL (4), MongoDB (4), Firebase/GCP (4), Docker / Kubernetes (k3d local) (4), Kafka/Event-Driven (4), Keycloak/NextAuth (3), SQLite/REST (4), Render/Aiven/Fly.io (3), Azure (3), GitHub Actions CI-CD (4), EmailJS/Brevo (3), Jenkins/Prometheus/Micrometer (4), Kibana/Grafana/ES free (4)
 - Tags: Clean, Hexagonal, DDD, SOLID, MFE, REST, CI/CD, OWASP, SDD, ITIL v4, Scrum, SSE, etc.
 
 ## Certificaciones — 13 top verificables (resto +8 en portafolio)

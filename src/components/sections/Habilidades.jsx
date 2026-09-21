@@ -29,7 +29,7 @@ const dataCloud = [
     { name: "MySQL / PostgreSQL", level: 4 },
     { name: "MongoDB", level: 4 },
     { name: "Firebase / GCP", level: 4 },
-    { name: "Docker / Kubernetes (k3d · AKS)", level: 4 },
+    { name: "Docker / Kubernetes (k3d local, AKS cert)", level: 4 },
     { name: "Kafka / Event-Driven", level: 4 },
     { name: "Keycloak / NextAuth (IAM)", level: 3 },
     { name: "SQLite / Express / REST", level: 4 },
@@ -48,7 +48,7 @@ const tagGroups = [
     },
     {
         title: "Cloud · Infra · Seguridad",
-        tags: ["Kafka KRaft", "SSE", "Docker / Kubernetes (k3d · AKS)", "GitHub Actions", "Jenkins", "Render", "Fly.io", "GCP", "Azure", "Aiven", "Keycloak", "NextAuth", "JWT", "RBAC", "IAM", "Multi-Tenancy", "IDOR", "Rate Limiting", "Prometheus", "Grafana", "Elasticsearch", "Kibana", "Micrometer", "JasperReports", "Spring Modulith", "Spring Security", "Transactional Outbox", "Resilience4j", "Testcontainers", "Virtual Threads", "X-Tenant-ID"],
+        tags: ["Kafka KRaft", "SSE", "Docker / Kubernetes (k3d)", "GitHub Actions", "Jenkins", "Render", "Fly.io", "GCP", "Azure", "Aiven", "Keycloak", "NextAuth", "JWT", "RBAC", "IAM", "Multi-Tenancy", "IDOR", "Rate Limiting", "Prometheus", "Grafana", "Elasticsearch", "Kibana", "Micrometer", "JasperReports", "Spring Modulith", "Spring Security", "Transactional Outbox", "Resilience4j", "Testcontainers", "Virtual Threads", "X-Tenant-ID"],
     },
     {
         title: "Frontend · IA · Ecosistema",
