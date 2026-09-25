@@ -44,7 +44,7 @@ const dataCloud = [
 const tagGroups = [
     {
         title: "Especialidades & Metodologías",
-        tags: ["Clean Architecture", "Hexagonal Architecture", "DDD", "SOLID", "MicroFront-Ends (MFE)", "REST API", "CI/CD", "OWASP Top 10", "SDD", "ITIL v4", "Scrum", "EDA", "Idempotency", "SEO AI First", "human-in-the-loop", "SEO organic"],
+        tags: ["Clean Architecture", "Hexagonal Architecture", "DDD", "SOLID", "MicroFront-Ends (MFE)", "REST API", "CI/CD", "OWASP Top 10", "SDD", "ITIL v4", "Scrum", "GraphQL solo-lectura (Spring for GraphQL)", "EDA", "Idempotency", "SEO AI First", "human-in-the-loop", "SEO organic"],
     },
     {
         title: "Cloud · Infra · Seguridad",
