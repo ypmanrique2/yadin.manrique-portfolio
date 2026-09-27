@@ -94,6 +94,17 @@
       --muted: #9ca3af;
       --amber: #fbbf24;
       --black: #050505;
+      /* ── shadcn/ui 2026 fusion (tokens adaptados, solo CSS, reversible) ── */
+      --radius: 0.625rem;
+      --radius-sm: 0.375rem;
+      --radius-md: 0.5rem;
+      --radius-lg: 0.625rem;
+      --radius-xl: 0.875rem;
+      --radius-2xl: 1.125rem;
+      --ring: rgba(34, 197, 94, 0.4);
+      --ring-offset: #0a0a0a;
+      --selection: rgba(34, 197, 94, 0.28);
+      color-scheme: dark;
     }
 
     * {
@@ -900,17 +911,18 @@
     .tag {
       font-family: "Share Tech Mono", monospace;
       font-size: 12px;
-      color: #a7f3d0;
-      border: 1px solid rgba(34, 197, 94, 0.25);
+      color: var(--green);
+      border: 1px solid transparent;
       background: var(--green-soft);
       padding: 5px 14px;
       border-radius: 8px;
-      transition: all 0.2s;
+      transition: background 0.2s, box-shadow 0.2s;
     }
 
     .tag:hover {
+      background: rgba(34, 197, 94, 0.2);
       border-color: var(--green);
-      box-shadow: 0 0 10px rgba(34, 197, 94, 0.2);
+      box-shadow: 0 0 10px rgba(34, 197, 94, 0.15);
       transform: translateY(-1px);
     }
 
@@ -1414,6 +1426,103 @@
       }
     }
 
+    /* ════════ shadcn/ui 2026 FUSION LAYER — solo CSS, reversible ════════ */
+    /* Mapeo: shadcn --background/--foreground/--card/--border/--ring/--radius
+       adaptados al neón verde #22c55e + glass actual. Dark principal, clear-mode 1:1. */
+    html.clear-mode {
+      color-scheme: light;
+    }
+
+    ::selection {
+      background: var(--selection);
+      color: #f3f4f6;
+    }
+
+    html.clear-mode ::selection {
+      background: rgba(34, 197, 94, 0.22);
+      color: #111827;
+    }
+
+    *:focus-visible {
+      outline: 2px solid var(--ring);
+      outline-offset: 3px;
+      border-radius: var(--radius-sm);
+      box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.12);
+    }
+
+    html.clear-mode *:focus-visible {
+      outline-color: #15803d;
+      box-shadow: 0 0 0 4px rgba(21, 128, 61, 0.14);
+    }
+
+    /* shadcn card radius scale aplicada al glass existente (sin cambiar layout) */
+    .stat {
+      border-radius: var(--radius-lg);
+    }
+
+    .pcard,
+    .skills-card,
+    .about-card {
+      border-radius: var(--radius-xl);
+    }
+
+    .cert,
+    .edu-item,
+    .lang-card {
+      border-radius: var(--radius-lg);
+    }
+
+    .chip,
+    .tag {
+      border-radius: var(--radius-md);
+    }
+
+    /* shadcn ring en hover/focus de chips (teclado + mouse, WCAG 2.4.7) */
+    .chip:focus-visible,
+    .tag:focus-visible,
+    .pcard .link:focus-visible,
+    .contact a:focus-visible,
+    .cert a:focus-visible {
+      outline: 2px solid var(--ring);
+      outline-offset: 3px;
+    }
+
+    /* contraste AA: muted暗 sobre negro ya ~7:1; refuerzo en textos pequeños */
+    .tl-item li {
+      color: #c3c9d1;
+    }
+
+    .pcard p {
+      color: #b6bdc6;
+    }
+
+    html.clear-mode .tl-item li,
+    html.clear-mode .pcard p {
+      color: #374151 !important;
+    }
+
+    /* clear-mode superficies shadcn: --card claro + ring verde legible */
+    html.clear-mode .chip,
+    html.clear-mode .tag {
+      background: rgba(34, 197, 94, 0.10) !important;
+      border-color: rgba(34, 197, 94, 0.30) !important;
+      color: #15803d !important;
+    }
+
+    /* reduced-motion ya existe abajo; refuerzo shadcn: sin parpadeo en tag-2026 */
+    @media (prefers-reduced-motion: reduce) {
+      .hero .tag-2026::before {
+        animation: none !important;
+      }
+
+      .chip,
+      .tag,
+      .cert,
+      .edu-item {
+        transition: none !important;
+      }
+    }
+
     .sr-only {
       position: absolute;
       width: 1px;
@@ -1424,6 +1533,241 @@
       clip: rect(0, 0, 0, 0);
       white-space: nowrap;
       border: 0;
+    }
+
+    /* ══ 2026 motion polish · solo CSS · aditivo reversible · sin JS nuevo ══ */
+    :root {
+      --ease-2026: cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .reveal {
+      transition: opacity 0.7s var(--ease-2026), transform 0.7s var(--ease-2026);
+      will-change: opacity, transform;
+    }
+
+    .reveal.visible {
+      will-change: auto;
+    }
+
+    .page > header.reveal {
+      transition-delay: 0s;
+    }
+
+    .page > section.reveal:nth-of-type(1) {
+      transition-delay: 0.04s;
+    }
+
+    .page > section.reveal:nth-of-type(2) {
+      transition-delay: 0.08s;
+    }
+
+    .page > section.reveal:nth-of-type(3) {
+      transition-delay: 0.12s;
+    }
+
+    .page > section.reveal:nth-of-type(4) {
+      transition-delay: 0.16s;
+    }
+
+    .page > section.reveal:nth-of-type(5) {
+      transition-delay: 0.20s;
+    }
+
+    .page > section.reveal:nth-of-type(6) {
+      transition-delay: 0.24s;
+    }
+
+    .pcard,
+    .stat,
+    .tag,
+    .chip,
+    .cert {
+      transition-timing-function: var(--ease-2026);
+    }
+
+    .hero h1 {
+      background-size: 180% 100%;
+      animation: hero-sheen 9s ease-in-out infinite alternate;
+    }
+
+    @keyframes hero-sheen {
+      from {
+        background-position: 0% 50%;
+      }
+
+      to {
+        background-position: 100% 50%;
+      }
+    }
+
+    @media print {
+      .hero h1 {
+        animation: none !important;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .hero h1 {
+        animation: none !important;
+      }
+
+      .reveal {
+        will-change: auto;
+      }
+    }
+
+    /* ══ 2026 ÉNFASIS PROFUNDO · solo CSS · aditivo reversible · sin JS nuevo ══
+       Dark principal + clear-mode 1:1. AA: solo sombras/relieve/ring, texto intacto. */
+    .hero h1 {
+      text-shadow: 0 0 56px rgba(34, 197, 94, 0.35), 0 0 18px rgba(34, 211, 238, 0.18), 0 2px 24px rgba(0, 0, 0, 0.5);
+      filter: drop-shadow(0 0 22px rgba(34, 197, 94, 0.25));
+    }
+
+    .hero .tag-2026 {
+      border-color: rgba(34, 197, 94, 0.65);
+      box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.14), 0 2px 20px rgba(34, 197, 94, 0.22);
+    }
+
+    .hero .tag-2026::before {
+      box-shadow: 0 0 14px rgba(34, 197, 94, 0.9);
+    }
+
+    /* glass más presente pero legible */
+    .hero {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.005));
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4), 0 1px 0 rgba(255, 255, 255, 0.07) inset;
+    }
+
+    .stat,
+    .pcard,
+    .skills-card,
+    .about-card {
+      box-shadow: 0 10px 32px rgba(0, 0, 0, 0.32), 0 1px 0 rgba(255, 255, 255, 0.06) inset;
+    }
+
+    /* pcard hover marcado: -6px + ring verde + sombra neón */
+    .pcard:hover {
+      transform: translateY(-6px);
+      border-color: rgba(34, 197, 94, 0.55);
+      box-shadow: 0 20px 48px rgba(34, 197, 94, 0.18), 0 10px 28px rgba(0, 0, 0, 0.4);
+    }
+
+    .stat:hover {
+      transform: translateY(-3px);
+      border-color: rgba(34, 197, 94, 0.45);
+      box-shadow: 0 12px 32px rgba(34, 197, 94, 0.14);
+    }
+
+    /* relieve chips/tags */
+    .chip,
+    .tag {
+      border-color: rgba(34, 197, 94, 0.22);
+      box-shadow: 0 1px 0 rgba(255, 255, 255, 0.05) inset, 0 2px 8px rgba(0, 0, 0, 0.25);
+    }
+
+    .chip:hover,
+    .tag:hover {
+      border-color: rgba(34, 197, 94, 0.5);
+      box-shadow: 0 0 14px rgba(34, 197, 94, 0.25);
+    }
+
+    /* línea section-heading más viva */
+    .section-heading .line {
+      height: 2px;
+      background: linear-gradient(90deg, rgba(34, 197, 94, 0.85), rgba(34, 211, 238, 0.35), transparent);
+      box-shadow: 0 0 12px rgba(34, 197, 94, 0.35);
+      border-radius: 999px;
+    }
+
+    /* scrollbar / selection / focus más visibles */
+    html {
+      scrollbar-color: rgba(34, 197, 94, 0.55) transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: rgba(34, 197, 94, 0.38);
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(34, 197, 94, 0.6);
+    }
+
+    ::selection {
+      background: rgba(34, 197, 94, 0.4);
+    }
+
+    *:focus-visible {
+      box-shadow: 0 0 0 5px rgba(34, 197, 94, 0.18);
+    }
+
+    /* stagger más marcado, sutil-profesional */
+    .reveal:nth-child(2) {
+      transition-delay: 0.07s;
+    }
+
+    .reveal:nth-child(3) {
+      transition-delay: 0.13s;
+    }
+
+    .reveal:nth-child(4) {
+      transition-delay: 0.19s;
+    }
+
+    .page > section.reveal:nth-of-type(5) {
+      transition-delay: 0.24s;
+    }
+
+    .page > section.reveal:nth-of-type(6) {
+      transition-delay: 0.30s;
+    }
+
+    /* clear-mode 1:1 */
+    html.clear-mode .hero {
+      background: rgba(255, 255, 255, 0.85) !important;
+      box-shadow: 0 12px 36px rgba(0, 0, 0, 0.08) !important;
+    }
+
+    html.clear-mode .hero .tag-2026 {
+      box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.16), 0 2px 16px rgba(34, 197, 94, 0.18) !important;
+    }
+
+    html.clear-mode .pcard:hover {
+      border-color: rgba(34, 197, 94, 0.5) !important;
+      box-shadow: 0 18px 40px rgba(34, 197, 94, 0.16), 0 8px 24px rgba(0, 0, 0, 0.08) !important;
+    }
+
+    html.clear-mode .section-heading .line {
+      box-shadow: 0 0 10px rgba(34, 197, 94, 0.3);
+    }
+
+    html.clear-mode *:focus-visible {
+      box-shadow: 0 0 0 5px rgba(21, 128, 61, 0.18);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .hero h1 {
+        filter: none !important;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .hero h1 {
+        filter: drop-shadow(0 0 12px rgba(34, 197, 94, 0.2));
+      }
+    }
+
+    @media print {
+      .hero h1 {
+        text-shadow: none !important;
+        filter: none !important;
+      }
+
+      .hero .tag-2026,
+      .section-heading .line {
+        box-shadow: none !important;
+      }
     }
   </style>
 </head>

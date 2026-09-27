@@ -116,6 +116,38 @@
       border-radius: 2px;
     }
 
+    /* ===== 2026 estatica: linea cometa + focus ring doble (port PREVIEW, adaptado ATS claro) ===== */
+    *:focus-visible {
+      outline: 2px solid #16a34a;
+      outline-offset: 3px;
+      border-radius: 4px;
+      box-shadow: 0 0 0 4px rgba(22, 163, 74, 0.18);
+    }
+
+    html.clear-mode *:focus-visible {
+      outline-color: #15803d;
+      box-shadow: 0 0 0 5px rgba(21, 128, 61, 0.18);
+    }
+
+    .section-heading .line {
+      height: 2px;
+      background: linear-gradient(90deg, rgba(22, 163, 74, 0.85), rgba(14, 116, 144, 0.35), transparent);
+      border-radius: 999px;
+      opacity: 0.9;
+      box-shadow: 0 0 8px rgba(22, 163, 74, 0.18);
+    }
+
+    .ats-section h2::after {
+      content: "";
+      display: block;
+      height: 2px;
+      margin-top: 8px;
+      background: linear-gradient(90deg, rgba(22, 163, 74, 0.85), rgba(14, 116, 144, 0.35), transparent);
+      border-radius: 999px;
+      opacity: 0.9;
+      box-shadow: 0 0 8px rgba(22, 163, 74, 0.18);
+    }
+
     /* ===== LAYOUT — SINGLE COLUMN ATS STRICT ===== */
     .ats-page {
       max-width: 780px;
@@ -641,6 +673,16 @@
 
       .ats-card .badge {
         border: 1px solid #999 !important;
+      }
+
+      .ats-section h2::after,
+      .section-heading .line {
+        box-shadow: none !important;
+      }
+
+      *:focus-visible,
+      a:focus-visible {
+        box-shadow: none !important;
       }
     }
 
