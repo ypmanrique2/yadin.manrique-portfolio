@@ -5,9 +5,10 @@ const projects = [
         title: "YadinStore · e-Shop SaaS · Enterprise e-Commerce",
         badge: "⭐ Distributed Systems Architecture · Multi-tenant · Hardened",
         badgeClass: "bg-green-500/20 text-green-300",
+        dates: "OCT 2025 — ACTUALIDAD",
         description:
             "Diseñé e implementé YadinStore, un SaaS e-Commerce Engine con Angular 21 + Nx + Module Federation y arquitectura de micro-frontends, respaldado por un monolito modular en Java 21 + Spring Boot/Spring Modulith. Apliqué Clean/Hexagonal Architecture + DDD, integración Kafka KRaft + Transactional Outbox + DLT + Idempotency, y MongoDB para persistencia con principio ACID. La solución incorpora RBAC + Multi-Tenancy, pruebas de integración con Testcontainers y un flujo CI/CD con GitHub Actions, Jenkins y Docker sobre infraestructura cloud. Arquitectura limpia (Clean Architecture), diseño guiado por el dominio (Domain-Driven Design - DDD) y arquitectura hexagonal (Hexagonal Architecture), asegurada con control de acceso basado en roles (Role-Based Access Control - RBAC), aislamiento estricto por inquilino (Multi-Tenancy Isolation), Docker con Kubernetes (K8s) mediante k3d (Docker/Kubernetes local).",
-        chips: ["Java 21", "Spring Boot", "Spring Modulith", "X-Tenant-ID", "Angular 21", "Kafka", "MongoDB", "NgRX", "Kubernetes (K8s)", "Hexagonal Architecture", "DDD", "Transactional Outbox", "Angular Signals", "DLT", "Idempotency", "Resilience4j", "Virtual Threads", "Spring Security", "JWT", "RBAC", "Clean Architecture", "Multi-Tenancy", "OWASP", "IDOR", "EDA", "Docker", "k3d", "Testcontainers", "GitHub Actions", "GraphQL solo-lectura (Spring for GraphQL)", "SEO AI First"],
+        chips: ["Java 21", "Spring Boot", "Spring Modulith", "X-Tenant-ID", "Angular 21", "Nx", "Module Federation", "Kafka", "MongoDB", "NgRX", "Kubernetes (K8s)", "Hexagonal Architecture", "DDD", "Transactional Outbox", "Angular Signals", "DLT", "Idempotency", "Resilience4j", "Virtual Threads", "Spring Security", "JWT", "RBAC", "Clean Architecture", "Multi-Tenancy", "OWASP", "IDOR", "EDA", "Docker", "k3d", "Testcontainers", "GitHub Actions", "GraphQL solo-lectura (Spring for GraphQL)", "SEO AI First"],
         href: "https://yadinstore-frontend.onrender.com/",
         demo: { email: "usuario.demo@yadinstore.com", password: "1cLaVeDePrUeBa+" },
     },
@@ -15,9 +16,10 @@ const projects = [
         title: "YadinStore · Admin Dashboard SaaS Multi-Vendor",
         badge: "🔐 SaaS Admin · Multi-Tenant Dashboard",
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
+        dates: "OCT 2025 — ACTUALIDAD",
         description:
             "Diseñé e implementé el Panel Administrativo SaaS de YadinStore, una consola de operación empresarial (Enterprise Administrative Dashboard) preparada como micro-frontend remoto (Remote Micro-Frontend) con Angular 21, Nx Monorepo y federación de módulos (Module Federation). Lideré la gestión reactiva de productos, usuarios, métricas y ventas con señales (Angular Signals), blindando la consola con arquitectura de seguridad endurecida (Hardened Security Architecture): autenticación JWT con acceso por ticket de un solo uso (One-Time Ticket Access), control de acceso basado en roles (Role-Based Access Control - RBAC), protección anti-IDOR (Anti-IDOR Protection) y aislamiento estricto por inquilino (X-Tenant-ID Multi-Tenancy Isolation), integrada con servicios Spring Boot 3.5 y base de datos MongoDB.",
-        chips: ["Java 21", "Spring Boot", "Spring Modulith", "X-Tenant-ID", "Angular 21", "Kafka", "MongoDB", "NgRX", "Kubernetes (K8s)", "Hexagonal Architecture", "DDD", "Transactional Outbox", "Angular Signals", "DLT", "Idempotency", "Resilience4j", "Virtual Threads", "Spring Security", "JWT", "RBAC", "Clean Architecture", "Multi-Tenancy", "OWASP", "IDOR", "EDA", "Docker", "k3d", "Testcontainers", "GitHub Actions", "GraphQL solo-lectura (Spring for GraphQL)", "SEO AI First", "human-in-the-loop", "SEO organic"],
+        chips: ["Java 21", "Spring Boot", "Spring Modulith", "X-Tenant-ID", "Angular 21", "Nx", "Module Federation", "Kafka", "MongoDB", "NgRX", "Kubernetes (K8s)", "Hexagonal Architecture", "DDD", "Transactional Outbox", "Angular Signals", "DLT", "Idempotency", "Resilience4j", "Virtual Threads", "Spring Security", "JWT", "RBAC", "Clean Architecture", "Multi-Tenancy", "OWASP", "IDOR", "EDA", "Docker", "k3d", "Testcontainers", "GitHub Actions", "GraphQL solo-lectura (Spring for GraphQL)", "SEO AI First", "human-in-the-loop", "SEO organic"],
         href: "https://yadinstore-admin.onrender.com/",
         demo: { email: "usuario.demo@yadinstore.com", password: "1cLaVeDePrUeBa+" },
     },
@@ -25,9 +27,10 @@ const projects = [
         title: "YadinStore · Backend API + Kafka + CI/CD & Observabilidad",
         badge: "🔧 Backend Event Driven · Kafka · CI/CD · Observabilidad",
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
+        dates: "OCT 2025 — ACTUALIDAD",
         description:
             "API REST Java 21 con Spring Boot 3.5 y Spring Modulith como monolito modular con arquitectura hexagonal, DDD y virtual threads. Kafka 3.9.2 KRaft opera con Transactional Outbox atómico, DLT para poison messages e idempotencia por eventId (at-least-once, efecto exactly-once); Resilience4j aporta circuit breaker, retry y bulkhead. La seguridad end-to-end combina Spring Security + JWT, RBAC por X-Tenant-ID, rate limiting por tenant, CORS allowlist y guards anti-IDOR con tests. La persistencia usa MongoDB ACID multi-documento, migraciones con Mongock y calidad con Testcontainers + JaCoCo. Stack CI/CD y observabilidad Cloud-Native integrado con GitHub Actions y Jenkins mediante Pipeline as Code (Jenkinsfile), Docker/DinD y automatización completa del ciclo build, test y empaquetado. El backend está instrumentado con Micrometer (Outbox, Kafka, p95 HTTP) centralizando métricas en Prometheus y visualización en Grafana, mientras Elasticsearch + Kibana proporcionan trazabilidad y análisis de logs; JasperReports genera reportes PDF de órdenes. Expone GraphQL solo-lectura (Spring for GraphQL, schema-first) como adapter hexagonal sobre CatalogService: 2 queries, tenant server-side (JWT/X-Tenant-ID), paginación acotada e introspección desactivada en prod. Incluye dashboard server-side de actividad Kafka (brokers, topics, consumer groups y lag) consultado vía SASL_SSL sin exponer credenciales al navegador. Si PC/agente hibernado se muestra OFFLINE, y Elasticsearch LOCAL ONLY en amarillo — es el comportamiento esperado del free-tier, no un bug.",
-        chips: ["Java 21", "Spring Boot 3.5", "Spring Modulith", "Kafka 3.9.2", "MongoDB", "Hexagonal Architecture", "DDD", "Transactional Outbox", "DLT", "Idempotency", "Resilience4j", "Spring Security", "JWT", "RBAC", "Multi-Tenancy", "OWASP", "Rate Limiting", "Mongock", "Testcontainers", "Docker", "k3d", "SASL_SSL", "GitHub Actions", "Jenkins 2.468.2", "Jenkinsfile", "Pipeline as Code", "DinD", "Grafana 10.4.3", "Prometheus", "Elasticsearch 8.15.3", "Kibana 8.15.3", "Micrometer", "JasperReports", "Render"],
+        chips: ["Java 21", "Spring Boot 3.5", "Spring Modulith", "Kafka 3.9.2", "MongoDB", "Hexagonal Architecture", "DDD", "Transactional Outbox", "DLT", "Idempotency", "Resilience4j", "Spring Security", "JWT", "RBAC", "X-Tenant-ID", "Multi-Tenancy", "OWASP", "IDOR", "Rate Limiting", "Mongock", "Testcontainers", "Docker", "k3d", "SASL_SSL", "GitHub Actions", "Jenkins 2.468.2", "Jenkinsfile", "Pipeline as Code", "DinD", "Grafana 10.4.3", "Prometheus", "Elasticsearch 8.15.3", "Kibana 8.15.3", "Micrometer", "JasperReports", "Render", "GraphQL solo-lectura (Spring for GraphQL)", "Virtual Threads"],
         href: "https://yadinstore-jenkins-obs-live.onrender.com/jenkins-dashboard.html",
         linkLabel: "Ver monitor Kafka + Docker + K8s (k3d) + CI/CD & Observabilidad →",
     },
@@ -35,6 +38,7 @@ const projects = [
         title: "Insurance CRM · Plataforma de Gestión y Digitalización de Seguros",
         badge: "🛡️ Business Process Digitalization",
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
+        dates: "MAR 2026 — MAR 2026",
         description:
             "Arquitecté y desarrollé Insurance CRM para transformar información operativa dispersa en múltiples hojas de Excel en una plataforma web centralizada de gestión para asesores de seguros. Analicé y estructuré los datos para concentrar en un dashboard administrativo tipo CRM la gestión de clientes, pólizas y siniestros, facilitando la consulta, organización y seguimiento del flujo operativo y reduciendo la dependencia de archivos aislados. Diseñé el front-end desacoplado con React, TypeScript, Vite y Tailwind CSS bajo una arquitectura basada en componentes, optimizando el rendimiento, la gestión de estado y la visualización de datos (Data Visualization). En la capa de servidor, construí una API RESTful en Python con Flask y Gunicorn, encargada de sanitizar entradas, aplicar validaciones estrictas y orquestar la persistencia sobre SQLite, asegurando un despliegue continuo mediante un            pipeline de CI/CD con GitHub Actions hacia Render. Con este proyecto demuestro mi capacidad para convertir procesos empresariales desestructurados en soluciones de software utilizables, conectando análisis de datos, modelado de procesos, desarrollo Full Stack y diseño de interfaces orientadas a la operación real.",
         chips: ["React", "TypeScript", "TailwindCSS", "HTML5", "CSS3", "Vite", "GitHub Actions", "Python", "Flask", "Gunicorn", "SQLite", "PostgreSQL", "Render", "API RESTful", "CI/CD", "Data Visualization", "Dashboard", "CRM", "Business Process Digitalization", "Excel", "Component-Based Architecture", "Clean Code", "Secure Coding", "Data Sanitization", "Input Validation", "State Management", "Performance Optimization"],
@@ -44,6 +48,7 @@ const projects = [
         title: "Marketplace de comercio electrónico VE&CO (Web)",
         badge: "Fui colaborador fullstack al código núcleo (Core Contributor)",
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
+        dates: "JUN 2026 — AGO 2026",
         description:
             "Contribuí como desarrollador fullstack al código núcleo (Core Contributor) del marketplace VE&CO, plataforma colombiana donde empresas y emprendedores publican, venden y gestionan productos. Implementé interfaces reactivas en Angular con TypeScript estricto y gestión de estado con RxJS, maquetado escalable con SCSS responsive, y una API REST en Node.js con Express para catálogo, autenticación con Firebase (Auth) y JWT, y persistencia en MongoDB. La solución opera con despliegue continuo sobre Fly.io, pagos electrónicos seguros y cumplimiento de la normativa colombiana de comercio electrónico y protección de datos, con sanitización de entradas y control de acceso por roles (Role-Based Access Control - RBAC).",
         chips: ["Angular", "Node.js", "Express", "SCSS", "Firebase", "Fly.io", "TypeScript", "MongoDB", "RxJS", "REST API", "Firebase Auth", "JWT", "RBAC", "Responsive Design", "CI/CD", "SEO"],
@@ -53,6 +58,7 @@ const projects = [
         title: "App de PlayStore: VE&CO, Marketplace de comercio electrónico",
         badge: "Fui colaborador fullstack al código núcleo (Core Contributor)",
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
+        dates: "JUN 2026 — AGO 2026",
         description:
             "Contribuí como desarrollador fullstack al código núcleo (Core Contributor) de la app omnicanal VE&CO, que conecta compradores y vendedores desde web, móvil y back-end en la nube. Construí la experiencia móvil distribuida en PlayStore con renderizado adaptativo, autenticación segura con Firebase (Auth) y JWT, gestión de productos, pagos electrónicos, logística y mensajería sobre una API REST en Node.js con Express y persistencia en MongoDB. Los servicios, desplegados en Fly.io bajo arquitectura escalable orientada a servicios, aplican control de acceso por roles (Role-Based Access Control - RBAC), validación de entradas y cumplimiento normativo colombiano.",
         chips: ["Angular", "Node.js", "Express", "SCSS", "Firebase", "Fly.io", "Java", "TypeScript", "MongoDB", "PlayStore", "RxJS", "REST API", "Firebase Auth", "JWT", "RBAC", "Responsive Design", "CI/CD"],
@@ -62,6 +68,7 @@ const projects = [
         title: "eShop corporativa de alta disponibilidad",
         badge: "⭐ Flagship · eShop OEM SaaS",
         badgeClass: "bg-green-500/20 text-green-300",
+        dates: "OCT 2025 — FEB 2026",
         description:
             "Diseñé e implementé una solución de e-commerce corporativa endurecida (Hardened e-Commerce Solution) para transacciones masivas bajo modelo de roles estricto (Strict RBAC Model). El front-end opera con renderizado de servidor (Server-Side Rendering - SSR) en Next.js con React y TypeScript, autenticación federada con Keycloak (Identity and Access Management - IAM) y NextAuth; el back-end expone servicios en Java con Spring Boot y Spring Security con persistencia en MongoDB. La arquitectura separa responsabilidades por capas (Clean Architecture), aplica mínimo privilegio, validación de entradas OWASP y operación privada, escalable y de alta fiabilidad aun en temporada alta.",
         chips: ["React", "Next.js", "Java", "TypeScript", "MongoDB", "Spring Boot", "Spring Security", "Keycloak", "NextAuth", "SSR", "RBAC", "OWASP", "Clean Architecture", "REST API"],
@@ -71,6 +78,7 @@ const projects = [
         title: "Portafolio adaptable a empresas",
         badge: "Actual",
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
+        dates: "FEB 2024 — ABR 2024",
         description:
             "Diseñé e implementé un portafolio adaptable (Adaptive Portfolio) de mediana complejidad para empresas productoras que exhiben su catálogo e incrementan ventas en línea. Construí el front-end en Angular con TypeScript y estado reactivo con RxJS, una API REST en Node.js con Express para contenido dinámico, maquetado escalable con SCSS responsive y despliegue en la nube con Firebase (Hosting). La solución aplica diseño responsive mobile-first, SEO on-page y código limpio por componentes.",
         chips: ["Angular", "Node.js", "Express", "SCSS", "Firebase", "TypeScript", "RxJS", "REST API", "Responsive Design", "SEO"],
@@ -98,9 +106,10 @@ const projects = [
         title: "App consumidora de API educativa (Full-Stack MySQL + RBAC)",
         badge: "Demo interactiva disponible",
         badgeClass: "bg-amber-500/10 text-amber-400 border border-amber-500/30",
+        dates: "ENE 2026 — ENE 2026",
         description:
             "Diseñé e implementé una web-app full-stack (Full-Stack Web App) en Angular que consume una API REST educativa en Node.js con Express. Aseguré la autenticación por sesión con cookie HTTP-only (HTTP-Only Session Cookie), login protegido con guards e interceptores, persistencia en MySQL con gestión de usuarios y roles (Role-Based Access Control - RBAC), estado reactivo con RxJS y comunicación segura cross-origin mediante CORS con lista de orígenes permitidos (Allowlist). La calidad se respalda con pruebas unitarias en Jasmine y Karma.",
-        chips: ["Angular", "Node.js", "Express", "RxJS", "TypeScript", "SQL", "Jasmine", "Karma", "MySQL", "CORS", "Route Guards", "REST API", "Responsive Design"],
+        chips: ["Angular", "Node.js", "Express", "RxJS", "TypeScript", "SQL", "Jasmine", "Karma", "MySQL", "CORS", "Route Guards", "RBAC", "REST API", "Responsive Design"],
         href: "https://pokedexaplication.netlify.app/",
     },
     {
@@ -116,6 +125,7 @@ const projects = [
         title: "Página personalizable a negocios",
         badge: "Actual",
         badgeClass: "bg-green-500/10 text-green-500 border border-green-500/30",
+        dates: "SEP 2023 — OCT 2023",
         description:
             "Diseñé e implementé una página ligera (Lightweight Business Page) de complejidad básica para personas y negocios pequeños que exhiben sus productos o servicios en internet. Maquetado semántico en HTML5 con estilos CSS3 responsive mobile-first y comportamiento en JavaScript vainilla (Vanilla JS), con SEO on-page básico, accesibilidad con etiquetas aria y despliegue estático en GitHub Pages para carga rápida y costo cero.",
         chips: ["HTML5", "CSS3", "JavaScript", "Responsive Design", "SEO", "GitHub Pages", "Semantic HTML", "Accessibility"],
@@ -148,6 +158,11 @@ export const Proyectos = () => {
                                     </span>
                                 )}
                                 <h3 className="text-xl font-bold mb-2">{project.title}</h3>
+                                {project.dates && (
+                                    <p className="text-xs text-gray-500 font-mono mb-2">
+                                        {project.dates}
+                                    </p>
+                                )}
                                 <p className="text-gray-400 mb-4">{project.description}</p>
                                 <div className="flex flex-wrap gap-2 mb-4">
                                     {project.chips.map((tech, index) => (

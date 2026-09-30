@@ -44,11 +44,11 @@ const dataCloud = [
 const tagGroups = [
     {
         title: "Especialidades & Metodologías",
-        tags: ["EDA", "Scrum", "Clean Architecture", "Hexagonal Architecture", "DDD", "SOLID", "MicroFront-Ends (MFE)", "REST API", "CI/CD", "OWASP Top 10", "SDD", "ITIL v4", "GraphQL solo-lectura (Spring for GraphQL)", "Idempotency", "SEO AI First", "human-in-the-loop", "SEO organic"],
+        tags: ["EDA", "Scrum", "Clean Architecture", "Hexagonal Architecture", "DDD", "SOLID", "MicroFront-Ends (MFE)", "REST API", "CI/CD", "OWASP Top 10", "ASVS", "SDD", "ITIL v4", "GraphQL solo-lectura (Spring for GraphQL)", "Idempotency", "SEO AI First", "human-in-the-loop", "SEO organic"],
     },
     {
         title: "Cloud · Infra · Seguridad",
-        tags: ["Kafka KRaft", "SSE", "Docker / Kubernetes (k3d)", "GitHub Actions", "Jenkins", "Render", "Fly.io", "GCP", "Azure", "Aiven", "Keycloak", "NextAuth", "JWT", "RBAC", "IAM", "Multi-Tenancy", "IDOR", "Rate Limiting", "Prometheus", "Grafana", "Elasticsearch", "Kibana", "Micrometer", "JasperReports", "Spring Modulith", "Spring Security", "Transactional Outbox", "Resilience4j", "Testcontainers", "Virtual Threads", "X-Tenant-ID"],
+        tags: ["Kafka KRaft", "SSE", "Docker / Kubernetes (k3d)", "GitHub Actions", "Jenkins", "Render", "Fly.io", "GCP", "Azure", "Aiven", "OCI", "Keycloak", "NextAuth", "JWT", "RBAC", "IAM", "Multi-Tenancy", "IDOR", "Rate Limiting", "Prometheus", "Grafana", "Elasticsearch", "Kibana", "Micrometer", "JasperReports", "Spring Modulith", "Spring Security", "Transactional Outbox", "DLT", "Resilience4j", "Testcontainers", "Virtual Threads", "X-Tenant-ID"],
     },
     {
         title: "Frontend · IA · Ecosistema",
