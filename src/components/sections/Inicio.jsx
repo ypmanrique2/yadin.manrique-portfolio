@@ -62,10 +62,11 @@ export const Inicio = () => {
                     </div>
 
                     <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto">
-                        Desarrollador full stack apasionado por el código limpio, SOLID, DX y muy
+                        Desarrollador Full Stack apasionado por el código limpio, SOLID, DX y muy
                         seguro. Enfocado en crear apps web con alto rendimiento y gran experiencia 
                         de usuario. Experto en Java 21, Spring Boot, Kafka, Angular, React, Next.js, 
-                        JWT, RBAC, OWASP, ASVS, IDOR, Idempotencia, SQL, MongoDB, Docker, K8s-k3d...
+                        JWT, RBAC, OWASP top 10, ASVS, IDOR, Idempotencia, 
+                        MySQL/PostgreSQL, MongoDB, Docker, Kubernetes...
                     </p>
 
                     <div className="flex flex-wrap justify-center items-center gap-x-4 gap-y-2 text-sm text-gray-400 mb-8">
