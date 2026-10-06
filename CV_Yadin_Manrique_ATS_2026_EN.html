@@ -883,21 +883,20 @@
           <span class="badge badge-green">🔧 BE-JD · Backend + Kafka + CI/CD & Observability</span>
           <h3>YadinStore · Backend API + Kafka + CI/CD & Observability</h3>
           <div class="dates">OCT 2025 — PRESENT</div>
-          <p>High-throughput Java 21 REST API built with <b>Spring Boot 3.5 and Spring Modulith</b> (Hexagonal
-            Architecture, DDD, and Virtual Threads). Integrates <b>Kafka 3.9.2 KRaft</b> using an atomic Transactional
-            Outbox pattern, Dead Letter Topics (DLT), and eventId deduplication for at-least-once with idempotent consumption (exactly-once effect);
-            fault-tolerant via <b>Resilience4j</b> (circuit breaker, retry, bulkhead). Security combines <b>Spring
-              Security + JWT, RBAC</b> with X-Tenant-ID, tenant-level rate limiting, strict CORS allowlist, and
-            anti-IDOR tests. Persistence backed by <b>MongoDB ACID</b> multi-document transactions, <b>Mongock</b>
-            migrations, and <b>Testcontainers + JaCoCo</b> quality gates. Cloud-Native CI/CD and observability pipeline
-            integrating <b>GitHub Actions and Jenkins 2.468.2</b> via Pipeline as Code (Jenkinsfile),
-            <b>Docker/DinD</b>, and end-to-end build/test/package automation. The backend is instrumented with
-            <b>Micrometer</b> (Outbox, Kafka, p95 HTTP metrics) feeding into <b>Prometheus</b> and <b>Grafana
-              10.4.3</b>, while <b>Elasticsearch 8.15.3 + Kibana</b> deliver distributed tracing and log parsing,
-            alongside <b>JasperReports</b> for automated order PDF receipts. Features a server-side Kafka activity
-            dashboard queried over <b>SASL_SSL</b> with zero frontend secrets. If the PC/agent in hibernation appears
-            OFFLINE, and LOCAL ONLY Elasticsearch is highlighted in yellow — this is the expected behavior of the free
-             tier, not a bug. Read-only GraphQL (Spring for GraphQL, schema-first): 2 queries delegating to CatalogService, server-side tenant (JWT/X-Tenant-ID), capped pagination, introspection off in prod.</p>
+          <p>I design and sustain this backend with <b>Java 21</b> and <b>Spring Boot 3.5</b> on
+            <b>Spring Modulith</b>, with <b>Hexagonal + DDD</b> and <b>Virtual Threads</b> for real concurrency. I
+            persist in <b>MongoDB</b> with <b>ACID</b> design and eventual consistency with <b>Kafka KRaft</b> via
+            <b>transactional Outbox</b>, <b>Resilience4j</b>, <b>Idempotency</b> and <b>DLT</b>. I secure with
+            <b>Spring Security</b>, <b>JWT</b>, <b>RBAC</b>, <b>X-Tenant-ID</b>, <b>Rate Limiting</b> and server-side
+            anti-<b>IDOR</b>. I keep explicit module and contract boundaries, with <b>Testcontainers</b> for real
+            integration before every deploy. I automate with <b>GitHub Actions</b>, <b>Jenkins</b>, <b>Docker</b> and
+            <b>K8s</b>, and observe with <b>Prometheus</b>, <b>Grafana</b>, <b>ELK</b> and <b>Micrometer</b> (metrics,
+            threads and Kafka lag). I document just enough: contracts, decisions and how to run it locally. I expose
+            read-only <b>GraphQL</b> (2 queries, schema-first) over catalog, with server-side tenant and no
+            introspection in prod. I run it cost-aware: if the monitor shows OFFLINE or <b>Elasticsearch</b> LOCAL ONLY
+            in yellow — that is the free tier, not a bug. With this project I demonstrate my ability to operate
+            <b>business-critical distributed systems in production</b>, connecting hexagonal architecture, resilient
+            messaging, hardened security and enterprise-grade observability.</p>
           <div class="chips"><span class="chip accent">Java 21</span><span class="chip accent">Spring Boot
               3.5</span><span class="chip accent">Spring Modulith</span><span class="chip accent">Kafka
               3.9.2</span><span class="chip accent">MongoDB</span><span class="chip">Hexagonal Architecture</span><span
@@ -990,7 +989,10 @@
             TypeScript, Vite, and TailwindCSS, ensuring strict typing, state management, and optimized performance in
             interactive dashboards. On the server layer, a REST API was programmed in Python (Flask) responsible for
             processing business rules, sanitizing inputs, and orchestrating persistence in SQLite/PostgreSQL,
-            complemented by a CI/CD automation pipeline in GitHub Actions and WSGI (Gunicorn) deployment on Render. This
+            complemented by a CI/CD automation pipeline in GitHub Actions and WSGI (Gunicorn) deployment on Render. I
+            organized the backend with application factory and domain <b>Blueprints</b>, with queries focused on the
+            portfolio dashboard (clients, policies and claims), and complemented the portfolio table with quick
+            <b>Vanilla JS</b> filters by status and client. This
             development demonstrates technical capability to transform informal business processes into distributed,
             scalable, and secure web architectures, combining data analysis with clean code writing oriented to real
             production environments.</p>

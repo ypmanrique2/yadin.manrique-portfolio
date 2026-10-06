@@ -909,32 +909,24 @@
           <h3>YadinStore · Backend API + Kafka + Jenkins + CI/CD & Observabilidad</h3>
           <div class="dates">OCT 2025 — ACTUALIDAD</div>
           <p>
-            Arquitecturé e integré un ecosistema distribuido de alta complejidad tecnológica utilizando <strong>Java
-              21</strong> y <strong>Spring Boot</strong>
-            3.5 sobre <strong>Spring Modulith</strong>, aplicando Arquitectura Hexagonal (<strong>Hexagonal
-              Architecture</strong>) y Diseño Guiado por el Dominio
-            (<strong>Domain-Driven Design - DDD</strong>) con alta concurrencia mediante Hilos Virtuales
-            (<strong>Virtual Threads</strong>-Project Loom).
-            Estructuré la persistencia transaccional sobre <strong>MongoDB</strong> con principio de diseño
-            <strong>ACID</strong> y garanticé la consistencia
-            eventual con <strong>Apache Kafka</strong> (<strong>KRaft</strong>) implementando el patrón de la Bandeja de
-            Salida Transaccional
-            (<strong>Transactional Outbox Pattern</strong>), resiliencia con <strong>Resilience4j</strong>, Idempotencia
-            (<strong>Idempotency</strong>) y
-            Tópicos de Mensajes No entregados (Dead Letter Topics - <strong>DLT</strong>). Fortalecí el núcleo de toda
-            la seguridad mediante
-            <strong>Spring Security</strong>, tokens <strong>JWT</strong>, Control de Acceso Basado en Roles
-            (<strong>RBAC</strong>), aislamiento
-            multi-inquilino (<strong>X-Tenant ID</strong>), limitación de rango (<strong>Rate Limiting</strong>) y
-            mitigación Anti-<strong>IDOR</strong>. Orquesté la
-            automatización de CI/CD e infraestructura con <strong>GitHub Actions</strong>, <strong>Jenkins</strong>,
-            <strong>Docker</strong> y <strong>Testcontainers</strong>
-            con <strong>Kubernetes (K8s)</strong>, desplegando una pila de Observabilidad con <strong>Prometheus,
-              Grafana, Elasticsearch, Kibana y Micrometer</strong> para
-            monitorear en tiempo real métricas del sistema, hilos del servidor y la latencia (lag) de los consumidores
-            de tópicos de <strong>Apache Kafka KRaft</strong>. Si PC/agente hibernado se muestra OFFLINE, y 
-            <strong>Elasticsearch</strong> LOCAL ONLY en amarillo — es el comportamiento esperado del free-tier, no un bug.
-            GraphQL solo-lectura (Spring for GraphQL, schema-first): 2 queries delegadas a CatalogService, tenant server-side (JWT/X-Tenant-ID), paginación acotada e introspección desactivada en prod.
+            Diseñé y sostengo este backend con <strong>Java 21</strong> y <strong>Spring Boot 3.5</strong> sobre
+            <strong>Spring Modulith</strong>, con <strong>Hexagonal + DDD</strong> y <strong>Virtual Threads</strong>
+            para concurrencia real. Persisto en <strong>MongoDB</strong> con diseño <strong>ACID</strong> y
+            consistencia eventual con <strong>Kafka KRaft</strong> vía <strong>Outbox transaccional</strong>,
+            <strong>Resilience4j</strong>, <strong>Idempotencia</strong> y <strong>DLT</strong>. Aseguro con
+            <strong>Spring Security</strong>, <strong>JWT</strong>, <strong>RBAC</strong>,
+            <strong>X-Tenant-ID</strong>, <strong>Rate Limiting</strong> y anti-<strong>IDOR</strong> server-side.
+            Mantengo fronteras explícitas por módulo y contrato, con <strong>Testcontainers</strong> para integración
+            real antes de cada despliegue. Automatizo con <strong>GitHub Actions</strong>, <strong>Jenkins</strong>,
+            <strong>Docker</strong> y <strong>K8s</strong>, y observo con <strong>Prometheus</strong>,
+            <strong>Grafana</strong>, <strong>ELK</strong> y <strong>Micrometer</strong> (métricas, hilos y lag de
+            Kafka). Documento lo justo: contratos, decisiones y cómo correrlo en local. Expongo
+            <strong>GraphQL read-only</strong> (2 queries, schema-first) sobre catálogo, con tenant server-side y sin
+            introspección en prod. Lo mantengo con criterio de costo: si el monitor se ve OFFLINE o
+            <strong>Elasticsearch</strong> LOCAL ONLY en amarillo — es el free-tier, no un bug. Con este proyecto
+            demuestro mi capacidad para operar <strong>sistemas distribuidos críticos en producción</strong>,
+            conectando arquitectura hexagonal, mensajería resiliente, seguridad endurecida y observabilidad de nivel
+            empresarial.
           </p>
           <div class="chips"><span class="chip accent">Java 21</span><span class="chip accent">Spring Boot
               3.5</span><span class="chip accent">Spring Modulith</span><span class="chip accent">Kafka
@@ -974,7 +966,10 @@
               RESTful</b> en <b>Python</b> con <b>Flask</b> y <b>Gunicorn</b>,
             encargada de sanitizar entradas, aplicar validaciones estrictas y orquestar la persistencia sobre
             <b>SQLite</b>, asegurando un despliegue continuo mediante un
-            pipeline de CI/CD con <b>GitHub Actions</b> hacia <b>Render</b>. Con este proyecto demuestro mi capacidad
+            pipeline de CI/CD con <b>GitHub Actions</b> hacia <b>Render</b>. Organicé el backend con application
+            factory y <b>Blueprints</b> por dominio, con consultas enfocadas al dashboard de cartera (clientes, pólizas
+            y siniestros), y complementé la tabla de cartera con filtros rápidos en <b>Vanilla JS</b> por estado y
+            cliente. Con este proyecto demuestro mi capacidad
             para convertir procesos empresariales desestructurados
             en soluciones de software utilizables, conectando análisis de datos, modelado de procesos, desarrollo Full
             Stack y diseño de interfaces orientadas a la operación real.
