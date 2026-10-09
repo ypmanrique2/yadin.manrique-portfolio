@@ -143,13 +143,13 @@ const certs = [
         links: [{ href: "https://app.aluracursos.com/user/ypmanrique15/immersion/certificate/46", label: "verificar credencial" }],
     },
     {
-        title: "Desarrollo con IA de 0 a Producción",
+        title: "Desarrollo con IA - El Nuevo Programador",
         meta: (
             <>
-                BIG School · <span className="text-cyan-400">Mar. 2026</span> · IA + MCP (6h)
+                BIG School · <span className="text-cyan-400">Oct. 2026</span> · IA + MCP (4h)
             </>
         ),
-        noverify: "▸ sin enlace público",
+        links: [{ href: "https://certificados.thebigschool.com/wp-content/uploads/certs/MDEV4/Certificado-Yadin-Paulo-Manrique-Marquez-fiqq2rtl.pdf", label: "verificar credencial" }],
     },
     {
         title: (
