@@ -4,7 +4,7 @@ export const Inicio = () => {
     return (
         <section
             id="inicio"
-            className="min-h-screen flex items-center justify-center relative"
+            className="min-h-screen flex items-center justify-center relative pt-16"
         >
             <RevealOnScroll>
                 {/*             <div ref={ref} className="reveal visible"> */}
