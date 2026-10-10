@@ -9,10 +9,6 @@ export const Inicio = () => {
             <RevealOnScroll>
                 {/*             <div ref={ref} className="reveal visible"> */}
                 <div className="text-center z-10 px-4">
-                    <span className="inline-block bg-green-500/10 border border-green-500/30 text-green-300 text-xs font-mono px-3 py-1 rounded-full mb-6 tracking-wide">
-                        CV 2026 · Actualizado
-                    </span>
-
                     <h1 className="text-5xl md:text -7xl font-bold mb-6 bg-gradient-to-r from-green-500 to-cyan-400 bg-clip-text text-transparent leading-right">
                         Hola, soy Yadin Manrique
                     </h1>
