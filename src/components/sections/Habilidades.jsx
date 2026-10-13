@@ -52,7 +52,7 @@ const tagGroups = [
     },
     {
         title: "Frontend · IA · Ecosistema",
-        tags: ["TailwindCSS", "WordPress/ACF Pro", "RxJS", "NgRX", "Vite", "esbuild", "Redux", "SSR", "MCP", "LLM", "EmailJS", "SEO", "CORS", "Firebase Auth", "Route Guards", "Responsive Design", "Semantic HTML", "Accessibility", "Security Hardening", "GitHub Pages", "Data Visualization", "Dashboard", "CRM", "Business Process Digitalization", "Excel", "Clean Code", "Secure Coding", "Input Validation", "State Management", "Performance Optimization", "JavaScript", "HTML5", "CSS3", "AJAX", "jQuery", "Hooks", "Security Nonces", "Jasmine / Karma"],
+        tags: ["TailwindCSS", "WordPress/ACF Pro", "RxJS", "NgRX", "Vite", "esbuild", "Redux", "SSR", "MCP", "LLM", "AI", "Agentic AI", "AI Assistant", "orchestration", "Harness", "graduation of hallucination", "EmailJS", "SEO", "CORS", "Firebase Auth", "Route Guards", "Responsive Design", "Semantic HTML", "Accessibility", "Security Hardening", "GitHub Pages", "Data Visualization", "Dashboard", "CRM", "Business Process Digitalization", "Excel", "Clean Code", "Secure Coding", "Input Validation", "State Management", "Performance Optimization", "JavaScript", "HTML5", "CSS3", "AJAX", "jQuery", "Hooks", "Security Nonces", "Jasmine / Karma"],
     },
 ];
 

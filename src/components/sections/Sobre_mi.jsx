@@ -7,7 +7,7 @@ export const Sobre_mi = () => {
     const backendSkills = ["Java", "SpringBoot", "Spring Security", "Keycloak", "Node.js", "Express", "MongoDB", "MySQL", "PostgreSQL", "Firebase", "Python", "Flask", "JavaScript", "TypeScript", "hardened security", "AI first"];
     const especialidadesChips = ["EDA", "Scrum", "Clean Arch", "Hexagonal", "DDD", "SOLID", "MicroFront-Ends (MFE)", "REST API", "CI/CD", "OWASP Top 10", "ASVS", "SDD", "ITIL v4", "Transactional Outbox", "DLT", "Idempotency", "Resilience4j", "Testcontainers", "Spring Modulith", "GraphQL solo-lectura (Spring for GraphQL)", "SEO AI First", "human-in-the-loop", "SEO organic"];
     const cloudSeguridadChips = ["Kafka KRaft", "SSE", "Docker / Kubernetes (k3d)", "GitHub Actions", "Jenkins", "Render", "Fly.io", "GCP", "Azure", "Aiven", "OCI", "Keycloak", "NextAuth", "RBAC", "JWT", "IDOR", "Rate Limiting", "X-Tenant-ID", "Virtual Threads", "Prometheus", "Grafana", "Elasticsearch", "Kibana", "Micrometer", "JasperReports"];
-    const frontendIaChips = ["TailwindCSS", "WordPress/ACF Pro", "RxJS", "Vite", "esbuild", "Redux", "MCP", "LLM", "EmailJS", "Brevo", "SEO", "CORS", "jQuery", "AJAX"];
+    const frontendIaChips = ["TailwindCSS", "WordPress/ACF Pro", "RxJS", "Vite", "esbuild", "Redux", "MCP", "LLM", "AI", "Agentic AI", "AI Assistant", "orchestration", "Harness", "graduation of hallucination", "EmailJS", "Brevo", "SEO", "CORS", "jQuery", "AJAX"];
 
     const downloadCV = () => {
         const link = document.createElement("a");
