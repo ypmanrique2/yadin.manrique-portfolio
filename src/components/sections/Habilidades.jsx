@@ -31,6 +31,9 @@ const dataCloud = [
     { name: "Firebase / GCP", level: 4 },
     { name: "Docker / Kubernetes (k3d local, AKS cert)", level: 4 },
     { name: "Kafka / Event-Driven", level: 4 },
+    { name: "RabbitMQ / AMQP", level: 3 },
+    { name: "Caffeine / Spring Cache", level: 3 },
+    { name: "OpenTelemetry / OTLP", level: 3 },
     { name: "Keycloak / NextAuth (IAM)", level: 3 },
     { name: "SQLite / Express / REST", level: 4 },
     { name: "Render / Aiven / Fly.io", level: 3 },
@@ -48,7 +51,7 @@ const tagGroups = [
     },
     {
         title: "Cloud · Infra · Seguridad",
-            tags: ["Kafka KRaft", "SSE", "Docker / Kubernetes (k3d)", "GitHub Actions", "Jenkins", "Render", "Fly.io", "GCP", "Azure", "Aiven", "OCI", "Keycloak", "NextAuth", "JWT", "RBAC", "IAM", "Multi-Tenancy", "IDOR", "Rate Limiting", "Prometheus", "Grafana", "Elasticsearch", "Kibana", "Micrometer", "JasperReports", "Spring Modulith", "Spring Security", "Transactional Outbox", "DLT", "Resilience4j", "Testcontainers", "Virtual Threads", "X-Tenant-ID", "Mockito", "JUnit 5", "Jupiter"],
+            tags: ["Kafka KRaft", "RabbitMQ / AMQP", "Caffeine", "OpenTelemetry / OTLP", "SSE", "Docker / Kubernetes (k3d)", "GitHub Actions", "Jenkins", "Render", "Fly.io", "GCP", "Azure", "Aiven", "OCI", "Keycloak", "NextAuth", "JWT", "RBAC", "IAM", "Multi-Tenancy", "IDOR", "Rate Limiting", "Prometheus", "Grafana", "Elasticsearch", "Kibana", "Micrometer", "JasperReports", "Spring Modulith", "Spring Security", "Transactional Outbox", "DLT", "Resilience4j", "Testcontainers", "Virtual Threads", "X-Tenant-ID", "Mockito", "JUnit 5", "Jupiter"],
     },
     {
         title: "Frontend · IA · Ecosistema",
