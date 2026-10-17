@@ -17,7 +17,7 @@ const coreStack = [
     { name: "Next.js / SSR", level: 4 },
     { name: "TypeScript", level: 5 },
     { name: "Node.js / Express", level: 4 },
-    { name: "Java 21 / Spring Boot 3", level: 4 },
+    { name: "Java 25 / Spring Boot 3.5.16", level: 4 },
     { name: "Python / Flask", level: 3 },
     { name: "TailwindCSS / SCSS", level: 4 },
     { name: "WordPress / ACF Pro / PHP", level: 4 },
@@ -48,7 +48,7 @@ const tagGroups = [
     },
     {
         title: "Cloud · Infra · Seguridad",
-        tags: ["Kafka KRaft", "SSE", "Docker / Kubernetes (k3d)", "GitHub Actions", "Jenkins", "Render", "Fly.io", "GCP", "Azure", "Aiven", "OCI", "Keycloak", "NextAuth", "JWT", "RBAC", "IAM", "Multi-Tenancy", "IDOR", "Rate Limiting", "Prometheus", "Grafana", "Elasticsearch", "Kibana", "Micrometer", "JasperReports", "Spring Modulith", "Spring Security", "Transactional Outbox", "DLT", "Resilience4j", "Testcontainers", "Virtual Threads", "X-Tenant-ID"],
+            tags: ["Kafka KRaft", "SSE", "Docker / Kubernetes (k3d)", "GitHub Actions", "Jenkins", "Render", "Fly.io", "GCP", "Azure", "Aiven", "OCI", "Keycloak", "NextAuth", "JWT", "RBAC", "IAM", "Multi-Tenancy", "IDOR", "Rate Limiting", "Prometheus", "Grafana", "Elasticsearch", "Kibana", "Micrometer", "JasperReports", "Spring Modulith", "Spring Security", "Transactional Outbox", "DLT", "Resilience4j", "Testcontainers", "Virtual Threads", "X-Tenant-ID", "Mockito", "JUnit 5", "Jupiter"],
     },
     {
         title: "Frontend · IA · Ecosistema",

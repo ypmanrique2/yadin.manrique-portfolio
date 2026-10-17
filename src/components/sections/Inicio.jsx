@@ -15,7 +15,7 @@ export const Inicio = () => {
 
                     <p className="text-gray-300 text-lg mb-6">
                         Full Stack Developer ·{" "}
-                        <b className="text-green-500 font-semibold">Java 8-21</b> ·{" "}
+                        <b className="text-green-500 font-semibold">Java 8-25</b> ·{" "}
                         <b className="text-green-500 font-semibold">Spring Boot</b> ·{" "}
                         <b className="text-green-500 font-semibold">Kafka KRaft</b> ·{" "}
                         <b className="text-green-500 font-semibold">Docker / Kubernetes </b> · React /
@@ -60,7 +60,7 @@ export const Inicio = () => {
                     <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto">
                         Desarrollador Full Stack apasionado por el código limpio, SOLID, DX y muy
                         seguro. Enfocado en crear apps web con alto rendimiento y gran experiencia 
-                        de usuario. Experto en Java 21, Spring Boot, Kafka, Angular, React, Next.js, 
+                        de usuario. Experto en Java 25, Spring Boot 3.5.16, Kafka, Angular, React, Next.js, 
                         JWT, RBAC, OWASP top 10, ASVS, IDOR, Idempotencia, 
                         MySQL/PostgreSQL, MongoDB, Docker, Kubernetes...
                     </p>
@@ -111,7 +111,7 @@ export const Inicio = () => {
                                     d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
                                 />
                             </svg>
-                            Cúcuta, Norte de Santander
+                            Cl 40Sur #4-52 Br San Nicolás, Soacha, Cundinamarca 250052
                         </span>
                         <span className="text-white/20">·</span>
                         <a
