@@ -3,23 +3,44 @@ import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
 
 import { defineConfig } from 'vite';
+
+const allowedDevHosts = new Set(['127.0.0.1:5173', 'localhost:5173']);
+
+const devHostGuard = {
+  name: 'dev-host-guard',
+  apply: 'serve',
+  configureServer(server) {
+    server.middlewares.use((req, res, next) => {
+      const host = req.headers.host?.toLowerCase();
+
+      if (!host || !allowedDevHosts.has(host)) {
+        res.statusCode = 403;
+        res.end('Forbidden');
+        return;
+      }
+
+      next();
+    });
+  }
+};
+
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), tailwindcss()],
+  plugins: [devHostGuard, react(), tailwindcss()],
   base: '/yadin.manrique-portfolio/',
   server: {
-    // Security mitigations for OWASP/ASVS compliance
-    // Prevents arbitrary file read via WebSocket (GHSA-p9ff-h696-f583)
+    // Local-only development server; do not expose it on the network.
+    host: '127.0.0.1',
+    strictPort: true,
+    cors: {
+      origin: ['http://localhost:5173', 'http://127.0.0.1:5173']
+    },
     ws: false,
-    // Enforce strict filesystem access control (defense-in-depth)
     fs: {
       strict: true,
       allow: ['.']
     },
-    // Additional defense-in-depth: enforce origin validation (reduces risk of UNC path attacks - GHSA-v6wh-96g9-6wx3)
+    // Sets generated development asset URLs; it is not a request-origin check.
     origin: 'http://localhost:5173',
-    // Prevent accidental network exposure (defense-in-depth against multiple Vite vulnerabilities)
-    strictPort: true,
-    host: '127.0.0.1'
   }
 });
