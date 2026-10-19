@@ -47,15 +47,15 @@ const dataCloud = [
 const tagGroups = [
     {
         title: "Especialidades & Metodologías",
-        tags: ["EDA", "Scrum", "Clean Architecture", "Hexagonal Architecture", "DDD", "SOLID", "MicroFront-Ends (MFE)", "REST API", "CI/CD", "OWASP Top 10", "ASVS", "SDD", "ITIL v4", "GraphQL solo-lectura (Spring for GraphQL)", "Idempotency", "SEO AI First", "human-in-the-loop", "SEO organic"],
+        tags: ["EDA", "Scrum", "Clean Architecture", "Hexagonal Architecture", "DDD", "SOLID", "MicroFront-Ends (MFE)", "REST API", "CI/CD", "OWASP Top 10", "ASVS", "SDD", "ITIL v4", "GraphQL solo-lectura (Spring for GraphQL)", "Idempotency", "Transactional Outbox", "DLT", "Resilience4j", "Testcontainers", "Spring Modulith", "OpenAPI (springdoc)", "MapStruct", "Spotless", "JaCoCo", "SEO AI First", "human-in-the-loop", "SEO organic"],
     },
     {
         title: "Cloud · Infra · Seguridad",
-            tags: ["Kafka KRaft", "RabbitMQ / AMQP", "Caffeine", "OpenTelemetry / OTLP", "SSE", "Docker / Kubernetes (k3d)", "GitHub Actions", "Jenkins", "Render", "Fly.io", "GCP", "Azure", "Aiven", "OCI", "Keycloak", "NextAuth", "JWT", "RBAC", "IAM", "Multi-Tenancy", "IDOR", "Rate Limiting", "Prometheus", "Grafana", "Elasticsearch", "Kibana", "Micrometer", "JasperReports", "Spring Modulith", "Spring Security", "Transactional Outbox", "DLT", "Resilience4j", "Testcontainers", "Virtual Threads", "X-Tenant-ID", "Mockito", "JUnit 5", "Jupiter"],
+            tags: ["Kafka KRaft", "RabbitMQ / AMQP", "Caffeine", "OpenTelemetry / OTLP", "SSE", "Docker / Kubernetes (k3d)", "Kustomize", "SealedSecrets (kubeseal)", "GHCR", "GitHub Actions", "Jenkins", "Render", "Fly.io", "GCP", "Azure", "Aiven", "OCI", "Keycloak", "NextAuth", "JWT", "RBAC", "IAM", "Multi-Tenancy", "IDOR", "Rate Limiting", "Prometheus", "Grafana", "Elasticsearch", "Kibana", "Micrometer", "JasperReports", "Spring Modulith", "Spring Security", "Transactional Outbox", "DLT", "Resilience4j", "Testcontainers", "Virtual Threads", "X-Tenant-ID", "OpenPay", "DIAN e-Invoicing", "Mockito", "JUnit 5", "Jupiter"],
     },
     {
         title: "Frontend · IA · Ecosistema",
-        tags: ["TailwindCSS", "WordPress/ACF Pro", "RxJS", "NgRX", "Vite", "esbuild", "Redux", "SSR", "MCP", "LLM", "AI", "Agentic AI", "AI Assistant", "orchestration", "Harness", "graduation of hallucination", "EmailJS", "SEO", "CORS", "Firebase Auth", "Route Guards", "Responsive Design", "Semantic HTML", "Accessibility", "Security Hardening", "GitHub Pages", "Data Visualization", "Dashboard", "CRM", "Business Process Digitalization", "Excel", "Clean Code", "Secure Coding", "Input Validation", "State Management", "Performance Optimization", "JavaScript", "HTML5", "CSS3", "AJAX", "jQuery", "Hooks", "Security Nonces", "Jasmine / Karma"],
+        tags: ["TailwindCSS", "WordPress/ACF Pro", "RxJS", "NgRX", "Vite", "esbuild", "Redux", "SSR", "MCP", "LLM", "AI", "Agentic AI", "AI Assistant", "LLM orchestration", "RAG", "Vector Search", "LLM Guardrails", "Gemini", "Groq", "OpenRouter", "EmailJS", "SEO", "CORS", "Firebase Auth", "Route Guards", "Responsive Design", "Semantic HTML", "Accessibility", "Security Hardening", "GitHub Pages", "Data Visualization", "Dashboard", "CRM", "Business Process Digitalization", "Excel", "Clean Code", "Secure Coding", "Input Validation", "State Management", "Performance Optimization", "JavaScript", "HTML5", "CSS3", "AJAX", "jQuery", "Hooks", "Security Nonces", "Jasmine / Karma"],
     },
 ];
 

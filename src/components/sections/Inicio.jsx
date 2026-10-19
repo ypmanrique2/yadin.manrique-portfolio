@@ -17,9 +17,10 @@ export const Inicio = () => {
                         Full Stack Developer ·{" "}
                         <b className="text-green-500 font-semibold">Java 8-25</b> ·{" "}
                         <b className="text-green-500 font-semibold">Spring Boot</b> ·{" "}
-                        <b className="text-green-500 font-semibold">Kafka KRaft</b> ·{" "}
+                        <b className="text-green-500 font-semibold">Kafka KRaft / RabbitMQ</b> ·{" "}
                         <b className="text-green-500 font-semibold">Docker / Kubernetes </b> · React /
-                        Angular / Next.js / TypeScript
+                        Angular / Next.js / TypeScript ·{" "}
+                        <b className="text-green-500 font-semibold">IA (RAG · LLM · Guardrails)</b>
                     </p>
 
                     <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -60,9 +61,10 @@ export const Inicio = () => {
                     <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto">
                         Desarrollador Full Stack apasionado por el código limpio, SOLID, DX y muy
                         seguro. Enfocado en crear apps web con alto rendimiento y gran experiencia 
-                        de usuario. Experto en Java 25, Spring Boot 3.5.16, Kafka, Angular, React, Next.js, 
-                        JWT, RBAC, OWASP top 10, ASVS, IDOR, Idempotencia, 
-                        MySQL/PostgreSQL, MongoDB, Docker, Kubernetes...
+                        de usuario. Experto en Java 25, Spring Boot 3.5.16, Kafka KRaft, RabbitMQ, 
+                        Angular, React, Next.js, JWT, RBAC, OWASP top 10, ASVS, IDOR, Idempotencia, 
+                        MySQL/PostgreSQL, MongoDB, Docker, Kubernetes (k3d/Kustomize), OpenAPI, y 
+                        asistente IA en producción (RAG + orquestación multi-LLM + guardrails: Gemini/Groq/OpenRouter)...
                     </p>
 
                     <div className="flex flex-wrap justify-center items-center gap-x-4 gap-y-2 text-sm text-gray-400 mb-8">
