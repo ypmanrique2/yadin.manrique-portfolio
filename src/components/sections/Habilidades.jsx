@@ -51,7 +51,7 @@ const tagGroups = [
     },
     {
         title: "Cloud · Infra · Seguridad",
-            tags: ["Kafka KRaft", "RabbitMQ / AMQP", "Caffeine", "OpenTelemetry / OTLP", "SSE", "Docker / Kubernetes (k3d)", "Kustomize", "SealedSecrets (kubeseal)", "GHCR", "GitHub Actions", "Jenkins", "Render", "Fly.io", "GCP", "Azure", "Aiven", "OCI", "Keycloak", "NextAuth", "JWT", "RBAC", "IAM", "Multi-Tenancy", "IDOR", "Rate Limiting", "Prometheus", "Grafana", "Elasticsearch", "Kibana", "Micrometer", "JasperReports", "Spring Modulith", "Spring Security", "Transactional Outbox", "DLT", "Resilience4j", "Testcontainers", "Virtual Threads", "X-Tenant-ID", "OpenPay", "DIAN e-Invoicing", "Mockito", "JUnit 5", "Jupiter"],
+            tags: ["Kafka KRaft", "RabbitMQ / AMQP", "Caffeine", "OpenTelemetry / OTLP", "SSE", "Docker / Kubernetes (k3d)", "Kustomize", "SealedSecrets (kubeseal)", "GHCR", "GitHub Actions", "Jenkins", "Render", "Fly.io", "GCP", "Azure", "Aiven", "OCI", "Keycloak", "NextAuth", "JWT", "RBAC", "IAM", "Multi-Tenancy", "IDOR", "Rate Limiting", "Prometheus", "Grafana", "Elasticsearch", "Kibana", "Micrometer", "JasperReports", "Spring Modulith", "Spring Security", "Transactional Outbox", "DLT", "Resilience4j", "Testcontainers", "Virtual Threads", "X-Tenant-ID", "OpenPay", "DIAN e-Invoicing", "Mockito", "JUnit 5", "Jupiter", "Secrets Scanning", "Secret Management", "OWASP LLM Top 10", "LLM Safety", "Prompt Injection Detection", "Output Validation", "Sensitive Data Redaction", "SAST / SCA"],
     },
     {
         title: "Frontend · IA · Ecosistema",
